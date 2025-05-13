@@ -4,13 +4,49 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.yeying</groupId>
+  <groupId>io.github.youxuehu</groupId>
   <artifactId>yeying-sdk-java</artifactId>
   <version>1.0</version>
+  <name>yeying java sdk</name>
+  <url>https://github.com/yeying-community/yeying-client-java</url>
 
-  <name>java</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <description>
+    Bean Validator With Spring Expression Language
+  </description>
+
+  <developers>
+    <developer>
+      <id>yeying</id>
+      <name>yeying-community</name>
+      <roles>
+        <role>Project Manager</role>
+        <role>Developer</role>
+      </roles>
+      <email>yeying-community</email>
+      <url>https://github.com/yeying-community</url>
+    </developer>
+  </developers>
+
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/yeying-community/yeying-client-java/issues</url>
+  </issueManagement>
+
+  <inceptionYear>2025</inceptionYear>
+
+  <licenses>
+    <license>
+      <name>Apache License 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:git://github.com/yeying-community/yeying-client-java.git</connection>
+    <developerConnection>scm:git:git@github.com:yeying-community/yeying-client-java.git</developerConnection>
+    <url>https://github.com/yeying-community/yeying-client-java</url>
+    <tag>HEAD</tag>
+  </scm>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -109,6 +145,15 @@
       </resource>
     </resources>
     <plugins>
+
+      <!-- 若要在GitHub Actions上执行mvn test，则必须添加此插件才能成功执行 -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+      </plugin>
+
+
       <plugin>
         <groupId>kr.motd.maven</groupId>
         <artifactId>os-maven-plugin</artifactId>
@@ -164,9 +209,81 @@
           </annotationProcessorPaths>
         </configuration>
       </plugin>
+
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.5.0</version>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <version>3.0.1</version>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <executable>gpg</executable>
+          <useAgent>true</useAgent>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>3.2.1</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+
+      <plugin>
+        <groupId>org.sonatype.central</groupId>
+        <artifactId>central-publishing-maven-plugin</artifactId>
+        <version>0.4.0</version>
+        <extensions>true</extensions>
+        <configuration>
+          <publishingServerId>ossrh</publishingServerId>
+          <tokenAuth>true</tokenAuth>
+        </configuration>
+      </plugin>
+
+
     </plugins>
   </build>
-
+  <!-- 仓库配置 -->
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
 
   <repositories>
     <repository>
