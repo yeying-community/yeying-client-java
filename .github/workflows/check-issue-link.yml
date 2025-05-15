@@ -1,0 +1,32 @@
+name: Check Issue Link in PR
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+jobs:
+  check-issue-link:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check if target is main
+        run: |
+          if [ "${{ github.base_ref }}" = "main" ]; then
+            echo "Target branch is main"
+          else
+            echo "Target branch is NOT main"
+            exit 0
+          fi
+
+      - name: Check PR body for issue reference
+        run: |
+          # 获取 PR 的描述内容
+          PR_BODY=$(jq --raw-output .pull_request.body "$GITHUB_EVENT_PATH")
+
+          # 检查是否包含 "fixes #<number>" 或 "resolve #<number>"
+          if echo "$PR_BODY" | grep -qiE '(fix|fixes|resolve|resolves)[[:space:]]+#([0-9]+)'; then
+            echo "PR is linked to an issue."
+            exit 0
+          else
+            echo "Error: PR must reference an issue using 'fixes #<number>' or similar."
+            exit 1
+          fi
