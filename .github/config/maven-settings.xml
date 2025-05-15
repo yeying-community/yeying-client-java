@@ -1,0 +1,25 @@
+<settings>
+  <servers>
+    <server>
+      <id>ossrh</id>
+      <username>${env.OSSRH_USERNAME}</username>
+      <password>${env.OSSRH_PASSWORD}</password>
+    </server>
+  </servers>
+  <profiles>
+    <profile>
+      <id>gpg</id>
+      <activation>
+        <property>
+          <name>env.GPG_KEYNAME</name>
+          <name>env.GPG_PASSPHRASE</name>
+        </property>
+      </activation>
+      <properties>
+        <gpg.executable>gpg</gpg.executable>
+        <gpg.keyname>${env.GPG_KEYNAME}</gpg.passphrase>
+        <gpg.passphrase>${env.GPG_PASSPHRASE}</gpg.passphrase>
+      </properties>
+    </profile>
+  </profiles>
+</settings>
