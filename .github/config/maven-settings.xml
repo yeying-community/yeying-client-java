@@ -9,12 +9,6 @@
   <profiles>
     <profile>
       <id>gpg</id>
-      <activation>
-        <property>
-          <name>env.GPG_KEYNAME</name>
-          <name>env.GPG_PASSPHRASE</name>
-        </property>
-      </activation>
       <properties>
         <gpg.executable>gpg</gpg.executable>
         <gpg.keyname>${env.GPG_KEYNAME}</gpg.passphrase>
