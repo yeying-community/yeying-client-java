@@ -25,18 +25,25 @@ jobs:
         with:
           maven-version: 3.9.9
 
+      - name: Import GPG Key
+        env:
+          GPG_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/.gnupg
+          echo "$GPG_KEY" | gpg --batch --import
+          echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
+          chmod 700 ~/.gnupg
+
+      - name: Debug GPG Keys
+        run: gpg --list-secret-keys --keyid-format LONG
+
       - name: Build and Publish
         env:
           OSSRH_USERNAME: ${{ secrets.OSSRH_USERNAME }}
           OSSRH_PASSWORD: ${{ secrets.OSSRH_PASSWORD }}
-          GPG_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          GPG_KEYNAME: ${{ secrets.GPG_KEYNAME }}
           GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
         run: |
-          # 导入 GPG 私钥到临时环境
-          echo "$GPG_KEY" | gpg --batch --import
-          # 配置 GPG 使用非交互模式
-          echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
-          # 执行构建和发布
           mvn clean deploy --settings .github/config/maven-settings.xml
 
       - name: Verify Artifact
