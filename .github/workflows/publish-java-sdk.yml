@@ -36,7 +36,7 @@ jobs:
           echo "$GPG_KEY" | gpg --batch --import
           # 配置 GPG 使用非交互模式
           echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
-          执行构建和发布
+          # 执行构建和发布
           mvn clean deploy --settings .github/config/maven-settings.xml
 
       - name: Verify Artifact
