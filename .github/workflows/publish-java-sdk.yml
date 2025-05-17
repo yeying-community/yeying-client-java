@@ -44,7 +44,11 @@ jobs:
           GPG_KEYNAME: ${{ secrets.GPG_KEYNAME }}
           GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
         run: |
-          mvn clean deploy --settings .github/config/maven-settings.xml
+          mvn clean deploy --settings .github/config/maven-settings.xml \
+            -Dgpg.keyname=${GPG_KEYNAME} \
+            -Dgpg.passphrase=${GPG_PASSPHRASE} \
+            -Dgpg.executable=gpg \
+            -Dgpg.pinentryMode=loopback
 
       - name: Verify Artifact
         run: |
