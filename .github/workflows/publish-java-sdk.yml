@@ -52,4 +52,4 @@ jobs:
 
       - name: Verify Artifact
         run: |
-          ls -l target/yeying-sdk-java-1.0.jar
+          ls -l target/yeying-*.jar
