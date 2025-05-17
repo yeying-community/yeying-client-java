@@ -7,6 +7,7 @@ on:
 jobs:
   build_and_publish:
     runs-on: ubuntu-24.04
+    environment: publish
 
     steps:
       - name: Checkout Code
@@ -22,13 +23,20 @@ jobs:
       - name: Set up Maven
         uses: stCarolas/setup-maven@v4
         with:
-          maven-version: 3.9.9 
+          maven-version: 3.9.9
 
       - name: Build and Publish
         env:
           OSSRH_USERNAME: ${{ secrets.OSSRH_USERNAME }}
           OSSRH_PASSWORD: ${{ secrets.OSSRH_PASSWORD }}
+          GPG_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
         run: |
+          # 导入 GPG 私钥到临时环境
+          echo "$GPG_KEY" | gpg --batch --import
+          # 配置 GPG 使用非交互模式
+          echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
+          执行构建和发布
           mvn clean deploy --settings .github/config/maven-settings.xml
 
       - name: Verify Artifact
