@@ -25,1567 +25,6 @@ public final class TaskOuterClass {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  public interface TaskMetadataOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:yeying.api.apps.zuoyepigai.TaskMetadata)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <pre>
-     * ID 唯一标识
-     * </pre>
-     *
-     * <code>string uid = 1;</code>
-     * @return The uid.
-     */
-    java.lang.String getUid();
-    /**
-     * <pre>
-     * ID 唯一标识
-     * </pre>
-     *
-     * <code>string uid = 1;</code>
-     * @return The bytes for uid.
-     */
-    com.google.protobuf.ByteString
-        getUidBytes();
-
-    /**
-     * <pre>
-     * 任务名称
-     * </pre>
-     *
-     * <code>string name = 2;</code>
-     * @return The name.
-     */
-    java.lang.String getName();
-    /**
-     * <pre>
-     * 任务名称
-     * </pre>
-     *
-     * <code>string name = 2;</code>
-     * @return The bytes for name.
-     */
-    com.google.protobuf.ByteString
-        getNameBytes();
-
-    /**
-     * <pre>
-     * 描述
-     * </pre>
-     *
-     * <code>string description = 3;</code>
-     * @return The description.
-     */
-    java.lang.String getDescription();
-    /**
-     * <pre>
-     * 描述
-     * </pre>
-     *
-     * <code>string description = 3;</code>
-     * @return The bytes for description.
-     */
-    com.google.protobuf.ByteString
-        getDescriptionBytes();
-
-    /**
-     * <pre>
-     * 标签
-     * </pre>
-     *
-     * <code>string tagUid = 4;</code>
-     * @return The tagUid.
-     */
-    java.lang.String getTagUid();
-    /**
-     * <pre>
-     * 标签
-     * </pre>
-     *
-     * <code>string tagUid = 4;</code>
-     * @return The bytes for tagUid.
-     */
-    com.google.protobuf.ByteString
-        getTagUidBytes();
-
-    /**
-     * <pre>
-     * 用户uId
-     * </pre>
-     *
-     * <code>string did = 5;</code>
-     * @return The did.
-     */
-    java.lang.String getDid();
-    /**
-     * <pre>
-     * 用户uId
-     * </pre>
-     *
-     * <code>string did = 5;</code>
-     * @return The bytes for did.
-     */
-    com.google.protobuf.ByteString
-        getDidBytes();
-
-    /**
-     * <pre>
-     * 创建时间
-     * </pre>
-     *
-     * <code>int64 createdAt = 6;</code>
-     * @return The createdAt.
-     */
-    long getCreatedAt();
-
-    /**
-     * <pre>
-     * 修改时间
-     * </pre>
-     *
-     * <code>int64 updatedAt = 7;</code>
-     * @return The updatedAt.
-     */
-    long getUpdatedAt();
-
-    /**
-     * <pre>
-     * 是否删除
-     * </pre>
-     *
-     * <code>bool isDeleted = 8;</code>
-     * @return The isDeleted.
-     */
-    boolean getIsDeleted();
-  }
-  /**
-   * Protobuf type {@code yeying.api.apps.zuoyepigai.TaskMetadata}
-   */
-  public static final class TaskMetadata extends
-      com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:yeying.api.apps.zuoyepigai.TaskMetadata)
-      TaskMetadataOrBuilder {
-  private static final long serialVersionUID = 0L;
-    static {
-      com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
-        com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
-        /* major= */ 4,
-        /* minor= */ 29,
-        /* patch= */ 3,
-        /* suffix= */ "",
-        TaskMetadata.class.getName());
-    }
-    // Use TaskMetadata.newBuilder() to construct.
-    private TaskMetadata(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-    }
-    private TaskMetadata() {
-      uid_ = "";
-      name_ = "";
-      description_ = "";
-      tagUid_ = "";
-      did_ = "";
-    }
-
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TaskMetadata_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TaskMetadata_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.class, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder.class);
-    }
-
-    public static final int UID_FIELD_NUMBER = 1;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object uid_ = "";
-    /**
-     * <pre>
-     * ID 唯一标识
-     * </pre>
-     *
-     * <code>string uid = 1;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public java.lang.String getUid() {
-      java.lang.Object ref = uid_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        uid_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * ID 唯一标识
-     * </pre>
-     *
-     * <code>string uid = 1;</code>
-     * @return The bytes for uid.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getUidBytes() {
-      java.lang.Object ref = uid_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        uid_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int NAME_FIELD_NUMBER = 2;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object name_ = "";
-    /**
-     * <pre>
-     * 任务名称
-     * </pre>
-     *
-     * <code>string name = 2;</code>
-     * @return The name.
-     */
-    @java.lang.Override
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        name_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * 任务名称
-     * </pre>
-     *
-     * <code>string name = 2;</code>
-     * @return The bytes for name.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getNameBytes() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        name_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int DESCRIPTION_FIELD_NUMBER = 3;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object description_ = "";
-    /**
-     * <pre>
-     * 描述
-     * </pre>
-     *
-     * <code>string description = 3;</code>
-     * @return The description.
-     */
-    @java.lang.Override
-    public java.lang.String getDescription() {
-      java.lang.Object ref = description_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        description_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * 描述
-     * </pre>
-     *
-     * <code>string description = 3;</code>
-     * @return The bytes for description.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getDescriptionBytes() {
-      java.lang.Object ref = description_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        description_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int TAGUID_FIELD_NUMBER = 4;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object tagUid_ = "";
-    /**
-     * <pre>
-     * 标签
-     * </pre>
-     *
-     * <code>string tagUid = 4;</code>
-     * @return The tagUid.
-     */
-    @java.lang.Override
-    public java.lang.String getTagUid() {
-      java.lang.Object ref = tagUid_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        tagUid_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * 标签
-     * </pre>
-     *
-     * <code>string tagUid = 4;</code>
-     * @return The bytes for tagUid.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getTagUidBytes() {
-      java.lang.Object ref = tagUid_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        tagUid_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int DID_FIELD_NUMBER = 5;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object did_ = "";
-    /**
-     * <pre>
-     * 用户uId
-     * </pre>
-     *
-     * <code>string did = 5;</code>
-     * @return The did.
-     */
-    @java.lang.Override
-    public java.lang.String getDid() {
-      java.lang.Object ref = did_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        did_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * 用户uId
-     * </pre>
-     *
-     * <code>string did = 5;</code>
-     * @return The bytes for did.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getDidBytes() {
-      java.lang.Object ref = did_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        did_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int CREATEDAT_FIELD_NUMBER = 6;
-    private long createdAt_ = 0L;
-    /**
-     * <pre>
-     * 创建时间
-     * </pre>
-     *
-     * <code>int64 createdAt = 6;</code>
-     * @return The createdAt.
-     */
-    @java.lang.Override
-    public long getCreatedAt() {
-      return createdAt_;
-    }
-
-    public static final int UPDATEDAT_FIELD_NUMBER = 7;
-    private long updatedAt_ = 0L;
-    /**
-     * <pre>
-     * 修改时间
-     * </pre>
-     *
-     * <code>int64 updatedAt = 7;</code>
-     * @return The updatedAt.
-     */
-    @java.lang.Override
-    public long getUpdatedAt() {
-      return updatedAt_;
-    }
-
-    public static final int ISDELETED_FIELD_NUMBER = 8;
-    private boolean isDeleted_ = false;
-    /**
-     * <pre>
-     * 是否删除
-     * </pre>
-     *
-     * <code>bool isDeleted = 8;</code>
-     * @return The isDeleted.
-     */
-    @java.lang.Override
-    public boolean getIsDeleted() {
-      return isDeleted_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(uid_)) {
-        com.google.protobuf.GeneratedMessage.writeString(output, 1, uid_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(name_)) {
-        com.google.protobuf.GeneratedMessage.writeString(output, 2, name_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(description_)) {
-        com.google.protobuf.GeneratedMessage.writeString(output, 3, description_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(tagUid_)) {
-        com.google.protobuf.GeneratedMessage.writeString(output, 4, tagUid_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(did_)) {
-        com.google.protobuf.GeneratedMessage.writeString(output, 5, did_);
-      }
-      if (createdAt_ != 0L) {
-        output.writeInt64(6, createdAt_);
-      }
-      if (updatedAt_ != 0L) {
-        output.writeInt64(7, updatedAt_);
-      }
-      if (isDeleted_ != false) {
-        output.writeBool(8, isDeleted_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(uid_)) {
-        size += com.google.protobuf.GeneratedMessage.computeStringSize(1, uid_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(name_)) {
-        size += com.google.protobuf.GeneratedMessage.computeStringSize(2, name_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(description_)) {
-        size += com.google.protobuf.GeneratedMessage.computeStringSize(3, description_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(tagUid_)) {
-        size += com.google.protobuf.GeneratedMessage.computeStringSize(4, tagUid_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(did_)) {
-        size += com.google.protobuf.GeneratedMessage.computeStringSize(5, did_);
-      }
-      if (createdAt_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(6, createdAt_);
-      }
-      if (updatedAt_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(7, updatedAt_);
-      }
-      if (isDeleted_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isDeleted_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata)) {
-        return super.equals(obj);
-      }
-      yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata other = (yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata) obj;
-
-      if (!getUid()
-          .equals(other.getUid())) return false;
-      if (!getName()
-          .equals(other.getName())) return false;
-      if (!getDescription()
-          .equals(other.getDescription())) return false;
-      if (!getTagUid()
-          .equals(other.getTagUid())) return false;
-      if (!getDid()
-          .equals(other.getDid())) return false;
-      if (getCreatedAt()
-          != other.getCreatedAt()) return false;
-      if (getUpdatedAt()
-          != other.getUpdatedAt()) return false;
-      if (getIsDeleted()
-          != other.getIsDeleted()) return false;
-      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid().hashCode();
-      hash = (37 * hash) + NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getName().hashCode();
-      hash = (37 * hash) + DESCRIPTION_FIELD_NUMBER;
-      hash = (53 * hash) + getDescription().hashCode();
-      hash = (37 * hash) + TAGUID_FIELD_NUMBER;
-      hash = (53 * hash) + getTagUid().hashCode();
-      hash = (37 * hash) + DID_FIELD_NUMBER;
-      hash = (53 * hash) + getDid().hashCode();
-      hash = (37 * hash) + CREATEDAT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getCreatedAt());
-      hash = (37 * hash) + UPDATEDAT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getUpdatedAt());
-      hash = (37 * hash) + ISDELETED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsDeleted());
-      hash = (29 * hash) + getUnknownFields().hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessage
-          .parseWithIOException(PARSER, input);
-    }
-    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessage
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessage
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-
-    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessage
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessage
-          .parseWithIOException(PARSER, input);
-    }
-    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessage
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    @java.lang.Override
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    @java.lang.Override
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code yeying.api.apps.zuoyepigai.TaskMetadata}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:yeying.api.apps.zuoyepigai.TaskMetadata)
-        yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TaskMetadata_descriptor;
-      }
-
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TaskMetadata_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.class, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder.class);
-      }
-
-      // Construct using yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.newBuilder()
-      private Builder() {
-
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-
-      }
-      @java.lang.Override
-      public Builder clear() {
-        super.clear();
-        bitField0_ = 0;
-        uid_ = "";
-        name_ = "";
-        description_ = "";
-        tagUid_ = "";
-        did_ = "";
-        createdAt_ = 0L;
-        updatedAt_ = 0L;
-        isDeleted_ = false;
-        return this;
-      }
-
-      @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TaskMetadata_descriptor;
-      }
-
-      @java.lang.Override
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getDefaultInstanceForType() {
-        return yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance();
-      }
-
-      @java.lang.Override
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata build() {
-        yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      @java.lang.Override
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata buildPartial() {
-        yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata result = new yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
-        onBuilt();
-        return result;
-      }
-
-      private void buildPartial0(yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.uid_ = uid_;
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.name_ = name_;
-        }
-        if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.description_ = description_;
-        }
-        if (((from_bitField0_ & 0x00000008) != 0)) {
-          result.tagUid_ = tagUid_;
-        }
-        if (((from_bitField0_ & 0x00000010) != 0)) {
-          result.did_ = did_;
-        }
-        if (((from_bitField0_ & 0x00000020) != 0)) {
-          result.createdAt_ = createdAt_;
-        }
-        if (((from_bitField0_ & 0x00000040) != 0)) {
-          result.updatedAt_ = updatedAt_;
-        }
-        if (((from_bitField0_ & 0x00000080) != 0)) {
-          result.isDeleted_ = isDeleted_;
-        }
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata) {
-          return mergeFrom((yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata other) {
-        if (other == yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance()) return this;
-        if (!other.getUid().isEmpty()) {
-          uid_ = other.uid_;
-          bitField0_ |= 0x00000001;
-          onChanged();
-        }
-        if (!other.getName().isEmpty()) {
-          name_ = other.name_;
-          bitField0_ |= 0x00000002;
-          onChanged();
-        }
-        if (!other.getDescription().isEmpty()) {
-          description_ = other.description_;
-          bitField0_ |= 0x00000004;
-          onChanged();
-        }
-        if (!other.getTagUid().isEmpty()) {
-          tagUid_ = other.tagUid_;
-          bitField0_ |= 0x00000008;
-          onChanged();
-        }
-        if (!other.getDid().isEmpty()) {
-          did_ = other.did_;
-          bitField0_ |= 0x00000010;
-          onChanged();
-        }
-        if (other.getCreatedAt() != 0L) {
-          setCreatedAt(other.getCreatedAt());
-        }
-        if (other.getUpdatedAt() != 0L) {
-          setUpdatedAt(other.getUpdatedAt());
-        }
-        if (other.getIsDeleted() != false) {
-          setIsDeleted(other.getIsDeleted());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        onChanged();
-        return this;
-      }
-
-      @java.lang.Override
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 10: {
-                uid_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 10
-              case 18: {
-                name_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000002;
-                break;
-              } // case 18
-              case 26: {
-                description_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000004;
-                break;
-              } // case 26
-              case 34: {
-                tagUid_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000008;
-                break;
-              } // case 34
-              case 42: {
-                did_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000010;
-                break;
-              } // case 42
-              case 48: {
-                createdAt_ = input.readInt64();
-                bitField0_ |= 0x00000020;
-                break;
-              } // case 48
-              case 56: {
-                updatedAt_ = input.readInt64();
-                bitField0_ |= 0x00000040;
-                break;
-              } // case 56
-              case 64: {
-                isDeleted_ = input.readBool();
-                bitField0_ |= 0x00000080;
-                break;
-              } // case 64
-              default: {
-                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
-                  done = true; // was an endgroup tag
-                }
-                break;
-              } // default:
-            } // switch (tag)
-          } // while (!done)
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.unwrapIOException();
-        } finally {
-          onChanged();
-        } // finally
-        return this;
-      }
-      private int bitField0_;
-
-      private java.lang.Object uid_ = "";
-      /**
-       * <pre>
-       * ID 唯一标识
-       * </pre>
-       *
-       * <code>string uid = 1;</code>
-       * @return The uid.
-       */
-      public java.lang.String getUid() {
-        java.lang.Object ref = uid_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          uid_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * ID 唯一标识
-       * </pre>
-       *
-       * <code>string uid = 1;</code>
-       * @return The bytes for uid.
-       */
-      public com.google.protobuf.ByteString
-          getUidBytes() {
-        java.lang.Object ref = uid_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          uid_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * ID 唯一标识
-       * </pre>
-       *
-       * <code>string uid = 1;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        uid_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * ID 唯一标识
-       * </pre>
-       *
-       * <code>string uid = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        uid_ = getDefaultInstance().getUid();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * ID 唯一标识
-       * </pre>
-       *
-       * <code>string uid = 1;</code>
-       * @param value The bytes for uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUidBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        uid_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object name_ = "";
-      /**
-       * <pre>
-       * 任务名称
-       * </pre>
-       *
-       * <code>string name = 2;</code>
-       * @return The name.
-       */
-      public java.lang.String getName() {
-        java.lang.Object ref = name_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          name_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 任务名称
-       * </pre>
-       *
-       * <code>string name = 2;</code>
-       * @return The bytes for name.
-       */
-      public com.google.protobuf.ByteString
-          getNameBytes() {
-        java.lang.Object ref = name_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          name_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 任务名称
-       * </pre>
-       *
-       * <code>string name = 2;</code>
-       * @param value The name to set.
-       * @return This builder for chaining.
-       */
-      public Builder setName(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        name_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 任务名称
-       * </pre>
-       *
-       * <code>string name = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearName() {
-        name_ = getDefaultInstance().getName();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 任务名称
-       * </pre>
-       *
-       * <code>string name = 2;</code>
-       * @param value The bytes for name to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        name_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object description_ = "";
-      /**
-       * <pre>
-       * 描述
-       * </pre>
-       *
-       * <code>string description = 3;</code>
-       * @return The description.
-       */
-      public java.lang.String getDescription() {
-        java.lang.Object ref = description_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          description_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 描述
-       * </pre>
-       *
-       * <code>string description = 3;</code>
-       * @return The bytes for description.
-       */
-      public com.google.protobuf.ByteString
-          getDescriptionBytes() {
-        java.lang.Object ref = description_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          description_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 描述
-       * </pre>
-       *
-       * <code>string description = 3;</code>
-       * @param value The description to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDescription(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        description_ = value;
-        bitField0_ |= 0x00000004;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 描述
-       * </pre>
-       *
-       * <code>string description = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDescription() {
-        description_ = getDefaultInstance().getDescription();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 描述
-       * </pre>
-       *
-       * <code>string description = 3;</code>
-       * @param value The bytes for description to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDescriptionBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        description_ = value;
-        bitField0_ |= 0x00000004;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object tagUid_ = "";
-      /**
-       * <pre>
-       * 标签
-       * </pre>
-       *
-       * <code>string tagUid = 4;</code>
-       * @return The tagUid.
-       */
-      public java.lang.String getTagUid() {
-        java.lang.Object ref = tagUid_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          tagUid_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 标签
-       * </pre>
-       *
-       * <code>string tagUid = 4;</code>
-       * @return The bytes for tagUid.
-       */
-      public com.google.protobuf.ByteString
-          getTagUidBytes() {
-        java.lang.Object ref = tagUid_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          tagUid_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 标签
-       * </pre>
-       *
-       * <code>string tagUid = 4;</code>
-       * @param value The tagUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTagUid(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        tagUid_ = value;
-        bitField0_ |= 0x00000008;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 标签
-       * </pre>
-       *
-       * <code>string tagUid = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTagUid() {
-        tagUid_ = getDefaultInstance().getTagUid();
-        bitField0_ = (bitField0_ & ~0x00000008);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 标签
-       * </pre>
-       *
-       * <code>string tagUid = 4;</code>
-       * @param value The bytes for tagUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTagUidBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        tagUid_ = value;
-        bitField0_ |= 0x00000008;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object did_ = "";
-      /**
-       * <pre>
-       * 用户uId
-       * </pre>
-       *
-       * <code>string did = 5;</code>
-       * @return The did.
-       */
-      public java.lang.String getDid() {
-        java.lang.Object ref = did_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          did_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 用户uId
-       * </pre>
-       *
-       * <code>string did = 5;</code>
-       * @return The bytes for did.
-       */
-      public com.google.protobuf.ByteString
-          getDidBytes() {
-        java.lang.Object ref = did_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          did_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 用户uId
-       * </pre>
-       *
-       * <code>string did = 5;</code>
-       * @param value The did to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDid(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        did_ = value;
-        bitField0_ |= 0x00000010;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 用户uId
-       * </pre>
-       *
-       * <code>string did = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDid() {
-        did_ = getDefaultInstance().getDid();
-        bitField0_ = (bitField0_ & ~0x00000010);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 用户uId
-       * </pre>
-       *
-       * <code>string did = 5;</code>
-       * @param value The bytes for did to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDidBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        did_ = value;
-        bitField0_ |= 0x00000010;
-        onChanged();
-        return this;
-      }
-
-      private long createdAt_ ;
-      /**
-       * <pre>
-       * 创建时间
-       * </pre>
-       *
-       * <code>int64 createdAt = 6;</code>
-       * @return The createdAt.
-       */
-      @java.lang.Override
-      public long getCreatedAt() {
-        return createdAt_;
-      }
-      /**
-       * <pre>
-       * 创建时间
-       * </pre>
-       *
-       * <code>int64 createdAt = 6;</code>
-       * @param value The createdAt to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCreatedAt(long value) {
-
-        createdAt_ = value;
-        bitField0_ |= 0x00000020;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 创建时间
-       * </pre>
-       *
-       * <code>int64 createdAt = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCreatedAt() {
-        bitField0_ = (bitField0_ & ~0x00000020);
-        createdAt_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private long updatedAt_ ;
-      /**
-       * <pre>
-       * 修改时间
-       * </pre>
-       *
-       * <code>int64 updatedAt = 7;</code>
-       * @return The updatedAt.
-       */
-      @java.lang.Override
-      public long getUpdatedAt() {
-        return updatedAt_;
-      }
-      /**
-       * <pre>
-       * 修改时间
-       * </pre>
-       *
-       * <code>int64 updatedAt = 7;</code>
-       * @param value The updatedAt to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUpdatedAt(long value) {
-
-        updatedAt_ = value;
-        bitField0_ |= 0x00000040;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 修改时间
-       * </pre>
-       *
-       * <code>int64 updatedAt = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUpdatedAt() {
-        bitField0_ = (bitField0_ & ~0x00000040);
-        updatedAt_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private boolean isDeleted_ ;
-      /**
-       * <pre>
-       * 是否删除
-       * </pre>
-       *
-       * <code>bool isDeleted = 8;</code>
-       * @return The isDeleted.
-       */
-      @java.lang.Override
-      public boolean getIsDeleted() {
-        return isDeleted_;
-      }
-      /**
-       * <pre>
-       * 是否删除
-       * </pre>
-       *
-       * <code>bool isDeleted = 8;</code>
-       * @param value The isDeleted to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsDeleted(boolean value) {
-
-        isDeleted_ = value;
-        bitField0_ |= 0x00000080;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 是否删除
-       * </pre>
-       *
-       * <code>bool isDeleted = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsDeleted() {
-        bitField0_ = (bitField0_ & ~0x00000080);
-        isDeleted_ = false;
-        onChanged();
-        return this;
-      }
-
-      // @@protoc_insertion_point(builder_scope:yeying.api.apps.zuoyepigai.TaskMetadata)
-    }
-
-    // @@protoc_insertion_point(class_scope:yeying.api.apps.zuoyepigai.TaskMetadata)
-    private static final yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata();
-    }
-
-    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<TaskMetadata>
-        PARSER = new com.google.protobuf.AbstractParser<TaskMetadata>() {
-      @java.lang.Override
-      public TaskMetadata parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        Builder builder = newBuilder();
-        try {
-          builder.mergeFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(builder.buildPartial());
-        } catch (com.google.protobuf.UninitializedMessageException e) {
-          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(e)
-              .setUnfinishedMessage(builder.buildPartial());
-        }
-        return builder.buildPartial();
-      }
-    };
-
-    public static com.google.protobuf.Parser<TaskMetadata> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<TaskMetadata> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
   public interface AddTaskRequestOrBuilder extends
       // @@protoc_insertion_point(interface_extends:yeying.api.apps.zuoyepigai.AddTaskRequest)
       com.google.protobuf.MessageOrBuilder {
@@ -2377,11 +816,11 @@ public final class TaskOuterClass {
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
      * @return The meta.
      */
-    yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getMeta();
+    yeying.api.apps.zuoyepigai.Meta.TaskMetadata getMeta();
     /**
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
      */
-    yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getMetaOrBuilder();
+    yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getMetaOrBuilder();
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.AddTaskRequestBody}
@@ -2422,7 +861,7 @@ public final class TaskOuterClass {
 
     private int bitField0_;
     public static final int META_FIELD_NUMBER = 1;
-    private yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata meta_;
+    private yeying.api.apps.zuoyepigai.Meta.TaskMetadata meta_;
     /**
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
      * @return Whether the meta field is set.
@@ -2436,15 +875,15 @@ public final class TaskOuterClass {
      * @return The meta.
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getMeta() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.TaskMetadata getMeta() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
     }
     /**
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getMetaOrBuilder() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getMetaOrBuilder() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -2762,9 +1201,9 @@ public final class TaskOuterClass {
       }
       private int bitField0_;
 
-      private yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata meta_;
+      private yeying.api.apps.zuoyepigai.Meta.TaskMetadata meta_;
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder> metaBuilder_;
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder> metaBuilder_;
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
        * @return Whether the meta field is set.
@@ -2776,9 +1215,9 @@ public final class TaskOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
        * @return The meta.
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getMeta() {
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadata getMeta() {
         if (metaBuilder_ == null) {
-          return meta_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+          return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
         } else {
           return metaBuilder_.getMessage();
         }
@@ -2786,7 +1225,7 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
        */
-      public Builder setMeta(yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata value) {
+      public Builder setMeta(yeying.api.apps.zuoyepigai.Meta.TaskMetadata value) {
         if (metaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2803,7 +1242,7 @@ public final class TaskOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
        */
       public Builder setMeta(
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder builderForValue) {
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder builderForValue) {
         if (metaBuilder_ == null) {
           meta_ = builderForValue.build();
         } else {
@@ -2816,11 +1255,11 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
        */
-      public Builder mergeMeta(yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata value) {
+      public Builder mergeMeta(yeying.api.apps.zuoyepigai.Meta.TaskMetadata value) {
         if (metaBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0) &&
             meta_ != null &&
-            meta_ != yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance()) {
+            meta_ != yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance()) {
             getMetaBuilder().mergeFrom(value);
           } else {
             meta_ = value;
@@ -2850,7 +1289,7 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder getMetaBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder getMetaBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getMetaFieldBuilder().getBuilder();
@@ -2858,23 +1297,23 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getMetaOrBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getMetaOrBuilder() {
         if (metaBuilder_ != null) {
           return metaBuilder_.getMessageOrBuilder();
         } else {
           return meta_ == null ?
-              yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+              yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
         }
       }
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder> 
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder> 
           getMetaFieldBuilder() {
         if (metaBuilder_ == null) {
           metaBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder>(
+              yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder>(
                   getMeta(),
                   getParentForChildren(),
                   isClean());
@@ -3732,11 +2171,11 @@ public final class TaskOuterClass {
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
      * @return The meta.
      */
-    yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getMeta();
+    yeying.api.apps.zuoyepigai.Meta.TaskMetadata getMeta();
     /**
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
      */
-    yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getMetaOrBuilder();
+    yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getMetaOrBuilder();
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.AddTaskResponseBody}
@@ -3803,7 +2242,7 @@ public final class TaskOuterClass {
     }
 
     public static final int META_FIELD_NUMBER = 2;
-    private yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata meta_;
+    private yeying.api.apps.zuoyepigai.Meta.TaskMetadata meta_;
     /**
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
      * @return Whether the meta field is set.
@@ -3817,15 +2256,15 @@ public final class TaskOuterClass {
      * @return The meta.
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getMeta() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.TaskMetadata getMeta() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
     }
     /**
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getMetaOrBuilder() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getMetaOrBuilder() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -4302,9 +2741,9 @@ public final class TaskOuterClass {
         return statusBuilder_;
       }
 
-      private yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata meta_;
+      private yeying.api.apps.zuoyepigai.Meta.TaskMetadata meta_;
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder> metaBuilder_;
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder> metaBuilder_;
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        * @return Whether the meta field is set.
@@ -4316,9 +2755,9 @@ public final class TaskOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        * @return The meta.
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getMeta() {
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadata getMeta() {
         if (metaBuilder_ == null) {
-          return meta_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+          return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
         } else {
           return metaBuilder_.getMessage();
         }
@@ -4326,7 +2765,7 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
-      public Builder setMeta(yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata value) {
+      public Builder setMeta(yeying.api.apps.zuoyepigai.Meta.TaskMetadata value) {
         if (metaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4343,7 +2782,7 @@ public final class TaskOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
       public Builder setMeta(
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder builderForValue) {
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder builderForValue) {
         if (metaBuilder_ == null) {
           meta_ = builderForValue.build();
         } else {
@@ -4356,11 +2795,11 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
-      public Builder mergeMeta(yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata value) {
+      public Builder mergeMeta(yeying.api.apps.zuoyepigai.Meta.TaskMetadata value) {
         if (metaBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0) &&
             meta_ != null &&
-            meta_ != yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance()) {
+            meta_ != yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance()) {
             getMetaBuilder().mergeFrom(value);
           } else {
             meta_ = value;
@@ -4390,7 +2829,7 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder getMetaBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder getMetaBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getMetaFieldBuilder().getBuilder();
@@ -4398,23 +2837,23 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getMetaOrBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getMetaOrBuilder() {
         if (metaBuilder_ != null) {
           return metaBuilder_.getMessageOrBuilder();
         } else {
           return meta_ == null ?
-              yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+              yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
         }
       }
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder> 
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder> 
           getMetaFieldBuilder() {
         if (metaBuilder_ == null) {
           metaBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder>(
+              yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder>(
                   getMeta(),
                   getParentForChildren(),
                   isClean());
@@ -6560,11 +4999,55 @@ public final class TaskOuterClass {
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
      * @return The meta.
      */
-    yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getMeta();
+    yeying.api.apps.zuoyepigai.Meta.TaskMetadata getMeta();
     /**
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
      */
-    yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getMetaOrBuilder();
+    yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getMetaOrBuilder();
+
+    /**
+     * <pre>
+     * 关联学生列表
+     * </pre>
+     *
+     * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+     */
+    java.util.List<yeying.api.apps.zuoyepigai.Meta.GroupMetaData> 
+        getStudentListList();
+    /**
+     * <pre>
+     * 关联学生列表
+     * </pre>
+     *
+     * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+     */
+    yeying.api.apps.zuoyepigai.Meta.GroupMetaData getStudentList(int index);
+    /**
+     * <pre>
+     * 关联学生列表
+     * </pre>
+     *
+     * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+     */
+    int getStudentListCount();
+    /**
+     * <pre>
+     * 关联学生列表
+     * </pre>
+     *
+     * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+     */
+    java.util.List<? extends yeying.api.apps.zuoyepigai.Meta.GroupMetaDataOrBuilder> 
+        getStudentListOrBuilderList();
+    /**
+     * <pre>
+     * 关联学生列表
+     * </pre>
+     *
+     * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+     */
+    yeying.api.apps.zuoyepigai.Meta.GroupMetaDataOrBuilder getStudentListOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.DetailTaskResponseBody}
@@ -6588,6 +5071,7 @@ public final class TaskOuterClass {
       super(builder);
     }
     private DetailTaskResponseBody() {
+      studentList_ = java.util.Collections.emptyList();
     }
 
     public static final com.google.protobuf.Descriptors.Descriptor
@@ -6631,7 +5115,7 @@ public final class TaskOuterClass {
     }
 
     public static final int META_FIELD_NUMBER = 2;
-    private yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata meta_;
+    private yeying.api.apps.zuoyepigai.Meta.TaskMetadata meta_;
     /**
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
      * @return Whether the meta field is set.
@@ -6645,15 +5129,76 @@ public final class TaskOuterClass {
      * @return The meta.
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getMeta() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.TaskMetadata getMeta() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
     }
     /**
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getMetaOrBuilder() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getMetaOrBuilder() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
+    }
+
+    public static final int STUDENTLIST_FIELD_NUMBER = 3;
+    @SuppressWarnings("serial")
+    private java.util.List<yeying.api.apps.zuoyepigai.Meta.GroupMetaData> studentList_;
+    /**
+     * <pre>
+     * 关联学生列表
+     * </pre>
+     *
+     * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+     */
+    @java.lang.Override
+    public java.util.List<yeying.api.apps.zuoyepigai.Meta.GroupMetaData> getStudentListList() {
+      return studentList_;
+    }
+    /**
+     * <pre>
+     * 关联学生列表
+     * </pre>
+     *
+     * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends yeying.api.apps.zuoyepigai.Meta.GroupMetaDataOrBuilder> 
+        getStudentListOrBuilderList() {
+      return studentList_;
+    }
+    /**
+     * <pre>
+     * 关联学生列表
+     * </pre>
+     *
+     * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+     */
+    @java.lang.Override
+    public int getStudentListCount() {
+      return studentList_.size();
+    }
+    /**
+     * <pre>
+     * 关联学生列表
+     * </pre>
+     *
+     * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+     */
+    @java.lang.Override
+    public yeying.api.apps.zuoyepigai.Meta.GroupMetaData getStudentList(int index) {
+      return studentList_.get(index);
+    }
+    /**
+     * <pre>
+     * 关联学生列表
+     * </pre>
+     *
+     * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+     */
+    @java.lang.Override
+    public yeying.api.apps.zuoyepigai.Meta.GroupMetaDataOrBuilder getStudentListOrBuilder(
+        int index) {
+      return studentList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -6676,6 +5221,9 @@ public final class TaskOuterClass {
       if (((bitField0_ & 0x00000002) != 0)) {
         output.writeMessage(2, getMeta());
       }
+      for (int i = 0; i < studentList_.size(); i++) {
+        output.writeMessage(3, studentList_.get(i));
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -6692,6 +5240,10 @@ public final class TaskOuterClass {
       if (((bitField0_ & 0x00000002) != 0)) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, getMeta());
+      }
+      for (int i = 0; i < studentList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, studentList_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -6718,6 +5270,8 @@ public final class TaskOuterClass {
         if (!getMeta()
             .equals(other.getMeta())) return false;
       }
+      if (!getStudentListList()
+          .equals(other.getStudentListList())) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -6736,6 +5290,10 @@ public final class TaskOuterClass {
       if (hasMeta()) {
         hash = (37 * hash) + META_FIELD_NUMBER;
         hash = (53 * hash) + getMeta().hashCode();
+      }
+      if (getStudentListCount() > 0) {
+        hash = (37 * hash) + STUDENTLIST_FIELD_NUMBER;
+        hash = (53 * hash) + getStudentListList().hashCode();
       }
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
@@ -6869,6 +5427,7 @@ public final class TaskOuterClass {
                 .alwaysUseFieldBuilders) {
           getStatusFieldBuilder();
           getMetaFieldBuilder();
+          getStudentListFieldBuilder();
         }
       }
       @java.lang.Override
@@ -6885,6 +5444,13 @@ public final class TaskOuterClass {
           metaBuilder_.dispose();
           metaBuilder_ = null;
         }
+        if (studentListBuilder_ == null) {
+          studentList_ = java.util.Collections.emptyList();
+        } else {
+          studentList_ = null;
+          studentListBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
 
@@ -6911,9 +5477,22 @@ public final class TaskOuterClass {
       @java.lang.Override
       public yeying.api.apps.zuoyepigai.TaskOuterClass.DetailTaskResponseBody buildPartial() {
         yeying.api.apps.zuoyepigai.TaskOuterClass.DetailTaskResponseBody result = new yeying.api.apps.zuoyepigai.TaskOuterClass.DetailTaskResponseBody(this);
+        buildPartialRepeatedFields(result);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartialRepeatedFields(yeying.api.apps.zuoyepigai.TaskOuterClass.DetailTaskResponseBody result) {
+        if (studentListBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) != 0)) {
+            studentList_ = java.util.Collections.unmodifiableList(studentList_);
+            bitField0_ = (bitField0_ & ~0x00000004);
+          }
+          result.studentList_ = studentList_;
+        } else {
+          result.studentList_ = studentListBuilder_.build();
+        }
       }
 
       private void buildPartial0(yeying.api.apps.zuoyepigai.TaskOuterClass.DetailTaskResponseBody result) {
@@ -6951,6 +5530,32 @@ public final class TaskOuterClass {
         }
         if (other.hasMeta()) {
           mergeMeta(other.getMeta());
+        }
+        if (studentListBuilder_ == null) {
+          if (!other.studentList_.isEmpty()) {
+            if (studentList_.isEmpty()) {
+              studentList_ = other.studentList_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+            } else {
+              ensureStudentListIsMutable();
+              studentList_.addAll(other.studentList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.studentList_.isEmpty()) {
+            if (studentListBuilder_.isEmpty()) {
+              studentListBuilder_.dispose();
+              studentListBuilder_ = null;
+              studentList_ = other.studentList_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+              studentListBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getStudentListFieldBuilder() : null;
+            } else {
+              studentListBuilder_.addAllMessages(other.studentList_);
+            }
+          }
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -6992,6 +5597,19 @@ public final class TaskOuterClass {
                 bitField0_ |= 0x00000002;
                 break;
               } // case 18
+              case 26: {
+                yeying.api.apps.zuoyepigai.Meta.GroupMetaData m =
+                    input.readMessage(
+                        yeying.api.apps.zuoyepigai.Meta.GroupMetaData.parser(),
+                        extensionRegistry);
+                if (studentListBuilder_ == null) {
+                  ensureStudentListIsMutable();
+                  studentList_.add(m);
+                } else {
+                  studentListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 26
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -7130,9 +5748,9 @@ public final class TaskOuterClass {
         return statusBuilder_;
       }
 
-      private yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata meta_;
+      private yeying.api.apps.zuoyepigai.Meta.TaskMetadata meta_;
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder> metaBuilder_;
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder> metaBuilder_;
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        * @return Whether the meta field is set.
@@ -7144,9 +5762,9 @@ public final class TaskOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        * @return The meta.
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getMeta() {
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadata getMeta() {
         if (metaBuilder_ == null) {
-          return meta_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+          return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
         } else {
           return metaBuilder_.getMessage();
         }
@@ -7154,7 +5772,7 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
-      public Builder setMeta(yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata value) {
+      public Builder setMeta(yeying.api.apps.zuoyepigai.Meta.TaskMetadata value) {
         if (metaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7171,7 +5789,7 @@ public final class TaskOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
       public Builder setMeta(
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder builderForValue) {
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder builderForValue) {
         if (metaBuilder_ == null) {
           meta_ = builderForValue.build();
         } else {
@@ -7184,11 +5802,11 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
-      public Builder mergeMeta(yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata value) {
+      public Builder mergeMeta(yeying.api.apps.zuoyepigai.Meta.TaskMetadata value) {
         if (metaBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0) &&
             meta_ != null &&
-            meta_ != yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance()) {
+            meta_ != yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance()) {
             getMetaBuilder().mergeFrom(value);
           } else {
             meta_ = value;
@@ -7218,7 +5836,7 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder getMetaBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder getMetaBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getMetaFieldBuilder().getBuilder();
@@ -7226,29 +5844,341 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getMetaOrBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getMetaOrBuilder() {
         if (metaBuilder_ != null) {
           return metaBuilder_.getMessageOrBuilder();
         } else {
           return meta_ == null ?
-              yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+              yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
         }
       }
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder> 
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder> 
           getMetaFieldBuilder() {
         if (metaBuilder_ == null) {
           metaBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder>(
+              yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder>(
                   getMeta(),
                   getParentForChildren(),
                   isClean());
           meta_ = null;
         }
         return metaBuilder_;
+      }
+
+      private java.util.List<yeying.api.apps.zuoyepigai.Meta.GroupMetaData> studentList_ =
+        java.util.Collections.emptyList();
+      private void ensureStudentListIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          studentList_ = new java.util.ArrayList<yeying.api.apps.zuoyepigai.Meta.GroupMetaData>(studentList_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          yeying.api.apps.zuoyepigai.Meta.GroupMetaData, yeying.api.apps.zuoyepigai.Meta.GroupMetaData.Builder, yeying.api.apps.zuoyepigai.Meta.GroupMetaDataOrBuilder> studentListBuilder_;
+
+      /**
+       * <pre>
+       * 关联学生列表
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+       */
+      public java.util.List<yeying.api.apps.zuoyepigai.Meta.GroupMetaData> getStudentListList() {
+        if (studentListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(studentList_);
+        } else {
+          return studentListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * 关联学生列表
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+       */
+      public int getStudentListCount() {
+        if (studentListBuilder_ == null) {
+          return studentList_.size();
+        } else {
+          return studentListBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * 关联学生列表
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+       */
+      public yeying.api.apps.zuoyepigai.Meta.GroupMetaData getStudentList(int index) {
+        if (studentListBuilder_ == null) {
+          return studentList_.get(index);
+        } else {
+          return studentListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * 关联学生列表
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+       */
+      public Builder setStudentList(
+          int index, yeying.api.apps.zuoyepigai.Meta.GroupMetaData value) {
+        if (studentListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureStudentListIsMutable();
+          studentList_.set(index, value);
+          onChanged();
+        } else {
+          studentListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 关联学生列表
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+       */
+      public Builder setStudentList(
+          int index, yeying.api.apps.zuoyepigai.Meta.GroupMetaData.Builder builderForValue) {
+        if (studentListBuilder_ == null) {
+          ensureStudentListIsMutable();
+          studentList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          studentListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 关联学生列表
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+       */
+      public Builder addStudentList(yeying.api.apps.zuoyepigai.Meta.GroupMetaData value) {
+        if (studentListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureStudentListIsMutable();
+          studentList_.add(value);
+          onChanged();
+        } else {
+          studentListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 关联学生列表
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+       */
+      public Builder addStudentList(
+          int index, yeying.api.apps.zuoyepigai.Meta.GroupMetaData value) {
+        if (studentListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureStudentListIsMutable();
+          studentList_.add(index, value);
+          onChanged();
+        } else {
+          studentListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 关联学生列表
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+       */
+      public Builder addStudentList(
+          yeying.api.apps.zuoyepigai.Meta.GroupMetaData.Builder builderForValue) {
+        if (studentListBuilder_ == null) {
+          ensureStudentListIsMutable();
+          studentList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          studentListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 关联学生列表
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+       */
+      public Builder addStudentList(
+          int index, yeying.api.apps.zuoyepigai.Meta.GroupMetaData.Builder builderForValue) {
+        if (studentListBuilder_ == null) {
+          ensureStudentListIsMutable();
+          studentList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          studentListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 关联学生列表
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+       */
+      public Builder addAllStudentList(
+          java.lang.Iterable<? extends yeying.api.apps.zuoyepigai.Meta.GroupMetaData> values) {
+        if (studentListBuilder_ == null) {
+          ensureStudentListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, studentList_);
+          onChanged();
+        } else {
+          studentListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 关联学生列表
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+       */
+      public Builder clearStudentList() {
+        if (studentListBuilder_ == null) {
+          studentList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+          onChanged();
+        } else {
+          studentListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 关联学生列表
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+       */
+      public Builder removeStudentList(int index) {
+        if (studentListBuilder_ == null) {
+          ensureStudentListIsMutable();
+          studentList_.remove(index);
+          onChanged();
+        } else {
+          studentListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 关联学生列表
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+       */
+      public yeying.api.apps.zuoyepigai.Meta.GroupMetaData.Builder getStudentListBuilder(
+          int index) {
+        return getStudentListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * 关联学生列表
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+       */
+      public yeying.api.apps.zuoyepigai.Meta.GroupMetaDataOrBuilder getStudentListOrBuilder(
+          int index) {
+        if (studentListBuilder_ == null) {
+          return studentList_.get(index);  } else {
+          return studentListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * 关联学生列表
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+       */
+      public java.util.List<? extends yeying.api.apps.zuoyepigai.Meta.GroupMetaDataOrBuilder> 
+           getStudentListOrBuilderList() {
+        if (studentListBuilder_ != null) {
+          return studentListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(studentList_);
+        }
+      }
+      /**
+       * <pre>
+       * 关联学生列表
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+       */
+      public yeying.api.apps.zuoyepigai.Meta.GroupMetaData.Builder addStudentListBuilder() {
+        return getStudentListFieldBuilder().addBuilder(
+            yeying.api.apps.zuoyepigai.Meta.GroupMetaData.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * 关联学生列表
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+       */
+      public yeying.api.apps.zuoyepigai.Meta.GroupMetaData.Builder addStudentListBuilder(
+          int index) {
+        return getStudentListFieldBuilder().addBuilder(
+            index, yeying.api.apps.zuoyepigai.Meta.GroupMetaData.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * 关联学生列表
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.GroupMetaData studentList = 3;</code>
+       */
+      public java.util.List<yeying.api.apps.zuoyepigai.Meta.GroupMetaData.Builder> 
+           getStudentListBuilderList() {
+        return getStudentListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          yeying.api.apps.zuoyepigai.Meta.GroupMetaData, yeying.api.apps.zuoyepigai.Meta.GroupMetaData.Builder, yeying.api.apps.zuoyepigai.Meta.GroupMetaDataOrBuilder> 
+          getStudentListFieldBuilder() {
+        if (studentListBuilder_ == null) {
+          studentListBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              yeying.api.apps.zuoyepigai.Meta.GroupMetaData, yeying.api.apps.zuoyepigai.Meta.GroupMetaData.Builder, yeying.api.apps.zuoyepigai.Meta.GroupMetaDataOrBuilder>(
+                  studentList_,
+                  ((bitField0_ & 0x00000004) != 0),
+                  getParentForChildren(),
+                  isClean());
+          studentList_ = null;
+        }
+        return studentListBuilder_;
       }
 
       // @@protoc_insertion_point(builder_scope:yeying.api.apps.zuoyepigai.DetailTaskResponseBody)
@@ -8219,6 +7149,36 @@ public final class TaskOuterClass {
      * <code>.google.protobuf.Int32Value pageSize = 6;</code>
      */
     com.google.protobuf.Int32ValueOrBuilder getPageSizeOrBuilder();
+
+    /**
+     * <pre>
+     * 任务状态
+     * </pre>
+     *
+     * <code>int32 status = 7;</code>
+     * @return The status.
+     */
+    int getStatus();
+
+    /**
+     * <pre>
+     * 开始时间
+     * </pre>
+     *
+     * <code>int64 startTime = 8;</code>
+     * @return The startTime.
+     */
+    long getStartTime();
+
+    /**
+     * <pre>
+     * 结束时间
+     * </pre>
+     *
+     * <code>int64 endTime = 9;</code>
+     * @return The endTime.
+     */
+    long getEndTime();
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.ListTaskRequestBody}
@@ -8528,6 +7488,51 @@ public final class TaskOuterClass {
       return pageSize_ == null ? com.google.protobuf.Int32Value.getDefaultInstance() : pageSize_;
     }
 
+    public static final int STATUS_FIELD_NUMBER = 7;
+    private int status_ = 0;
+    /**
+     * <pre>
+     * 任务状态
+     * </pre>
+     *
+     * <code>int32 status = 7;</code>
+     * @return The status.
+     */
+    @java.lang.Override
+    public int getStatus() {
+      return status_;
+    }
+
+    public static final int STARTTIME_FIELD_NUMBER = 8;
+    private long startTime_ = 0L;
+    /**
+     * <pre>
+     * 开始时间
+     * </pre>
+     *
+     * <code>int64 startTime = 8;</code>
+     * @return The startTime.
+     */
+    @java.lang.Override
+    public long getStartTime() {
+      return startTime_;
+    }
+
+    public static final int ENDTIME_FIELD_NUMBER = 9;
+    private long endTime_ = 0L;
+    /**
+     * <pre>
+     * 结束时间
+     * </pre>
+     *
+     * <code>int64 endTime = 9;</code>
+     * @return The endTime.
+     */
+    @java.lang.Override
+    public long getEndTime() {
+      return endTime_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -8560,6 +7565,15 @@ public final class TaskOuterClass {
       if (((bitField0_ & 0x00000002) != 0)) {
         output.writeMessage(6, getPageSize());
       }
+      if (status_ != 0) {
+        output.writeInt32(7, status_);
+      }
+      if (startTime_ != 0L) {
+        output.writeInt64(8, startTime_);
+      }
+      if (endTime_ != 0L) {
+        output.writeInt64(9, endTime_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -8588,6 +7602,18 @@ public final class TaskOuterClass {
       if (((bitField0_ & 0x00000002) != 0)) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, getPageSize());
+      }
+      if (status_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(7, status_);
+      }
+      if (startTime_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(8, startTime_);
+      }
+      if (endTime_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(9, endTime_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -8622,6 +7648,12 @@ public final class TaskOuterClass {
         if (!getPageSize()
             .equals(other.getPageSize())) return false;
       }
+      if (getStatus()
+          != other.getStatus()) return false;
+      if (getStartTime()
+          != other.getStartTime()) return false;
+      if (getEndTime()
+          != other.getEndTime()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -8649,6 +7681,14 @@ public final class TaskOuterClass {
         hash = (37 * hash) + PAGESIZE_FIELD_NUMBER;
         hash = (53 * hash) + getPageSize().hashCode();
       }
+      hash = (37 * hash) + STATUS_FIELD_NUMBER;
+      hash = (53 * hash) + getStatus();
+      hash = (37 * hash) + STARTTIME_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getStartTime());
+      hash = (37 * hash) + ENDTIME_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getEndTime());
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -8801,6 +7841,9 @@ public final class TaskOuterClass {
           pageSizeBuilder_.dispose();
           pageSizeBuilder_ = null;
         }
+        status_ = 0;
+        startTime_ = 0L;
+        endTime_ = 0L;
         return this;
       }
 
@@ -8859,6 +7902,15 @@ public final class TaskOuterClass {
               : pageSizeBuilder_.build();
           to_bitField0_ |= 0x00000002;
         }
+        if (((from_bitField0_ & 0x00000040) != 0)) {
+          result.status_ = status_;
+        }
+        if (((from_bitField0_ & 0x00000080) != 0)) {
+          result.startTime_ = startTime_;
+        }
+        if (((from_bitField0_ & 0x00000100) != 0)) {
+          result.endTime_ = endTime_;
+        }
         result.bitField0_ |= to_bitField0_;
       }
 
@@ -8899,6 +7951,15 @@ public final class TaskOuterClass {
         }
         if (other.hasPageSize()) {
           mergePageSize(other.getPageSize());
+        }
+        if (other.getStatus() != 0) {
+          setStatus(other.getStatus());
+        }
+        if (other.getStartTime() != 0L) {
+          setStartTime(other.getStartTime());
+        }
+        if (other.getEndTime() != 0L) {
+          setEndTime(other.getEndTime());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -8960,6 +8021,21 @@ public final class TaskOuterClass {
                 bitField0_ |= 0x00000020;
                 break;
               } // case 50
+              case 56: {
+                status_ = input.readInt32();
+                bitField0_ |= 0x00000040;
+                break;
+              } // case 56
+              case 64: {
+                startTime_ = input.readInt64();
+                bitField0_ |= 0x00000080;
+                break;
+              } // case 64
+              case 72: {
+                endTime_ = input.readInt64();
+                bitField0_ |= 0x00000100;
+                break;
+              } // case 72
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -9662,6 +8738,138 @@ public final class TaskOuterClass {
           pageSize_ = null;
         }
         return pageSizeBuilder_;
+      }
+
+      private int status_ ;
+      /**
+       * <pre>
+       * 任务状态
+       * </pre>
+       *
+       * <code>int32 status = 7;</code>
+       * @return The status.
+       */
+      @java.lang.Override
+      public int getStatus() {
+        return status_;
+      }
+      /**
+       * <pre>
+       * 任务状态
+       * </pre>
+       *
+       * <code>int32 status = 7;</code>
+       * @param value The status to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStatus(int value) {
+
+        status_ = value;
+        bitField0_ |= 0x00000040;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 任务状态
+       * </pre>
+       *
+       * <code>int32 status = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStatus() {
+        bitField0_ = (bitField0_ & ~0x00000040);
+        status_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long startTime_ ;
+      /**
+       * <pre>
+       * 开始时间
+       * </pre>
+       *
+       * <code>int64 startTime = 8;</code>
+       * @return The startTime.
+       */
+      @java.lang.Override
+      public long getStartTime() {
+        return startTime_;
+      }
+      /**
+       * <pre>
+       * 开始时间
+       * </pre>
+       *
+       * <code>int64 startTime = 8;</code>
+       * @param value The startTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStartTime(long value) {
+
+        startTime_ = value;
+        bitField0_ |= 0x00000080;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 开始时间
+       * </pre>
+       *
+       * <code>int64 startTime = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStartTime() {
+        bitField0_ = (bitField0_ & ~0x00000080);
+        startTime_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long endTime_ ;
+      /**
+       * <pre>
+       * 结束时间
+       * </pre>
+       *
+       * <code>int64 endTime = 9;</code>
+       * @return The endTime.
+       */
+      @java.lang.Override
+      public long getEndTime() {
+        return endTime_;
+      }
+      /**
+       * <pre>
+       * 结束时间
+       * </pre>
+       *
+       * <code>int64 endTime = 9;</code>
+       * @param value The endTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEndTime(long value) {
+
+        endTime_ = value;
+        bitField0_ |= 0x00000100;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 结束时间
+       * </pre>
+       *
+       * <code>int64 endTime = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEndTime() {
+        bitField0_ = (bitField0_ & ~0x00000100);
+        endTime_ = 0L;
+        onChanged();
+        return this;
       }
 
       // @@protoc_insertion_point(builder_scope:yeying.api.apps.zuoyepigai.ListTaskRequestBody)
@@ -10511,7 +9719,7 @@ public final class TaskOuterClass {
      *
      * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
      */
-    java.util.List<yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata> 
+    java.util.List<yeying.api.apps.zuoyepigai.Meta.TaskMetadata> 
         getListList();
     /**
      * <pre>
@@ -10520,7 +9728,7 @@ public final class TaskOuterClass {
      *
      * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
      */
-    yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getList(int index);
+    yeying.api.apps.zuoyepigai.Meta.TaskMetadata getList(int index);
     /**
      * <pre>
      * repeated 表示 List
@@ -10536,7 +9744,7 @@ public final class TaskOuterClass {
      *
      * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
      */
-    java.util.List<? extends yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder> 
+    java.util.List<? extends yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder> 
         getListOrBuilderList();
     /**
      * <pre>
@@ -10545,8 +9753,18 @@ public final class TaskOuterClass {
      *
      * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
      */
-    yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getListOrBuilder(
+    yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getListOrBuilder(
         int index);
+
+    /**
+     * <pre>
+     * 总数
+     * </pre>
+     *
+     * <code>uint64 total = 3;</code>
+     * @return The total.
+     */
+    long getTotal();
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.ListTaskResponseBody}
@@ -10615,7 +9833,7 @@ public final class TaskOuterClass {
 
     public static final int LIST_FIELD_NUMBER = 2;
     @SuppressWarnings("serial")
-    private java.util.List<yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata> list_;
+    private java.util.List<yeying.api.apps.zuoyepigai.Meta.TaskMetadata> list_;
     /**
      * <pre>
      * repeated 表示 List
@@ -10624,7 +9842,7 @@ public final class TaskOuterClass {
      * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
      */
     @java.lang.Override
-    public java.util.List<yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata> getListList() {
+    public java.util.List<yeying.api.apps.zuoyepigai.Meta.TaskMetadata> getListList() {
       return list_;
     }
     /**
@@ -10635,7 +9853,7 @@ public final class TaskOuterClass {
      * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder> 
+    public java.util.List<? extends yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder> 
         getListOrBuilderList() {
       return list_;
     }
@@ -10658,7 +9876,7 @@ public final class TaskOuterClass {
      * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getList(int index) {
+    public yeying.api.apps.zuoyepigai.Meta.TaskMetadata getList(int index) {
       return list_.get(index);
     }
     /**
@@ -10669,9 +9887,24 @@ public final class TaskOuterClass {
      * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getListOrBuilder(
+    public yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getListOrBuilder(
         int index) {
       return list_.get(index);
+    }
+
+    public static final int TOTAL_FIELD_NUMBER = 3;
+    private long total_ = 0L;
+    /**
+     * <pre>
+     * 总数
+     * </pre>
+     *
+     * <code>uint64 total = 3;</code>
+     * @return The total.
+     */
+    @java.lang.Override
+    public long getTotal() {
+      return total_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -10694,6 +9927,9 @@ public final class TaskOuterClass {
       for (int i = 0; i < list_.size(); i++) {
         output.writeMessage(2, list_.get(i));
       }
+      if (total_ != 0L) {
+        output.writeUInt64(3, total_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -10710,6 +9946,10 @@ public final class TaskOuterClass {
       for (int i = 0; i < list_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, list_.get(i));
+      }
+      if (total_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(3, total_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -10733,6 +9973,8 @@ public final class TaskOuterClass {
       }
       if (!getListList()
           .equals(other.getListList())) return false;
+      if (getTotal()
+          != other.getTotal()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -10752,6 +9994,9 @@ public final class TaskOuterClass {
         hash = (37 * hash) + LIST_FIELD_NUMBER;
         hash = (53 * hash) + getListList().hashCode();
       }
+      hash = (37 * hash) + TOTAL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getTotal());
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -10902,6 +10147,7 @@ public final class TaskOuterClass {
           listBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000002);
+        total_ = 0L;
         return this;
       }
 
@@ -10955,6 +10201,9 @@ public final class TaskOuterClass {
               : statusBuilder_.build();
           to_bitField0_ |= 0x00000001;
         }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.total_ = total_;
+        }
         result.bitField0_ |= to_bitField0_;
       }
 
@@ -10999,6 +10248,9 @@ public final class TaskOuterClass {
             }
           }
         }
+        if (other.getTotal() != 0L) {
+          setTotal(other.getTotal());
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
@@ -11033,15 +10285,3179 @@ public final class TaskOuterClass {
                 break;
               } // case 10
               case 18: {
-                yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata m =
+                yeying.api.apps.zuoyepigai.Meta.TaskMetadata m =
                     input.readMessage(
-                        yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.parser(),
+                        yeying.api.apps.zuoyepigai.Meta.TaskMetadata.parser(),
                         extensionRegistry);
                 if (listBuilder_ == null) {
                   ensureListIsMutable();
                   list_.add(m);
                 } else {
                   listBuilder_.addMessage(m);
+                }
+                break;
+              } // case 18
+              case 24: {
+                total_ = input.readUInt64();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.unwrapIOException();
+        } finally {
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private yeying.api.common.Message.ResponseStatus status_;
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.common.Message.ResponseStatus, yeying.api.common.Message.ResponseStatus.Builder, yeying.api.common.Message.ResponseStatusOrBuilder> statusBuilder_;
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       * @return Whether the status field is set.
+       */
+      public boolean hasStatus() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       * @return The status.
+       */
+      public yeying.api.common.Message.ResponseStatus getStatus() {
+        if (statusBuilder_ == null) {
+          return status_ == null ? yeying.api.common.Message.ResponseStatus.getDefaultInstance() : status_;
+        } else {
+          return statusBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public Builder setStatus(yeying.api.common.Message.ResponseStatus value) {
+        if (statusBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          status_ = value;
+        } else {
+          statusBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public Builder setStatus(
+          yeying.api.common.Message.ResponseStatus.Builder builderForValue) {
+        if (statusBuilder_ == null) {
+          status_ = builderForValue.build();
+        } else {
+          statusBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public Builder mergeStatus(yeying.api.common.Message.ResponseStatus value) {
+        if (statusBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0) &&
+            status_ != null &&
+            status_ != yeying.api.common.Message.ResponseStatus.getDefaultInstance()) {
+            getStatusBuilder().mergeFrom(value);
+          } else {
+            status_ = value;
+          }
+        } else {
+          statusBuilder_.mergeFrom(value);
+        }
+        if (status_ != null) {
+          bitField0_ |= 0x00000001;
+          onChanged();
+        }
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public Builder clearStatus() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        status_ = null;
+        if (statusBuilder_ != null) {
+          statusBuilder_.dispose();
+          statusBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public yeying.api.common.Message.ResponseStatus.Builder getStatusBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getStatusFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public yeying.api.common.Message.ResponseStatusOrBuilder getStatusOrBuilder() {
+        if (statusBuilder_ != null) {
+          return statusBuilder_.getMessageOrBuilder();
+        } else {
+          return status_ == null ?
+              yeying.api.common.Message.ResponseStatus.getDefaultInstance() : status_;
+        }
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.common.Message.ResponseStatus, yeying.api.common.Message.ResponseStatus.Builder, yeying.api.common.Message.ResponseStatusOrBuilder> 
+          getStatusFieldBuilder() {
+        if (statusBuilder_ == null) {
+          statusBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              yeying.api.common.Message.ResponseStatus, yeying.api.common.Message.ResponseStatus.Builder, yeying.api.common.Message.ResponseStatusOrBuilder>(
+                  getStatus(),
+                  getParentForChildren(),
+                  isClean());
+          status_ = null;
+        }
+        return statusBuilder_;
+      }
+
+      private java.util.List<yeying.api.apps.zuoyepigai.Meta.TaskMetadata> list_ =
+        java.util.Collections.emptyList();
+      private void ensureListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          list_ = new java.util.ArrayList<yeying.api.apps.zuoyepigai.Meta.TaskMetadata>(list_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder> listBuilder_;
+
+      /**
+       * <pre>
+       * repeated 表示 List
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       */
+      public java.util.List<yeying.api.apps.zuoyepigai.Meta.TaskMetadata> getListList() {
+        if (listBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(list_);
+        } else {
+          return listBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * repeated 表示 List
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       */
+      public int getListCount() {
+        if (listBuilder_ == null) {
+          return list_.size();
+        } else {
+          return listBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * repeated 表示 List
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       */
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadata getList(int index) {
+        if (listBuilder_ == null) {
+          return list_.get(index);
+        } else {
+          return listBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * repeated 表示 List
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       */
+      public Builder setList(
+          int index, yeying.api.apps.zuoyepigai.Meta.TaskMetadata value) {
+        if (listBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureListIsMutable();
+          list_.set(index, value);
+          onChanged();
+        } else {
+          listBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * repeated 表示 List
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       */
+      public Builder setList(
+          int index, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder builderForValue) {
+        if (listBuilder_ == null) {
+          ensureListIsMutable();
+          list_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          listBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * repeated 表示 List
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       */
+      public Builder addList(yeying.api.apps.zuoyepigai.Meta.TaskMetadata value) {
+        if (listBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureListIsMutable();
+          list_.add(value);
+          onChanged();
+        } else {
+          listBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * repeated 表示 List
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       */
+      public Builder addList(
+          int index, yeying.api.apps.zuoyepigai.Meta.TaskMetadata value) {
+        if (listBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureListIsMutable();
+          list_.add(index, value);
+          onChanged();
+        } else {
+          listBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * repeated 表示 List
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       */
+      public Builder addList(
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder builderForValue) {
+        if (listBuilder_ == null) {
+          ensureListIsMutable();
+          list_.add(builderForValue.build());
+          onChanged();
+        } else {
+          listBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * repeated 表示 List
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       */
+      public Builder addList(
+          int index, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder builderForValue) {
+        if (listBuilder_ == null) {
+          ensureListIsMutable();
+          list_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          listBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * repeated 表示 List
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       */
+      public Builder addAllList(
+          java.lang.Iterable<? extends yeying.api.apps.zuoyepigai.Meta.TaskMetadata> values) {
+        if (listBuilder_ == null) {
+          ensureListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, list_);
+          onChanged();
+        } else {
+          listBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * repeated 表示 List
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       */
+      public Builder clearList() {
+        if (listBuilder_ == null) {
+          list_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          listBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * repeated 表示 List
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       */
+      public Builder removeList(int index) {
+        if (listBuilder_ == null) {
+          ensureListIsMutable();
+          list_.remove(index);
+          onChanged();
+        } else {
+          listBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * repeated 表示 List
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       */
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder getListBuilder(
+          int index) {
+        return getListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * repeated 表示 List
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       */
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getListOrBuilder(
+          int index) {
+        if (listBuilder_ == null) {
+          return list_.get(index);  } else {
+          return listBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * repeated 表示 List
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       */
+      public java.util.List<? extends yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder> 
+           getListOrBuilderList() {
+        if (listBuilder_ != null) {
+          return listBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(list_);
+        }
+      }
+      /**
+       * <pre>
+       * repeated 表示 List
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       */
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder addListBuilder() {
+        return getListFieldBuilder().addBuilder(
+            yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * repeated 表示 List
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       */
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder addListBuilder(
+          int index) {
+        return getListFieldBuilder().addBuilder(
+            index, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * repeated 表示 List
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       */
+      public java.util.List<yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder> 
+           getListBuilderList() {
+        return getListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder> 
+          getListFieldBuilder() {
+        if (listBuilder_ == null) {
+          listBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder>(
+                  list_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          list_ = null;
+        }
+        return listBuilder_;
+      }
+
+      private long total_ ;
+      /**
+       * <pre>
+       * 总数
+       * </pre>
+       *
+       * <code>uint64 total = 3;</code>
+       * @return The total.
+       */
+      @java.lang.Override
+      public long getTotal() {
+        return total_;
+      }
+      /**
+       * <pre>
+       * 总数
+       * </pre>
+       *
+       * <code>uint64 total = 3;</code>
+       * @param value The total to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTotal(long value) {
+
+        total_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 总数
+       * </pre>
+       *
+       * <code>uint64 total = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTotal() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        total_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:yeying.api.apps.zuoyepigai.ListTaskResponseBody)
+    }
+
+    // @@protoc_insertion_point(class_scope:yeying.api.apps.zuoyepigai.ListTaskResponseBody)
+    private static final yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskResponseBody DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskResponseBody();
+    }
+
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskResponseBody getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ListTaskResponseBody>
+        PARSER = new com.google.protobuf.AbstractParser<ListTaskResponseBody>() {
+      @java.lang.Override
+      public ListTaskResponseBody parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
+      }
+    };
+
+    public static com.google.protobuf.Parser<ListTaskResponseBody> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ListTaskResponseBody> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskResponseBody getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface TagCountTaskRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:yeying.api.apps.zuoyepigai.TagCountTaskRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return Whether the header field is set.
+     */
+    boolean hasHeader();
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return The header.
+     */
+    yeying.api.common.Message.MessageHeader getHeader();
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     */
+    yeying.api.common.Message.MessageHeaderOrBuilder getHeaderOrBuilder();
+
+    /**
+     * <code>.yeying.api.apps.zuoyepigai.TagCountTaskRequestBody body = 2;</code>
+     * @return Whether the body field is set.
+     */
+    boolean hasBody();
+    /**
+     * <code>.yeying.api.apps.zuoyepigai.TagCountTaskRequestBody body = 2;</code>
+     * @return The body.
+     */
+    yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody getBody();
+    /**
+     * <code>.yeying.api.apps.zuoyepigai.TagCountTaskRequestBody body = 2;</code>
+     */
+    yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBodyOrBuilder getBodyOrBuilder();
+  }
+  /**
+   * <pre>
+   * tag 名下的任务数量
+   * </pre>
+   *
+   * Protobuf type {@code yeying.api.apps.zuoyepigai.TagCountTaskRequest}
+   */
+  public static final class TagCountTaskRequest extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:yeying.api.apps.zuoyepigai.TagCountTaskRequest)
+      TagCountTaskRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
+    static {
+      com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
+        com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
+        /* major= */ 4,
+        /* minor= */ 29,
+        /* patch= */ 3,
+        /* suffix= */ "",
+        TagCountTaskRequest.class.getName());
+    }
+    // Use TagCountTaskRequest.newBuilder() to construct.
+    private TagCountTaskRequest(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+    }
+    private TagCountTaskRequest() {
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequest_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest.class, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int HEADER_FIELD_NUMBER = 1;
+    private yeying.api.common.Message.MessageHeader header_;
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return Whether the header field is set.
+     */
+    @java.lang.Override
+    public boolean hasHeader() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return The header.
+     */
+    @java.lang.Override
+    public yeying.api.common.Message.MessageHeader getHeader() {
+      return header_ == null ? yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+    }
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     */
+    @java.lang.Override
+    public yeying.api.common.Message.MessageHeaderOrBuilder getHeaderOrBuilder() {
+      return header_ == null ? yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+    }
+
+    public static final int BODY_FIELD_NUMBER = 2;
+    private yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody body_;
+    /**
+     * <code>.yeying.api.apps.zuoyepigai.TagCountTaskRequestBody body = 2;</code>
+     * @return Whether the body field is set.
+     */
+    @java.lang.Override
+    public boolean hasBody() {
+      return ((bitField0_ & 0x00000002) != 0);
+    }
+    /**
+     * <code>.yeying.api.apps.zuoyepigai.TagCountTaskRequestBody body = 2;</code>
+     * @return The body.
+     */
+    @java.lang.Override
+    public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody getBody() {
+      return body_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody.getDefaultInstance() : body_;
+    }
+    /**
+     * <code>.yeying.api.apps.zuoyepigai.TagCountTaskRequestBody body = 2;</code>
+     */
+    @java.lang.Override
+    public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBodyOrBuilder getBodyOrBuilder() {
+      return body_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody.getDefaultInstance() : body_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) != 0)) {
+        output.writeMessage(1, getHeader());
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        output.writeMessage(2, getBody());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getHeader());
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getBody());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest)) {
+        return super.equals(obj);
+      }
+      yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest other = (yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest) obj;
+
+      if (hasHeader() != other.hasHeader()) return false;
+      if (hasHeader()) {
+        if (!getHeader()
+            .equals(other.getHeader())) return false;
+      }
+      if (hasBody() != other.hasBody()) return false;
+      if (hasBody()) {
+        if (!getBody()
+            .equals(other.getBody())) return false;
+      }
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasHeader()) {
+        hash = (37 * hash) + HEADER_FIELD_NUMBER;
+        hash = (53 * hash) + getHeader().hashCode();
+      }
+      if (hasBody()) {
+        hash = (37 * hash) + BODY_FIELD_NUMBER;
+        hash = (53 * hash) + getBody().hashCode();
+      }
+      hash = (29 * hash) + getUnknownFields().hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     * tag 名下的任务数量
+     * </pre>
+     *
+     * Protobuf type {@code yeying.api.apps.zuoyepigai.TagCountTaskRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:yeying.api.apps.zuoyepigai.TagCountTaskRequest)
+        yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequest_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest.class, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest.Builder.class);
+      }
+
+      // Construct using yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage
+                .alwaysUseFieldBuilders) {
+          getHeaderFieldBuilder();
+          getBodyFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        bitField0_ = 0;
+        header_ = null;
+        if (headerBuilder_ != null) {
+          headerBuilder_.dispose();
+          headerBuilder_ = null;
+        }
+        body_ = null;
+        if (bodyBuilder_ != null) {
+          bodyBuilder_.dispose();
+          bodyBuilder_ = null;
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequest_descriptor;
+      }
+
+      @java.lang.Override
+      public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest getDefaultInstanceForType() {
+        return yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest build() {
+        yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest buildPartial() {
+        yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest result = new yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest(this);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartial0(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest result) {
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.header_ = headerBuilder_ == null
+              ? header_
+              : headerBuilder_.build();
+          to_bitField0_ |= 0x00000001;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.body_ = bodyBuilder_ == null
+              ? body_
+              : bodyBuilder_.build();
+          to_bitField0_ |= 0x00000002;
+        }
+        result.bitField0_ |= to_bitField0_;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest) {
+          return mergeFrom((yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest other) {
+        if (other == yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest.getDefaultInstance()) return this;
+        if (other.hasHeader()) {
+          mergeHeader(other.getHeader());
+        }
+        if (other.hasBody()) {
+          mergeBody(other.getBody());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                input.readMessage(
+                    getHeaderFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 10
+              case 18: {
+                input.readMessage(
+                    getBodyFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 18
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.unwrapIOException();
+        } finally {
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private yeying.api.common.Message.MessageHeader header_;
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.common.Message.MessageHeader, yeying.api.common.Message.MessageHeader.Builder, yeying.api.common.Message.MessageHeaderOrBuilder> headerBuilder_;
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       * @return Whether the header field is set.
+       */
+      public boolean hasHeader() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       * @return The header.
+       */
+      public yeying.api.common.Message.MessageHeader getHeader() {
+        if (headerBuilder_ == null) {
+          return header_ == null ? yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+        } else {
+          return headerBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder setHeader(yeying.api.common.Message.MessageHeader value) {
+        if (headerBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          header_ = value;
+        } else {
+          headerBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder setHeader(
+          yeying.api.common.Message.MessageHeader.Builder builderForValue) {
+        if (headerBuilder_ == null) {
+          header_ = builderForValue.build();
+        } else {
+          headerBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder mergeHeader(yeying.api.common.Message.MessageHeader value) {
+        if (headerBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0) &&
+            header_ != null &&
+            header_ != yeying.api.common.Message.MessageHeader.getDefaultInstance()) {
+            getHeaderBuilder().mergeFrom(value);
+          } else {
+            header_ = value;
+          }
+        } else {
+          headerBuilder_.mergeFrom(value);
+        }
+        if (header_ != null) {
+          bitField0_ |= 0x00000001;
+          onChanged();
+        }
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder clearHeader() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        header_ = null;
+        if (headerBuilder_ != null) {
+          headerBuilder_.dispose();
+          headerBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public yeying.api.common.Message.MessageHeader.Builder getHeaderBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getHeaderFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public yeying.api.common.Message.MessageHeaderOrBuilder getHeaderOrBuilder() {
+        if (headerBuilder_ != null) {
+          return headerBuilder_.getMessageOrBuilder();
+        } else {
+          return header_ == null ?
+              yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+        }
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.common.Message.MessageHeader, yeying.api.common.Message.MessageHeader.Builder, yeying.api.common.Message.MessageHeaderOrBuilder> 
+          getHeaderFieldBuilder() {
+        if (headerBuilder_ == null) {
+          headerBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              yeying.api.common.Message.MessageHeader, yeying.api.common.Message.MessageHeader.Builder, yeying.api.common.Message.MessageHeaderOrBuilder>(
+                  getHeader(),
+                  getParentForChildren(),
+                  isClean());
+          header_ = null;
+        }
+        return headerBuilder_;
+      }
+
+      private yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody body_;
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBodyOrBuilder> bodyBuilder_;
+      /**
+       * <code>.yeying.api.apps.zuoyepigai.TagCountTaskRequestBody body = 2;</code>
+       * @return Whether the body field is set.
+       */
+      public boolean hasBody() {
+        return ((bitField0_ & 0x00000002) != 0);
+      }
+      /**
+       * <code>.yeying.api.apps.zuoyepigai.TagCountTaskRequestBody body = 2;</code>
+       * @return The body.
+       */
+      public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody getBody() {
+        if (bodyBuilder_ == null) {
+          return body_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody.getDefaultInstance() : body_;
+        } else {
+          return bodyBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.yeying.api.apps.zuoyepigai.TagCountTaskRequestBody body = 2;</code>
+       */
+      public Builder setBody(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody value) {
+        if (bodyBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          body_ = value;
+        } else {
+          bodyBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.apps.zuoyepigai.TagCountTaskRequestBody body = 2;</code>
+       */
+      public Builder setBody(
+          yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody.Builder builderForValue) {
+        if (bodyBuilder_ == null) {
+          body_ = builderForValue.build();
+        } else {
+          bodyBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.apps.zuoyepigai.TagCountTaskRequestBody body = 2;</code>
+       */
+      public Builder mergeBody(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody value) {
+        if (bodyBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0) &&
+            body_ != null &&
+            body_ != yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody.getDefaultInstance()) {
+            getBodyBuilder().mergeFrom(value);
+          } else {
+            body_ = value;
+          }
+        } else {
+          bodyBuilder_.mergeFrom(value);
+        }
+        if (body_ != null) {
+          bitField0_ |= 0x00000002;
+          onChanged();
+        }
+        return this;
+      }
+      /**
+       * <code>.yeying.api.apps.zuoyepigai.TagCountTaskRequestBody body = 2;</code>
+       */
+      public Builder clearBody() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        body_ = null;
+        if (bodyBuilder_ != null) {
+          bodyBuilder_.dispose();
+          bodyBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.apps.zuoyepigai.TagCountTaskRequestBody body = 2;</code>
+       */
+      public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody.Builder getBodyBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getBodyFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.yeying.api.apps.zuoyepigai.TagCountTaskRequestBody body = 2;</code>
+       */
+      public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBodyOrBuilder getBodyOrBuilder() {
+        if (bodyBuilder_ != null) {
+          return bodyBuilder_.getMessageOrBuilder();
+        } else {
+          return body_ == null ?
+              yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody.getDefaultInstance() : body_;
+        }
+      }
+      /**
+       * <code>.yeying.api.apps.zuoyepigai.TagCountTaskRequestBody body = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBodyOrBuilder> 
+          getBodyFieldBuilder() {
+        if (bodyBuilder_ == null) {
+          bodyBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBodyOrBuilder>(
+                  getBody(),
+                  getParentForChildren(),
+                  isClean());
+          body_ = null;
+        }
+        return bodyBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:yeying.api.apps.zuoyepigai.TagCountTaskRequest)
+    }
+
+    // @@protoc_insertion_point(class_scope:yeying.api.apps.zuoyepigai.TagCountTaskRequest)
+    private static final yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest();
+    }
+
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<TagCountTaskRequest>
+        PARSER = new com.google.protobuf.AbstractParser<TagCountTaskRequest>() {
+      @java.lang.Override
+      public TagCountTaskRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
+      }
+    };
+
+    public static com.google.protobuf.Parser<TagCountTaskRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<TagCountTaskRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface TagCountTaskRequestBodyOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:yeying.api.apps.zuoyepigai.TagCountTaskRequestBody)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     * 登录用户did
+     * </pre>
+     *
+     * <code>string did = 1;</code>
+     * @return The did.
+     */
+    java.lang.String getDid();
+    /**
+     * <pre>
+     * 登录用户did
+     * </pre>
+     *
+     * <code>string did = 1;</code>
+     * @return The bytes for did.
+     */
+    com.google.protobuf.ByteString
+        getDidBytes();
+  }
+  /**
+   * Protobuf type {@code yeying.api.apps.zuoyepigai.TagCountTaskRequestBody}
+   */
+  public static final class TagCountTaskRequestBody extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:yeying.api.apps.zuoyepigai.TagCountTaskRequestBody)
+      TagCountTaskRequestBodyOrBuilder {
+  private static final long serialVersionUID = 0L;
+    static {
+      com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
+        com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
+        /* major= */ 4,
+        /* minor= */ 29,
+        /* patch= */ 3,
+        /* suffix= */ "",
+        TagCountTaskRequestBody.class.getName());
+    }
+    // Use TagCountTaskRequestBody.newBuilder() to construct.
+    private TagCountTaskRequestBody(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+    }
+    private TagCountTaskRequestBody() {
+      did_ = "";
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequestBody_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequestBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody.class, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody.Builder.class);
+    }
+
+    public static final int DID_FIELD_NUMBER = 1;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object did_ = "";
+    /**
+     * <pre>
+     * 登录用户did
+     * </pre>
+     *
+     * <code>string did = 1;</code>
+     * @return The did.
+     */
+    @java.lang.Override
+    public java.lang.String getDid() {
+      java.lang.Object ref = did_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        did_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * 登录用户did
+     * </pre>
+     *
+     * <code>string did = 1;</code>
+     * @return The bytes for did.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getDidBytes() {
+      java.lang.Object ref = did_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        did_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(did_)) {
+        com.google.protobuf.GeneratedMessage.writeString(output, 1, did_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(did_)) {
+        size += com.google.protobuf.GeneratedMessage.computeStringSize(1, did_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody)) {
+        return super.equals(obj);
+      }
+      yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody other = (yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody) obj;
+
+      if (!getDid()
+          .equals(other.getDid())) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + DID_FIELD_NUMBER;
+      hash = (53 * hash) + getDid().hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code yeying.api.apps.zuoyepigai.TagCountTaskRequestBody}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:yeying.api.apps.zuoyepigai.TagCountTaskRequestBody)
+        yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBodyOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequestBody_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequestBody_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody.class, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody.Builder.class);
+      }
+
+      // Construct using yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody.newBuilder()
+      private Builder() {
+
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        bitField0_ = 0;
+        did_ = "";
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequestBody_descriptor;
+      }
+
+      @java.lang.Override
+      public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody getDefaultInstanceForType() {
+        return yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody build() {
+        yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody buildPartial() {
+        yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody result = new yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody(this);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartial0(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.did_ = did_;
+        }
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody) {
+          return mergeFrom((yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody other) {
+        if (other == yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody.getDefaultInstance()) return this;
+        if (!other.getDid().isEmpty()) {
+          did_ = other.did_;
+          bitField0_ |= 0x00000001;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                did_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 10
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.unwrapIOException();
+        } finally {
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object did_ = "";
+      /**
+       * <pre>
+       * 登录用户did
+       * </pre>
+       *
+       * <code>string did = 1;</code>
+       * @return The did.
+       */
+      public java.lang.String getDid() {
+        java.lang.Object ref = did_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          did_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * 登录用户did
+       * </pre>
+       *
+       * <code>string did = 1;</code>
+       * @return The bytes for did.
+       */
+      public com.google.protobuf.ByteString
+          getDidBytes() {
+        java.lang.Object ref = did_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          did_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * 登录用户did
+       * </pre>
+       *
+       * <code>string did = 1;</code>
+       * @param value The did to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDid(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        did_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 登录用户did
+       * </pre>
+       *
+       * <code>string did = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDid() {
+        did_ = getDefaultInstance().getDid();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 登录用户did
+       * </pre>
+       *
+       * <code>string did = 1;</code>
+       * @param value The bytes for did to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
+        did_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:yeying.api.apps.zuoyepigai.TagCountTaskRequestBody)
+    }
+
+    // @@protoc_insertion_point(class_scope:yeying.api.apps.zuoyepigai.TagCountTaskRequestBody)
+    private static final yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody();
+    }
+
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<TagCountTaskRequestBody>
+        PARSER = new com.google.protobuf.AbstractParser<TagCountTaskRequestBody>() {
+      @java.lang.Override
+      public TagCountTaskRequestBody parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
+      }
+    };
+
+    public static com.google.protobuf.Parser<TagCountTaskRequestBody> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<TagCountTaskRequestBody> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequestBody getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface TagCountTaskResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:yeying.api.apps.zuoyepigai.TagCountTaskResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     * @return Whether the status field is set.
+     */
+    boolean hasStatus();
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     * @return The status.
+     */
+    yeying.api.common.Message.ResponseStatus getStatus();
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     */
+    yeying.api.common.Message.ResponseStatusOrBuilder getStatusOrBuilder();
+
+    /**
+     * <code>.yeying.api.apps.zuoyepigai.TagCountTaskResponseBody body = 2;</code>
+     * @return Whether the body field is set.
+     */
+    boolean hasBody();
+    /**
+     * <code>.yeying.api.apps.zuoyepigai.TagCountTaskResponseBody body = 2;</code>
+     * @return The body.
+     */
+    yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody getBody();
+    /**
+     * <code>.yeying.api.apps.zuoyepigai.TagCountTaskResponseBody body = 2;</code>
+     */
+    yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBodyOrBuilder getBodyOrBuilder();
+  }
+  /**
+   * Protobuf type {@code yeying.api.apps.zuoyepigai.TagCountTaskResponse}
+   */
+  public static final class TagCountTaskResponse extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:yeying.api.apps.zuoyepigai.TagCountTaskResponse)
+      TagCountTaskResponseOrBuilder {
+  private static final long serialVersionUID = 0L;
+    static {
+      com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
+        com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
+        /* major= */ 4,
+        /* minor= */ 29,
+        /* patch= */ 3,
+        /* suffix= */ "",
+        TagCountTaskResponse.class.getName());
+    }
+    // Use TagCountTaskResponse.newBuilder() to construct.
+    private TagCountTaskResponse(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+    }
+    private TagCountTaskResponse() {
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponse_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse.class, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int STATUS_FIELD_NUMBER = 1;
+    private yeying.api.common.Message.ResponseStatus status_;
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     * @return Whether the status field is set.
+     */
+    @java.lang.Override
+    public boolean hasStatus() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     * @return The status.
+     */
+    @java.lang.Override
+    public yeying.api.common.Message.ResponseStatus getStatus() {
+      return status_ == null ? yeying.api.common.Message.ResponseStatus.getDefaultInstance() : status_;
+    }
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     */
+    @java.lang.Override
+    public yeying.api.common.Message.ResponseStatusOrBuilder getStatusOrBuilder() {
+      return status_ == null ? yeying.api.common.Message.ResponseStatus.getDefaultInstance() : status_;
+    }
+
+    public static final int BODY_FIELD_NUMBER = 2;
+    private yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody body_;
+    /**
+     * <code>.yeying.api.apps.zuoyepigai.TagCountTaskResponseBody body = 2;</code>
+     * @return Whether the body field is set.
+     */
+    @java.lang.Override
+    public boolean hasBody() {
+      return ((bitField0_ & 0x00000002) != 0);
+    }
+    /**
+     * <code>.yeying.api.apps.zuoyepigai.TagCountTaskResponseBody body = 2;</code>
+     * @return The body.
+     */
+    @java.lang.Override
+    public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody getBody() {
+      return body_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody.getDefaultInstance() : body_;
+    }
+    /**
+     * <code>.yeying.api.apps.zuoyepigai.TagCountTaskResponseBody body = 2;</code>
+     */
+    @java.lang.Override
+    public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBodyOrBuilder getBodyOrBuilder() {
+      return body_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody.getDefaultInstance() : body_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) != 0)) {
+        output.writeMessage(1, getStatus());
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        output.writeMessage(2, getBody());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getStatus());
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getBody());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse)) {
+        return super.equals(obj);
+      }
+      yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse other = (yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse) obj;
+
+      if (hasStatus() != other.hasStatus()) return false;
+      if (hasStatus()) {
+        if (!getStatus()
+            .equals(other.getStatus())) return false;
+      }
+      if (hasBody() != other.hasBody()) return false;
+      if (hasBody()) {
+        if (!getBody()
+            .equals(other.getBody())) return false;
+      }
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasStatus()) {
+        hash = (37 * hash) + STATUS_FIELD_NUMBER;
+        hash = (53 * hash) + getStatus().hashCode();
+      }
+      if (hasBody()) {
+        hash = (37 * hash) + BODY_FIELD_NUMBER;
+        hash = (53 * hash) + getBody().hashCode();
+      }
+      hash = (29 * hash) + getUnknownFields().hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code yeying.api.apps.zuoyepigai.TagCountTaskResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:yeying.api.apps.zuoyepigai.TagCountTaskResponse)
+        yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponse_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse.class, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse.Builder.class);
+      }
+
+      // Construct using yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage
+                .alwaysUseFieldBuilders) {
+          getStatusFieldBuilder();
+          getBodyFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        bitField0_ = 0;
+        status_ = null;
+        if (statusBuilder_ != null) {
+          statusBuilder_.dispose();
+          statusBuilder_ = null;
+        }
+        body_ = null;
+        if (bodyBuilder_ != null) {
+          bodyBuilder_.dispose();
+          bodyBuilder_ = null;
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponse_descriptor;
+      }
+
+      @java.lang.Override
+      public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse getDefaultInstanceForType() {
+        return yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse build() {
+        yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse buildPartial() {
+        yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse result = new yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse(this);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartial0(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse result) {
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.status_ = statusBuilder_ == null
+              ? status_
+              : statusBuilder_.build();
+          to_bitField0_ |= 0x00000001;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.body_ = bodyBuilder_ == null
+              ? body_
+              : bodyBuilder_.build();
+          to_bitField0_ |= 0x00000002;
+        }
+        result.bitField0_ |= to_bitField0_;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse) {
+          return mergeFrom((yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse other) {
+        if (other == yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse.getDefaultInstance()) return this;
+        if (other.hasStatus()) {
+          mergeStatus(other.getStatus());
+        }
+        if (other.hasBody()) {
+          mergeBody(other.getBody());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                input.readMessage(
+                    getStatusFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 10
+              case 18: {
+                input.readMessage(
+                    getBodyFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 18
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.unwrapIOException();
+        } finally {
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private yeying.api.common.Message.ResponseStatus status_;
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.common.Message.ResponseStatus, yeying.api.common.Message.ResponseStatus.Builder, yeying.api.common.Message.ResponseStatusOrBuilder> statusBuilder_;
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       * @return Whether the status field is set.
+       */
+      public boolean hasStatus() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       * @return The status.
+       */
+      public yeying.api.common.Message.ResponseStatus getStatus() {
+        if (statusBuilder_ == null) {
+          return status_ == null ? yeying.api.common.Message.ResponseStatus.getDefaultInstance() : status_;
+        } else {
+          return statusBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public Builder setStatus(yeying.api.common.Message.ResponseStatus value) {
+        if (statusBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          status_ = value;
+        } else {
+          statusBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public Builder setStatus(
+          yeying.api.common.Message.ResponseStatus.Builder builderForValue) {
+        if (statusBuilder_ == null) {
+          status_ = builderForValue.build();
+        } else {
+          statusBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public Builder mergeStatus(yeying.api.common.Message.ResponseStatus value) {
+        if (statusBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0) &&
+            status_ != null &&
+            status_ != yeying.api.common.Message.ResponseStatus.getDefaultInstance()) {
+            getStatusBuilder().mergeFrom(value);
+          } else {
+            status_ = value;
+          }
+        } else {
+          statusBuilder_.mergeFrom(value);
+        }
+        if (status_ != null) {
+          bitField0_ |= 0x00000001;
+          onChanged();
+        }
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public Builder clearStatus() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        status_ = null;
+        if (statusBuilder_ != null) {
+          statusBuilder_.dispose();
+          statusBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public yeying.api.common.Message.ResponseStatus.Builder getStatusBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getStatusFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public yeying.api.common.Message.ResponseStatusOrBuilder getStatusOrBuilder() {
+        if (statusBuilder_ != null) {
+          return statusBuilder_.getMessageOrBuilder();
+        } else {
+          return status_ == null ?
+              yeying.api.common.Message.ResponseStatus.getDefaultInstance() : status_;
+        }
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.common.Message.ResponseStatus, yeying.api.common.Message.ResponseStatus.Builder, yeying.api.common.Message.ResponseStatusOrBuilder> 
+          getStatusFieldBuilder() {
+        if (statusBuilder_ == null) {
+          statusBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              yeying.api.common.Message.ResponseStatus, yeying.api.common.Message.ResponseStatus.Builder, yeying.api.common.Message.ResponseStatusOrBuilder>(
+                  getStatus(),
+                  getParentForChildren(),
+                  isClean());
+          status_ = null;
+        }
+        return statusBuilder_;
+      }
+
+      private yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody body_;
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBodyOrBuilder> bodyBuilder_;
+      /**
+       * <code>.yeying.api.apps.zuoyepigai.TagCountTaskResponseBody body = 2;</code>
+       * @return Whether the body field is set.
+       */
+      public boolean hasBody() {
+        return ((bitField0_ & 0x00000002) != 0);
+      }
+      /**
+       * <code>.yeying.api.apps.zuoyepigai.TagCountTaskResponseBody body = 2;</code>
+       * @return The body.
+       */
+      public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody getBody() {
+        if (bodyBuilder_ == null) {
+          return body_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody.getDefaultInstance() : body_;
+        } else {
+          return bodyBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.yeying.api.apps.zuoyepigai.TagCountTaskResponseBody body = 2;</code>
+       */
+      public Builder setBody(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody value) {
+        if (bodyBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          body_ = value;
+        } else {
+          bodyBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.apps.zuoyepigai.TagCountTaskResponseBody body = 2;</code>
+       */
+      public Builder setBody(
+          yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody.Builder builderForValue) {
+        if (bodyBuilder_ == null) {
+          body_ = builderForValue.build();
+        } else {
+          bodyBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.apps.zuoyepigai.TagCountTaskResponseBody body = 2;</code>
+       */
+      public Builder mergeBody(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody value) {
+        if (bodyBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0) &&
+            body_ != null &&
+            body_ != yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody.getDefaultInstance()) {
+            getBodyBuilder().mergeFrom(value);
+          } else {
+            body_ = value;
+          }
+        } else {
+          bodyBuilder_.mergeFrom(value);
+        }
+        if (body_ != null) {
+          bitField0_ |= 0x00000002;
+          onChanged();
+        }
+        return this;
+      }
+      /**
+       * <code>.yeying.api.apps.zuoyepigai.TagCountTaskResponseBody body = 2;</code>
+       */
+      public Builder clearBody() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        body_ = null;
+        if (bodyBuilder_ != null) {
+          bodyBuilder_.dispose();
+          bodyBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.apps.zuoyepigai.TagCountTaskResponseBody body = 2;</code>
+       */
+      public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody.Builder getBodyBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getBodyFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.yeying.api.apps.zuoyepigai.TagCountTaskResponseBody body = 2;</code>
+       */
+      public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBodyOrBuilder getBodyOrBuilder() {
+        if (bodyBuilder_ != null) {
+          return bodyBuilder_.getMessageOrBuilder();
+        } else {
+          return body_ == null ?
+              yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody.getDefaultInstance() : body_;
+        }
+      }
+      /**
+       * <code>.yeying.api.apps.zuoyepigai.TagCountTaskResponseBody body = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBodyOrBuilder> 
+          getBodyFieldBuilder() {
+        if (bodyBuilder_ == null) {
+          bodyBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBodyOrBuilder>(
+                  getBody(),
+                  getParentForChildren(),
+                  isClean());
+          body_ = null;
+        }
+        return bodyBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:yeying.api.apps.zuoyepigai.TagCountTaskResponse)
+    }
+
+    // @@protoc_insertion_point(class_scope:yeying.api.apps.zuoyepigai.TagCountTaskResponse)
+    private static final yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse();
+    }
+
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<TagCountTaskResponse>
+        PARSER = new com.google.protobuf.AbstractParser<TagCountTaskResponse>() {
+      @java.lang.Override
+      public TagCountTaskResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
+      }
+    };
+
+    public static com.google.protobuf.Parser<TagCountTaskResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<TagCountTaskResponse> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface TagCountTaskResponseBodyOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:yeying.api.apps.zuoyepigai.TagCountTaskResponseBody)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     * @return Whether the status field is set.
+     */
+    boolean hasStatus();
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     * @return The status.
+     */
+    yeying.api.common.Message.ResponseStatus getStatus();
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     */
+    yeying.api.common.Message.ResponseStatusOrBuilder getStatusOrBuilder();
+
+    /**
+     * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
+     */
+    java.util.List<yeying.api.apps.zuoyepigai.Meta.TagCountMeta> 
+        getMetaList();
+    /**
+     * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
+     */
+    yeying.api.apps.zuoyepigai.Meta.TagCountMeta getMeta(int index);
+    /**
+     * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
+     */
+    int getMetaCount();
+    /**
+     * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
+     */
+    java.util.List<? extends yeying.api.apps.zuoyepigai.Meta.TagCountMetaOrBuilder> 
+        getMetaOrBuilderList();
+    /**
+     * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
+     */
+    yeying.api.apps.zuoyepigai.Meta.TagCountMetaOrBuilder getMetaOrBuilder(
+        int index);
+  }
+  /**
+   * Protobuf type {@code yeying.api.apps.zuoyepigai.TagCountTaskResponseBody}
+   */
+  public static final class TagCountTaskResponseBody extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:yeying.api.apps.zuoyepigai.TagCountTaskResponseBody)
+      TagCountTaskResponseBodyOrBuilder {
+  private static final long serialVersionUID = 0L;
+    static {
+      com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
+        com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
+        /* major= */ 4,
+        /* minor= */ 29,
+        /* patch= */ 3,
+        /* suffix= */ "",
+        TagCountTaskResponseBody.class.getName());
+    }
+    // Use TagCountTaskResponseBody.newBuilder() to construct.
+    private TagCountTaskResponseBody(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+    }
+    private TagCountTaskResponseBody() {
+      meta_ = java.util.Collections.emptyList();
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponseBody_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody.class, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int STATUS_FIELD_NUMBER = 1;
+    private yeying.api.common.Message.ResponseStatus status_;
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     * @return Whether the status field is set.
+     */
+    @java.lang.Override
+    public boolean hasStatus() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     * @return The status.
+     */
+    @java.lang.Override
+    public yeying.api.common.Message.ResponseStatus getStatus() {
+      return status_ == null ? yeying.api.common.Message.ResponseStatus.getDefaultInstance() : status_;
+    }
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     */
+    @java.lang.Override
+    public yeying.api.common.Message.ResponseStatusOrBuilder getStatusOrBuilder() {
+      return status_ == null ? yeying.api.common.Message.ResponseStatus.getDefaultInstance() : status_;
+    }
+
+    public static final int META_FIELD_NUMBER = 2;
+    @SuppressWarnings("serial")
+    private java.util.List<yeying.api.apps.zuoyepigai.Meta.TagCountMeta> meta_;
+    /**
+     * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<yeying.api.apps.zuoyepigai.Meta.TagCountMeta> getMetaList() {
+      return meta_;
+    }
+    /**
+     * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends yeying.api.apps.zuoyepigai.Meta.TagCountMetaOrBuilder> 
+        getMetaOrBuilderList() {
+      return meta_;
+    }
+    /**
+     * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
+     */
+    @java.lang.Override
+    public int getMetaCount() {
+      return meta_.size();
+    }
+    /**
+     * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
+     */
+    @java.lang.Override
+    public yeying.api.apps.zuoyepigai.Meta.TagCountMeta getMeta(int index) {
+      return meta_.get(index);
+    }
+    /**
+     * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
+     */
+    @java.lang.Override
+    public yeying.api.apps.zuoyepigai.Meta.TagCountMetaOrBuilder getMetaOrBuilder(
+        int index) {
+      return meta_.get(index);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) != 0)) {
+        output.writeMessage(1, getStatus());
+      }
+      for (int i = 0; i < meta_.size(); i++) {
+        output.writeMessage(2, meta_.get(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getStatus());
+      }
+      for (int i = 0; i < meta_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, meta_.get(i));
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody)) {
+        return super.equals(obj);
+      }
+      yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody other = (yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody) obj;
+
+      if (hasStatus() != other.hasStatus()) return false;
+      if (hasStatus()) {
+        if (!getStatus()
+            .equals(other.getStatus())) return false;
+      }
+      if (!getMetaList()
+          .equals(other.getMetaList())) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasStatus()) {
+        hash = (37 * hash) + STATUS_FIELD_NUMBER;
+        hash = (53 * hash) + getStatus().hashCode();
+      }
+      if (getMetaCount() > 0) {
+        hash = (37 * hash) + META_FIELD_NUMBER;
+        hash = (53 * hash) + getMetaList().hashCode();
+      }
+      hash = (29 * hash) + getUnknownFields().hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code yeying.api.apps.zuoyepigai.TagCountTaskResponseBody}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:yeying.api.apps.zuoyepigai.TagCountTaskResponseBody)
+        yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBodyOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponseBody_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponseBody_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody.class, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody.Builder.class);
+      }
+
+      // Construct using yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage
+                .alwaysUseFieldBuilders) {
+          getStatusFieldBuilder();
+          getMetaFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        bitField0_ = 0;
+        status_ = null;
+        if (statusBuilder_ != null) {
+          statusBuilder_.dispose();
+          statusBuilder_ = null;
+        }
+        if (metaBuilder_ == null) {
+          meta_ = java.util.Collections.emptyList();
+        } else {
+          meta_ = null;
+          metaBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return yeying.api.apps.zuoyepigai.TaskOuterClass.internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponseBody_descriptor;
+      }
+
+      @java.lang.Override
+      public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody getDefaultInstanceForType() {
+        return yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody build() {
+        yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody buildPartial() {
+        yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody result = new yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody(this);
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody result) {
+        if (metaBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0)) {
+            meta_ = java.util.Collections.unmodifiableList(meta_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.meta_ = meta_;
+        } else {
+          result.meta_ = metaBuilder_.build();
+        }
+      }
+
+      private void buildPartial0(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody result) {
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.status_ = statusBuilder_ == null
+              ? status_
+              : statusBuilder_.build();
+          to_bitField0_ |= 0x00000001;
+        }
+        result.bitField0_ |= to_bitField0_;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody) {
+          return mergeFrom((yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody other) {
+        if (other == yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody.getDefaultInstance()) return this;
+        if (other.hasStatus()) {
+          mergeStatus(other.getStatus());
+        }
+        if (metaBuilder_ == null) {
+          if (!other.meta_.isEmpty()) {
+            if (meta_.isEmpty()) {
+              meta_ = other.meta_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureMetaIsMutable();
+              meta_.addAll(other.meta_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.meta_.isEmpty()) {
+            if (metaBuilder_.isEmpty()) {
+              metaBuilder_.dispose();
+              metaBuilder_ = null;
+              meta_ = other.meta_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              metaBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getMetaFieldBuilder() : null;
+            } else {
+              metaBuilder_.addAllMessages(other.meta_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                input.readMessage(
+                    getStatusFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 10
+              case 18: {
+                yeying.api.apps.zuoyepigai.Meta.TagCountMeta m =
+                    input.readMessage(
+                        yeying.api.apps.zuoyepigai.Meta.TagCountMeta.parser(),
+                        extensionRegistry);
+                if (metaBuilder_ == null) {
+                  ensureMetaIsMutable();
+                  meta_.add(m);
+                } else {
+                  metaBuilder_.addMessage(m);
                 }
                 break;
               } // case 18
@@ -11183,335 +13599,263 @@ public final class TaskOuterClass {
         return statusBuilder_;
       }
 
-      private java.util.List<yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata> list_ =
+      private java.util.List<yeying.api.apps.zuoyepigai.Meta.TagCountMeta> meta_ =
         java.util.Collections.emptyList();
-      private void ensureListIsMutable() {
+      private void ensureMetaIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          list_ = new java.util.ArrayList<yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata>(list_);
+          meta_ = new java.util.ArrayList<yeying.api.apps.zuoyepigai.Meta.TagCountMeta>(meta_);
           bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder> listBuilder_;
+          yeying.api.apps.zuoyepigai.Meta.TagCountMeta, yeying.api.apps.zuoyepigai.Meta.TagCountMeta.Builder, yeying.api.apps.zuoyepigai.Meta.TagCountMetaOrBuilder> metaBuilder_;
 
       /**
-       * <pre>
-       * repeated 表示 List
-       * </pre>
-       *
-       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
        */
-      public java.util.List<yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata> getListList() {
-        if (listBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(list_);
+      public java.util.List<yeying.api.apps.zuoyepigai.Meta.TagCountMeta> getMetaList() {
+        if (metaBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(meta_);
         } else {
-          return listBuilder_.getMessageList();
+          return metaBuilder_.getMessageList();
         }
       }
       /**
-       * <pre>
-       * repeated 表示 List
-       * </pre>
-       *
-       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
        */
-      public int getListCount() {
-        if (listBuilder_ == null) {
-          return list_.size();
+      public int getMetaCount() {
+        if (metaBuilder_ == null) {
+          return meta_.size();
         } else {
-          return listBuilder_.getCount();
+          return metaBuilder_.getCount();
         }
       }
       /**
-       * <pre>
-       * repeated 表示 List
-       * </pre>
-       *
-       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getList(int index) {
-        if (listBuilder_ == null) {
-          return list_.get(index);
+      public yeying.api.apps.zuoyepigai.Meta.TagCountMeta getMeta(int index) {
+        if (metaBuilder_ == null) {
+          return meta_.get(index);
         } else {
-          return listBuilder_.getMessage(index);
+          return metaBuilder_.getMessage(index);
         }
       }
       /**
-       * <pre>
-       * repeated 表示 List
-       * </pre>
-       *
-       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
        */
-      public Builder setList(
-          int index, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata value) {
-        if (listBuilder_ == null) {
+      public Builder setMeta(
+          int index, yeying.api.apps.zuoyepigai.Meta.TagCountMeta value) {
+        if (metaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureListIsMutable();
-          list_.set(index, value);
+          ensureMetaIsMutable();
+          meta_.set(index, value);
           onChanged();
         } else {
-          listBuilder_.setMessage(index, value);
+          metaBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <pre>
-       * repeated 表示 List
-       * </pre>
-       *
-       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
        */
-      public Builder setList(
-          int index, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder builderForValue) {
-        if (listBuilder_ == null) {
-          ensureListIsMutable();
-          list_.set(index, builderForValue.build());
+      public Builder setMeta(
+          int index, yeying.api.apps.zuoyepigai.Meta.TagCountMeta.Builder builderForValue) {
+        if (metaBuilder_ == null) {
+          ensureMetaIsMutable();
+          meta_.set(index, builderForValue.build());
           onChanged();
         } else {
-          listBuilder_.setMessage(index, builderForValue.build());
+          metaBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <pre>
-       * repeated 表示 List
-       * </pre>
-       *
-       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
        */
-      public Builder addList(yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata value) {
-        if (listBuilder_ == null) {
+      public Builder addMeta(yeying.api.apps.zuoyepigai.Meta.TagCountMeta value) {
+        if (metaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureListIsMutable();
-          list_.add(value);
+          ensureMetaIsMutable();
+          meta_.add(value);
           onChanged();
         } else {
-          listBuilder_.addMessage(value);
+          metaBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <pre>
-       * repeated 表示 List
-       * </pre>
-       *
-       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
        */
-      public Builder addList(
-          int index, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata value) {
-        if (listBuilder_ == null) {
+      public Builder addMeta(
+          int index, yeying.api.apps.zuoyepigai.Meta.TagCountMeta value) {
+        if (metaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureListIsMutable();
-          list_.add(index, value);
+          ensureMetaIsMutable();
+          meta_.add(index, value);
           onChanged();
         } else {
-          listBuilder_.addMessage(index, value);
+          metaBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <pre>
-       * repeated 表示 List
-       * </pre>
-       *
-       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
        */
-      public Builder addList(
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder builderForValue) {
-        if (listBuilder_ == null) {
-          ensureListIsMutable();
-          list_.add(builderForValue.build());
+      public Builder addMeta(
+          yeying.api.apps.zuoyepigai.Meta.TagCountMeta.Builder builderForValue) {
+        if (metaBuilder_ == null) {
+          ensureMetaIsMutable();
+          meta_.add(builderForValue.build());
           onChanged();
         } else {
-          listBuilder_.addMessage(builderForValue.build());
+          metaBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <pre>
-       * repeated 表示 List
-       * </pre>
-       *
-       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
        */
-      public Builder addList(
-          int index, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder builderForValue) {
-        if (listBuilder_ == null) {
-          ensureListIsMutable();
-          list_.add(index, builderForValue.build());
+      public Builder addMeta(
+          int index, yeying.api.apps.zuoyepigai.Meta.TagCountMeta.Builder builderForValue) {
+        if (metaBuilder_ == null) {
+          ensureMetaIsMutable();
+          meta_.add(index, builderForValue.build());
           onChanged();
         } else {
-          listBuilder_.addMessage(index, builderForValue.build());
+          metaBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <pre>
-       * repeated 表示 List
-       * </pre>
-       *
-       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
        */
-      public Builder addAllList(
-          java.lang.Iterable<? extends yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata> values) {
-        if (listBuilder_ == null) {
-          ensureListIsMutable();
+      public Builder addAllMeta(
+          java.lang.Iterable<? extends yeying.api.apps.zuoyepigai.Meta.TagCountMeta> values) {
+        if (metaBuilder_ == null) {
+          ensureMetaIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, list_);
+              values, meta_);
           onChanged();
         } else {
-          listBuilder_.addAllMessages(values);
+          metaBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <pre>
-       * repeated 表示 List
-       * </pre>
-       *
-       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
        */
-      public Builder clearList() {
-        if (listBuilder_ == null) {
-          list_ = java.util.Collections.emptyList();
+      public Builder clearMeta() {
+        if (metaBuilder_ == null) {
+          meta_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
-          listBuilder_.clear();
+          metaBuilder_.clear();
         }
         return this;
       }
       /**
-       * <pre>
-       * repeated 表示 List
-       * </pre>
-       *
-       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
        */
-      public Builder removeList(int index) {
-        if (listBuilder_ == null) {
-          ensureListIsMutable();
-          list_.remove(index);
+      public Builder removeMeta(int index) {
+        if (metaBuilder_ == null) {
+          ensureMetaIsMutable();
+          meta_.remove(index);
           onChanged();
         } else {
-          listBuilder_.remove(index);
+          metaBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <pre>
-       * repeated 表示 List
-       * </pre>
-       *
-       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder getListBuilder(
+      public yeying.api.apps.zuoyepigai.Meta.TagCountMeta.Builder getMetaBuilder(
           int index) {
-        return getListFieldBuilder().getBuilder(index);
+        return getMetaFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       * repeated 表示 List
-       * </pre>
-       *
-       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getListOrBuilder(
+      public yeying.api.apps.zuoyepigai.Meta.TagCountMetaOrBuilder getMetaOrBuilder(
           int index) {
-        if (listBuilder_ == null) {
-          return list_.get(index);  } else {
-          return listBuilder_.getMessageOrBuilder(index);
+        if (metaBuilder_ == null) {
+          return meta_.get(index);  } else {
+          return metaBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <pre>
-       * repeated 表示 List
-       * </pre>
-       *
-       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
        */
-      public java.util.List<? extends yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder> 
-           getListOrBuilderList() {
-        if (listBuilder_ != null) {
-          return listBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends yeying.api.apps.zuoyepigai.Meta.TagCountMetaOrBuilder> 
+           getMetaOrBuilderList() {
+        if (metaBuilder_ != null) {
+          return metaBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(list_);
+          return java.util.Collections.unmodifiableList(meta_);
         }
       }
       /**
-       * <pre>
-       * repeated 表示 List
-       * </pre>
-       *
-       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder addListBuilder() {
-        return getListFieldBuilder().addBuilder(
-            yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance());
+      public yeying.api.apps.zuoyepigai.Meta.TagCountMeta.Builder addMetaBuilder() {
+        return getMetaFieldBuilder().addBuilder(
+            yeying.api.apps.zuoyepigai.Meta.TagCountMeta.getDefaultInstance());
       }
       /**
-       * <pre>
-       * repeated 表示 List
-       * </pre>
-       *
-       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder addListBuilder(
+      public yeying.api.apps.zuoyepigai.Meta.TagCountMeta.Builder addMetaBuilder(
           int index) {
-        return getListFieldBuilder().addBuilder(
-            index, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance());
+        return getMetaFieldBuilder().addBuilder(
+            index, yeying.api.apps.zuoyepigai.Meta.TagCountMeta.getDefaultInstance());
       }
       /**
-       * <pre>
-       * repeated 表示 List
-       * </pre>
-       *
-       * <code>repeated .yeying.api.apps.zuoyepigai.TaskMetadata list = 2;</code>
+       * <code>repeated .yeying.api.apps.zuoyepigai.TagCountMeta meta = 2;</code>
        */
-      public java.util.List<yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder> 
-           getListBuilderList() {
-        return getListFieldBuilder().getBuilderList();
+      public java.util.List<yeying.api.apps.zuoyepigai.Meta.TagCountMeta.Builder> 
+           getMetaBuilderList() {
+        return getMetaFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder> 
-          getListFieldBuilder() {
-        if (listBuilder_ == null) {
-          listBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder>(
-                  list_,
+          yeying.api.apps.zuoyepigai.Meta.TagCountMeta, yeying.api.apps.zuoyepigai.Meta.TagCountMeta.Builder, yeying.api.apps.zuoyepigai.Meta.TagCountMetaOrBuilder> 
+          getMetaFieldBuilder() {
+        if (metaBuilder_ == null) {
+          metaBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              yeying.api.apps.zuoyepigai.Meta.TagCountMeta, yeying.api.apps.zuoyepigai.Meta.TagCountMeta.Builder, yeying.api.apps.zuoyepigai.Meta.TagCountMetaOrBuilder>(
+                  meta_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
-          list_ = null;
+          meta_ = null;
         }
-        return listBuilder_;
+        return metaBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:yeying.api.apps.zuoyepigai.ListTaskResponseBody)
+      // @@protoc_insertion_point(builder_scope:yeying.api.apps.zuoyepigai.TagCountTaskResponseBody)
     }
 
-    // @@protoc_insertion_point(class_scope:yeying.api.apps.zuoyepigai.ListTaskResponseBody)
-    private static final yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskResponseBody DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:yeying.api.apps.zuoyepigai.TagCountTaskResponseBody)
+    private static final yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskResponseBody();
+      DEFAULT_INSTANCE = new yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody();
     }
 
-    public static yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskResponseBody getDefaultInstance() {
+    public static yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<ListTaskResponseBody>
-        PARSER = new com.google.protobuf.AbstractParser<ListTaskResponseBody>() {
+    private static final com.google.protobuf.Parser<TagCountTaskResponseBody>
+        PARSER = new com.google.protobuf.AbstractParser<TagCountTaskResponseBody>() {
       @java.lang.Override
-      public ListTaskResponseBody parsePartialFrom(
+      public TagCountTaskResponseBody parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
@@ -11530,17 +13874,17 @@ public final class TaskOuterClass {
       }
     };
 
-    public static com.google.protobuf.Parser<ListTaskResponseBody> parser() {
+    public static com.google.protobuf.Parser<TagCountTaskResponseBody> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<ListTaskResponseBody> getParserForType() {
+    public com.google.protobuf.Parser<TagCountTaskResponseBody> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskResponseBody getDefaultInstanceForType() {
+    public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponseBody getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -12337,11 +14681,11 @@ public final class TaskOuterClass {
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
      * @return The meta.
      */
-    yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getMeta();
+    yeying.api.apps.zuoyepigai.Meta.TaskMetadata getMeta();
     /**
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
      */
-    yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getMetaOrBuilder();
+    yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getMetaOrBuilder();
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.UpdateTaskRequestBody}
@@ -12382,7 +14726,7 @@ public final class TaskOuterClass {
 
     private int bitField0_;
     public static final int META_FIELD_NUMBER = 1;
-    private yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata meta_;
+    private yeying.api.apps.zuoyepigai.Meta.TaskMetadata meta_;
     /**
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
      * @return Whether the meta field is set.
@@ -12396,15 +14740,15 @@ public final class TaskOuterClass {
      * @return The meta.
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getMeta() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.TaskMetadata getMeta() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
     }
     /**
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getMetaOrBuilder() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getMetaOrBuilder() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -12722,9 +15066,9 @@ public final class TaskOuterClass {
       }
       private int bitField0_;
 
-      private yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata meta_;
+      private yeying.api.apps.zuoyepigai.Meta.TaskMetadata meta_;
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder> metaBuilder_;
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder> metaBuilder_;
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
        * @return Whether the meta field is set.
@@ -12736,9 +15080,9 @@ public final class TaskOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
        * @return The meta.
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getMeta() {
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadata getMeta() {
         if (metaBuilder_ == null) {
-          return meta_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+          return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
         } else {
           return metaBuilder_.getMessage();
         }
@@ -12746,7 +15090,7 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
        */
-      public Builder setMeta(yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata value) {
+      public Builder setMeta(yeying.api.apps.zuoyepigai.Meta.TaskMetadata value) {
         if (metaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -12763,7 +15107,7 @@ public final class TaskOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
        */
       public Builder setMeta(
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder builderForValue) {
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder builderForValue) {
         if (metaBuilder_ == null) {
           meta_ = builderForValue.build();
         } else {
@@ -12776,11 +15120,11 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
        */
-      public Builder mergeMeta(yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata value) {
+      public Builder mergeMeta(yeying.api.apps.zuoyepigai.Meta.TaskMetadata value) {
         if (metaBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0) &&
             meta_ != null &&
-            meta_ != yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance()) {
+            meta_ != yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance()) {
             getMetaBuilder().mergeFrom(value);
           } else {
             meta_ = value;
@@ -12810,7 +15154,7 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder getMetaBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder getMetaBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getMetaFieldBuilder().getBuilder();
@@ -12818,23 +15162,23 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getMetaOrBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getMetaOrBuilder() {
         if (metaBuilder_ != null) {
           return metaBuilder_.getMessageOrBuilder();
         } else {
           return meta_ == null ?
-              yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+              yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
         }
       }
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder> 
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder> 
           getMetaFieldBuilder() {
         if (metaBuilder_ == null) {
           metaBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder>(
+              yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder>(
                   getMeta(),
                   getParentForChildren(),
                   isClean());
@@ -13692,11 +16036,11 @@ public final class TaskOuterClass {
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
      * @return The meta.
      */
-    yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getMeta();
+    yeying.api.apps.zuoyepigai.Meta.TaskMetadata getMeta();
     /**
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
      */
-    yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getMetaOrBuilder();
+    yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getMetaOrBuilder();
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.UpdateTaskResponseBody}
@@ -13763,7 +16107,7 @@ public final class TaskOuterClass {
     }
 
     public static final int META_FIELD_NUMBER = 2;
-    private yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata meta_;
+    private yeying.api.apps.zuoyepigai.Meta.TaskMetadata meta_;
     /**
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
      * @return Whether the meta field is set.
@@ -13777,15 +16121,15 @@ public final class TaskOuterClass {
      * @return The meta.
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getMeta() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.TaskMetadata getMeta() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
     }
     /**
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getMetaOrBuilder() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getMetaOrBuilder() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -14262,9 +16606,9 @@ public final class TaskOuterClass {
         return statusBuilder_;
       }
 
-      private yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata meta_;
+      private yeying.api.apps.zuoyepigai.Meta.TaskMetadata meta_;
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder> metaBuilder_;
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder> metaBuilder_;
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        * @return Whether the meta field is set.
@@ -14276,9 +16620,9 @@ public final class TaskOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        * @return The meta.
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getMeta() {
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadata getMeta() {
         if (metaBuilder_ == null) {
-          return meta_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+          return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
         } else {
           return metaBuilder_.getMessage();
         }
@@ -14286,7 +16630,7 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
-      public Builder setMeta(yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata value) {
+      public Builder setMeta(yeying.api.apps.zuoyepigai.Meta.TaskMetadata value) {
         if (metaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -14303,7 +16647,7 @@ public final class TaskOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
       public Builder setMeta(
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder builderForValue) {
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder builderForValue) {
         if (metaBuilder_ == null) {
           meta_ = builderForValue.build();
         } else {
@@ -14316,11 +16660,11 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
-      public Builder mergeMeta(yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata value) {
+      public Builder mergeMeta(yeying.api.apps.zuoyepigai.Meta.TaskMetadata value) {
         if (metaBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0) &&
             meta_ != null &&
-            meta_ != yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance()) {
+            meta_ != yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance()) {
             getMetaBuilder().mergeFrom(value);
           } else {
             meta_ = value;
@@ -14350,7 +16694,7 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder getMetaBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder getMetaBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getMetaFieldBuilder().getBuilder();
@@ -14358,23 +16702,23 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getMetaOrBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getMetaOrBuilder() {
         if (metaBuilder_ != null) {
           return metaBuilder_.getMessageOrBuilder();
         } else {
           return meta_ == null ?
-              yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+              yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
         }
       }
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder> 
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder> 
           getMetaFieldBuilder() {
         if (metaBuilder_ == null) {
           metaBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder>(
+              yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder>(
                   getMeta(),
                   getParentForChildren(),
                   isClean());
@@ -16520,11 +18864,11 @@ public final class TaskOuterClass {
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
      * @return The meta.
      */
-    yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getMeta();
+    yeying.api.apps.zuoyepigai.Meta.TaskMetadata getMeta();
     /**
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
      */
-    yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getMetaOrBuilder();
+    yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getMetaOrBuilder();
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.DeleteTaskResponseBody}
@@ -16591,7 +18935,7 @@ public final class TaskOuterClass {
     }
 
     public static final int META_FIELD_NUMBER = 2;
-    private yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata meta_;
+    private yeying.api.apps.zuoyepigai.Meta.TaskMetadata meta_;
     /**
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
      * @return Whether the meta field is set.
@@ -16605,15 +18949,15 @@ public final class TaskOuterClass {
      * @return The meta.
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getMeta() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.TaskMetadata getMeta() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
     }
     /**
      * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getMetaOrBuilder() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getMetaOrBuilder() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -17090,9 +19434,9 @@ public final class TaskOuterClass {
         return statusBuilder_;
       }
 
-      private yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata meta_;
+      private yeying.api.apps.zuoyepigai.Meta.TaskMetadata meta_;
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder> metaBuilder_;
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder> metaBuilder_;
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        * @return Whether the meta field is set.
@@ -17104,9 +19448,9 @@ public final class TaskOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        * @return The meta.
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata getMeta() {
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadata getMeta() {
         if (metaBuilder_ == null) {
-          return meta_ == null ? yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+          return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
         } else {
           return metaBuilder_.getMessage();
         }
@@ -17114,7 +19458,7 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
-      public Builder setMeta(yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata value) {
+      public Builder setMeta(yeying.api.apps.zuoyepigai.Meta.TaskMetadata value) {
         if (metaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -17131,7 +19475,7 @@ public final class TaskOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
       public Builder setMeta(
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder builderForValue) {
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder builderForValue) {
         if (metaBuilder_ == null) {
           meta_ = builderForValue.build();
         } else {
@@ -17144,11 +19488,11 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
-      public Builder mergeMeta(yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata value) {
+      public Builder mergeMeta(yeying.api.apps.zuoyepigai.Meta.TaskMetadata value) {
         if (metaBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0) &&
             meta_ != null &&
-            meta_ != yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance()) {
+            meta_ != yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance()) {
             getMetaBuilder().mergeFrom(value);
           } else {
             meta_ = value;
@@ -17178,7 +19522,7 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder getMetaBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder getMetaBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getMetaFieldBuilder().getBuilder();
@@ -17186,23 +19530,23 @@ public final class TaskOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder getMetaOrBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder getMetaOrBuilder() {
         if (metaBuilder_ != null) {
           return metaBuilder_.getMessageOrBuilder();
         } else {
           return meta_ == null ?
-              yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.getDefaultInstance() : meta_;
+              yeying.api.apps.zuoyepigai.Meta.TaskMetadata.getDefaultInstance() : meta_;
         }
       }
       /**
        * <code>.yeying.api.apps.zuoyepigai.TaskMetadata meta = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder> 
+          yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder> 
           getMetaFieldBuilder() {
         if (metaBuilder_ == null) {
           metaBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.TaskOuterClass.TaskMetadataOrBuilder>(
+              yeying.api.apps.zuoyepigai.Meta.TaskMetadata, yeying.api.apps.zuoyepigai.Meta.TaskMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.TaskMetadataOrBuilder>(
                   getMeta(),
                   getParentForChildren(),
                   isClean());
@@ -17262,11 +19606,6 @@ public final class TaskOuterClass {
 
   }
 
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_yeying_api_apps_zuoyepigai_TaskMetadata_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_yeying_api_apps_zuoyepigai_TaskMetadata_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_yeying_api_apps_zuoyepigai_AddTaskRequest_descriptor;
   private static final 
@@ -17328,6 +19667,26 @@ public final class TaskOuterClass {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_yeying_api_apps_zuoyepigai_ListTaskResponseBody_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequest_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequestBody_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequestBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponse_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponseBody_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponseBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_yeying_api_apps_zuoyepigai_UpdateTaskRequest_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -17379,79 +19738,95 @@ public final class TaskOuterClass {
       "\n%yeying/api/apps/zuoyepigai/task.proto\022" +
       "\032yeying.api.apps.zuoyepigai\032\037yeying/api/" +
       "common/message.proto\032\036google/protobuf/wr" +
-      "appers.proto\"\224\001\n\014TaskMetadata\022\013\n\003uid\030\001 \001" +
-      "(\t\022\014\n\004name\030\002 \001(\t\022\023\n\013description\030\003 \001(\t\022\016\n" +
-      "\006tagUid\030\004 \001(\t\022\013\n\003did\030\005 \001(\t\022\021\n\tcreatedAt\030" +
-      "\006 \001(\003\022\021\n\tupdatedAt\030\007 \001(\003\022\021\n\tisDeleted\030\010 " +
-      "\001(\010\"\200\001\n\016AddTaskRequest\0220\n\006header\030\001 \001(\0132 " +
-      ".yeying.api.common.MessageHeader\022<\n\004body" +
-      "\030\002 \001(\0132..yeying.api.apps.zuoyepigai.AddT" +
-      "askRequestBody\"L\n\022AddTaskRequestBody\0226\n\004" +
-      "meta\030\001 \001(\0132(.yeying.api.apps.zuoyepigai." +
-      "TaskMetadata\"\202\001\n\017AddTaskResponse\0220\n\006head" +
-      "er\030\001 \001(\0132 .yeying.api.common.MessageHead" +
-      "er\022=\n\004body\030\002 \001(\0132/.yeying.api.apps.zuoye" +
-      "pigai.AddTaskResponseBody\"\200\001\n\023AddTaskRes" +
-      "ponseBody\0221\n\006status\030\001 \001(\0132!.yeying.api.c" +
-      "ommon.ResponseStatus\0226\n\004meta\030\002 \001(\0132(.yey" +
-      "ing.api.apps.zuoyepigai.TaskMetadata\"\206\001\n" +
-      "\021DetailTaskRequest\0220\n\006header\030\001 \001(\0132 .yey" +
-      "ing.api.common.MessageHeader\022?\n\004body\030\002 \001" +
-      "(\01321.yeying.api.apps.zuoyepigai.DetailTa" +
-      "skRequestBody\"$\n\025DetailTaskRequestBody\022\013" +
-      "\n\003uid\030\001 \001(\t\"\210\001\n\022DetailTaskResponse\0220\n\006he" +
-      "ader\030\001 \001(\0132 .yeying.api.common.MessageHe" +
-      "ader\022@\n\004body\030\002 \001(\01322.yeying.api.apps.zuo" +
-      "yepigai.DetailTaskResponseBody\"\203\001\n\026Detai" +
-      "lTaskResponseBody\0221\n\006status\030\001 \001(\0132!.yeyi" +
-      "ng.api.common.ResponseStatus\0226\n\004meta\030\002 \001" +
-      "(\0132(.yeying.api.apps.zuoyepigai.TaskMeta" +
-      "data\"\202\001\n\017ListTaskRequest\0220\n\006header\030\001 \001(\013" +
-      "2 .yeying.api.common.MessageHeader\022=\n\004bo" +
-      "dy\030\002 \001(\0132/.yeying.api.apps.zuoyepigai.Li" +
-      "stTaskRequestBody\"\270\001\n\023ListTaskRequestBod" +
-      "y\022\013\n\003did\030\001 \001(\t\022\016\n\006tagUid\030\002 \001(\t\022\020\n\010taskNa" +
-      "me\030\003 \001(\t\022\023\n\013description\030\004 \001(\t\022.\n\tpageInd" +
-      "ex\030\005 \001(\0132\033.google.protobuf.Int32Value\022-\n" +
-      "\010pageSize\030\006 \001(\0132\033.google.protobuf.Int32V" +
-      "alue\"\204\001\n\020ListTaskResponse\0220\n\006header\030\001 \001(" +
-      "\0132 .yeying.api.common.MessageHeader\022>\n\004b" +
-      "ody\030\002 \001(\01320.yeying.api.apps.zuoyepigai.L" +
-      "istTaskResponseBody\"\201\001\n\024ListTaskResponse" +
-      "Body\0221\n\006status\030\001 \001(\0132!.yeying.api.common" +
-      ".ResponseStatus\0226\n\004list\030\002 \003(\0132(.yeying.a" +
-      "pi.apps.zuoyepigai.TaskMetadata\"\206\001\n\021Upda" +
-      "teTaskRequest\0220\n\006header\030\001 \001(\0132 .yeying.a" +
-      "pi.common.MessageHeader\022?\n\004body\030\002 \001(\01321." +
-      "yeying.api.apps.zuoyepigai.UpdateTaskReq" +
-      "uestBody\"O\n\025UpdateTaskRequestBody\0226\n\004met" +
-      "a\030\001 \001(\0132(.yeying.api.apps.zuoyepigai.Tas" +
-      "kMetadata\"\210\001\n\022UpdateTaskResponse\0220\n\006head" +
-      "er\030\001 \001(\0132 .yeying.api.common.MessageHead" +
-      "er\022@\n\004body\030\002 \001(\01322.yeying.api.apps.zuoye" +
-      "pigai.UpdateTaskResponseBody\"\203\001\n\026UpdateT" +
+      "appers.proto\032-yeying/api/apps/zuoyepigai" +
+      "/imagecontent.proto\032%yeying/api/apps/zuo" +
+      "yepigai/meta.proto\"\200\001\n\016AddTaskRequest\0220\n" +
+      "\006header\030\001 \001(\0132 .yeying.api.common.Messag" +
+      "eHeader\022<\n\004body\030\002 \001(\0132..yeying.api.apps." +
+      "zuoyepigai.AddTaskRequestBody\"L\n\022AddTask" +
+      "RequestBody\0226\n\004meta\030\001 \001(\0132(.yeying.api.a" +
+      "pps.zuoyepigai.TaskMetadata\"\202\001\n\017AddTaskR" +
+      "esponse\0220\n\006header\030\001 \001(\0132 .yeying.api.com" +
+      "mon.MessageHeader\022=\n\004body\030\002 \001(\0132/.yeying" +
+      ".api.apps.zuoyepigai.AddTaskResponseBody" +
+      "\"\200\001\n\023AddTaskResponseBody\0221\n\006status\030\001 \001(\013" +
+      "2!.yeying.api.common.ResponseStatus\0226\n\004m" +
+      "eta\030\002 \001(\0132(.yeying.api.apps.zuoyepigai.T" +
+      "askMetadata\"\206\001\n\021DetailTaskRequest\0220\n\006hea" +
+      "der\030\001 \001(\0132 .yeying.api.common.MessageHea" +
+      "der\022?\n\004body\030\002 \001(\01321.yeying.api.apps.zuoy" +
+      "epigai.DetailTaskRequestBody\"$\n\025DetailTa" +
+      "skRequestBody\022\013\n\003uid\030\001 \001(\t\"\210\001\n\022DetailTas" +
+      "kResponse\0220\n\006header\030\001 \001(\0132 .yeying.api.c" +
+      "ommon.MessageHeader\022@\n\004body\030\002 \001(\01322.yeyi" +
+      "ng.api.apps.zuoyepigai.DetailTaskRespons" +
+      "eBody\"\303\001\n\026DetailTaskResponseBody\0221\n\006stat" +
+      "us\030\001 \001(\0132!.yeying.api.common.ResponseSta" +
+      "tus\0226\n\004meta\030\002 \001(\0132(.yeying.api.apps.zuoy" +
+      "epigai.TaskMetadata\022>\n\013studentList\030\003 \003(\013" +
+      "2).yeying.api.apps.zuoyepigai.GroupMetaD" +
+      "ata\"\202\001\n\017ListTaskRequest\0220\n\006header\030\001 \001(\0132" +
+      " .yeying.api.common.MessageHeader\022=\n\004bod" +
+      "y\030\002 \001(\0132/.yeying.api.apps.zuoyepigai.Lis" +
+      "tTaskRequestBody\"\354\001\n\023ListTaskRequestBody" +
+      "\022\013\n\003did\030\001 \001(\t\022\016\n\006tagUid\030\002 \001(\t\022\020\n\010taskNam" +
+      "e\030\003 \001(\t\022\023\n\013description\030\004 \001(\t\022.\n\tpageInde" +
+      "x\030\005 \001(\0132\033.google.protobuf.Int32Value\022-\n\010" +
+      "pageSize\030\006 \001(\0132\033.google.protobuf.Int32Va" +
+      "lue\022\016\n\006status\030\007 \001(\005\022\021\n\tstartTime\030\010 \001(\003\022\017" +
+      "\n\007endTime\030\t \001(\003\"\204\001\n\020ListTaskResponse\0220\n\006" +
+      "header\030\001 \001(\0132 .yeying.api.common.Message" +
+      "Header\022>\n\004body\030\002 \001(\01320.yeying.api.apps.z" +
+      "uoyepigai.ListTaskResponseBody\"\220\001\n\024ListT" +
       "askResponseBody\0221\n\006status\030\001 \001(\0132!.yeying" +
-      ".api.common.ResponseStatus\0226\n\004meta\030\002 \001(\013" +
+      ".api.common.ResponseStatus\0226\n\004list\030\002 \003(\013" +
       "2(.yeying.api.apps.zuoyepigai.TaskMetada" +
-      "ta\"\206\001\n\021DeleteTaskRequest\0220\n\006header\030\001 \001(\013" +
-      "2 .yeying.api.common.MessageHeader\022?\n\004bo" +
-      "dy\030\002 \001(\01321.yeying.api.apps.zuoyepigai.De" +
-      "leteTaskRequestBody\"$\n\025DeleteTaskRequest" +
-      "Body\022\013\n\003uid\030\001 \001(\t\"\210\001\n\022DeleteTaskResponse" +
-      "\0220\n\006header\030\001 \001(\0132 .yeying.api.common.Mes" +
-      "sageHeader\022@\n\004body\030\002 \001(\01322.yeying.api.ap" +
-      "ps.zuoyepigai.DeleteTaskResponseBody\"\203\001\n" +
-      "\026DeleteTaskResponseBody\0221\n\006status\030\001 \001(\0132" +
-      "!.yeying.api.common.ResponseStatus\0226\n\004me" +
-      "ta\030\002 \001(\0132(.yeying.api.apps.zuoyepigai.Ta" +
-      "skMetadata2\216\004\n\004Task\022`\n\003Add\022*.yeying.api." +
-      "apps.zuoyepigai.AddTaskRequest\032+.yeying." +
-      "api.apps.zuoyepigai.AddTaskResponse\"\000\022i\n" +
-      "\006Detail\022-.yeying.api.apps.zuoyepigai.Det" +
-      "ailTaskRequest\032..yeying.api.apps.zuoyepi" +
-      "gai.DetailTaskResponse\"\000\022c\n\004List\022+.yeyin" +
-      "g.api.apps.zuoyepigai.ListTaskRequest\032,." +
-      "yeying.api.apps.zuoyepigai.ListTaskRespo" +
+      "ta\022\r\n\005total\030\003 \001(\004\"\212\001\n\023TagCountTaskReques" +
+      "t\0220\n\006header\030\001 \001(\0132 .yeying.api.common.Me" +
+      "ssageHeader\022A\n\004body\030\002 \001(\01323.yeying.api.a" +
+      "pps.zuoyepigai.TagCountTaskRequestBody\"&" +
+      "\n\027TagCountTaskRequestBody\022\013\n\003did\030\001 \001(\t\"\215" +
+      "\001\n\024TagCountTaskResponse\0221\n\006status\030\001 \001(\0132" +
+      "!.yeying.api.common.ResponseStatus\022B\n\004bo" +
+      "dy\030\002 \001(\01324.yeying.api.apps.zuoyepigai.Ta" +
+      "gCountTaskResponseBody\"\205\001\n\030TagCountTaskR" +
+      "esponseBody\0221\n\006status\030\001 \001(\0132!.yeying.api" +
+      ".common.ResponseStatus\0226\n\004meta\030\002 \003(\0132(.y" +
+      "eying.api.apps.zuoyepigai.TagCountMeta\"\206" +
+      "\001\n\021UpdateTaskRequest\0220\n\006header\030\001 \001(\0132 .y" +
+      "eying.api.common.MessageHeader\022?\n\004body\030\002" +
+      " \001(\01321.yeying.api.apps.zuoyepigai.Update" +
+      "TaskRequestBody\"O\n\025UpdateTaskRequestBody" +
+      "\0226\n\004meta\030\001 \001(\0132(.yeying.api.apps.zuoyepi" +
+      "gai.TaskMetadata\"\210\001\n\022UpdateTaskResponse\022" +
+      "0\n\006header\030\001 \001(\0132 .yeying.api.common.Mess" +
+      "ageHeader\022@\n\004body\030\002 \001(\01322.yeying.api.app" +
+      "s.zuoyepigai.UpdateTaskResponseBody\"\203\001\n\026" +
+      "UpdateTaskResponseBody\0221\n\006status\030\001 \001(\0132!" +
+      ".yeying.api.common.ResponseStatus\0226\n\004met" +
+      "a\030\002 \001(\0132(.yeying.api.apps.zuoyepigai.Tas" +
+      "kMetadata\"\206\001\n\021DeleteTaskRequest\0220\n\006heade" +
+      "r\030\001 \001(\0132 .yeying.api.common.MessageHeade" +
+      "r\022?\n\004body\030\002 \001(\01321.yeying.api.apps.zuoyep" +
+      "igai.DeleteTaskRequestBody\"$\n\025DeleteTask" +
+      "RequestBody\022\013\n\003uid\030\001 \001(\t\"\210\001\n\022DeleteTaskR" +
+      "esponse\0220\n\006header\030\001 \001(\0132 .yeying.api.com" +
+      "mon.MessageHeader\022@\n\004body\030\002 \001(\01322.yeying" +
+      ".api.apps.zuoyepigai.DeleteTaskResponseB" +
+      "ody\"\203\001\n\026DeleteTaskResponseBody\0221\n\006status" +
+      "\030\001 \001(\0132!.yeying.api.common.ResponseStatu" +
+      "s\0226\n\004meta\030\002 \001(\0132(.yeying.api.apps.zuoyep" +
+      "igai.TaskMetadata2\377\004\n\004Task\022`\n\003Add\022*.yeyi" +
+      "ng.api.apps.zuoyepigai.AddTaskRequest\032+." +
+      "yeying.api.apps.zuoyepigai.AddTaskRespon" +
+      "se\"\000\022i\n\006Detail\022-.yeying.api.apps.zuoyepi" +
+      "gai.DetailTaskRequest\032..yeying.api.apps." +
+      "zuoyepigai.DetailTaskResponse\"\000\022c\n\004List\022" +
+      "+.yeying.api.apps.zuoyepigai.ListTaskReq" +
+      "uest\032,.yeying.api.apps.zuoyepigai.ListTa" +
+      "skResponse\"\000\022o\n\010TagCount\022/.yeying.api.ap" +
+      "ps.zuoyepigai.TagCountTaskRequest\0320.yeyi" +
+      "ng.api.apps.zuoyepigai.TagCountTaskRespo" +
       "nse\"\000\022i\n\006Update\022-.yeying.api.apps.zuoyep" +
       "igai.UpdateTaskRequest\032..yeying.api.apps" +
       ".zuoyepigai.UpdateTaskResponse\"\000\022i\n\006Dele" +
@@ -17465,129 +19840,149 @@ public final class TaskOuterClass {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           yeying.api.common.Message.getDescriptor(),
           com.google.protobuf.WrappersProto.getDescriptor(),
+          yeying.api.apps.zuoyepigai.Imagecontent.getDescriptor(),
+          yeying.api.apps.zuoyepigai.Meta.getDescriptor(),
         });
-    internal_static_yeying_api_apps_zuoyepigai_TaskMetadata_descriptor =
-      getDescriptor().getMessageTypes().get(0);
-    internal_static_yeying_api_apps_zuoyepigai_TaskMetadata_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_yeying_api_apps_zuoyepigai_TaskMetadata_descriptor,
-        new java.lang.String[] { "Uid", "Name", "Description", "TagUid", "Did", "CreatedAt", "UpdatedAt", "IsDeleted", });
     internal_static_yeying_api_apps_zuoyepigai_AddTaskRequest_descriptor =
-      getDescriptor().getMessageTypes().get(1);
+      getDescriptor().getMessageTypes().get(0);
     internal_static_yeying_api_apps_zuoyepigai_AddTaskRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_AddTaskRequest_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_AddTaskRequestBody_descriptor =
-      getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(1);
     internal_static_yeying_api_apps_zuoyepigai_AddTaskRequestBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_AddTaskRequestBody_descriptor,
         new java.lang.String[] { "Meta", });
     internal_static_yeying_api_apps_zuoyepigai_AddTaskResponse_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(2);
     internal_static_yeying_api_apps_zuoyepigai_AddTaskResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_AddTaskResponse_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_AddTaskResponseBody_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(3);
     internal_static_yeying_api_apps_zuoyepigai_AddTaskResponseBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_AddTaskResponseBody_descriptor,
         new java.lang.String[] { "Status", "Meta", });
     internal_static_yeying_api_apps_zuoyepigai_DetailTaskRequest_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(4);
     internal_static_yeying_api_apps_zuoyepigai_DetailTaskRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_DetailTaskRequest_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_DetailTaskRequestBody_descriptor =
-      getDescriptor().getMessageTypes().get(6);
+      getDescriptor().getMessageTypes().get(5);
     internal_static_yeying_api_apps_zuoyepigai_DetailTaskRequestBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_DetailTaskRequestBody_descriptor,
         new java.lang.String[] { "Uid", });
     internal_static_yeying_api_apps_zuoyepigai_DetailTaskResponse_descriptor =
-      getDescriptor().getMessageTypes().get(7);
+      getDescriptor().getMessageTypes().get(6);
     internal_static_yeying_api_apps_zuoyepigai_DetailTaskResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_DetailTaskResponse_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_DetailTaskResponseBody_descriptor =
-      getDescriptor().getMessageTypes().get(8);
+      getDescriptor().getMessageTypes().get(7);
     internal_static_yeying_api_apps_zuoyepigai_DetailTaskResponseBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_DetailTaskResponseBody_descriptor,
-        new java.lang.String[] { "Status", "Meta", });
+        new java.lang.String[] { "Status", "Meta", "StudentList", });
     internal_static_yeying_api_apps_zuoyepigai_ListTaskRequest_descriptor =
-      getDescriptor().getMessageTypes().get(9);
+      getDescriptor().getMessageTypes().get(8);
     internal_static_yeying_api_apps_zuoyepigai_ListTaskRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ListTaskRequest_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_ListTaskRequestBody_descriptor =
-      getDescriptor().getMessageTypes().get(10);
+      getDescriptor().getMessageTypes().get(9);
     internal_static_yeying_api_apps_zuoyepigai_ListTaskRequestBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ListTaskRequestBody_descriptor,
-        new java.lang.String[] { "Did", "TagUid", "TaskName", "Description", "PageIndex", "PageSize", });
+        new java.lang.String[] { "Did", "TagUid", "TaskName", "Description", "PageIndex", "PageSize", "Status", "StartTime", "EndTime", });
     internal_static_yeying_api_apps_zuoyepigai_ListTaskResponse_descriptor =
-      getDescriptor().getMessageTypes().get(11);
+      getDescriptor().getMessageTypes().get(10);
     internal_static_yeying_api_apps_zuoyepigai_ListTaskResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ListTaskResponse_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_ListTaskResponseBody_descriptor =
-      getDescriptor().getMessageTypes().get(12);
+      getDescriptor().getMessageTypes().get(11);
     internal_static_yeying_api_apps_zuoyepigai_ListTaskResponseBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ListTaskResponseBody_descriptor,
-        new java.lang.String[] { "Status", "List", });
-    internal_static_yeying_api_apps_zuoyepigai_UpdateTaskRequest_descriptor =
+        new java.lang.String[] { "Status", "List", "Total", });
+    internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequest_descriptor =
+      getDescriptor().getMessageTypes().get(12);
+    internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequest_descriptor,
+        new java.lang.String[] { "Header", "Body", });
+    internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequestBody_descriptor =
       getDescriptor().getMessageTypes().get(13);
+    internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequestBody_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_yeying_api_apps_zuoyepigai_TagCountTaskRequestBody_descriptor,
+        new java.lang.String[] { "Did", });
+    internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponse_descriptor =
+      getDescriptor().getMessageTypes().get(14);
+    internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponse_descriptor,
+        new java.lang.String[] { "Status", "Body", });
+    internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponseBody_descriptor =
+      getDescriptor().getMessageTypes().get(15);
+    internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponseBody_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_yeying_api_apps_zuoyepigai_TagCountTaskResponseBody_descriptor,
+        new java.lang.String[] { "Status", "Meta", });
+    internal_static_yeying_api_apps_zuoyepigai_UpdateTaskRequest_descriptor =
+      getDescriptor().getMessageTypes().get(16);
     internal_static_yeying_api_apps_zuoyepigai_UpdateTaskRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_UpdateTaskRequest_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_UpdateTaskRequestBody_descriptor =
-      getDescriptor().getMessageTypes().get(14);
+      getDescriptor().getMessageTypes().get(17);
     internal_static_yeying_api_apps_zuoyepigai_UpdateTaskRequestBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_UpdateTaskRequestBody_descriptor,
         new java.lang.String[] { "Meta", });
     internal_static_yeying_api_apps_zuoyepigai_UpdateTaskResponse_descriptor =
-      getDescriptor().getMessageTypes().get(15);
+      getDescriptor().getMessageTypes().get(18);
     internal_static_yeying_api_apps_zuoyepigai_UpdateTaskResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_UpdateTaskResponse_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_UpdateTaskResponseBody_descriptor =
-      getDescriptor().getMessageTypes().get(16);
+      getDescriptor().getMessageTypes().get(19);
     internal_static_yeying_api_apps_zuoyepigai_UpdateTaskResponseBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_UpdateTaskResponseBody_descriptor,
         new java.lang.String[] { "Status", "Meta", });
     internal_static_yeying_api_apps_zuoyepigai_DeleteTaskRequest_descriptor =
-      getDescriptor().getMessageTypes().get(17);
+      getDescriptor().getMessageTypes().get(20);
     internal_static_yeying_api_apps_zuoyepigai_DeleteTaskRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_DeleteTaskRequest_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_DeleteTaskRequestBody_descriptor =
-      getDescriptor().getMessageTypes().get(18);
+      getDescriptor().getMessageTypes().get(21);
     internal_static_yeying_api_apps_zuoyepigai_DeleteTaskRequestBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_DeleteTaskRequestBody_descriptor,
         new java.lang.String[] { "Uid", });
     internal_static_yeying_api_apps_zuoyepigai_DeleteTaskResponse_descriptor =
-      getDescriptor().getMessageTypes().get(19);
+      getDescriptor().getMessageTypes().get(22);
     internal_static_yeying_api_apps_zuoyepigai_DeleteTaskResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_DeleteTaskResponse_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_DeleteTaskResponseBody_descriptor =
-      getDescriptor().getMessageTypes().get(20);
+      getDescriptor().getMessageTypes().get(23);
     internal_static_yeying_api_apps_zuoyepigai_DeleteTaskResponseBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_DeleteTaskResponseBody_descriptor,
@@ -17595,6 +19990,8 @@ public final class TaskOuterClass {
     descriptor.resolveAllFeaturesImmutable();
     yeying.api.common.Message.getDescriptor();
     com.google.protobuf.WrappersProto.getDescriptor();
+    yeying.api.apps.zuoyepigai.Imagecontent.getDescriptor();
+    yeying.api.apps.zuoyepigai.Meta.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

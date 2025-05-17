@@ -2857,7 +2857,7 @@ public final class ArchiveOuterClass {
      *
      * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
      */
-    java.util.List<yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata> 
+    java.util.List<yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata> 
         getListList();
     /**
      * <pre>
@@ -2866,7 +2866,7 @@ public final class ArchiveOuterClass {
      *
      * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
      */
-    yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getList(int index);
+    yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getList(int index);
     /**
      * <pre>
      * repeated 表示 List
@@ -2882,7 +2882,7 @@ public final class ArchiveOuterClass {
      *
      * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
      */
-    java.util.List<? extends yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> 
+    java.util.List<? extends yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> 
         getListOrBuilderList();
     /**
      * <pre>
@@ -2891,8 +2891,18 @@ public final class ArchiveOuterClass {
      *
      * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
      */
-    yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getListOrBuilder(
+    yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getListOrBuilder(
         int index);
+
+    /**
+     * <pre>
+     * 总数
+     * </pre>
+     *
+     * <code>uint64 total = 3;</code>
+     * @return The total.
+     */
+    long getTotal();
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.ArchiveListResponseBody}
@@ -2961,7 +2971,7 @@ public final class ArchiveOuterClass {
 
     public static final int LIST_FIELD_NUMBER = 2;
     @SuppressWarnings("serial")
-    private java.util.List<yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata> list_;
+    private java.util.List<yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata> list_;
     /**
      * <pre>
      * repeated 表示 List
@@ -2970,7 +2980,7 @@ public final class ArchiveOuterClass {
      * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
      */
     @java.lang.Override
-    public java.util.List<yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata> getListList() {
+    public java.util.List<yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata> getListList() {
       return list_;
     }
     /**
@@ -2981,7 +2991,7 @@ public final class ArchiveOuterClass {
      * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> 
+    public java.util.List<? extends yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> 
         getListOrBuilderList() {
       return list_;
     }
@@ -3004,7 +3014,7 @@ public final class ArchiveOuterClass {
      * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getList(int index) {
+    public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getList(int index) {
       return list_.get(index);
     }
     /**
@@ -3015,9 +3025,24 @@ public final class ArchiveOuterClass {
      * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getListOrBuilder(
+    public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getListOrBuilder(
         int index) {
       return list_.get(index);
+    }
+
+    public static final int TOTAL_FIELD_NUMBER = 3;
+    private long total_ = 0L;
+    /**
+     * <pre>
+     * 总数
+     * </pre>
+     *
+     * <code>uint64 total = 3;</code>
+     * @return The total.
+     */
+    @java.lang.Override
+    public long getTotal() {
+      return total_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -3040,6 +3065,9 @@ public final class ArchiveOuterClass {
       for (int i = 0; i < list_.size(); i++) {
         output.writeMessage(2, list_.get(i));
       }
+      if (total_ != 0L) {
+        output.writeUInt64(3, total_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -3056,6 +3084,10 @@ public final class ArchiveOuterClass {
       for (int i = 0; i < list_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, list_.get(i));
+      }
+      if (total_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(3, total_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -3079,6 +3111,8 @@ public final class ArchiveOuterClass {
       }
       if (!getListList()
           .equals(other.getListList())) return false;
+      if (getTotal()
+          != other.getTotal()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -3098,6 +3132,9 @@ public final class ArchiveOuterClass {
         hash = (37 * hash) + LIST_FIELD_NUMBER;
         hash = (53 * hash) + getListList().hashCode();
       }
+      hash = (37 * hash) + TOTAL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getTotal());
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -3248,6 +3285,7 @@ public final class ArchiveOuterClass {
           listBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000002);
+        total_ = 0L;
         return this;
       }
 
@@ -3301,6 +3339,9 @@ public final class ArchiveOuterClass {
               : statusBuilder_.build();
           to_bitField0_ |= 0x00000001;
         }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.total_ = total_;
+        }
         result.bitField0_ |= to_bitField0_;
       }
 
@@ -3345,6 +3386,9 @@ public final class ArchiveOuterClass {
             }
           }
         }
+        if (other.getTotal() != 0L) {
+          setTotal(other.getTotal());
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
@@ -3379,9 +3423,9 @@ public final class ArchiveOuterClass {
                 break;
               } // case 10
               case 18: {
-                yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata m =
+                yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata m =
                     input.readMessage(
-                        yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.parser(),
+                        yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.parser(),
                         extensionRegistry);
                 if (listBuilder_ == null) {
                   ensureListIsMutable();
@@ -3391,6 +3435,11 @@ public final class ArchiveOuterClass {
                 }
                 break;
               } // case 18
+              case 24: {
+                total_ = input.readUInt64();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -3529,17 +3578,17 @@ public final class ArchiveOuterClass {
         return statusBuilder_;
       }
 
-      private java.util.List<yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata> list_ =
+      private java.util.List<yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata> list_ =
         java.util.Collections.emptyList();
       private void ensureListIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          list_ = new java.util.ArrayList<yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata>(list_);
+          list_ = new java.util.ArrayList<yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata>(list_);
           bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> listBuilder_;
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> listBuilder_;
 
       /**
        * <pre>
@@ -3548,7 +3597,7 @@ public final class ArchiveOuterClass {
        *
        * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
        */
-      public java.util.List<yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata> getListList() {
+      public java.util.List<yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata> getListList() {
         if (listBuilder_ == null) {
           return java.util.Collections.unmodifiableList(list_);
         } else {
@@ -3576,7 +3625,7 @@ public final class ArchiveOuterClass {
        *
        * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getList(int index) {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getList(int index) {
         if (listBuilder_ == null) {
           return list_.get(index);
         } else {
@@ -3591,7 +3640,7 @@ public final class ArchiveOuterClass {
        * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
        */
       public Builder setList(
-          int index, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata value) {
+          int index, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata value) {
         if (listBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3612,7 +3661,7 @@ public final class ArchiveOuterClass {
        * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
        */
       public Builder setList(
-          int index, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder builderForValue) {
+          int index, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder builderForValue) {
         if (listBuilder_ == null) {
           ensureListIsMutable();
           list_.set(index, builderForValue.build());
@@ -3629,7 +3678,7 @@ public final class ArchiveOuterClass {
        *
        * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
        */
-      public Builder addList(yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata value) {
+      public Builder addList(yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata value) {
         if (listBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3650,7 +3699,7 @@ public final class ArchiveOuterClass {
        * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
        */
       public Builder addList(
-          int index, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata value) {
+          int index, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata value) {
         if (listBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3671,7 +3720,7 @@ public final class ArchiveOuterClass {
        * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
        */
       public Builder addList(
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder builderForValue) {
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder builderForValue) {
         if (listBuilder_ == null) {
           ensureListIsMutable();
           list_.add(builderForValue.build());
@@ -3689,7 +3738,7 @@ public final class ArchiveOuterClass {
        * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
        */
       public Builder addList(
-          int index, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder builderForValue) {
+          int index, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder builderForValue) {
         if (listBuilder_ == null) {
           ensureListIsMutable();
           list_.add(index, builderForValue.build());
@@ -3707,7 +3756,7 @@ public final class ArchiveOuterClass {
        * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
        */
       public Builder addAllList(
-          java.lang.Iterable<? extends yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata> values) {
+          java.lang.Iterable<? extends yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata> values) {
         if (listBuilder_ == null) {
           ensureListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -3759,7 +3808,7 @@ public final class ArchiveOuterClass {
        *
        * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder getListBuilder(
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder getListBuilder(
           int index) {
         return getListFieldBuilder().getBuilder(index);
       }
@@ -3770,7 +3819,7 @@ public final class ArchiveOuterClass {
        *
        * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getListOrBuilder(
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getListOrBuilder(
           int index) {
         if (listBuilder_ == null) {
           return list_.get(index);  } else {
@@ -3784,7 +3833,7 @@ public final class ArchiveOuterClass {
        *
        * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
        */
-      public java.util.List<? extends yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> 
+      public java.util.List<? extends yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> 
            getListOrBuilderList() {
         if (listBuilder_ != null) {
           return listBuilder_.getMessageOrBuilderList();
@@ -3799,9 +3848,9 @@ public final class ArchiveOuterClass {
        *
        * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder addListBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder addListBuilder() {
         return getListFieldBuilder().addBuilder(
-            yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance());
+            yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance());
       }
       /**
        * <pre>
@@ -3810,10 +3859,10 @@ public final class ArchiveOuterClass {
        *
        * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder addListBuilder(
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder addListBuilder(
           int index) {
         return getListFieldBuilder().addBuilder(
-            index, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance());
+            index, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance());
       }
       /**
        * <pre>
@@ -3822,16 +3871,16 @@ public final class ArchiveOuterClass {
        *
        * <code>repeated .yeying.api.apps.zuoyepigai.ArchiveMetadata list = 2;</code>
        */
-      public java.util.List<yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder> 
+      public java.util.List<yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder> 
            getListBuilderList() {
         return getListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> 
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> 
           getListFieldBuilder() {
         if (listBuilder_ == null) {
           listBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder>(
+              yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder>(
                   list_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -3839,6 +3888,50 @@ public final class ArchiveOuterClass {
           list_ = null;
         }
         return listBuilder_;
+      }
+
+      private long total_ ;
+      /**
+       * <pre>
+       * 总数
+       * </pre>
+       *
+       * <code>uint64 total = 3;</code>
+       * @return The total.
+       */
+      @java.lang.Override
+      public long getTotal() {
+        return total_;
+      }
+      /**
+       * <pre>
+       * 总数
+       * </pre>
+       *
+       * <code>uint64 total = 3;</code>
+       * @param value The total to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTotal(long value) {
+
+        total_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 总数
+       * </pre>
+       *
+       * <code>uint64 total = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTotal() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        total_ = 0L;
+        onChanged();
+        return this;
       }
 
       // @@protoc_insertion_point(builder_scope:yeying.api.apps.zuoyepigai.ArchiveListResponseBody)
@@ -3887,1567 +3980,6 @@ public final class ArchiveOuterClass {
 
     @java.lang.Override
     public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveListResponseBody getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
-  public interface ArchiveMetadataOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:yeying.api.apps.zuoyepigai.ArchiveMetadata)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <pre>
-     * 主键标识ID
-     * </pre>
-     *
-     * <code>string uid = 1;</code>
-     * @return The uid.
-     */
-    java.lang.String getUid();
-    /**
-     * <pre>
-     * 主键标识ID
-     * </pre>
-     *
-     * <code>string uid = 1;</code>
-     * @return The bytes for uid.
-     */
-    com.google.protobuf.ByteString
-        getUidBytes();
-
-    /**
-     * <pre>
-     * 档案名称
-     * </pre>
-     *
-     * <code>string name = 2;</code>
-     * @return The name.
-     */
-    java.lang.String getName();
-    /**
-     * <pre>
-     * 档案名称
-     * </pre>
-     *
-     * <code>string name = 2;</code>
-     * @return The bytes for name.
-     */
-    com.google.protobuf.ByteString
-        getNameBytes();
-
-    /**
-     * <pre>
-     * 学生did
-     * </pre>
-     *
-     * <code>string studentDid = 3;</code>
-     * @return The studentDid.
-     */
-    java.lang.String getStudentDid();
-    /**
-     * <pre>
-     * 学生did
-     * </pre>
-     *
-     * <code>string studentDid = 3;</code>
-     * @return The bytes for studentDid.
-     */
-    com.google.protobuf.ByteString
-        getStudentDidBytes();
-
-    /**
-     * <pre>
-     * 老师did
-     * </pre>
-     *
-     * <code>string teacherDid = 4;</code>
-     * @return The teacherDid.
-     */
-    java.lang.String getTeacherDid();
-    /**
-     * <pre>
-     * 老师did
-     * </pre>
-     *
-     * <code>string teacherDid = 4;</code>
-     * @return The bytes for teacherDid.
-     */
-    com.google.protobuf.ByteString
-        getTeacherDidBytes();
-
-    /**
-     * <pre>
-     * 科目
-     * </pre>
-     *
-     * <code>string subject = 5;</code>
-     * @return The subject.
-     */
-    java.lang.String getSubject();
-    /**
-     * <pre>
-     * 科目
-     * </pre>
-     *
-     * <code>string subject = 5;</code>
-     * @return The bytes for subject.
-     */
-    com.google.protobuf.ByteString
-        getSubjectBytes();
-
-    /**
-     * <pre>
-     * 创建时间
-     * </pre>
-     *
-     * <code>int64 createdAt = 6;</code>
-     * @return The createdAt.
-     */
-    long getCreatedAt();
-
-    /**
-     * <pre>
-     * 修改时间
-     * </pre>
-     *
-     * <code>int64 updatedAt = 7;</code>
-     * @return The updatedAt.
-     */
-    long getUpdatedAt();
-
-    /**
-     * <pre>
-     * 是否删除
-     * </pre>
-     *
-     * <code>bool isDeleted = 8;</code>
-     * @return The isDeleted.
-     */
-    boolean getIsDeleted();
-  }
-  /**
-   * Protobuf type {@code yeying.api.apps.zuoyepigai.ArchiveMetadata}
-   */
-  public static final class ArchiveMetadata extends
-      com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:yeying.api.apps.zuoyepigai.ArchiveMetadata)
-      ArchiveMetadataOrBuilder {
-  private static final long serialVersionUID = 0L;
-    static {
-      com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
-        com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
-        /* major= */ 4,
-        /* minor= */ 29,
-        /* patch= */ 3,
-        /* suffix= */ "",
-        ArchiveMetadata.class.getName());
-    }
-    // Use ArchiveMetadata.newBuilder() to construct.
-    private ArchiveMetadata(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-    }
-    private ArchiveMetadata() {
-      uid_ = "";
-      name_ = "";
-      studentDid_ = "";
-      teacherDid_ = "";
-      subject_ = "";
-    }
-
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return yeying.api.apps.zuoyepigai.ArchiveOuterClass.internal_static_yeying_api_apps_zuoyepigai_ArchiveMetadata_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return yeying.api.apps.zuoyepigai.ArchiveOuterClass.internal_static_yeying_api_apps_zuoyepigai_ArchiveMetadata_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.class, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder.class);
-    }
-
-    public static final int UID_FIELD_NUMBER = 1;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object uid_ = "";
-    /**
-     * <pre>
-     * 主键标识ID
-     * </pre>
-     *
-     * <code>string uid = 1;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public java.lang.String getUid() {
-      java.lang.Object ref = uid_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        uid_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * 主键标识ID
-     * </pre>
-     *
-     * <code>string uid = 1;</code>
-     * @return The bytes for uid.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getUidBytes() {
-      java.lang.Object ref = uid_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        uid_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int NAME_FIELD_NUMBER = 2;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object name_ = "";
-    /**
-     * <pre>
-     * 档案名称
-     * </pre>
-     *
-     * <code>string name = 2;</code>
-     * @return The name.
-     */
-    @java.lang.Override
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        name_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * 档案名称
-     * </pre>
-     *
-     * <code>string name = 2;</code>
-     * @return The bytes for name.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getNameBytes() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        name_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int STUDENTDID_FIELD_NUMBER = 3;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object studentDid_ = "";
-    /**
-     * <pre>
-     * 学生did
-     * </pre>
-     *
-     * <code>string studentDid = 3;</code>
-     * @return The studentDid.
-     */
-    @java.lang.Override
-    public java.lang.String getStudentDid() {
-      java.lang.Object ref = studentDid_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        studentDid_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * 学生did
-     * </pre>
-     *
-     * <code>string studentDid = 3;</code>
-     * @return The bytes for studentDid.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getStudentDidBytes() {
-      java.lang.Object ref = studentDid_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        studentDid_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int TEACHERDID_FIELD_NUMBER = 4;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object teacherDid_ = "";
-    /**
-     * <pre>
-     * 老师did
-     * </pre>
-     *
-     * <code>string teacherDid = 4;</code>
-     * @return The teacherDid.
-     */
-    @java.lang.Override
-    public java.lang.String getTeacherDid() {
-      java.lang.Object ref = teacherDid_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        teacherDid_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * 老师did
-     * </pre>
-     *
-     * <code>string teacherDid = 4;</code>
-     * @return The bytes for teacherDid.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getTeacherDidBytes() {
-      java.lang.Object ref = teacherDid_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        teacherDid_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int SUBJECT_FIELD_NUMBER = 5;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object subject_ = "";
-    /**
-     * <pre>
-     * 科目
-     * </pre>
-     *
-     * <code>string subject = 5;</code>
-     * @return The subject.
-     */
-    @java.lang.Override
-    public java.lang.String getSubject() {
-      java.lang.Object ref = subject_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        subject_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * 科目
-     * </pre>
-     *
-     * <code>string subject = 5;</code>
-     * @return The bytes for subject.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getSubjectBytes() {
-      java.lang.Object ref = subject_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        subject_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int CREATEDAT_FIELD_NUMBER = 6;
-    private long createdAt_ = 0L;
-    /**
-     * <pre>
-     * 创建时间
-     * </pre>
-     *
-     * <code>int64 createdAt = 6;</code>
-     * @return The createdAt.
-     */
-    @java.lang.Override
-    public long getCreatedAt() {
-      return createdAt_;
-    }
-
-    public static final int UPDATEDAT_FIELD_NUMBER = 7;
-    private long updatedAt_ = 0L;
-    /**
-     * <pre>
-     * 修改时间
-     * </pre>
-     *
-     * <code>int64 updatedAt = 7;</code>
-     * @return The updatedAt.
-     */
-    @java.lang.Override
-    public long getUpdatedAt() {
-      return updatedAt_;
-    }
-
-    public static final int ISDELETED_FIELD_NUMBER = 8;
-    private boolean isDeleted_ = false;
-    /**
-     * <pre>
-     * 是否删除
-     * </pre>
-     *
-     * <code>bool isDeleted = 8;</code>
-     * @return The isDeleted.
-     */
-    @java.lang.Override
-    public boolean getIsDeleted() {
-      return isDeleted_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(uid_)) {
-        com.google.protobuf.GeneratedMessage.writeString(output, 1, uid_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(name_)) {
-        com.google.protobuf.GeneratedMessage.writeString(output, 2, name_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(studentDid_)) {
-        com.google.protobuf.GeneratedMessage.writeString(output, 3, studentDid_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(teacherDid_)) {
-        com.google.protobuf.GeneratedMessage.writeString(output, 4, teacherDid_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(subject_)) {
-        com.google.protobuf.GeneratedMessage.writeString(output, 5, subject_);
-      }
-      if (createdAt_ != 0L) {
-        output.writeInt64(6, createdAt_);
-      }
-      if (updatedAt_ != 0L) {
-        output.writeInt64(7, updatedAt_);
-      }
-      if (isDeleted_ != false) {
-        output.writeBool(8, isDeleted_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(uid_)) {
-        size += com.google.protobuf.GeneratedMessage.computeStringSize(1, uid_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(name_)) {
-        size += com.google.protobuf.GeneratedMessage.computeStringSize(2, name_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(studentDid_)) {
-        size += com.google.protobuf.GeneratedMessage.computeStringSize(3, studentDid_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(teacherDid_)) {
-        size += com.google.protobuf.GeneratedMessage.computeStringSize(4, teacherDid_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(subject_)) {
-        size += com.google.protobuf.GeneratedMessage.computeStringSize(5, subject_);
-      }
-      if (createdAt_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(6, createdAt_);
-      }
-      if (updatedAt_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(7, updatedAt_);
-      }
-      if (isDeleted_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isDeleted_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata)) {
-        return super.equals(obj);
-      }
-      yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata other = (yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata) obj;
-
-      if (!getUid()
-          .equals(other.getUid())) return false;
-      if (!getName()
-          .equals(other.getName())) return false;
-      if (!getStudentDid()
-          .equals(other.getStudentDid())) return false;
-      if (!getTeacherDid()
-          .equals(other.getTeacherDid())) return false;
-      if (!getSubject()
-          .equals(other.getSubject())) return false;
-      if (getCreatedAt()
-          != other.getCreatedAt()) return false;
-      if (getUpdatedAt()
-          != other.getUpdatedAt()) return false;
-      if (getIsDeleted()
-          != other.getIsDeleted()) return false;
-      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid().hashCode();
-      hash = (37 * hash) + NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getName().hashCode();
-      hash = (37 * hash) + STUDENTDID_FIELD_NUMBER;
-      hash = (53 * hash) + getStudentDid().hashCode();
-      hash = (37 * hash) + TEACHERDID_FIELD_NUMBER;
-      hash = (53 * hash) + getTeacherDid().hashCode();
-      hash = (37 * hash) + SUBJECT_FIELD_NUMBER;
-      hash = (53 * hash) + getSubject().hashCode();
-      hash = (37 * hash) + CREATEDAT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getCreatedAt());
-      hash = (37 * hash) + UPDATEDAT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getUpdatedAt());
-      hash = (37 * hash) + ISDELETED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsDeleted());
-      hash = (29 * hash) + getUnknownFields().hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessage
-          .parseWithIOException(PARSER, input);
-    }
-    public static yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessage
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public static yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessage
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-
-    public static yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessage
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessage
-          .parseWithIOException(PARSER, input);
-    }
-    public static yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessage
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    @java.lang.Override
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    @java.lang.Override
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code yeying.api.apps.zuoyepigai.ArchiveMetadata}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:yeying.api.apps.zuoyepigai.ArchiveMetadata)
-        yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return yeying.api.apps.zuoyepigai.ArchiveOuterClass.internal_static_yeying_api_apps_zuoyepigai_ArchiveMetadata_descriptor;
-      }
-
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return yeying.api.apps.zuoyepigai.ArchiveOuterClass.internal_static_yeying_api_apps_zuoyepigai_ArchiveMetadata_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.class, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder.class);
-      }
-
-      // Construct using yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.newBuilder()
-      private Builder() {
-
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-
-      }
-      @java.lang.Override
-      public Builder clear() {
-        super.clear();
-        bitField0_ = 0;
-        uid_ = "";
-        name_ = "";
-        studentDid_ = "";
-        teacherDid_ = "";
-        subject_ = "";
-        createdAt_ = 0L;
-        updatedAt_ = 0L;
-        isDeleted_ = false;
-        return this;
-      }
-
-      @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return yeying.api.apps.zuoyepigai.ArchiveOuterClass.internal_static_yeying_api_apps_zuoyepigai_ArchiveMetadata_descriptor;
-      }
-
-      @java.lang.Override
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getDefaultInstanceForType() {
-        return yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance();
-      }
-
-      @java.lang.Override
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata build() {
-        yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      @java.lang.Override
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata buildPartial() {
-        yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata result = new yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
-        onBuilt();
-        return result;
-      }
-
-      private void buildPartial0(yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.uid_ = uid_;
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.name_ = name_;
-        }
-        if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.studentDid_ = studentDid_;
-        }
-        if (((from_bitField0_ & 0x00000008) != 0)) {
-          result.teacherDid_ = teacherDid_;
-        }
-        if (((from_bitField0_ & 0x00000010) != 0)) {
-          result.subject_ = subject_;
-        }
-        if (((from_bitField0_ & 0x00000020) != 0)) {
-          result.createdAt_ = createdAt_;
-        }
-        if (((from_bitField0_ & 0x00000040) != 0)) {
-          result.updatedAt_ = updatedAt_;
-        }
-        if (((from_bitField0_ & 0x00000080) != 0)) {
-          result.isDeleted_ = isDeleted_;
-        }
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata) {
-          return mergeFrom((yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata other) {
-        if (other == yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance()) return this;
-        if (!other.getUid().isEmpty()) {
-          uid_ = other.uid_;
-          bitField0_ |= 0x00000001;
-          onChanged();
-        }
-        if (!other.getName().isEmpty()) {
-          name_ = other.name_;
-          bitField0_ |= 0x00000002;
-          onChanged();
-        }
-        if (!other.getStudentDid().isEmpty()) {
-          studentDid_ = other.studentDid_;
-          bitField0_ |= 0x00000004;
-          onChanged();
-        }
-        if (!other.getTeacherDid().isEmpty()) {
-          teacherDid_ = other.teacherDid_;
-          bitField0_ |= 0x00000008;
-          onChanged();
-        }
-        if (!other.getSubject().isEmpty()) {
-          subject_ = other.subject_;
-          bitField0_ |= 0x00000010;
-          onChanged();
-        }
-        if (other.getCreatedAt() != 0L) {
-          setCreatedAt(other.getCreatedAt());
-        }
-        if (other.getUpdatedAt() != 0L) {
-          setUpdatedAt(other.getUpdatedAt());
-        }
-        if (other.getIsDeleted() != false) {
-          setIsDeleted(other.getIsDeleted());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        onChanged();
-        return this;
-      }
-
-      @java.lang.Override
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 10: {
-                uid_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 10
-              case 18: {
-                name_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000002;
-                break;
-              } // case 18
-              case 26: {
-                studentDid_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000004;
-                break;
-              } // case 26
-              case 34: {
-                teacherDid_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000008;
-                break;
-              } // case 34
-              case 42: {
-                subject_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000010;
-                break;
-              } // case 42
-              case 48: {
-                createdAt_ = input.readInt64();
-                bitField0_ |= 0x00000020;
-                break;
-              } // case 48
-              case 56: {
-                updatedAt_ = input.readInt64();
-                bitField0_ |= 0x00000040;
-                break;
-              } // case 56
-              case 64: {
-                isDeleted_ = input.readBool();
-                bitField0_ |= 0x00000080;
-                break;
-              } // case 64
-              default: {
-                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
-                  done = true; // was an endgroup tag
-                }
-                break;
-              } // default:
-            } // switch (tag)
-          } // while (!done)
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.unwrapIOException();
-        } finally {
-          onChanged();
-        } // finally
-        return this;
-      }
-      private int bitField0_;
-
-      private java.lang.Object uid_ = "";
-      /**
-       * <pre>
-       * 主键标识ID
-       * </pre>
-       *
-       * <code>string uid = 1;</code>
-       * @return The uid.
-       */
-      public java.lang.String getUid() {
-        java.lang.Object ref = uid_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          uid_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 主键标识ID
-       * </pre>
-       *
-       * <code>string uid = 1;</code>
-       * @return The bytes for uid.
-       */
-      public com.google.protobuf.ByteString
-          getUidBytes() {
-        java.lang.Object ref = uid_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          uid_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 主键标识ID
-       * </pre>
-       *
-       * <code>string uid = 1;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        uid_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 主键标识ID
-       * </pre>
-       *
-       * <code>string uid = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        uid_ = getDefaultInstance().getUid();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 主键标识ID
-       * </pre>
-       *
-       * <code>string uid = 1;</code>
-       * @param value The bytes for uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUidBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        uid_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object name_ = "";
-      /**
-       * <pre>
-       * 档案名称
-       * </pre>
-       *
-       * <code>string name = 2;</code>
-       * @return The name.
-       */
-      public java.lang.String getName() {
-        java.lang.Object ref = name_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          name_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 档案名称
-       * </pre>
-       *
-       * <code>string name = 2;</code>
-       * @return The bytes for name.
-       */
-      public com.google.protobuf.ByteString
-          getNameBytes() {
-        java.lang.Object ref = name_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          name_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 档案名称
-       * </pre>
-       *
-       * <code>string name = 2;</code>
-       * @param value The name to set.
-       * @return This builder for chaining.
-       */
-      public Builder setName(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        name_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 档案名称
-       * </pre>
-       *
-       * <code>string name = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearName() {
-        name_ = getDefaultInstance().getName();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 档案名称
-       * </pre>
-       *
-       * <code>string name = 2;</code>
-       * @param value The bytes for name to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        name_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object studentDid_ = "";
-      /**
-       * <pre>
-       * 学生did
-       * </pre>
-       *
-       * <code>string studentDid = 3;</code>
-       * @return The studentDid.
-       */
-      public java.lang.String getStudentDid() {
-        java.lang.Object ref = studentDid_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          studentDid_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 学生did
-       * </pre>
-       *
-       * <code>string studentDid = 3;</code>
-       * @return The bytes for studentDid.
-       */
-      public com.google.protobuf.ByteString
-          getStudentDidBytes() {
-        java.lang.Object ref = studentDid_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          studentDid_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 学生did
-       * </pre>
-       *
-       * <code>string studentDid = 3;</code>
-       * @param value The studentDid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStudentDid(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        studentDid_ = value;
-        bitField0_ |= 0x00000004;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 学生did
-       * </pre>
-       *
-       * <code>string studentDid = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStudentDid() {
-        studentDid_ = getDefaultInstance().getStudentDid();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 学生did
-       * </pre>
-       *
-       * <code>string studentDid = 3;</code>
-       * @param value The bytes for studentDid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStudentDidBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        studentDid_ = value;
-        bitField0_ |= 0x00000004;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object teacherDid_ = "";
-      /**
-       * <pre>
-       * 老师did
-       * </pre>
-       *
-       * <code>string teacherDid = 4;</code>
-       * @return The teacherDid.
-       */
-      public java.lang.String getTeacherDid() {
-        java.lang.Object ref = teacherDid_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          teacherDid_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 老师did
-       * </pre>
-       *
-       * <code>string teacherDid = 4;</code>
-       * @return The bytes for teacherDid.
-       */
-      public com.google.protobuf.ByteString
-          getTeacherDidBytes() {
-        java.lang.Object ref = teacherDid_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          teacherDid_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 老师did
-       * </pre>
-       *
-       * <code>string teacherDid = 4;</code>
-       * @param value The teacherDid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTeacherDid(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        teacherDid_ = value;
-        bitField0_ |= 0x00000008;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 老师did
-       * </pre>
-       *
-       * <code>string teacherDid = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTeacherDid() {
-        teacherDid_ = getDefaultInstance().getTeacherDid();
-        bitField0_ = (bitField0_ & ~0x00000008);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 老师did
-       * </pre>
-       *
-       * <code>string teacherDid = 4;</code>
-       * @param value The bytes for teacherDid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTeacherDidBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        teacherDid_ = value;
-        bitField0_ |= 0x00000008;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object subject_ = "";
-      /**
-       * <pre>
-       * 科目
-       * </pre>
-       *
-       * <code>string subject = 5;</code>
-       * @return The subject.
-       */
-      public java.lang.String getSubject() {
-        java.lang.Object ref = subject_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          subject_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 科目
-       * </pre>
-       *
-       * <code>string subject = 5;</code>
-       * @return The bytes for subject.
-       */
-      public com.google.protobuf.ByteString
-          getSubjectBytes() {
-        java.lang.Object ref = subject_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          subject_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 科目
-       * </pre>
-       *
-       * <code>string subject = 5;</code>
-       * @param value The subject to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSubject(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        subject_ = value;
-        bitField0_ |= 0x00000010;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 科目
-       * </pre>
-       *
-       * <code>string subject = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSubject() {
-        subject_ = getDefaultInstance().getSubject();
-        bitField0_ = (bitField0_ & ~0x00000010);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 科目
-       * </pre>
-       *
-       * <code>string subject = 5;</code>
-       * @param value The bytes for subject to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSubjectBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        subject_ = value;
-        bitField0_ |= 0x00000010;
-        onChanged();
-        return this;
-      }
-
-      private long createdAt_ ;
-      /**
-       * <pre>
-       * 创建时间
-       * </pre>
-       *
-       * <code>int64 createdAt = 6;</code>
-       * @return The createdAt.
-       */
-      @java.lang.Override
-      public long getCreatedAt() {
-        return createdAt_;
-      }
-      /**
-       * <pre>
-       * 创建时间
-       * </pre>
-       *
-       * <code>int64 createdAt = 6;</code>
-       * @param value The createdAt to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCreatedAt(long value) {
-
-        createdAt_ = value;
-        bitField0_ |= 0x00000020;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 创建时间
-       * </pre>
-       *
-       * <code>int64 createdAt = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCreatedAt() {
-        bitField0_ = (bitField0_ & ~0x00000020);
-        createdAt_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private long updatedAt_ ;
-      /**
-       * <pre>
-       * 修改时间
-       * </pre>
-       *
-       * <code>int64 updatedAt = 7;</code>
-       * @return The updatedAt.
-       */
-      @java.lang.Override
-      public long getUpdatedAt() {
-        return updatedAt_;
-      }
-      /**
-       * <pre>
-       * 修改时间
-       * </pre>
-       *
-       * <code>int64 updatedAt = 7;</code>
-       * @param value The updatedAt to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUpdatedAt(long value) {
-
-        updatedAt_ = value;
-        bitField0_ |= 0x00000040;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 修改时间
-       * </pre>
-       *
-       * <code>int64 updatedAt = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUpdatedAt() {
-        bitField0_ = (bitField0_ & ~0x00000040);
-        updatedAt_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private boolean isDeleted_ ;
-      /**
-       * <pre>
-       * 是否删除
-       * </pre>
-       *
-       * <code>bool isDeleted = 8;</code>
-       * @return The isDeleted.
-       */
-      @java.lang.Override
-      public boolean getIsDeleted() {
-        return isDeleted_;
-      }
-      /**
-       * <pre>
-       * 是否删除
-       * </pre>
-       *
-       * <code>bool isDeleted = 8;</code>
-       * @param value The isDeleted to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsDeleted(boolean value) {
-
-        isDeleted_ = value;
-        bitField0_ |= 0x00000080;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 是否删除
-       * </pre>
-       *
-       * <code>bool isDeleted = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsDeleted() {
-        bitField0_ = (bitField0_ & ~0x00000080);
-        isDeleted_ = false;
-        onChanged();
-        return this;
-      }
-
-      // @@protoc_insertion_point(builder_scope:yeying.api.apps.zuoyepigai.ArchiveMetadata)
-    }
-
-    // @@protoc_insertion_point(class_scope:yeying.api.apps.zuoyepigai.ArchiveMetadata)
-    private static final yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata();
-    }
-
-    public static yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<ArchiveMetadata>
-        PARSER = new com.google.protobuf.AbstractParser<ArchiveMetadata>() {
-      @java.lang.Override
-      public ArchiveMetadata parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        Builder builder = newBuilder();
-        try {
-          builder.mergeFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(builder.buildPartial());
-        } catch (com.google.protobuf.UninitializedMessageException e) {
-          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(e)
-              .setUnfinishedMessage(builder.buildPartial());
-        }
-        return builder.buildPartial();
-      }
-    };
-
-    public static com.google.protobuf.Parser<ArchiveMetadata> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<ArchiveMetadata> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -7539,11 +6071,11 @@ public final class ArchiveOuterClass {
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      * @return The meta.
      */
-    yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta();
+    yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta();
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      */
-    yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder();
+    yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder();
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.ArchiveDetailResponseBody}
@@ -7610,7 +6142,7 @@ public final class ArchiveOuterClass {
     }
 
     public static final int META_FIELD_NUMBER = 2;
-    private yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata meta_;
+    private yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata meta_;
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      * @return Whether the meta field is set.
@@ -7624,15 +6156,15 @@ public final class ArchiveOuterClass {
      * @return The meta.
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
     }
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -8109,9 +6641,9 @@ public final class ArchiveOuterClass {
         return statusBuilder_;
       }
 
-      private yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata meta_;
+      private yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata meta_;
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> metaBuilder_;
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> metaBuilder_;
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        * @return Whether the meta field is set.
@@ -8123,9 +6655,9 @@ public final class ArchiveOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        * @return The meta.
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta() {
         if (metaBuilder_ == null) {
-          return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+          return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
         } else {
           return metaBuilder_.getMessage();
         }
@@ -8133,7 +6665,7 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public Builder setMeta(yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata value) {
+      public Builder setMeta(yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata value) {
         if (metaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -8150,7 +6682,7 @@ public final class ArchiveOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
       public Builder setMeta(
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder builderForValue) {
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder builderForValue) {
         if (metaBuilder_ == null) {
           meta_ = builderForValue.build();
         } else {
@@ -8163,11 +6695,11 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public Builder mergeMeta(yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata value) {
+      public Builder mergeMeta(yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata value) {
         if (metaBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0) &&
             meta_ != null &&
-            meta_ != yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance()) {
+            meta_ != yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance()) {
             getMetaBuilder().mergeFrom(value);
           } else {
             meta_ = value;
@@ -8197,7 +6729,7 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder getMetaBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder getMetaBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getMetaFieldBuilder().getBuilder();
@@ -8205,23 +6737,23 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder() {
         if (metaBuilder_ != null) {
           return metaBuilder_.getMessageOrBuilder();
         } else {
           return meta_ == null ?
-              yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+              yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
         }
       }
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> 
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> 
           getMetaFieldBuilder() {
         if (metaBuilder_ == null) {
           metaBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder>(
+              yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder>(
                   getMeta(),
                   getParentForChildren(),
                   isClean());
@@ -10367,11 +8899,11 @@ public final class ArchiveOuterClass {
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      * @return The meta.
      */
-    yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta();
+    yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta();
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      */
-    yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder();
+    yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder();
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.ArchiveDetailStudentResponseBody}
@@ -10438,7 +8970,7 @@ public final class ArchiveOuterClass {
     }
 
     public static final int META_FIELD_NUMBER = 2;
-    private yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata meta_;
+    private yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata meta_;
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      * @return Whether the meta field is set.
@@ -10452,15 +8984,15 @@ public final class ArchiveOuterClass {
      * @return The meta.
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
     }
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -10937,9 +9469,9 @@ public final class ArchiveOuterClass {
         return statusBuilder_;
       }
 
-      private yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata meta_;
+      private yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata meta_;
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> metaBuilder_;
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> metaBuilder_;
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        * @return Whether the meta field is set.
@@ -10951,9 +9483,9 @@ public final class ArchiveOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        * @return The meta.
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta() {
         if (metaBuilder_ == null) {
-          return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+          return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
         } else {
           return metaBuilder_.getMessage();
         }
@@ -10961,7 +9493,7 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public Builder setMeta(yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata value) {
+      public Builder setMeta(yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata value) {
         if (metaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -10978,7 +9510,7 @@ public final class ArchiveOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
       public Builder setMeta(
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder builderForValue) {
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder builderForValue) {
         if (metaBuilder_ == null) {
           meta_ = builderForValue.build();
         } else {
@@ -10991,11 +9523,11 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public Builder mergeMeta(yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata value) {
+      public Builder mergeMeta(yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata value) {
         if (metaBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0) &&
             meta_ != null &&
-            meta_ != yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance()) {
+            meta_ != yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance()) {
             getMetaBuilder().mergeFrom(value);
           } else {
             meta_ = value;
@@ -11025,7 +9557,7 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder getMetaBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder getMetaBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getMetaFieldBuilder().getBuilder();
@@ -11033,23 +9565,23 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder() {
         if (metaBuilder_ != null) {
           return metaBuilder_.getMessageOrBuilder();
         } else {
           return meta_ == null ?
-              yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+              yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
         }
       }
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> 
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> 
           getMetaFieldBuilder() {
         if (metaBuilder_ == null) {
           metaBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder>(
+              yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder>(
                   getMeta(),
                   getParentForChildren(),
                   isClean());
@@ -11900,11 +10432,11 @@ public final class ArchiveOuterClass {
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
      * @return The meta.
      */
-    yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta();
+    yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta();
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
      */
-    yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder();
+    yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder();
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.ArchiveAddRequestBody}
@@ -11945,7 +10477,7 @@ public final class ArchiveOuterClass {
 
     private int bitField0_;
     public static final int META_FIELD_NUMBER = 1;
-    private yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata meta_;
+    private yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata meta_;
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
      * @return Whether the meta field is set.
@@ -11959,15 +10491,15 @@ public final class ArchiveOuterClass {
      * @return The meta.
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
     }
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -12285,9 +10817,9 @@ public final class ArchiveOuterClass {
       }
       private int bitField0_;
 
-      private yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata meta_;
+      private yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata meta_;
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> metaBuilder_;
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> metaBuilder_;
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
        * @return Whether the meta field is set.
@@ -12299,9 +10831,9 @@ public final class ArchiveOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
        * @return The meta.
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta() {
         if (metaBuilder_ == null) {
-          return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+          return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
         } else {
           return metaBuilder_.getMessage();
         }
@@ -12309,7 +10841,7 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
        */
-      public Builder setMeta(yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata value) {
+      public Builder setMeta(yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata value) {
         if (metaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -12326,7 +10858,7 @@ public final class ArchiveOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
        */
       public Builder setMeta(
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder builderForValue) {
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder builderForValue) {
         if (metaBuilder_ == null) {
           meta_ = builderForValue.build();
         } else {
@@ -12339,11 +10871,11 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
        */
-      public Builder mergeMeta(yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata value) {
+      public Builder mergeMeta(yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata value) {
         if (metaBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0) &&
             meta_ != null &&
-            meta_ != yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance()) {
+            meta_ != yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance()) {
             getMetaBuilder().mergeFrom(value);
           } else {
             meta_ = value;
@@ -12373,7 +10905,7 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder getMetaBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder getMetaBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getMetaFieldBuilder().getBuilder();
@@ -12381,23 +10913,23 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder() {
         if (metaBuilder_ != null) {
           return metaBuilder_.getMessageOrBuilder();
         } else {
           return meta_ == null ?
-              yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+              yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
         }
       }
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> 
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> 
           getMetaFieldBuilder() {
         if (metaBuilder_ == null) {
           metaBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder>(
+              yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder>(
                   getMeta(),
                   getParentForChildren(),
                   isClean());
@@ -13255,11 +11787,11 @@ public final class ArchiveOuterClass {
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      * @return The meta.
      */
-    yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta();
+    yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta();
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      */
-    yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder();
+    yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder();
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.ArchiveAddResponseBody}
@@ -13326,7 +11858,7 @@ public final class ArchiveOuterClass {
     }
 
     public static final int META_FIELD_NUMBER = 2;
-    private yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata meta_;
+    private yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata meta_;
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      * @return Whether the meta field is set.
@@ -13340,15 +11872,15 @@ public final class ArchiveOuterClass {
      * @return The meta.
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
     }
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -13825,9 +12357,9 @@ public final class ArchiveOuterClass {
         return statusBuilder_;
       }
 
-      private yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata meta_;
+      private yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata meta_;
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> metaBuilder_;
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> metaBuilder_;
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        * @return Whether the meta field is set.
@@ -13839,9 +12371,9 @@ public final class ArchiveOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        * @return The meta.
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta() {
         if (metaBuilder_ == null) {
-          return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+          return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
         } else {
           return metaBuilder_.getMessage();
         }
@@ -13849,7 +12381,7 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public Builder setMeta(yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata value) {
+      public Builder setMeta(yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata value) {
         if (metaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -13866,7 +12398,7 @@ public final class ArchiveOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
       public Builder setMeta(
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder builderForValue) {
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder builderForValue) {
         if (metaBuilder_ == null) {
           meta_ = builderForValue.build();
         } else {
@@ -13879,11 +12411,11 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public Builder mergeMeta(yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata value) {
+      public Builder mergeMeta(yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata value) {
         if (metaBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0) &&
             meta_ != null &&
-            meta_ != yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance()) {
+            meta_ != yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance()) {
             getMetaBuilder().mergeFrom(value);
           } else {
             meta_ = value;
@@ -13913,7 +12445,7 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder getMetaBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder getMetaBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getMetaFieldBuilder().getBuilder();
@@ -13921,23 +12453,23 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder() {
         if (metaBuilder_ != null) {
           return metaBuilder_.getMessageOrBuilder();
         } else {
           return meta_ == null ?
-              yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+              yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
         }
       }
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> 
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> 
           getMetaFieldBuilder() {
         if (metaBuilder_ == null) {
           metaBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder>(
+              yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder>(
                   getMeta(),
                   getParentForChildren(),
                   isClean());
@@ -16083,11 +14615,11 @@ public final class ArchiveOuterClass {
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      * @return The meta.
      */
-    yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta();
+    yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta();
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      */
-    yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder();
+    yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder();
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.ArchiveDeleteResponseBody}
@@ -16154,7 +14686,7 @@ public final class ArchiveOuterClass {
     }
 
     public static final int META_FIELD_NUMBER = 2;
-    private yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata meta_;
+    private yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata meta_;
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      * @return Whether the meta field is set.
@@ -16168,15 +14700,15 @@ public final class ArchiveOuterClass {
      * @return The meta.
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
     }
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -16653,9 +15185,9 @@ public final class ArchiveOuterClass {
         return statusBuilder_;
       }
 
-      private yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata meta_;
+      private yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata meta_;
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> metaBuilder_;
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> metaBuilder_;
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        * @return Whether the meta field is set.
@@ -16667,9 +15199,9 @@ public final class ArchiveOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        * @return The meta.
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta() {
         if (metaBuilder_ == null) {
-          return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+          return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
         } else {
           return metaBuilder_.getMessage();
         }
@@ -16677,7 +15209,7 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public Builder setMeta(yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata value) {
+      public Builder setMeta(yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata value) {
         if (metaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -16694,7 +15226,7 @@ public final class ArchiveOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
       public Builder setMeta(
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder builderForValue) {
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder builderForValue) {
         if (metaBuilder_ == null) {
           meta_ = builderForValue.build();
         } else {
@@ -16707,11 +15239,11 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public Builder mergeMeta(yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata value) {
+      public Builder mergeMeta(yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata value) {
         if (metaBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0) &&
             meta_ != null &&
-            meta_ != yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance()) {
+            meta_ != yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance()) {
             getMetaBuilder().mergeFrom(value);
           } else {
             meta_ = value;
@@ -16741,7 +15273,7 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder getMetaBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder getMetaBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getMetaFieldBuilder().getBuilder();
@@ -16749,23 +15281,23 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder() {
         if (metaBuilder_ != null) {
           return metaBuilder_.getMessageOrBuilder();
         } else {
           return meta_ == null ?
-              yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+              yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
         }
       }
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> 
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> 
           getMetaFieldBuilder() {
         if (metaBuilder_ == null) {
           metaBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder>(
+              yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder>(
                   getMeta(),
                   getParentForChildren(),
                   isClean());
@@ -17616,11 +16148,11 @@ public final class ArchiveOuterClass {
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
      * @return The meta.
      */
-    yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta();
+    yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta();
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
      */
-    yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder();
+    yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder();
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.ArchiveUpdateRequestBody}
@@ -17661,7 +16193,7 @@ public final class ArchiveOuterClass {
 
     private int bitField0_;
     public static final int META_FIELD_NUMBER = 1;
-    private yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata meta_;
+    private yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata meta_;
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
      * @return Whether the meta field is set.
@@ -17675,15 +16207,15 @@ public final class ArchiveOuterClass {
      * @return The meta.
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
     }
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -18001,9 +16533,9 @@ public final class ArchiveOuterClass {
       }
       private int bitField0_;
 
-      private yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata meta_;
+      private yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata meta_;
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> metaBuilder_;
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> metaBuilder_;
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
        * @return Whether the meta field is set.
@@ -18015,9 +16547,9 @@ public final class ArchiveOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
        * @return The meta.
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta() {
         if (metaBuilder_ == null) {
-          return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+          return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
         } else {
           return metaBuilder_.getMessage();
         }
@@ -18025,7 +16557,7 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
        */
-      public Builder setMeta(yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata value) {
+      public Builder setMeta(yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata value) {
         if (metaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -18042,7 +16574,7 @@ public final class ArchiveOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
        */
       public Builder setMeta(
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder builderForValue) {
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder builderForValue) {
         if (metaBuilder_ == null) {
           meta_ = builderForValue.build();
         } else {
@@ -18055,11 +16587,11 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
        */
-      public Builder mergeMeta(yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata value) {
+      public Builder mergeMeta(yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata value) {
         if (metaBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0) &&
             meta_ != null &&
-            meta_ != yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance()) {
+            meta_ != yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance()) {
             getMetaBuilder().mergeFrom(value);
           } else {
             meta_ = value;
@@ -18089,7 +16621,7 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder getMetaBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder getMetaBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getMetaFieldBuilder().getBuilder();
@@ -18097,23 +16629,23 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder() {
         if (metaBuilder_ != null) {
           return metaBuilder_.getMessageOrBuilder();
         } else {
           return meta_ == null ?
-              yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+              yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
         }
       }
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> 
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> 
           getMetaFieldBuilder() {
         if (metaBuilder_ == null) {
           metaBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder>(
+              yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder>(
                   getMeta(),
                   getParentForChildren(),
                   isClean());
@@ -18971,11 +17503,11 @@ public final class ArchiveOuterClass {
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      * @return The meta.
      */
-    yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta();
+    yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta();
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      */
-    yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder();
+    yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder();
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.ArchiveUpdateResponseBody}
@@ -19042,7 +17574,7 @@ public final class ArchiveOuterClass {
     }
 
     public static final int META_FIELD_NUMBER = 2;
-    private yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata meta_;
+    private yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata meta_;
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      * @return Whether the meta field is set.
@@ -19056,15 +17588,15 @@ public final class ArchiveOuterClass {
      * @return The meta.
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
     }
     /**
      * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -19541,9 +18073,9 @@ public final class ArchiveOuterClass {
         return statusBuilder_;
       }
 
-      private yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata meta_;
+      private yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata meta_;
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> metaBuilder_;
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> metaBuilder_;
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        * @return Whether the meta field is set.
@@ -19555,9 +18087,9 @@ public final class ArchiveOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        * @return The meta.
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata getMeta() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata getMeta() {
         if (metaBuilder_ == null) {
-          return meta_ == null ? yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+          return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
         } else {
           return metaBuilder_.getMessage();
         }
@@ -19565,7 +18097,7 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public Builder setMeta(yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata value) {
+      public Builder setMeta(yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata value) {
         if (metaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -19582,7 +18114,7 @@ public final class ArchiveOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
       public Builder setMeta(
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder builderForValue) {
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder builderForValue) {
         if (metaBuilder_ == null) {
           meta_ = builderForValue.build();
         } else {
@@ -19595,11 +18127,11 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public Builder mergeMeta(yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata value) {
+      public Builder mergeMeta(yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata value) {
         if (metaBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0) &&
             meta_ != null &&
-            meta_ != yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance()) {
+            meta_ != yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance()) {
             getMetaBuilder().mergeFrom(value);
           } else {
             meta_ = value;
@@ -19629,7 +18161,7 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder getMetaBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder getMetaBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getMetaFieldBuilder().getBuilder();
@@ -19637,23 +18169,23 @@ public final class ArchiveOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder getMetaOrBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder getMetaOrBuilder() {
         if (metaBuilder_ != null) {
           return metaBuilder_.getMessageOrBuilder();
         } else {
           return meta_ == null ?
-              yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.getDefaultInstance() : meta_;
+              yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.getDefaultInstance() : meta_;
         }
       }
       /**
        * <code>.yeying.api.apps.zuoyepigai.ArchiveMetadata meta = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder> 
+          yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder> 
           getMetaFieldBuilder() {
         if (metaBuilder_ == null) {
           metaBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.ArchiveOuterClass.ArchiveMetadataOrBuilder>(
+              yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.ArchiveMetadataOrBuilder>(
                   getMeta(),
                   getParentForChildren(),
                   isClean());
@@ -19733,11 +18265,6 @@ public final class ArchiveOuterClass {
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_yeying_api_apps_zuoyepigai_ArchiveListResponseBody_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_yeying_api_apps_zuoyepigai_ArchiveMetadata_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_yeying_api_apps_zuoyepigai_ArchiveMetadata_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailRequest_descriptor;
   private static final 
@@ -19850,111 +18377,110 @@ public final class ArchiveOuterClass {
       "\n(yeying/api/apps/zuoyepigai/archive.pro" +
       "to\022\032yeying.api.apps.zuoyepigai\032\037yeying/a" +
       "pi/common/message.proto\032\036google/protobuf" +
-      "/wrappers.proto\"\210\001\n\022ArchiveListRequest\0220" +
-      "\n\006header\030\001 \001(\0132 .yeying.api.common.Messa" +
-      "geHeader\022@\n\004body\030\002 \001(\01322.yeying.api.apps" +
-      ".zuoyepigai.ArchiveListRequestBody\"\231\001\n\026A" +
-      "rchiveListRequestBody\022\022\n\nteacherDid\030\001 \001(" +
-      "\t\022\014\n\004name\030\002 \001(\t\022.\n\tpageIndex\030\003 \001(\0132\033.goo" +
-      "gle.protobuf.Int32Value\022-\n\010pageSize\030\004 \001(" +
-      "\0132\033.google.protobuf.Int32Value\"\212\001\n\023Archi" +
-      "veListResponse\0220\n\006header\030\001 \001(\0132 .yeying." +
-      "api.common.MessageHeader\022A\n\004body\030\002 \001(\01323" +
-      ".yeying.api.apps.zuoyepigai.ArchiveListR" +
-      "esponseBody\"\207\001\n\027ArchiveListResponseBody\022" +
-      "1\n\006status\030\001 \001(\0132!.yeying.api.common.Resp" +
-      "onseStatus\0229\n\004list\030\002 \003(\0132+.yeying.api.ap" +
-      "ps.zuoyepigai.ArchiveMetadata\"\236\001\n\017Archiv" +
-      "eMetadata\022\013\n\003uid\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\022\n\n" +
-      "studentDid\030\003 \001(\t\022\022\n\nteacherDid\030\004 \001(\t\022\017\n\007" +
-      "subject\030\005 \001(\t\022\021\n\tcreatedAt\030\006 \001(\003\022\021\n\tupda" +
-      "tedAt\030\007 \001(\003\022\021\n\tisDeleted\030\010 \001(\010\"\214\001\n\024Archi" +
-      "veDetailRequest\0220\n\006header\030\001 \001(\0132 .yeying" +
-      ".api.common.MessageHeader\022B\n\004body\030\002 \001(\0132" +
-      "4.yeying.api.apps.zuoyepigai.ArchiveDeta" +
-      "ilRequestBody\"\'\n\030ArchiveDetailRequestBod" +
-      "y\022\013\n\003uid\030\001 \001(\t\"\216\001\n\025ArchiveDetailResponse" +
-      "\0220\n\006header\030\001 \001(\0132 .yeying.api.common.Mes" +
-      "sageHeader\022C\n\004body\030\002 \001(\01325.yeying.api.ap" +
-      "ps.zuoyepigai.ArchiveDetailResponseBody\"" +
-      "\211\001\n\031ArchiveDetailResponseBody\0221\n\006status\030" +
-      "\001 \001(\0132!.yeying.api.common.ResponseStatus" +
-      "\0229\n\004meta\030\002 \001(\0132+.yeying.api.apps.zuoyepi" +
-      "gai.ArchiveMetadata\"\232\001\n\033ArchiveDetailStu" +
-      "dentRequest\0220\n\006header\030\001 \001(\0132 .yeying.api" +
-      ".common.MessageHeader\022I\n\004body\030\002 \001(\0132;.ye" +
-      "ying.api.apps.zuoyepigai.ArchiveDetailSt" +
-      "udentRequestBody\"5\n\037ArchiveDetailStudent" +
-      "RequestBody\022\022\n\nstudentDid\030\001 \001(\t\"\234\001\n\034Arch" +
-      "iveDetailStudentResponse\0220\n\006header\030\001 \001(\013" +
-      "2 .yeying.api.common.MessageHeader\022J\n\004bo" +
-      "dy\030\002 \001(\0132<.yeying.api.apps.zuoyepigai.Ar" +
-      "chiveDetailStudentResponseBody\"\220\001\n Archi" +
-      "veDetailStudentResponseBody\0221\n\006status\030\001 " +
-      "\001(\0132!.yeying.api.common.ResponseStatus\0229" +
-      "\n\004meta\030\002 \001(\0132+.yeying.api.apps.zuoyepiga" +
-      "i.ArchiveMetadata\"\206\001\n\021ArchiveAddRequest\022" +
-      "0\n\006header\030\001 \001(\0132 .yeying.api.common.Mess" +
-      "ageHeader\022?\n\004body\030\002 \001(\01321.yeying.api.app" +
-      "s.zuoyepigai.ArchiveAddRequestBody\"R\n\025Ar" +
-      "chiveAddRequestBody\0229\n\004meta\030\001 \001(\0132+.yeyi" +
-      "ng.api.apps.zuoyepigai.ArchiveMetadata\"\210" +
-      "\001\n\022ArchiveAddResponse\0220\n\006header\030\001 \001(\0132 ." +
-      "yeying.api.common.MessageHeader\022@\n\004body\030" +
-      "\002 \001(\01322.yeying.api.apps.zuoyepigai.Archi" +
-      "veAddResponseBody\"\206\001\n\026ArchiveAddResponse" +
-      "Body\0221\n\006status\030\001 \001(\0132!.yeying.api.common" +
-      ".ResponseStatus\0229\n\004meta\030\002 \001(\0132+.yeying.a" +
-      "pi.apps.zuoyepigai.ArchiveMetadata\"\214\001\n\024A" +
-      "rchiveDeleteRequest\0220\n\006header\030\001 \001(\0132 .ye" +
-      "ying.api.common.MessageHeader\022B\n\004body\030\002 " +
-      "\001(\01324.yeying.api.apps.zuoyepigai.Archive" +
-      "DeleteRequestBody\"\'\n\030ArchiveDeleteReques" +
-      "tBody\022\013\n\003uid\030\001 \001(\t\"\216\001\n\025ArchiveDeleteResp" +
-      "onse\0220\n\006header\030\001 \001(\0132 .yeying.api.common" +
-      ".MessageHeader\022C\n\004body\030\002 \001(\01325.yeying.ap" +
-      "i.apps.zuoyepigai.ArchiveDeleteResponseB" +
-      "ody\"\211\001\n\031ArchiveDeleteResponseBody\0221\n\006sta" +
-      "tus\030\001 \001(\0132!.yeying.api.common.ResponseSt" +
-      "atus\0229\n\004meta\030\002 \001(\0132+.yeying.api.apps.zuo" +
-      "yepigai.ArchiveMetadata\"\214\001\n\024ArchiveUpdat" +
-      "eRequest\0220\n\006header\030\001 \001(\0132 .yeying.api.co" +
-      "mmon.MessageHeader\022B\n\004body\030\002 \001(\01324.yeyin" +
-      "g.api.apps.zuoyepigai.ArchiveUpdateReque" +
-      "stBody\"U\n\030ArchiveUpdateRequestBody\0229\n\004me" +
-      "ta\030\001 \001(\0132+.yeying.api.apps.zuoyepigai.Ar" +
-      "chiveMetadata\"\216\001\n\025ArchiveUpdateResponse\022" +
-      "0\n\006header\030\001 \001(\0132 .yeying.api.common.Mess" +
-      "ageHeader\022C\n\004body\030\002 \001(\01325.yeying.api.app" +
-      "s.zuoyepigai.ArchiveUpdateResponseBody\"\211" +
-      "\001\n\031ArchiveUpdateResponseBody\0221\n\006status\030\001" +
-      " \001(\0132!.yeying.api.common.ResponseStatus\022" +
-      "9\n\004meta\030\002 \001(\0132+.yeying.api.apps.zuoyepig" +
-      "ai.ArchiveMetadata2\273\005\n\007Archive\022i\n\004List\022." +
-      ".yeying.api.apps.zuoyepigai.ArchiveListR" +
-      "equest\032/.yeying.api.apps.zuoyepigai.Arch" +
-      "iveListResponse\"\000\022o\n\006Detail\0220.yeying.api" +
-      ".apps.zuoyepigai.ArchiveDetailRequest\0321." +
+      "/wrappers.proto\032%yeying/api/apps/zuoyepi" +
+      "gai/meta.proto\"\210\001\n\022ArchiveListRequest\0220\n" +
+      "\006header\030\001 \001(\0132 .yeying.api.common.Messag" +
+      "eHeader\022@\n\004body\030\002 \001(\01322.yeying.api.apps." +
+      "zuoyepigai.ArchiveListRequestBody\"\231\001\n\026Ar" +
+      "chiveListRequestBody\022\022\n\nteacherDid\030\001 \001(\t" +
+      "\022\014\n\004name\030\002 \001(\t\022.\n\tpageIndex\030\003 \001(\0132\033.goog" +
+      "le.protobuf.Int32Value\022-\n\010pageSize\030\004 \001(\013" +
+      "2\033.google.protobuf.Int32Value\"\212\001\n\023Archiv" +
+      "eListResponse\0220\n\006header\030\001 \001(\0132 .yeying.a" +
+      "pi.common.MessageHeader\022A\n\004body\030\002 \001(\01323." +
+      "yeying.api.apps.zuoyepigai.ArchiveListRe" +
+      "sponseBody\"\226\001\n\027ArchiveListResponseBody\0221" +
+      "\n\006status\030\001 \001(\0132!.yeying.api.common.Respo" +
+      "nseStatus\0229\n\004list\030\002 \003(\0132+.yeying.api.app" +
+      "s.zuoyepigai.ArchiveMetadata\022\r\n\005total\030\003 " +
+      "\001(\004\"\214\001\n\024ArchiveDetailRequest\0220\n\006header\030\001" +
+      " \001(\0132 .yeying.api.common.MessageHeader\022B" +
+      "\n\004body\030\002 \001(\01324.yeying.api.apps.zuoyepiga" +
+      "i.ArchiveDetailRequestBody\"\'\n\030ArchiveDet" +
+      "ailRequestBody\022\013\n\003uid\030\001 \001(\t\"\216\001\n\025ArchiveD" +
+      "etailResponse\0220\n\006header\030\001 \001(\0132 .yeying.a" +
+      "pi.common.MessageHeader\022C\n\004body\030\002 \001(\01325." +
       "yeying.api.apps.zuoyepigai.ArchiveDetail" +
-      "Response\"\000\022\211\001\n\022DetailByStudentDid\0227.yeyi" +
-      "ng.api.apps.zuoyepigai.ArchiveDetailStud" +
-      "entRequest\0328.yeying.api.apps.zuoyepigai." +
-      "ArchiveDetailStudentResponse\"\000\022f\n\003Add\022-." +
-      "yeying.api.apps.zuoyepigai.ArchiveAddReq" +
-      "uest\032..yeying.api.apps.zuoyepigai.Archiv" +
-      "eAddResponse\"\000\022o\n\006Delete\0220.yeying.api.ap" +
-      "ps.zuoyepigai.ArchiveDeleteRequest\0321.yey" +
-      "ing.api.apps.zuoyepigai.ArchiveDeleteRes" +
-      "ponse\"\000\022o\n\006Update\0220.yeying.api.apps.zuoy" +
-      "epigai.ArchiveUpdateRequest\0321.yeying.api" +
-      ".apps.zuoyepigai.ArchiveUpdateResponse\"\000" +
-      "B\034Z\032yeying/api/apps/zuoyepigaib\006proto3"
+      "ResponseBody\"\211\001\n\031ArchiveDetailResponseBo" +
+      "dy\0221\n\006status\030\001 \001(\0132!.yeying.api.common.R" +
+      "esponseStatus\0229\n\004meta\030\002 \001(\0132+.yeying.api" +
+      ".apps.zuoyepigai.ArchiveMetadata\"\232\001\n\033Arc" +
+      "hiveDetailStudentRequest\0220\n\006header\030\001 \001(\013" +
+      "2 .yeying.api.common.MessageHeader\022I\n\004bo" +
+      "dy\030\002 \001(\0132;.yeying.api.apps.zuoyepigai.Ar" +
+      "chiveDetailStudentRequestBody\"5\n\037Archive" +
+      "DetailStudentRequestBody\022\022\n\nstudentDid\030\001" +
+      " \001(\t\"\234\001\n\034ArchiveDetailStudentResponse\0220\n" +
+      "\006header\030\001 \001(\0132 .yeying.api.common.Messag" +
+      "eHeader\022J\n\004body\030\002 \001(\0132<.yeying.api.apps." +
+      "zuoyepigai.ArchiveDetailStudentResponseB" +
+      "ody\"\220\001\n ArchiveDetailStudentResponseBody" +
+      "\0221\n\006status\030\001 \001(\0132!.yeying.api.common.Res" +
+      "ponseStatus\0229\n\004meta\030\002 \001(\0132+.yeying.api.a" +
+      "pps.zuoyepigai.ArchiveMetadata\"\206\001\n\021Archi" +
+      "veAddRequest\0220\n\006header\030\001 \001(\0132 .yeying.ap" +
+      "i.common.MessageHeader\022?\n\004body\030\002 \001(\01321.y" +
+      "eying.api.apps.zuoyepigai.ArchiveAddRequ" +
+      "estBody\"R\n\025ArchiveAddRequestBody\0229\n\004meta" +
+      "\030\001 \001(\0132+.yeying.api.apps.zuoyepigai.Arch" +
+      "iveMetadata\"\210\001\n\022ArchiveAddResponse\0220\n\006he" +
+      "ader\030\001 \001(\0132 .yeying.api.common.MessageHe" +
+      "ader\022@\n\004body\030\002 \001(\01322.yeying.api.apps.zuo" +
+      "yepigai.ArchiveAddResponseBody\"\206\001\n\026Archi" +
+      "veAddResponseBody\0221\n\006status\030\001 \001(\0132!.yeyi" +
+      "ng.api.common.ResponseStatus\0229\n\004meta\030\002 \001" +
+      "(\0132+.yeying.api.apps.zuoyepigai.ArchiveM" +
+      "etadata\"\214\001\n\024ArchiveDeleteRequest\0220\n\006head" +
+      "er\030\001 \001(\0132 .yeying.api.common.MessageHead" +
+      "er\022B\n\004body\030\002 \001(\01324.yeying.api.apps.zuoye" +
+      "pigai.ArchiveDeleteRequestBody\"\'\n\030Archiv" +
+      "eDeleteRequestBody\022\013\n\003uid\030\001 \001(\t\"\216\001\n\025Arch" +
+      "iveDeleteResponse\0220\n\006header\030\001 \001(\0132 .yeyi" +
+      "ng.api.common.MessageHeader\022C\n\004body\030\002 \001(" +
+      "\01325.yeying.api.apps.zuoyepigai.ArchiveDe" +
+      "leteResponseBody\"\211\001\n\031ArchiveDeleteRespon" +
+      "seBody\0221\n\006status\030\001 \001(\0132!.yeying.api.comm" +
+      "on.ResponseStatus\0229\n\004meta\030\002 \001(\0132+.yeying" +
+      ".api.apps.zuoyepigai.ArchiveMetadata\"\214\001\n" +
+      "\024ArchiveUpdateRequest\0220\n\006header\030\001 \001(\0132 ." +
+      "yeying.api.common.MessageHeader\022B\n\004body\030" +
+      "\002 \001(\01324.yeying.api.apps.zuoyepigai.Archi" +
+      "veUpdateRequestBody\"U\n\030ArchiveUpdateRequ" +
+      "estBody\0229\n\004meta\030\001 \001(\0132+.yeying.api.apps." +
+      "zuoyepigai.ArchiveMetadata\"\216\001\n\025ArchiveUp" +
+      "dateResponse\0220\n\006header\030\001 \001(\0132 .yeying.ap" +
+      "i.common.MessageHeader\022C\n\004body\030\002 \001(\01325.y" +
+      "eying.api.apps.zuoyepigai.ArchiveUpdateR" +
+      "esponseBody\"\211\001\n\031ArchiveUpdateResponseBod" +
+      "y\0221\n\006status\030\001 \001(\0132!.yeying.api.common.Re" +
+      "sponseStatus\0229\n\004meta\030\002 \001(\0132+.yeying.api." +
+      "apps.zuoyepigai.ArchiveMetadata2\273\005\n\007Arch" +
+      "ive\022i\n\004List\022..yeying.api.apps.zuoyepigai" +
+      ".ArchiveListRequest\032/.yeying.api.apps.zu" +
+      "oyepigai.ArchiveListResponse\"\000\022o\n\006Detail" +
+      "\0220.yeying.api.apps.zuoyepigai.ArchiveDet" +
+      "ailRequest\0321.yeying.api.apps.zuoyepigai." +
+      "ArchiveDetailResponse\"\000\022\211\001\n\022DetailByStud" +
+      "entDid\0227.yeying.api.apps.zuoyepigai.Arch" +
+      "iveDetailStudentRequest\0328.yeying.api.app" +
+      "s.zuoyepigai.ArchiveDetailStudentRespons" +
+      "e\"\000\022f\n\003Add\022-.yeying.api.apps.zuoyepigai." +
+      "ArchiveAddRequest\032..yeying.api.apps.zuoy" +
+      "epigai.ArchiveAddResponse\"\000\022o\n\006Delete\0220." +
+      "yeying.api.apps.zuoyepigai.ArchiveDelete" +
+      "Request\0321.yeying.api.apps.zuoyepigai.Arc" +
+      "hiveDeleteResponse\"\000\022o\n\006Update\0220.yeying." +
+      "api.apps.zuoyepigai.ArchiveUpdateRequest" +
+      "\0321.yeying.api.apps.zuoyepigai.ArchiveUpd" +
+      "ateResponse\"\000B\034Z\032yeying/api/apps/zuoyepi" +
+      "gaib\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           yeying.api.common.Message.getDescriptor(),
           com.google.protobuf.WrappersProto.getDescriptor(),
+          yeying.api.apps.zuoyepigai.Meta.getDescriptor(),
         });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveListRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -19979,129 +18505,123 @@ public final class ArchiveOuterClass {
     internal_static_yeying_api_apps_zuoyepigai_ArchiveListResponseBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveListResponseBody_descriptor,
-        new java.lang.String[] { "Status", "List", });
-    internal_static_yeying_api_apps_zuoyepigai_ArchiveMetadata_descriptor =
-      getDescriptor().getMessageTypes().get(4);
-    internal_static_yeying_api_apps_zuoyepigai_ArchiveMetadata_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_yeying_api_apps_zuoyepigai_ArchiveMetadata_descriptor,
-        new java.lang.String[] { "Uid", "Name", "StudentDid", "TeacherDid", "Subject", "CreatedAt", "UpdatedAt", "IsDeleted", });
+        new java.lang.String[] { "Status", "List", "Total", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailRequest_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(4);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailRequest_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailRequestBody_descriptor =
-      getDescriptor().getMessageTypes().get(6);
+      getDescriptor().getMessageTypes().get(5);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailRequestBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailRequestBody_descriptor,
         new java.lang.String[] { "Uid", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailResponse_descriptor =
-      getDescriptor().getMessageTypes().get(7);
+      getDescriptor().getMessageTypes().get(6);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailResponse_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailResponseBody_descriptor =
-      getDescriptor().getMessageTypes().get(8);
+      getDescriptor().getMessageTypes().get(7);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailResponseBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailResponseBody_descriptor,
         new java.lang.String[] { "Status", "Meta", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailStudentRequest_descriptor =
-      getDescriptor().getMessageTypes().get(9);
+      getDescriptor().getMessageTypes().get(8);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailStudentRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailStudentRequest_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailStudentRequestBody_descriptor =
-      getDescriptor().getMessageTypes().get(10);
+      getDescriptor().getMessageTypes().get(9);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailStudentRequestBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailStudentRequestBody_descriptor,
         new java.lang.String[] { "StudentDid", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailStudentResponse_descriptor =
-      getDescriptor().getMessageTypes().get(11);
+      getDescriptor().getMessageTypes().get(10);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailStudentResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailStudentResponse_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailStudentResponseBody_descriptor =
-      getDescriptor().getMessageTypes().get(12);
+      getDescriptor().getMessageTypes().get(11);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailStudentResponseBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveDetailStudentResponseBody_descriptor,
         new java.lang.String[] { "Status", "Meta", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveAddRequest_descriptor =
-      getDescriptor().getMessageTypes().get(13);
+      getDescriptor().getMessageTypes().get(12);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveAddRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveAddRequest_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveAddRequestBody_descriptor =
-      getDescriptor().getMessageTypes().get(14);
+      getDescriptor().getMessageTypes().get(13);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveAddRequestBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveAddRequestBody_descriptor,
         new java.lang.String[] { "Meta", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveAddResponse_descriptor =
-      getDescriptor().getMessageTypes().get(15);
+      getDescriptor().getMessageTypes().get(14);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveAddResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveAddResponse_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveAddResponseBody_descriptor =
-      getDescriptor().getMessageTypes().get(16);
+      getDescriptor().getMessageTypes().get(15);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveAddResponseBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveAddResponseBody_descriptor,
         new java.lang.String[] { "Status", "Meta", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDeleteRequest_descriptor =
-      getDescriptor().getMessageTypes().get(17);
+      getDescriptor().getMessageTypes().get(16);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDeleteRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveDeleteRequest_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDeleteRequestBody_descriptor =
-      getDescriptor().getMessageTypes().get(18);
+      getDescriptor().getMessageTypes().get(17);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDeleteRequestBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveDeleteRequestBody_descriptor,
         new java.lang.String[] { "Uid", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDeleteResponse_descriptor =
-      getDescriptor().getMessageTypes().get(19);
+      getDescriptor().getMessageTypes().get(18);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDeleteResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveDeleteResponse_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDeleteResponseBody_descriptor =
-      getDescriptor().getMessageTypes().get(20);
+      getDescriptor().getMessageTypes().get(19);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveDeleteResponseBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveDeleteResponseBody_descriptor,
         new java.lang.String[] { "Status", "Meta", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveUpdateRequest_descriptor =
-      getDescriptor().getMessageTypes().get(21);
+      getDescriptor().getMessageTypes().get(20);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveUpdateRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveUpdateRequest_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveUpdateRequestBody_descriptor =
-      getDescriptor().getMessageTypes().get(22);
+      getDescriptor().getMessageTypes().get(21);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveUpdateRequestBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveUpdateRequestBody_descriptor,
         new java.lang.String[] { "Meta", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveUpdateResponse_descriptor =
-      getDescriptor().getMessageTypes().get(23);
+      getDescriptor().getMessageTypes().get(22);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveUpdateResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveUpdateResponse_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_ArchiveUpdateResponseBody_descriptor =
-      getDescriptor().getMessageTypes().get(24);
+      getDescriptor().getMessageTypes().get(23);
     internal_static_yeying_api_apps_zuoyepigai_ArchiveUpdateResponseBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveUpdateResponseBody_descriptor,
@@ -20109,6 +18629,7 @@ public final class ArchiveOuterClass {
     descriptor.resolveAllFeaturesImmutable();
     yeying.api.common.Message.getDescriptor();
     com.google.protobuf.WrappersProto.getDescriptor();
+    yeying.api.apps.zuoyepigai.Meta.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)
