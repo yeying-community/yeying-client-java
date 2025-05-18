@@ -11136,7 +11136,7 @@ public final class Meta {
 
     /**
      * <pre>
-     * 资产 url
+     * 资产文件 url
      * </pre>
      *
      * <code>string url = 3;</code>
@@ -11145,7 +11145,7 @@ public final class Meta {
     java.lang.String getUrl();
     /**
      * <pre>
-     * 资产 url
+     * 资产文件 url
      * </pre>
      *
      * <code>string url = 3;</code>
@@ -11156,10 +11156,32 @@ public final class Meta {
 
     /**
      * <pre>
+     * 试卷上传，支持多张图片，是个 json 数组
+     * 格式：["url1","url2"]
+     * </pre>
+     *
+     * <code>string urlJsonArray = 4;</code>
+     * @return The urlJsonArray.
+     */
+    java.lang.String getUrlJsonArray();
+    /**
+     * <pre>
+     * 试卷上传，支持多张图片，是个 json 数组
+     * 格式：["url1","url2"]
+     * </pre>
+     *
+     * <code>string urlJsonArray = 4;</code>
+     * @return The bytes for urlJsonArray.
+     */
+    com.google.protobuf.ByteString
+        getUrlJsonArrayBytes();
+
+    /**
+     * <pre>
      * 任务 uId
      * </pre>
      *
-     * <code>string taskUid = 4;</code>
+     * <code>string taskUid = 5;</code>
      * @return The taskUid.
      */
     java.lang.String getTaskUid();
@@ -11168,7 +11190,7 @@ public final class Meta {
      * 任务 uId
      * </pre>
      *
-     * <code>string taskUid = 4;</code>
+     * <code>string taskUid = 5;</code>
      * @return The bytes for taskUid.
      */
     com.google.protobuf.ByteString
@@ -11179,7 +11201,7 @@ public final class Meta {
      * 资产类型
      * </pre>
      *
-     * <code>.yeying.api.apps.zuoyepigai.ImageContentTypeEnum type = 5;</code>
+     * <code>.yeying.api.apps.zuoyepigai.ImageContentTypeEnum type = 6;</code>
      * @return The enum numeric value on the wire for type.
      */
     int getTypeValue();
@@ -11188,7 +11210,7 @@ public final class Meta {
      * 资产类型
      * </pre>
      *
-     * <code>.yeying.api.apps.zuoyepigai.ImageContentTypeEnum type = 5;</code>
+     * <code>.yeying.api.apps.zuoyepigai.ImageContentTypeEnum type = 6;</code>
      * @return The type.
      */
     yeying.api.apps.zuoyepigai.Imagecontent.ImageContentTypeEnum getType();
@@ -11198,7 +11220,7 @@ public final class Meta {
      * 创建时间
      * </pre>
      *
-     * <code>int64 createdAt = 6;</code>
+     * <code>int64 createdAt = 7;</code>
      * @return The createdAt.
      */
     long getCreatedAt();
@@ -11208,7 +11230,7 @@ public final class Meta {
      * 修改时间
      * </pre>
      *
-     * <code>int64 updatedAt = 7;</code>
+     * <code>int64 updatedAt = 8;</code>
      * @return The updatedAt.
      */
     long getUpdatedAt();
@@ -11218,10 +11240,20 @@ public final class Meta {
      * 是否删除
      * </pre>
      *
-     * <code>bool isDeleted = 8;</code>
+     * <code>bool isDeleted = 9;</code>
      * @return The isDeleted.
      */
     boolean getIsDeleted();
+
+    /**
+     * <pre>
+     * 试卷拍照图片序号，表示教学任务对应试卷的序号，从 1 开始
+     * </pre>
+     *
+     * <code>uint32 urlIndex = 10;</code>
+     * @return The urlIndex.
+     */
+    int getUrlIndex();
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.WarehouseMetadata}
@@ -11248,6 +11280,7 @@ public final class Meta {
       uid_ = "";
       did_ = "";
       url_ = "";
+      urlJsonArray_ = "";
       taskUid_ = "";
       type_ = 0;
     }
@@ -11364,7 +11397,7 @@ public final class Meta {
     private volatile java.lang.Object url_ = "";
     /**
      * <pre>
-     * 资产 url
+     * 资产文件 url
      * </pre>
      *
      * <code>string url = 3;</code>
@@ -11385,7 +11418,7 @@ public final class Meta {
     }
     /**
      * <pre>
-     * 资产 url
+     * 资产文件 url
      * </pre>
      *
      * <code>string url = 3;</code>
@@ -11406,7 +11439,56 @@ public final class Meta {
       }
     }
 
-    public static final int TASKUID_FIELD_NUMBER = 4;
+    public static final int URLJSONARRAY_FIELD_NUMBER = 4;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object urlJsonArray_ = "";
+    /**
+     * <pre>
+     * 试卷上传，支持多张图片，是个 json 数组
+     * 格式：["url1","url2"]
+     * </pre>
+     *
+     * <code>string urlJsonArray = 4;</code>
+     * @return The urlJsonArray.
+     */
+    @java.lang.Override
+    public java.lang.String getUrlJsonArray() {
+      java.lang.Object ref = urlJsonArray_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        urlJsonArray_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * 试卷上传，支持多张图片，是个 json 数组
+     * 格式：["url1","url2"]
+     * </pre>
+     *
+     * <code>string urlJsonArray = 4;</code>
+     * @return The bytes for urlJsonArray.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getUrlJsonArrayBytes() {
+      java.lang.Object ref = urlJsonArray_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        urlJsonArray_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int TASKUID_FIELD_NUMBER = 5;
     @SuppressWarnings("serial")
     private volatile java.lang.Object taskUid_ = "";
     /**
@@ -11414,7 +11496,7 @@ public final class Meta {
      * 任务 uId
      * </pre>
      *
-     * <code>string taskUid = 4;</code>
+     * <code>string taskUid = 5;</code>
      * @return The taskUid.
      */
     @java.lang.Override
@@ -11435,7 +11517,7 @@ public final class Meta {
      * 任务 uId
      * </pre>
      *
-     * <code>string taskUid = 4;</code>
+     * <code>string taskUid = 5;</code>
      * @return The bytes for taskUid.
      */
     @java.lang.Override
@@ -11453,14 +11535,14 @@ public final class Meta {
       }
     }
 
-    public static final int TYPE_FIELD_NUMBER = 5;
+    public static final int TYPE_FIELD_NUMBER = 6;
     private int type_ = 0;
     /**
      * <pre>
      * 资产类型
      * </pre>
      *
-     * <code>.yeying.api.apps.zuoyepigai.ImageContentTypeEnum type = 5;</code>
+     * <code>.yeying.api.apps.zuoyepigai.ImageContentTypeEnum type = 6;</code>
      * @return The enum numeric value on the wire for type.
      */
     @java.lang.Override public int getTypeValue() {
@@ -11471,7 +11553,7 @@ public final class Meta {
      * 资产类型
      * </pre>
      *
-     * <code>.yeying.api.apps.zuoyepigai.ImageContentTypeEnum type = 5;</code>
+     * <code>.yeying.api.apps.zuoyepigai.ImageContentTypeEnum type = 6;</code>
      * @return The type.
      */
     @java.lang.Override public yeying.api.apps.zuoyepigai.Imagecontent.ImageContentTypeEnum getType() {
@@ -11479,14 +11561,14 @@ public final class Meta {
       return result == null ? yeying.api.apps.zuoyepigai.Imagecontent.ImageContentTypeEnum.UNRECOGNIZED : result;
     }
 
-    public static final int CREATEDAT_FIELD_NUMBER = 6;
+    public static final int CREATEDAT_FIELD_NUMBER = 7;
     private long createdAt_ = 0L;
     /**
      * <pre>
      * 创建时间
      * </pre>
      *
-     * <code>int64 createdAt = 6;</code>
+     * <code>int64 createdAt = 7;</code>
      * @return The createdAt.
      */
     @java.lang.Override
@@ -11494,14 +11576,14 @@ public final class Meta {
       return createdAt_;
     }
 
-    public static final int UPDATEDAT_FIELD_NUMBER = 7;
+    public static final int UPDATEDAT_FIELD_NUMBER = 8;
     private long updatedAt_ = 0L;
     /**
      * <pre>
      * 修改时间
      * </pre>
      *
-     * <code>int64 updatedAt = 7;</code>
+     * <code>int64 updatedAt = 8;</code>
      * @return The updatedAt.
      */
     @java.lang.Override
@@ -11509,19 +11591,34 @@ public final class Meta {
       return updatedAt_;
     }
 
-    public static final int ISDELETED_FIELD_NUMBER = 8;
+    public static final int ISDELETED_FIELD_NUMBER = 9;
     private boolean isDeleted_ = false;
     /**
      * <pre>
      * 是否删除
      * </pre>
      *
-     * <code>bool isDeleted = 8;</code>
+     * <code>bool isDeleted = 9;</code>
      * @return The isDeleted.
      */
     @java.lang.Override
     public boolean getIsDeleted() {
       return isDeleted_;
+    }
+
+    public static final int URLINDEX_FIELD_NUMBER = 10;
+    private int urlIndex_ = 0;
+    /**
+     * <pre>
+     * 试卷拍照图片序号，表示教学任务对应试卷的序号，从 1 开始
+     * </pre>
+     *
+     * <code>uint32 urlIndex = 10;</code>
+     * @return The urlIndex.
+     */
+    @java.lang.Override
+    public int getUrlIndex() {
+      return urlIndex_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -11547,20 +11644,26 @@ public final class Meta {
       if (!com.google.protobuf.GeneratedMessage.isStringEmpty(url_)) {
         com.google.protobuf.GeneratedMessage.writeString(output, 3, url_);
       }
+      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(urlJsonArray_)) {
+        com.google.protobuf.GeneratedMessage.writeString(output, 4, urlJsonArray_);
+      }
       if (!com.google.protobuf.GeneratedMessage.isStringEmpty(taskUid_)) {
-        com.google.protobuf.GeneratedMessage.writeString(output, 4, taskUid_);
+        com.google.protobuf.GeneratedMessage.writeString(output, 5, taskUid_);
       }
       if (type_ != yeying.api.apps.zuoyepigai.Imagecontent.ImageContentTypeEnum.QUESTION.getNumber()) {
-        output.writeEnum(5, type_);
+        output.writeEnum(6, type_);
       }
       if (createdAt_ != 0L) {
-        output.writeInt64(6, createdAt_);
+        output.writeInt64(7, createdAt_);
       }
       if (updatedAt_ != 0L) {
-        output.writeInt64(7, updatedAt_);
+        output.writeInt64(8, updatedAt_);
       }
       if (isDeleted_ != false) {
-        output.writeBool(8, isDeleted_);
+        output.writeBool(9, isDeleted_);
+      }
+      if (urlIndex_ != 0) {
+        output.writeUInt32(10, urlIndex_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -11580,24 +11683,31 @@ public final class Meta {
       if (!com.google.protobuf.GeneratedMessage.isStringEmpty(url_)) {
         size += com.google.protobuf.GeneratedMessage.computeStringSize(3, url_);
       }
+      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(urlJsonArray_)) {
+        size += com.google.protobuf.GeneratedMessage.computeStringSize(4, urlJsonArray_);
+      }
       if (!com.google.protobuf.GeneratedMessage.isStringEmpty(taskUid_)) {
-        size += com.google.protobuf.GeneratedMessage.computeStringSize(4, taskUid_);
+        size += com.google.protobuf.GeneratedMessage.computeStringSize(5, taskUid_);
       }
       if (type_ != yeying.api.apps.zuoyepigai.Imagecontent.ImageContentTypeEnum.QUESTION.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(5, type_);
+          .computeEnumSize(6, type_);
       }
       if (createdAt_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(6, createdAt_);
+          .computeInt64Size(7, createdAt_);
       }
       if (updatedAt_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(7, updatedAt_);
+          .computeInt64Size(8, updatedAt_);
       }
       if (isDeleted_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isDeleted_);
+          .computeBoolSize(9, isDeleted_);
+      }
+      if (urlIndex_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, urlIndex_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -11620,6 +11730,8 @@ public final class Meta {
           .equals(other.getDid())) return false;
       if (!getUrl()
           .equals(other.getUrl())) return false;
+      if (!getUrlJsonArray()
+          .equals(other.getUrlJsonArray())) return false;
       if (!getTaskUid()
           .equals(other.getTaskUid())) return false;
       if (type_ != other.type_) return false;
@@ -11629,6 +11741,8 @@ public final class Meta {
           != other.getUpdatedAt()) return false;
       if (getIsDeleted()
           != other.getIsDeleted()) return false;
+      if (getUrlIndex()
+          != other.getUrlIndex()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -11646,6 +11760,8 @@ public final class Meta {
       hash = (53 * hash) + getDid().hashCode();
       hash = (37 * hash) + URL_FIELD_NUMBER;
       hash = (53 * hash) + getUrl().hashCode();
+      hash = (37 * hash) + URLJSONARRAY_FIELD_NUMBER;
+      hash = (53 * hash) + getUrlJsonArray().hashCode();
       hash = (37 * hash) + TASKUID_FIELD_NUMBER;
       hash = (53 * hash) + getTaskUid().hashCode();
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
@@ -11659,6 +11775,8 @@ public final class Meta {
       hash = (37 * hash) + ISDELETED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsDeleted());
+      hash = (37 * hash) + URLINDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getUrlIndex();
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -11793,11 +11911,13 @@ public final class Meta {
         uid_ = "";
         did_ = "";
         url_ = "";
+        urlJsonArray_ = "";
         taskUid_ = "";
         type_ = 0;
         createdAt_ = 0L;
         updatedAt_ = 0L;
         isDeleted_ = false;
+        urlIndex_ = 0;
         return this;
       }
 
@@ -11841,19 +11961,25 @@ public final class Meta {
           result.url_ = url_;
         }
         if (((from_bitField0_ & 0x00000008) != 0)) {
-          result.taskUid_ = taskUid_;
+          result.urlJsonArray_ = urlJsonArray_;
         }
         if (((from_bitField0_ & 0x00000010) != 0)) {
-          result.type_ = type_;
+          result.taskUid_ = taskUid_;
         }
         if (((from_bitField0_ & 0x00000020) != 0)) {
-          result.createdAt_ = createdAt_;
+          result.type_ = type_;
         }
         if (((from_bitField0_ & 0x00000040) != 0)) {
-          result.updatedAt_ = updatedAt_;
+          result.createdAt_ = createdAt_;
         }
         if (((from_bitField0_ & 0x00000080) != 0)) {
+          result.updatedAt_ = updatedAt_;
+        }
+        if (((from_bitField0_ & 0x00000100) != 0)) {
           result.isDeleted_ = isDeleted_;
+        }
+        if (((from_bitField0_ & 0x00000200) != 0)) {
+          result.urlIndex_ = urlIndex_;
         }
       }
 
@@ -11884,9 +12010,14 @@ public final class Meta {
           bitField0_ |= 0x00000004;
           onChanged();
         }
+        if (!other.getUrlJsonArray().isEmpty()) {
+          urlJsonArray_ = other.urlJsonArray_;
+          bitField0_ |= 0x00000008;
+          onChanged();
+        }
         if (!other.getTaskUid().isEmpty()) {
           taskUid_ = other.taskUid_;
-          bitField0_ |= 0x00000008;
+          bitField0_ |= 0x00000010;
           onChanged();
         }
         if (other.type_ != 0) {
@@ -11900,6 +12031,9 @@ public final class Meta {
         }
         if (other.getIsDeleted() != false) {
           setIsDeleted(other.getIsDeleted());
+        }
+        if (other.getUrlIndex() != 0) {
+          setUrlIndex(other.getUrlIndex());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -11943,30 +12077,40 @@ public final class Meta {
                 break;
               } // case 26
               case 34: {
-                taskUid_ = input.readStringRequireUtf8();
+                urlJsonArray_ = input.readStringRequireUtf8();
                 bitField0_ |= 0x00000008;
                 break;
               } // case 34
-              case 40: {
-                type_ = input.readEnum();
+              case 42: {
+                taskUid_ = input.readStringRequireUtf8();
                 bitField0_ |= 0x00000010;
                 break;
-              } // case 40
+              } // case 42
               case 48: {
-                createdAt_ = input.readInt64();
+                type_ = input.readEnum();
                 bitField0_ |= 0x00000020;
                 break;
               } // case 48
               case 56: {
-                updatedAt_ = input.readInt64();
+                createdAt_ = input.readInt64();
                 bitField0_ |= 0x00000040;
                 break;
               } // case 56
               case 64: {
-                isDeleted_ = input.readBool();
+                updatedAt_ = input.readInt64();
                 bitField0_ |= 0x00000080;
                 break;
               } // case 64
+              case 72: {
+                isDeleted_ = input.readBool();
+                bitField0_ |= 0x00000100;
+                break;
+              } // case 72
+              case 80: {
+                urlIndex_ = input.readUInt32();
+                bitField0_ |= 0x00000200;
+                break;
+              } // case 80
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -12171,7 +12315,7 @@ public final class Meta {
       private java.lang.Object url_ = "";
       /**
        * <pre>
-       * 资产 url
+       * 资产文件 url
        * </pre>
        *
        * <code>string url = 3;</code>
@@ -12191,7 +12335,7 @@ public final class Meta {
       }
       /**
        * <pre>
-       * 资产 url
+       * 资产文件 url
        * </pre>
        *
        * <code>string url = 3;</code>
@@ -12212,7 +12356,7 @@ public final class Meta {
       }
       /**
        * <pre>
-       * 资产 url
+       * 资产文件 url
        * </pre>
        *
        * <code>string url = 3;</code>
@@ -12229,7 +12373,7 @@ public final class Meta {
       }
       /**
        * <pre>
-       * 资产 url
+       * 资产文件 url
        * </pre>
        *
        * <code>string url = 3;</code>
@@ -12243,7 +12387,7 @@ public final class Meta {
       }
       /**
        * <pre>
-       * 资产 url
+       * 资产文件 url
        * </pre>
        *
        * <code>string url = 3;</code>
@@ -12260,13 +12404,110 @@ public final class Meta {
         return this;
       }
 
+      private java.lang.Object urlJsonArray_ = "";
+      /**
+       * <pre>
+       * 试卷上传，支持多张图片，是个 json 数组
+       * 格式：["url1","url2"]
+       * </pre>
+       *
+       * <code>string urlJsonArray = 4;</code>
+       * @return The urlJsonArray.
+       */
+      public java.lang.String getUrlJsonArray() {
+        java.lang.Object ref = urlJsonArray_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          urlJsonArray_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * 试卷上传，支持多张图片，是个 json 数组
+       * 格式：["url1","url2"]
+       * </pre>
+       *
+       * <code>string urlJsonArray = 4;</code>
+       * @return The bytes for urlJsonArray.
+       */
+      public com.google.protobuf.ByteString
+          getUrlJsonArrayBytes() {
+        java.lang.Object ref = urlJsonArray_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          urlJsonArray_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * 试卷上传，支持多张图片，是个 json 数组
+       * 格式：["url1","url2"]
+       * </pre>
+       *
+       * <code>string urlJsonArray = 4;</code>
+       * @param value The urlJsonArray to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUrlJsonArray(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        urlJsonArray_ = value;
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 试卷上传，支持多张图片，是个 json 数组
+       * 格式：["url1","url2"]
+       * </pre>
+       *
+       * <code>string urlJsonArray = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUrlJsonArray() {
+        urlJsonArray_ = getDefaultInstance().getUrlJsonArray();
+        bitField0_ = (bitField0_ & ~0x00000008);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 试卷上传，支持多张图片，是个 json 数组
+       * 格式：["url1","url2"]
+       * </pre>
+       *
+       * <code>string urlJsonArray = 4;</code>
+       * @param value The bytes for urlJsonArray to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUrlJsonArrayBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
+        urlJsonArray_ = value;
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+
       private java.lang.Object taskUid_ = "";
       /**
        * <pre>
        * 任务 uId
        * </pre>
        *
-       * <code>string taskUid = 4;</code>
+       * <code>string taskUid = 5;</code>
        * @return The taskUid.
        */
       public java.lang.String getTaskUid() {
@@ -12286,7 +12527,7 @@ public final class Meta {
        * 任务 uId
        * </pre>
        *
-       * <code>string taskUid = 4;</code>
+       * <code>string taskUid = 5;</code>
        * @return The bytes for taskUid.
        */
       public com.google.protobuf.ByteString
@@ -12307,7 +12548,7 @@ public final class Meta {
        * 任务 uId
        * </pre>
        *
-       * <code>string taskUid = 4;</code>
+       * <code>string taskUid = 5;</code>
        * @param value The taskUid to set.
        * @return This builder for chaining.
        */
@@ -12315,7 +12556,7 @@ public final class Meta {
           java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         taskUid_ = value;
-        bitField0_ |= 0x00000008;
+        bitField0_ |= 0x00000010;
         onChanged();
         return this;
       }
@@ -12324,12 +12565,12 @@ public final class Meta {
        * 任务 uId
        * </pre>
        *
-       * <code>string taskUid = 4;</code>
+       * <code>string taskUid = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearTaskUid() {
         taskUid_ = getDefaultInstance().getTaskUid();
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000010);
         onChanged();
         return this;
       }
@@ -12338,7 +12579,7 @@ public final class Meta {
        * 任务 uId
        * </pre>
        *
-       * <code>string taskUid = 4;</code>
+       * <code>string taskUid = 5;</code>
        * @param value The bytes for taskUid to set.
        * @return This builder for chaining.
        */
@@ -12347,7 +12588,7 @@ public final class Meta {
         if (value == null) { throw new NullPointerException(); }
         checkByteStringIsUtf8(value);
         taskUid_ = value;
-        bitField0_ |= 0x00000008;
+        bitField0_ |= 0x00000010;
         onChanged();
         return this;
       }
@@ -12358,7 +12599,7 @@ public final class Meta {
        * 资产类型
        * </pre>
        *
-       * <code>.yeying.api.apps.zuoyepigai.ImageContentTypeEnum type = 5;</code>
+       * <code>.yeying.api.apps.zuoyepigai.ImageContentTypeEnum type = 6;</code>
        * @return The enum numeric value on the wire for type.
        */
       @java.lang.Override public int getTypeValue() {
@@ -12369,13 +12610,13 @@ public final class Meta {
        * 资产类型
        * </pre>
        *
-       * <code>.yeying.api.apps.zuoyepigai.ImageContentTypeEnum type = 5;</code>
+       * <code>.yeying.api.apps.zuoyepigai.ImageContentTypeEnum type = 6;</code>
        * @param value The enum numeric value on the wire for type to set.
        * @return This builder for chaining.
        */
       public Builder setTypeValue(int value) {
         type_ = value;
-        bitField0_ |= 0x00000010;
+        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
@@ -12384,7 +12625,7 @@ public final class Meta {
        * 资产类型
        * </pre>
        *
-       * <code>.yeying.api.apps.zuoyepigai.ImageContentTypeEnum type = 5;</code>
+       * <code>.yeying.api.apps.zuoyepigai.ImageContentTypeEnum type = 6;</code>
        * @return The type.
        */
       @java.lang.Override
@@ -12397,7 +12638,7 @@ public final class Meta {
        * 资产类型
        * </pre>
        *
-       * <code>.yeying.api.apps.zuoyepigai.ImageContentTypeEnum type = 5;</code>
+       * <code>.yeying.api.apps.zuoyepigai.ImageContentTypeEnum type = 6;</code>
        * @param value The type to set.
        * @return This builder for chaining.
        */
@@ -12405,7 +12646,7 @@ public final class Meta {
         if (value == null) {
           throw new NullPointerException();
         }
-        bitField0_ |= 0x00000010;
+        bitField0_ |= 0x00000020;
         type_ = value.getNumber();
         onChanged();
         return this;
@@ -12415,11 +12656,11 @@ public final class Meta {
        * 资产类型
        * </pre>
        *
-       * <code>.yeying.api.apps.zuoyepigai.ImageContentTypeEnum type = 5;</code>
+       * <code>.yeying.api.apps.zuoyepigai.ImageContentTypeEnum type = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearType() {
-        bitField0_ = (bitField0_ & ~0x00000010);
+        bitField0_ = (bitField0_ & ~0x00000020);
         type_ = 0;
         onChanged();
         return this;
@@ -12431,7 +12672,7 @@ public final class Meta {
        * 创建时间
        * </pre>
        *
-       * <code>int64 createdAt = 6;</code>
+       * <code>int64 createdAt = 7;</code>
        * @return The createdAt.
        */
       @java.lang.Override
@@ -12443,14 +12684,14 @@ public final class Meta {
        * 创建时间
        * </pre>
        *
-       * <code>int64 createdAt = 6;</code>
+       * <code>int64 createdAt = 7;</code>
        * @param value The createdAt to set.
        * @return This builder for chaining.
        */
       public Builder setCreatedAt(long value) {
 
         createdAt_ = value;
-        bitField0_ |= 0x00000020;
+        bitField0_ |= 0x00000040;
         onChanged();
         return this;
       }
@@ -12459,11 +12700,11 @@ public final class Meta {
        * 创建时间
        * </pre>
        *
-       * <code>int64 createdAt = 6;</code>
+       * <code>int64 createdAt = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCreatedAt() {
-        bitField0_ = (bitField0_ & ~0x00000020);
+        bitField0_ = (bitField0_ & ~0x00000040);
         createdAt_ = 0L;
         onChanged();
         return this;
@@ -12475,7 +12716,7 @@ public final class Meta {
        * 修改时间
        * </pre>
        *
-       * <code>int64 updatedAt = 7;</code>
+       * <code>int64 updatedAt = 8;</code>
        * @return The updatedAt.
        */
       @java.lang.Override
@@ -12487,14 +12728,14 @@ public final class Meta {
        * 修改时间
        * </pre>
        *
-       * <code>int64 updatedAt = 7;</code>
+       * <code>int64 updatedAt = 8;</code>
        * @param value The updatedAt to set.
        * @return This builder for chaining.
        */
       public Builder setUpdatedAt(long value) {
 
         updatedAt_ = value;
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000080;
         onChanged();
         return this;
       }
@@ -12503,11 +12744,11 @@ public final class Meta {
        * 修改时间
        * </pre>
        *
-       * <code>int64 updatedAt = 7;</code>
+       * <code>int64 updatedAt = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearUpdatedAt() {
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000080);
         updatedAt_ = 0L;
         onChanged();
         return this;
@@ -12519,7 +12760,7 @@ public final class Meta {
        * 是否删除
        * </pre>
        *
-       * <code>bool isDeleted = 8;</code>
+       * <code>bool isDeleted = 9;</code>
        * @return The isDeleted.
        */
       @java.lang.Override
@@ -12531,14 +12772,14 @@ public final class Meta {
        * 是否删除
        * </pre>
        *
-       * <code>bool isDeleted = 8;</code>
+       * <code>bool isDeleted = 9;</code>
        * @param value The isDeleted to set.
        * @return This builder for chaining.
        */
       public Builder setIsDeleted(boolean value) {
 
         isDeleted_ = value;
-        bitField0_ |= 0x00000080;
+        bitField0_ |= 0x00000100;
         onChanged();
         return this;
       }
@@ -12547,12 +12788,56 @@ public final class Meta {
        * 是否删除
        * </pre>
        *
-       * <code>bool isDeleted = 8;</code>
+       * <code>bool isDeleted = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsDeleted() {
-        bitField0_ = (bitField0_ & ~0x00000080);
+        bitField0_ = (bitField0_ & ~0x00000100);
         isDeleted_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int urlIndex_ ;
+      /**
+       * <pre>
+       * 试卷拍照图片序号，表示教学任务对应试卷的序号，从 1 开始
+       * </pre>
+       *
+       * <code>uint32 urlIndex = 10;</code>
+       * @return The urlIndex.
+       */
+      @java.lang.Override
+      public int getUrlIndex() {
+        return urlIndex_;
+      }
+      /**
+       * <pre>
+       * 试卷拍照图片序号，表示教学任务对应试卷的序号，从 1 开始
+       * </pre>
+       *
+       * <code>uint32 urlIndex = 10;</code>
+       * @param value The urlIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUrlIndex(int value) {
+
+        urlIndex_ = value;
+        bitField0_ |= 0x00000200;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 试卷拍照图片序号，表示教学任务对应试卷的序号，从 1 开始
+       * </pre>
+       *
+       * <code>uint32 urlIndex = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUrlIndex() {
+        bitField0_ = (bitField0_ & ~0x00000200);
+        urlIndex_ = 0;
         onChanged();
         return this;
       }
@@ -12694,12 +12979,13 @@ public final class Meta {
       "\r\n\005count\030\003 \001(\004\"r\n\017TaskTagMetadata\022\013\n\003uid" +
       "\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\013\n\003did\030\003 \001(\t\022\021\n\tcre" +
       "atedAt\030\004 \001(\003\022\021\n\tupdatedAt\030\005 \001(\003\022\021\n\tisDel" +
-      "eted\030\006 \001(\010\"\304\001\n\021WarehouseMetadata\022\013\n\003uid\030" +
-      "\001 \001(\t\022\013\n\003did\030\002 \001(\t\022\013\n\003url\030\003 \001(\t\022\017\n\007taskU" +
-      "id\030\004 \001(\t\022>\n\004type\030\005 \001(\01620.yeying.api.apps" +
-      ".zuoyepigai.ImageContentTypeEnum\022\021\n\tcrea" +
-      "tedAt\030\006 \001(\003\022\021\n\tupdatedAt\030\007 \001(\003\022\021\n\tisDele" +
-      "ted\030\010 \001(\010B\034Z\032yeying/api/apps/zuoyepigaib" +
+      "eted\030\006 \001(\010\"\354\001\n\021WarehouseMetadata\022\013\n\003uid\030" +
+      "\001 \001(\t\022\013\n\003did\030\002 \001(\t\022\013\n\003url\030\003 \001(\t\022\024\n\014urlJs" +
+      "onArray\030\004 \001(\t\022\017\n\007taskUid\030\005 \001(\t\022>\n\004type\030\006" +
+      " \001(\01620.yeying.api.apps.zuoyepigai.ImageC" +
+      "ontentTypeEnum\022\021\n\tcreatedAt\030\007 \001(\003\022\021\n\tupd" +
+      "atedAt\030\010 \001(\003\022\021\n\tisDeleted\030\t \001(\010\022\020\n\010urlIn" +
+      "dex\030\n \001(\rB\034Z\032yeying/api/apps/zuoyepigaib" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -12760,7 +13046,7 @@ public final class Meta {
     internal_static_yeying_api_apps_zuoyepigai_WarehouseMetadata_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_WarehouseMetadata_descriptor,
-        new java.lang.String[] { "Uid", "Did", "Url", "TaskUid", "Type", "CreatedAt", "UpdatedAt", "IsDeleted", });
+        new java.lang.String[] { "Uid", "Did", "Url", "UrlJsonArray", "TaskUid", "Type", "CreatedAt", "UpdatedAt", "IsDeleted", "UrlIndex", });
     descriptor.resolveAllFeaturesImmutable();
     yeying.api.apps.zuoyepigai.Imagecontent.getDescriptor();
   }
