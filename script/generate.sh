@@ -9,3 +9,6 @@ protoc --proto_path=../yeying-idl \
        --grpc-java_out=src/main/java \
        ../yeying-idl/yeying/api/apps/zuoyepigai/*.proto
 
+
+mvn clean install
+

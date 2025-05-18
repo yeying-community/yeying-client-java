@@ -11157,24 +11157,51 @@ public final class Meta {
     /**
      * <pre>
      * 试卷上传，支持多张图片，是个 json 数组
-     * 格式：["url1","url2"]
+     * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
      * </pre>
      *
-     * <code>string urlJsonArray = 4;</code>
-     * @return The urlJsonArray.
+     * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
      */
-    java.lang.String getUrlJsonArray();
+    java.util.List<yeying.api.apps.zuoyepigai.Meta.UrlMetaData> 
+        getUrlMetaDataList();
     /**
      * <pre>
      * 试卷上传，支持多张图片，是个 json 数组
-     * 格式：["url1","url2"]
+     * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
      * </pre>
      *
-     * <code>string urlJsonArray = 4;</code>
-     * @return The bytes for urlJsonArray.
+     * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
      */
-    com.google.protobuf.ByteString
-        getUrlJsonArrayBytes();
+    yeying.api.apps.zuoyepigai.Meta.UrlMetaData getUrlMetaData(int index);
+    /**
+     * <pre>
+     * 试卷上传，支持多张图片，是个 json 数组
+     * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+     * </pre>
+     *
+     * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+     */
+    int getUrlMetaDataCount();
+    /**
+     * <pre>
+     * 试卷上传，支持多张图片，是个 json 数组
+     * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+     * </pre>
+     *
+     * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+     */
+    java.util.List<? extends yeying.api.apps.zuoyepigai.Meta.UrlMetaDataOrBuilder> 
+        getUrlMetaDataOrBuilderList();
+    /**
+     * <pre>
+     * 试卷上传，支持多张图片，是个 json 数组
+     * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+     * </pre>
+     *
+     * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+     */
+    yeying.api.apps.zuoyepigai.Meta.UrlMetaDataOrBuilder getUrlMetaDataOrBuilder(
+        int index);
 
     /**
      * <pre>
@@ -11280,7 +11307,7 @@ public final class Meta {
       uid_ = "";
       did_ = "";
       url_ = "";
-      urlJsonArray_ = "";
+      urlMetaData_ = java.util.Collections.emptyList();
       taskUid_ = "";
       type_ = 0;
     }
@@ -11439,53 +11466,70 @@ public final class Meta {
       }
     }
 
-    public static final int URLJSONARRAY_FIELD_NUMBER = 4;
+    public static final int URLMETADATA_FIELD_NUMBER = 4;
     @SuppressWarnings("serial")
-    private volatile java.lang.Object urlJsonArray_ = "";
+    private java.util.List<yeying.api.apps.zuoyepigai.Meta.UrlMetaData> urlMetaData_;
     /**
      * <pre>
      * 试卷上传，支持多张图片，是个 json 数组
-     * 格式：["url1","url2"]
+     * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
      * </pre>
      *
-     * <code>string urlJsonArray = 4;</code>
-     * @return The urlJsonArray.
+     * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
      */
     @java.lang.Override
-    public java.lang.String getUrlJsonArray() {
-      java.lang.Object ref = urlJsonArray_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        urlJsonArray_ = s;
-        return s;
-      }
+    public java.util.List<yeying.api.apps.zuoyepigai.Meta.UrlMetaData> getUrlMetaDataList() {
+      return urlMetaData_;
     }
     /**
      * <pre>
      * 试卷上传，支持多张图片，是个 json 数组
-     * 格式：["url1","url2"]
+     * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
      * </pre>
      *
-     * <code>string urlJsonArray = 4;</code>
-     * @return The bytes for urlJsonArray.
+     * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
      */
     @java.lang.Override
-    public com.google.protobuf.ByteString
-        getUrlJsonArrayBytes() {
-      java.lang.Object ref = urlJsonArray_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        urlJsonArray_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public java.util.List<? extends yeying.api.apps.zuoyepigai.Meta.UrlMetaDataOrBuilder> 
+        getUrlMetaDataOrBuilderList() {
+      return urlMetaData_;
+    }
+    /**
+     * <pre>
+     * 试卷上传，支持多张图片，是个 json 数组
+     * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+     * </pre>
+     *
+     * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+     */
+    @java.lang.Override
+    public int getUrlMetaDataCount() {
+      return urlMetaData_.size();
+    }
+    /**
+     * <pre>
+     * 试卷上传，支持多张图片，是个 json 数组
+     * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+     * </pre>
+     *
+     * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+     */
+    @java.lang.Override
+    public yeying.api.apps.zuoyepigai.Meta.UrlMetaData getUrlMetaData(int index) {
+      return urlMetaData_.get(index);
+    }
+    /**
+     * <pre>
+     * 试卷上传，支持多张图片，是个 json 数组
+     * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+     * </pre>
+     *
+     * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+     */
+    @java.lang.Override
+    public yeying.api.apps.zuoyepigai.Meta.UrlMetaDataOrBuilder getUrlMetaDataOrBuilder(
+        int index) {
+      return urlMetaData_.get(index);
     }
 
     public static final int TASKUID_FIELD_NUMBER = 5;
@@ -11644,8 +11688,8 @@ public final class Meta {
       if (!com.google.protobuf.GeneratedMessage.isStringEmpty(url_)) {
         com.google.protobuf.GeneratedMessage.writeString(output, 3, url_);
       }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(urlJsonArray_)) {
-        com.google.protobuf.GeneratedMessage.writeString(output, 4, urlJsonArray_);
+      for (int i = 0; i < urlMetaData_.size(); i++) {
+        output.writeMessage(4, urlMetaData_.get(i));
       }
       if (!com.google.protobuf.GeneratedMessage.isStringEmpty(taskUid_)) {
         com.google.protobuf.GeneratedMessage.writeString(output, 5, taskUid_);
@@ -11683,8 +11727,9 @@ public final class Meta {
       if (!com.google.protobuf.GeneratedMessage.isStringEmpty(url_)) {
         size += com.google.protobuf.GeneratedMessage.computeStringSize(3, url_);
       }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(urlJsonArray_)) {
-        size += com.google.protobuf.GeneratedMessage.computeStringSize(4, urlJsonArray_);
+      for (int i = 0; i < urlMetaData_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, urlMetaData_.get(i));
       }
       if (!com.google.protobuf.GeneratedMessage.isStringEmpty(taskUid_)) {
         size += com.google.protobuf.GeneratedMessage.computeStringSize(5, taskUid_);
@@ -11730,8 +11775,8 @@ public final class Meta {
           .equals(other.getDid())) return false;
       if (!getUrl()
           .equals(other.getUrl())) return false;
-      if (!getUrlJsonArray()
-          .equals(other.getUrlJsonArray())) return false;
+      if (!getUrlMetaDataList()
+          .equals(other.getUrlMetaDataList())) return false;
       if (!getTaskUid()
           .equals(other.getTaskUid())) return false;
       if (type_ != other.type_) return false;
@@ -11760,8 +11805,10 @@ public final class Meta {
       hash = (53 * hash) + getDid().hashCode();
       hash = (37 * hash) + URL_FIELD_NUMBER;
       hash = (53 * hash) + getUrl().hashCode();
-      hash = (37 * hash) + URLJSONARRAY_FIELD_NUMBER;
-      hash = (53 * hash) + getUrlJsonArray().hashCode();
+      if (getUrlMetaDataCount() > 0) {
+        hash = (37 * hash) + URLMETADATA_FIELD_NUMBER;
+        hash = (53 * hash) + getUrlMetaDataList().hashCode();
+      }
       hash = (37 * hash) + TASKUID_FIELD_NUMBER;
       hash = (53 * hash) + getTaskUid().hashCode();
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
@@ -11911,7 +11958,13 @@ public final class Meta {
         uid_ = "";
         did_ = "";
         url_ = "";
-        urlJsonArray_ = "";
+        if (urlMetaDataBuilder_ == null) {
+          urlMetaData_ = java.util.Collections.emptyList();
+        } else {
+          urlMetaData_ = null;
+          urlMetaDataBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
         taskUid_ = "";
         type_ = 0;
         createdAt_ = 0L;
@@ -11944,9 +11997,22 @@ public final class Meta {
       @java.lang.Override
       public yeying.api.apps.zuoyepigai.Meta.WarehouseMetadata buildPartial() {
         yeying.api.apps.zuoyepigai.Meta.WarehouseMetadata result = new yeying.api.apps.zuoyepigai.Meta.WarehouseMetadata(this);
+        buildPartialRepeatedFields(result);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartialRepeatedFields(yeying.api.apps.zuoyepigai.Meta.WarehouseMetadata result) {
+        if (urlMetaDataBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) != 0)) {
+            urlMetaData_ = java.util.Collections.unmodifiableList(urlMetaData_);
+            bitField0_ = (bitField0_ & ~0x00000008);
+          }
+          result.urlMetaData_ = urlMetaData_;
+        } else {
+          result.urlMetaData_ = urlMetaDataBuilder_.build();
+        }
       }
 
       private void buildPartial0(yeying.api.apps.zuoyepigai.Meta.WarehouseMetadata result) {
@@ -11959,9 +12025,6 @@ public final class Meta {
         }
         if (((from_bitField0_ & 0x00000004) != 0)) {
           result.url_ = url_;
-        }
-        if (((from_bitField0_ & 0x00000008) != 0)) {
-          result.urlJsonArray_ = urlJsonArray_;
         }
         if (((from_bitField0_ & 0x00000010) != 0)) {
           result.taskUid_ = taskUid_;
@@ -12010,10 +12073,31 @@ public final class Meta {
           bitField0_ |= 0x00000004;
           onChanged();
         }
-        if (!other.getUrlJsonArray().isEmpty()) {
-          urlJsonArray_ = other.urlJsonArray_;
-          bitField0_ |= 0x00000008;
-          onChanged();
+        if (urlMetaDataBuilder_ == null) {
+          if (!other.urlMetaData_.isEmpty()) {
+            if (urlMetaData_.isEmpty()) {
+              urlMetaData_ = other.urlMetaData_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+            } else {
+              ensureUrlMetaDataIsMutable();
+              urlMetaData_.addAll(other.urlMetaData_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.urlMetaData_.isEmpty()) {
+            if (urlMetaDataBuilder_.isEmpty()) {
+              urlMetaDataBuilder_.dispose();
+              urlMetaDataBuilder_ = null;
+              urlMetaData_ = other.urlMetaData_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+              urlMetaDataBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getUrlMetaDataFieldBuilder() : null;
+            } else {
+              urlMetaDataBuilder_.addAllMessages(other.urlMetaData_);
+            }
+          }
         }
         if (!other.getTaskUid().isEmpty()) {
           taskUid_ = other.taskUid_;
@@ -12077,8 +12161,16 @@ public final class Meta {
                 break;
               } // case 26
               case 34: {
-                urlJsonArray_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000008;
+                yeying.api.apps.zuoyepigai.Meta.UrlMetaData m =
+                    input.readMessage(
+                        yeying.api.apps.zuoyepigai.Meta.UrlMetaData.parser(),
+                        extensionRegistry);
+                if (urlMetaDataBuilder_ == null) {
+                  ensureUrlMetaDataIsMutable();
+                  urlMetaData_.add(m);
+                } else {
+                  urlMetaDataBuilder_.addMessage(m);
+                }
                 break;
               } // case 34
               case 42: {
@@ -12404,101 +12496,334 @@ public final class Meta {
         return this;
       }
 
-      private java.lang.Object urlJsonArray_ = "";
+      private java.util.List<yeying.api.apps.zuoyepigai.Meta.UrlMetaData> urlMetaData_ =
+        java.util.Collections.emptyList();
+      private void ensureUrlMetaDataIsMutable() {
+        if (!((bitField0_ & 0x00000008) != 0)) {
+          urlMetaData_ = new java.util.ArrayList<yeying.api.apps.zuoyepigai.Meta.UrlMetaData>(urlMetaData_);
+          bitField0_ |= 0x00000008;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          yeying.api.apps.zuoyepigai.Meta.UrlMetaData, yeying.api.apps.zuoyepigai.Meta.UrlMetaData.Builder, yeying.api.apps.zuoyepigai.Meta.UrlMetaDataOrBuilder> urlMetaDataBuilder_;
+
       /**
        * <pre>
        * 试卷上传，支持多张图片，是个 json 数组
-       * 格式：["url1","url2"]
+       * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
        * </pre>
        *
-       * <code>string urlJsonArray = 4;</code>
-       * @return The urlJsonArray.
+       * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
        */
-      public java.lang.String getUrlJsonArray() {
-        java.lang.Object ref = urlJsonArray_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          urlJsonArray_ = s;
-          return s;
+      public java.util.List<yeying.api.apps.zuoyepigai.Meta.UrlMetaData> getUrlMetaDataList() {
+        if (urlMetaDataBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(urlMetaData_);
         } else {
-          return (java.lang.String) ref;
+          return urlMetaDataBuilder_.getMessageList();
         }
       }
       /**
        * <pre>
        * 试卷上传，支持多张图片，是个 json 数组
-       * 格式：["url1","url2"]
+       * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
        * </pre>
        *
-       * <code>string urlJsonArray = 4;</code>
-       * @return The bytes for urlJsonArray.
+       * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
        */
-      public com.google.protobuf.ByteString
-          getUrlJsonArrayBytes() {
-        java.lang.Object ref = urlJsonArray_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          urlJsonArray_ = b;
-          return b;
+      public int getUrlMetaDataCount() {
+        if (urlMetaDataBuilder_ == null) {
+          return urlMetaData_.size();
         } else {
-          return (com.google.protobuf.ByteString) ref;
+          return urlMetaDataBuilder_.getCount();
         }
       }
       /**
        * <pre>
        * 试卷上传，支持多张图片，是个 json 数组
-       * 格式：["url1","url2"]
+       * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
        * </pre>
        *
-       * <code>string urlJsonArray = 4;</code>
-       * @param value The urlJsonArray to set.
-       * @return This builder for chaining.
+       * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
        */
-      public Builder setUrlJsonArray(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        urlJsonArray_ = value;
-        bitField0_ |= 0x00000008;
-        onChanged();
+      public yeying.api.apps.zuoyepigai.Meta.UrlMetaData getUrlMetaData(int index) {
+        if (urlMetaDataBuilder_ == null) {
+          return urlMetaData_.get(index);
+        } else {
+          return urlMetaDataBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * 试卷上传，支持多张图片，是个 json 数组
+       * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+       */
+      public Builder setUrlMetaData(
+          int index, yeying.api.apps.zuoyepigai.Meta.UrlMetaData value) {
+        if (urlMetaDataBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUrlMetaDataIsMutable();
+          urlMetaData_.set(index, value);
+          onChanged();
+        } else {
+          urlMetaDataBuilder_.setMessage(index, value);
+        }
         return this;
       }
       /**
        * <pre>
        * 试卷上传，支持多张图片，是个 json 数组
-       * 格式：["url1","url2"]
+       * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
        * </pre>
        *
-       * <code>string urlJsonArray = 4;</code>
-       * @return This builder for chaining.
+       * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
        */
-      public Builder clearUrlJsonArray() {
-        urlJsonArray_ = getDefaultInstance().getUrlJsonArray();
-        bitField0_ = (bitField0_ & ~0x00000008);
-        onChanged();
+      public Builder setUrlMetaData(
+          int index, yeying.api.apps.zuoyepigai.Meta.UrlMetaData.Builder builderForValue) {
+        if (urlMetaDataBuilder_ == null) {
+          ensureUrlMetaDataIsMutable();
+          urlMetaData_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          urlMetaDataBuilder_.setMessage(index, builderForValue.build());
+        }
         return this;
       }
       /**
        * <pre>
        * 试卷上传，支持多张图片，是个 json 数组
-       * 格式：["url1","url2"]
+       * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
        * </pre>
        *
-       * <code>string urlJsonArray = 4;</code>
-       * @param value The bytes for urlJsonArray to set.
-       * @return This builder for chaining.
+       * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
        */
-      public Builder setUrlJsonArrayBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        urlJsonArray_ = value;
-        bitField0_ |= 0x00000008;
-        onChanged();
+      public Builder addUrlMetaData(yeying.api.apps.zuoyepigai.Meta.UrlMetaData value) {
+        if (urlMetaDataBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUrlMetaDataIsMutable();
+          urlMetaData_.add(value);
+          onChanged();
+        } else {
+          urlMetaDataBuilder_.addMessage(value);
+        }
         return this;
+      }
+      /**
+       * <pre>
+       * 试卷上传，支持多张图片，是个 json 数组
+       * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+       */
+      public Builder addUrlMetaData(
+          int index, yeying.api.apps.zuoyepigai.Meta.UrlMetaData value) {
+        if (urlMetaDataBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUrlMetaDataIsMutable();
+          urlMetaData_.add(index, value);
+          onChanged();
+        } else {
+          urlMetaDataBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 试卷上传，支持多张图片，是个 json 数组
+       * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+       */
+      public Builder addUrlMetaData(
+          yeying.api.apps.zuoyepigai.Meta.UrlMetaData.Builder builderForValue) {
+        if (urlMetaDataBuilder_ == null) {
+          ensureUrlMetaDataIsMutable();
+          urlMetaData_.add(builderForValue.build());
+          onChanged();
+        } else {
+          urlMetaDataBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 试卷上传，支持多张图片，是个 json 数组
+       * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+       */
+      public Builder addUrlMetaData(
+          int index, yeying.api.apps.zuoyepigai.Meta.UrlMetaData.Builder builderForValue) {
+        if (urlMetaDataBuilder_ == null) {
+          ensureUrlMetaDataIsMutable();
+          urlMetaData_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          urlMetaDataBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 试卷上传，支持多张图片，是个 json 数组
+       * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+       */
+      public Builder addAllUrlMetaData(
+          java.lang.Iterable<? extends yeying.api.apps.zuoyepigai.Meta.UrlMetaData> values) {
+        if (urlMetaDataBuilder_ == null) {
+          ensureUrlMetaDataIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, urlMetaData_);
+          onChanged();
+        } else {
+          urlMetaDataBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 试卷上传，支持多张图片，是个 json 数组
+       * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+       */
+      public Builder clearUrlMetaData() {
+        if (urlMetaDataBuilder_ == null) {
+          urlMetaData_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
+          onChanged();
+        } else {
+          urlMetaDataBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 试卷上传，支持多张图片，是个 json 数组
+       * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+       */
+      public Builder removeUrlMetaData(int index) {
+        if (urlMetaDataBuilder_ == null) {
+          ensureUrlMetaDataIsMutable();
+          urlMetaData_.remove(index);
+          onChanged();
+        } else {
+          urlMetaDataBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 试卷上传，支持多张图片，是个 json 数组
+       * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+       */
+      public yeying.api.apps.zuoyepigai.Meta.UrlMetaData.Builder getUrlMetaDataBuilder(
+          int index) {
+        return getUrlMetaDataFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * 试卷上传，支持多张图片，是个 json 数组
+       * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+       */
+      public yeying.api.apps.zuoyepigai.Meta.UrlMetaDataOrBuilder getUrlMetaDataOrBuilder(
+          int index) {
+        if (urlMetaDataBuilder_ == null) {
+          return urlMetaData_.get(index);  } else {
+          return urlMetaDataBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * 试卷上传，支持多张图片，是个 json 数组
+       * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+       */
+      public java.util.List<? extends yeying.api.apps.zuoyepigai.Meta.UrlMetaDataOrBuilder> 
+           getUrlMetaDataOrBuilderList() {
+        if (urlMetaDataBuilder_ != null) {
+          return urlMetaDataBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(urlMetaData_);
+        }
+      }
+      /**
+       * <pre>
+       * 试卷上传，支持多张图片，是个 json 数组
+       * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+       */
+      public yeying.api.apps.zuoyepigai.Meta.UrlMetaData.Builder addUrlMetaDataBuilder() {
+        return getUrlMetaDataFieldBuilder().addBuilder(
+            yeying.api.apps.zuoyepigai.Meta.UrlMetaData.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * 试卷上传，支持多张图片，是个 json 数组
+       * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+       */
+      public yeying.api.apps.zuoyepigai.Meta.UrlMetaData.Builder addUrlMetaDataBuilder(
+          int index) {
+        return getUrlMetaDataFieldBuilder().addBuilder(
+            index, yeying.api.apps.zuoyepigai.Meta.UrlMetaData.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * 试卷上传，支持多张图片，是个 json 数组
+       * 格式：[{"index":1,"url":"url1"},{"index":2,"url":"url2"}]
+       * </pre>
+       *
+       * <code>repeated .yeying.api.apps.zuoyepigai.UrlMetaData urlMetaData = 4;</code>
+       */
+      public java.util.List<yeying.api.apps.zuoyepigai.Meta.UrlMetaData.Builder> 
+           getUrlMetaDataBuilderList() {
+        return getUrlMetaDataFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          yeying.api.apps.zuoyepigai.Meta.UrlMetaData, yeying.api.apps.zuoyepigai.Meta.UrlMetaData.Builder, yeying.api.apps.zuoyepigai.Meta.UrlMetaDataOrBuilder> 
+          getUrlMetaDataFieldBuilder() {
+        if (urlMetaDataBuilder_ == null) {
+          urlMetaDataBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              yeying.api.apps.zuoyepigai.Meta.UrlMetaData, yeying.api.apps.zuoyepigai.Meta.UrlMetaData.Builder, yeying.api.apps.zuoyepigai.Meta.UrlMetaDataOrBuilder>(
+                  urlMetaData_,
+                  ((bitField0_ & 0x00000008) != 0),
+                  getParentForChildren(),
+                  isClean());
+          urlMetaData_ = null;
+        }
+        return urlMetaDataBuilder_;
       }
 
       private java.lang.Object taskUid_ = "";
@@ -12893,6 +13218,588 @@ public final class Meta {
 
   }
 
+  public interface UrlMetaDataOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:yeying.api.apps.zuoyepigai.UrlMetaData)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>uint32 index = 1;</code>
+     * @return The index.
+     */
+    int getIndex();
+
+    /**
+     * <code>string url = 2;</code>
+     * @return The url.
+     */
+    java.lang.String getUrl();
+    /**
+     * <code>string url = 2;</code>
+     * @return The bytes for url.
+     */
+    com.google.protobuf.ByteString
+        getUrlBytes();
+  }
+  /**
+   * Protobuf type {@code yeying.api.apps.zuoyepigai.UrlMetaData}
+   */
+  public static final class UrlMetaData extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:yeying.api.apps.zuoyepigai.UrlMetaData)
+      UrlMetaDataOrBuilder {
+  private static final long serialVersionUID = 0L;
+    static {
+      com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
+        com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
+        /* major= */ 4,
+        /* minor= */ 29,
+        /* patch= */ 3,
+        /* suffix= */ "",
+        UrlMetaData.class.getName());
+    }
+    // Use UrlMetaData.newBuilder() to construct.
+    private UrlMetaData(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+    }
+    private UrlMetaData() {
+      url_ = "";
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return yeying.api.apps.zuoyepigai.Meta.internal_static_yeying_api_apps_zuoyepigai_UrlMetaData_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return yeying.api.apps.zuoyepigai.Meta.internal_static_yeying_api_apps_zuoyepigai_UrlMetaData_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              yeying.api.apps.zuoyepigai.Meta.UrlMetaData.class, yeying.api.apps.zuoyepigai.Meta.UrlMetaData.Builder.class);
+    }
+
+    public static final int INDEX_FIELD_NUMBER = 1;
+    private int index_ = 0;
+    /**
+     * <code>uint32 index = 1;</code>
+     * @return The index.
+     */
+    @java.lang.Override
+    public int getIndex() {
+      return index_;
+    }
+
+    public static final int URL_FIELD_NUMBER = 2;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object url_ = "";
+    /**
+     * <code>string url = 2;</code>
+     * @return The url.
+     */
+    @java.lang.Override
+    public java.lang.String getUrl() {
+      java.lang.Object ref = url_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        url_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string url = 2;</code>
+     * @return The bytes for url.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getUrlBytes() {
+      java.lang.Object ref = url_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        url_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (index_ != 0) {
+        output.writeUInt32(1, index_);
+      }
+      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(url_)) {
+        com.google.protobuf.GeneratedMessage.writeString(output, 2, url_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (index_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, index_);
+      }
+      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(url_)) {
+        size += com.google.protobuf.GeneratedMessage.computeStringSize(2, url_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof yeying.api.apps.zuoyepigai.Meta.UrlMetaData)) {
+        return super.equals(obj);
+      }
+      yeying.api.apps.zuoyepigai.Meta.UrlMetaData other = (yeying.api.apps.zuoyepigai.Meta.UrlMetaData) obj;
+
+      if (getIndex()
+          != other.getIndex()) return false;
+      if (!getUrl()
+          .equals(other.getUrl())) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getIndex();
+      hash = (37 * hash) + URL_FIELD_NUMBER;
+      hash = (53 * hash) + getUrl().hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static yeying.api.apps.zuoyepigai.Meta.UrlMetaData parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.apps.zuoyepigai.Meta.UrlMetaData parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.Meta.UrlMetaData parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.apps.zuoyepigai.Meta.UrlMetaData parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.Meta.UrlMetaData parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.apps.zuoyepigai.Meta.UrlMetaData parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.Meta.UrlMetaData parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.apps.zuoyepigai.Meta.UrlMetaData parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static yeying.api.apps.zuoyepigai.Meta.UrlMetaData parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static yeying.api.apps.zuoyepigai.Meta.UrlMetaData parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static yeying.api.apps.zuoyepigai.Meta.UrlMetaData parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.apps.zuoyepigai.Meta.UrlMetaData parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(yeying.api.apps.zuoyepigai.Meta.UrlMetaData prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code yeying.api.apps.zuoyepigai.UrlMetaData}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:yeying.api.apps.zuoyepigai.UrlMetaData)
+        yeying.api.apps.zuoyepigai.Meta.UrlMetaDataOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return yeying.api.apps.zuoyepigai.Meta.internal_static_yeying_api_apps_zuoyepigai_UrlMetaData_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return yeying.api.apps.zuoyepigai.Meta.internal_static_yeying_api_apps_zuoyepigai_UrlMetaData_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                yeying.api.apps.zuoyepigai.Meta.UrlMetaData.class, yeying.api.apps.zuoyepigai.Meta.UrlMetaData.Builder.class);
+      }
+
+      // Construct using yeying.api.apps.zuoyepigai.Meta.UrlMetaData.newBuilder()
+      private Builder() {
+
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        bitField0_ = 0;
+        index_ = 0;
+        url_ = "";
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return yeying.api.apps.zuoyepigai.Meta.internal_static_yeying_api_apps_zuoyepigai_UrlMetaData_descriptor;
+      }
+
+      @java.lang.Override
+      public yeying.api.apps.zuoyepigai.Meta.UrlMetaData getDefaultInstanceForType() {
+        return yeying.api.apps.zuoyepigai.Meta.UrlMetaData.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public yeying.api.apps.zuoyepigai.Meta.UrlMetaData build() {
+        yeying.api.apps.zuoyepigai.Meta.UrlMetaData result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public yeying.api.apps.zuoyepigai.Meta.UrlMetaData buildPartial() {
+        yeying.api.apps.zuoyepigai.Meta.UrlMetaData result = new yeying.api.apps.zuoyepigai.Meta.UrlMetaData(this);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartial0(yeying.api.apps.zuoyepigai.Meta.UrlMetaData result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.index_ = index_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.url_ = url_;
+        }
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof yeying.api.apps.zuoyepigai.Meta.UrlMetaData) {
+          return mergeFrom((yeying.api.apps.zuoyepigai.Meta.UrlMetaData)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(yeying.api.apps.zuoyepigai.Meta.UrlMetaData other) {
+        if (other == yeying.api.apps.zuoyepigai.Meta.UrlMetaData.getDefaultInstance()) return this;
+        if (other.getIndex() != 0) {
+          setIndex(other.getIndex());
+        }
+        if (!other.getUrl().isEmpty()) {
+          url_ = other.url_;
+          bitField0_ |= 0x00000002;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                index_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 18: {
+                url_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 18
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.unwrapIOException();
+        } finally {
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private int index_ ;
+      /**
+       * <code>uint32 index = 1;</code>
+       * @return The index.
+       */
+      @java.lang.Override
+      public int getIndex() {
+        return index_;
+      }
+      /**
+       * <code>uint32 index = 1;</code>
+       * @param value The index to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIndex(int value) {
+
+        index_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 index = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIndex() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        index_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object url_ = "";
+      /**
+       * <code>string url = 2;</code>
+       * @return The url.
+       */
+      public java.lang.String getUrl() {
+        java.lang.Object ref = url_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          url_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string url = 2;</code>
+       * @return The bytes for url.
+       */
+      public com.google.protobuf.ByteString
+          getUrlBytes() {
+        java.lang.Object ref = url_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          url_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string url = 2;</code>
+       * @param value The url to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUrl(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        url_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string url = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUrl() {
+        url_ = getDefaultInstance().getUrl();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string url = 2;</code>
+       * @param value The bytes for url to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUrlBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
+        url_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:yeying.api.apps.zuoyepigai.UrlMetaData)
+    }
+
+    // @@protoc_insertion_point(class_scope:yeying.api.apps.zuoyepigai.UrlMetaData)
+    private static final yeying.api.apps.zuoyepigai.Meta.UrlMetaData DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new yeying.api.apps.zuoyepigai.Meta.UrlMetaData();
+    }
+
+    public static yeying.api.apps.zuoyepigai.Meta.UrlMetaData getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<UrlMetaData>
+        PARSER = new com.google.protobuf.AbstractParser<UrlMetaData>() {
+      @java.lang.Override
+      public UrlMetaData parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
+      }
+    };
+
+    public static com.google.protobuf.Parser<UrlMetaData> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<UrlMetaData> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public yeying.api.apps.zuoyepigai.Meta.UrlMetaData getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_yeying_api_apps_zuoyepigai_GroupMetaData_descriptor;
   private static final 
@@ -12938,6 +13845,11 @@ public final class Meta {
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_yeying_api_apps_zuoyepigai_WarehouseMetadata_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_yeying_api_apps_zuoyepigai_UrlMetaData_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_yeying_api_apps_zuoyepigai_UrlMetaData_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -12979,14 +13891,16 @@ public final class Meta {
       "\r\n\005count\030\003 \001(\004\"r\n\017TaskTagMetadata\022\013\n\003uid" +
       "\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\013\n\003did\030\003 \001(\t\022\021\n\tcre" +
       "atedAt\030\004 \001(\003\022\021\n\tupdatedAt\030\005 \001(\003\022\021\n\tisDel" +
-      "eted\030\006 \001(\010\"\354\001\n\021WarehouseMetadata\022\013\n\003uid\030" +
-      "\001 \001(\t\022\013\n\003did\030\002 \001(\t\022\013\n\003url\030\003 \001(\t\022\024\n\014urlJs" +
-      "onArray\030\004 \001(\t\022\017\n\007taskUid\030\005 \001(\t\022>\n\004type\030\006" +
+      "eted\030\006 \001(\010\"\224\002\n\021WarehouseMetadata\022\013\n\003uid\030" +
+      "\001 \001(\t\022\013\n\003did\030\002 \001(\t\022\013\n\003url\030\003 \001(\t\022<\n\013urlMe" +
+      "taData\030\004 \003(\0132\'.yeying.api.apps.zuoyepiga" +
+      "i.UrlMetaData\022\017\n\007taskUid\030\005 \001(\t\022>\n\004type\030\006" +
       " \001(\01620.yeying.api.apps.zuoyepigai.ImageC" +
       "ontentTypeEnum\022\021\n\tcreatedAt\030\007 \001(\003\022\021\n\tupd" +
       "atedAt\030\010 \001(\003\022\021\n\tisDeleted\030\t \001(\010\022\020\n\010urlIn" +
-      "dex\030\n \001(\rB\034Z\032yeying/api/apps/zuoyepigaib" +
-      "\006proto3"
+      "dex\030\n \001(\r\")\n\013UrlMetaData\022\r\n\005index\030\001 \001(\r\022" +
+      "\013\n\003url\030\002 \001(\tB\034Z\032yeying/api/apps/zuoyepig" +
+      "aib\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -13046,7 +13960,13 @@ public final class Meta {
     internal_static_yeying_api_apps_zuoyepigai_WarehouseMetadata_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_WarehouseMetadata_descriptor,
-        new java.lang.String[] { "Uid", "Did", "Url", "UrlJsonArray", "TaskUid", "Type", "CreatedAt", "UpdatedAt", "IsDeleted", "UrlIndex", });
+        new java.lang.String[] { "Uid", "Did", "Url", "UrlMetaData", "TaskUid", "Type", "CreatedAt", "UpdatedAt", "IsDeleted", "UrlIndex", });
+    internal_static_yeying_api_apps_zuoyepigai_UrlMetaData_descriptor =
+      getDescriptor().getMessageTypes().get(9);
+    internal_static_yeying_api_apps_zuoyepigai_UrlMetaData_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_yeying_api_apps_zuoyepigai_UrlMetaData_descriptor,
+        new java.lang.String[] { "Index", "Url", });
     descriptor.resolveAllFeaturesImmutable();
     yeying.api.apps.zuoyepigai.Imagecontent.getDescriptor();
   }
