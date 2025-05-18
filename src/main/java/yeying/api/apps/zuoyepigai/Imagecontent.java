@@ -186,6 +186,226 @@ public final class Imagecontent {
     // @@protoc_insertion_point(enum_scope:yeying.api.apps.zuoyepigai.ImageContentTypeEnum)
   }
 
+  /**
+   * Protobuf enum {@code yeying.api.apps.zuoyepigai.TaskStatusEnum}
+   */
+  public enum TaskStatusEnum
+      implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <pre>
+     * 创建、待批改（创建后用户还没有批改作业）、批改中（用户批改一部分作业）、批改完成、待订正、订正中、订正完成
+     * 创建
+     * </pre>
+     *
+     * <code>CREATED = 0;</code>
+     */
+    CREATED(0),
+    /**
+     * <pre>
+     * 待批改
+     * </pre>
+     *
+     * <code>WAIT_MARKING = 1;</code>
+     */
+    WAIT_MARKING(1),
+    /**
+     * <pre>
+     * 批改中
+     * </pre>
+     *
+     * <code>MARKING = 2;</code>
+     */
+    MARKING(2),
+    /**
+     * <pre>
+     * 批改完成
+     * </pre>
+     *
+     * <code>FINISH_MARKING = 3;</code>
+     */
+    FINISH_MARKING(3),
+    /**
+     * <pre>
+     * 待订正
+     * </pre>
+     *
+     * <code>WAIT_REVISE = 4;</code>
+     */
+    WAIT_REVISE(4),
+    /**
+     * <pre>
+     * 订正中
+     * </pre>
+     *
+     * <code>REVISE = 5;</code>
+     */
+    REVISE(5),
+    /**
+     * <pre>
+     * 订正完成
+     * </pre>
+     *
+     * <code>FINISH_REVISE = 6;</code>
+     */
+    FINISH_REVISE(6),
+    UNRECOGNIZED(-1),
+    ;
+
+    static {
+      com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
+        com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
+        /* major= */ 4,
+        /* minor= */ 29,
+        /* patch= */ 3,
+        /* suffix= */ "",
+        TaskStatusEnum.class.getName());
+    }
+    /**
+     * <pre>
+     * 创建、待批改（创建后用户还没有批改作业）、批改中（用户批改一部分作业）、批改完成、待订正、订正中、订正完成
+     * 创建
+     * </pre>
+     *
+     * <code>CREATED = 0;</code>
+     */
+    public static final int CREATED_VALUE = 0;
+    /**
+     * <pre>
+     * 待批改
+     * </pre>
+     *
+     * <code>WAIT_MARKING = 1;</code>
+     */
+    public static final int WAIT_MARKING_VALUE = 1;
+    /**
+     * <pre>
+     * 批改中
+     * </pre>
+     *
+     * <code>MARKING = 2;</code>
+     */
+    public static final int MARKING_VALUE = 2;
+    /**
+     * <pre>
+     * 批改完成
+     * </pre>
+     *
+     * <code>FINISH_MARKING = 3;</code>
+     */
+    public static final int FINISH_MARKING_VALUE = 3;
+    /**
+     * <pre>
+     * 待订正
+     * </pre>
+     *
+     * <code>WAIT_REVISE = 4;</code>
+     */
+    public static final int WAIT_REVISE_VALUE = 4;
+    /**
+     * <pre>
+     * 订正中
+     * </pre>
+     *
+     * <code>REVISE = 5;</code>
+     */
+    public static final int REVISE_VALUE = 5;
+    /**
+     * <pre>
+     * 订正完成
+     * </pre>
+     *
+     * <code>FINISH_REVISE = 6;</code>
+     */
+    public static final int FINISH_REVISE_VALUE = 6;
+
+
+    public final int getNumber() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
+      }
+      return value;
+    }
+
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static TaskStatusEnum valueOf(int value) {
+      return forNumber(value);
+    }
+
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     */
+    public static TaskStatusEnum forNumber(int value) {
+      switch (value) {
+        case 0: return CREATED;
+        case 1: return WAIT_MARKING;
+        case 2: return MARKING;
+        case 3: return FINISH_MARKING;
+        case 4: return WAIT_REVISE;
+        case 5: return REVISE;
+        case 6: return FINISH_REVISE;
+        default: return null;
+      }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<TaskStatusEnum>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static final com.google.protobuf.Internal.EnumLiteMap<
+        TaskStatusEnum> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<TaskStatusEnum>() {
+            public TaskStatusEnum findValueByNumber(int number) {
+              return TaskStatusEnum.forNumber(number);
+            }
+          };
+
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
+      return getDescriptor().getValues().get(ordinal());
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return yeying.api.apps.zuoyepigai.Imagecontent.getDescriptor().getEnumTypes().get(1);
+    }
+
+    private static final TaskStatusEnum[] VALUES = values();
+
+    public static TaskStatusEnum valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      if (desc.getIndex() == -1) {
+        return UNRECOGNIZED;
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int value;
+
+    private TaskStatusEnum(int value) {
+      this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:yeying.api.apps.zuoyepigai.TaskStatusEnum)
+  }
+
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -198,8 +418,11 @@ public final class Imagecontent {
       "\n-yeying/api/apps/zuoyepigai/imageconten" +
       "t.proto\022\032yeying.api.apps.zuoyepigai*8\n\024I" +
       "mageContentTypeEnum\022\014\n\010QUESTION\020\000\022\n\n\006ANS" +
-      "WER\020\001\022\006\n\002QA\020\002B\034Z\032yeying/api/apps/zuoyepi" +
-      "gaib\006proto3"
+      "WER\020\001\022\006\n\002QA\020\002*\200\001\n\016TaskStatusEnum\022\013\n\007CREA" +
+      "TED\020\000\022\020\n\014WAIT_MARKING\020\001\022\013\n\007MARKING\020\002\022\022\n\016" +
+      "FINISH_MARKING\020\003\022\017\n\013WAIT_REVISE\020\004\022\n\n\006REV" +
+      "ISE\020\005\022\021\n\rFINISH_REVISE\020\006B\034Z\032yeying/api/a" +
+      "pps/zuoyepigaib\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

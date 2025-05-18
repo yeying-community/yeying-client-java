@@ -113,6 +113,37 @@ public final class TaskGrpc {
     return getListMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest,
+      yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse> getTagCountMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "TagCount",
+      requestType = yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest.class,
+      responseType = yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest,
+      yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse> getTagCountMethod() {
+    io.grpc.MethodDescriptor<yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse> getTagCountMethod;
+    if ((getTagCountMethod = TaskGrpc.getTagCountMethod) == null) {
+      synchronized (TaskGrpc.class) {
+        if ((getTagCountMethod = TaskGrpc.getTagCountMethod) == null) {
+          TaskGrpc.getTagCountMethod = getTagCountMethod =
+              io.grpc.MethodDescriptor.<yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest, yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "TagCount"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new TaskMethodDescriptorSupplier("TagCount"))
+              .build();
+        }
+      }
+    }
+    return getTagCountMethod;
+  }
+
   private static volatile io.grpc.MethodDescriptor<yeying.api.apps.zuoyepigai.TaskOuterClass.UpdateTaskRequest,
       yeying.api.apps.zuoyepigai.TaskOuterClass.UpdateTaskResponse> getUpdateMethod;
 
@@ -265,12 +296,22 @@ public final class TaskGrpc {
 
     /**
      * <pre>
-     * 任务列表
+     * 查询老师名下总的任务列表
      * </pre>
      */
     default void list(yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskRequest request,
         io.grpc.stub.StreamObserver<yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getListMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * 查询老师名下创建的 tag 名下对应的任务数量
+     * </pre>
+     */
+    default void tagCount(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest request,
+        io.grpc.stub.StreamObserver<yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTagCountMethod(), responseObserver);
     }
 
     /**
@@ -355,13 +396,24 @@ public final class TaskGrpc {
 
     /**
      * <pre>
-     * 任务列表
+     * 查询老师名下总的任务列表
      * </pre>
      */
     public void list(yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskRequest request,
         io.grpc.stub.StreamObserver<yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getListMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * 查询老师名下创建的 tag 名下对应的任务数量
+     * </pre>
+     */
+    public void tagCount(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest request,
+        io.grpc.stub.StreamObserver<yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getTagCountMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
@@ -430,12 +482,22 @@ public final class TaskGrpc {
 
     /**
      * <pre>
-     * 任务列表
+     * 查询老师名下总的任务列表
      * </pre>
      */
     public yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskResponse list(yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getListMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * 查询老师名下创建的 tag 名下对应的任务数量
+     * </pre>
+     */
+    public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse tagCount(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getTagCountMethod(), getCallOptions(), request);
     }
 
     /**
@@ -502,12 +564,22 @@ public final class TaskGrpc {
 
     /**
      * <pre>
-     * 任务列表
+     * 查询老师名下总的任务列表
      * </pre>
      */
     public yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskResponse list(yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getListMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * 查询老师名下创建的 tag 名下对应的任务数量
+     * </pre>
+     */
+    public yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse tagCount(yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getTagCountMethod(), getCallOptions(), request);
     }
 
     /**
@@ -576,13 +648,24 @@ public final class TaskGrpc {
 
     /**
      * <pre>
-     * 任务列表
+     * 查询老师名下总的任务列表
      * </pre>
      */
     public com.google.common.util.concurrent.ListenableFuture<yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskResponse> list(
         yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getListMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * 查询老师名下创建的 tag 名下对应的任务数量
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse> tagCount(
+        yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getTagCountMethod(), getCallOptions()), request);
     }
 
     /**
@@ -611,8 +694,9 @@ public final class TaskGrpc {
   private static final int METHODID_ADD = 0;
   private static final int METHODID_DETAIL = 1;
   private static final int METHODID_LIST = 2;
-  private static final int METHODID_UPDATE = 3;
-  private static final int METHODID_DELETE = 4;
+  private static final int METHODID_TAG_COUNT = 3;
+  private static final int METHODID_UPDATE = 4;
+  private static final int METHODID_DELETE = 5;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -642,6 +726,10 @@ public final class TaskGrpc {
         case METHODID_LIST:
           serviceImpl.list((yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskRequest) request,
               (io.grpc.stub.StreamObserver<yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskResponse>) responseObserver);
+          break;
+        case METHODID_TAG_COUNT:
+          serviceImpl.tagCount((yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest) request,
+              (io.grpc.stub.StreamObserver<yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse>) responseObserver);
           break;
         case METHODID_UPDATE:
           serviceImpl.update((yeying.api.apps.zuoyepigai.TaskOuterClass.UpdateTaskRequest) request,
@@ -690,6 +778,13 @@ public final class TaskGrpc {
               yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskRequest,
               yeying.api.apps.zuoyepigai.TaskOuterClass.ListTaskResponse>(
                 service, METHODID_LIST)))
+        .addMethod(
+          getTagCountMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskRequest,
+              yeying.api.apps.zuoyepigai.TaskOuterClass.TagCountTaskResponse>(
+                service, METHODID_TAG_COUNT)))
         .addMethod(
           getUpdateMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
@@ -755,6 +850,7 @@ public final class TaskGrpc {
               .addMethod(getAddMethod())
               .addMethod(getDetailMethod())
               .addMethod(getListMethod())
+              .addMethod(getTagCountMethod())
               .addMethod(getUpdateMethod())
               .addMethod(getDeleteMethod())
               .build();

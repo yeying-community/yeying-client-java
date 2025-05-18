@@ -2145,7 +2145,7 @@ public final class HomeworkOuterClass {
      *
      * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
      */
-    java.util.List<yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata> 
+    java.util.List<yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata> 
         getListList();
     /**
      * <pre>
@@ -2154,7 +2154,7 @@ public final class HomeworkOuterClass {
      *
      * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
      */
-    yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata getList(int index);
+    yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata getList(int index);
     /**
      * <pre>
      * repeated 表示 List
@@ -2170,7 +2170,7 @@ public final class HomeworkOuterClass {
      *
      * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
      */
-    java.util.List<? extends yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadataOrBuilder> 
+    java.util.List<? extends yeying.api.apps.zuoyepigai.Meta.HomeworkMetadataOrBuilder> 
         getListOrBuilderList();
     /**
      * <pre>
@@ -2179,7 +2179,7 @@ public final class HomeworkOuterClass {
      *
      * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
      */
-    yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadataOrBuilder getListOrBuilder(
+    yeying.api.apps.zuoyepigai.Meta.HomeworkMetadataOrBuilder getListOrBuilder(
         int index);
   }
   /**
@@ -2249,7 +2249,7 @@ public final class HomeworkOuterClass {
 
     public static final int LIST_FIELD_NUMBER = 2;
     @SuppressWarnings("serial")
-    private java.util.List<yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata> list_;
+    private java.util.List<yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata> list_;
     /**
      * <pre>
      * repeated 表示 List
@@ -2258,7 +2258,7 @@ public final class HomeworkOuterClass {
      * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
      */
     @java.lang.Override
-    public java.util.List<yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata> getListList() {
+    public java.util.List<yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata> getListList() {
       return list_;
     }
     /**
@@ -2269,7 +2269,7 @@ public final class HomeworkOuterClass {
      * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadataOrBuilder> 
+    public java.util.List<? extends yeying.api.apps.zuoyepigai.Meta.HomeworkMetadataOrBuilder> 
         getListOrBuilderList() {
       return list_;
     }
@@ -2292,7 +2292,7 @@ public final class HomeworkOuterClass {
      * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata getList(int index) {
+    public yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata getList(int index) {
       return list_.get(index);
     }
     /**
@@ -2303,7 +2303,7 @@ public final class HomeworkOuterClass {
      * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadataOrBuilder getListOrBuilder(
+    public yeying.api.apps.zuoyepigai.Meta.HomeworkMetadataOrBuilder getListOrBuilder(
         int index) {
       return list_.get(index);
     }
@@ -2667,9 +2667,9 @@ public final class HomeworkOuterClass {
                 break;
               } // case 10
               case 18: {
-                yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata m =
+                yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata m =
                     input.readMessage(
-                        yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.parser(),
+                        yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.parser(),
                         extensionRegistry);
                 if (listBuilder_ == null) {
                   ensureListIsMutable();
@@ -2817,17 +2817,17 @@ public final class HomeworkOuterClass {
         return statusBuilder_;
       }
 
-      private java.util.List<yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata> list_ =
+      private java.util.List<yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata> list_ =
         java.util.Collections.emptyList();
       private void ensureListIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          list_ = new java.util.ArrayList<yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata>(list_);
+          list_ = new java.util.ArrayList<yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata>(list_);
           bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.Builder, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadataOrBuilder> listBuilder_;
+          yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata, yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.HomeworkMetadataOrBuilder> listBuilder_;
 
       /**
        * <pre>
@@ -2836,7 +2836,7 @@ public final class HomeworkOuterClass {
        *
        * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
        */
-      public java.util.List<yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata> getListList() {
+      public java.util.List<yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata> getListList() {
         if (listBuilder_ == null) {
           return java.util.Collections.unmodifiableList(list_);
         } else {
@@ -2864,7 +2864,7 @@ public final class HomeworkOuterClass {
        *
        * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata getList(int index) {
+      public yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata getList(int index) {
         if (listBuilder_ == null) {
           return list_.get(index);
         } else {
@@ -2879,7 +2879,7 @@ public final class HomeworkOuterClass {
        * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
        */
       public Builder setList(
-          int index, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata value) {
+          int index, yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata value) {
         if (listBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2900,7 +2900,7 @@ public final class HomeworkOuterClass {
        * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
        */
       public Builder setList(
-          int index, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.Builder builderForValue) {
+          int index, yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.Builder builderForValue) {
         if (listBuilder_ == null) {
           ensureListIsMutable();
           list_.set(index, builderForValue.build());
@@ -2917,7 +2917,7 @@ public final class HomeworkOuterClass {
        *
        * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
        */
-      public Builder addList(yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata value) {
+      public Builder addList(yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata value) {
         if (listBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2938,7 +2938,7 @@ public final class HomeworkOuterClass {
        * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
        */
       public Builder addList(
-          int index, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata value) {
+          int index, yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata value) {
         if (listBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2959,7 +2959,7 @@ public final class HomeworkOuterClass {
        * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
        */
       public Builder addList(
-          yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.Builder builderForValue) {
+          yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.Builder builderForValue) {
         if (listBuilder_ == null) {
           ensureListIsMutable();
           list_.add(builderForValue.build());
@@ -2977,7 +2977,7 @@ public final class HomeworkOuterClass {
        * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
        */
       public Builder addList(
-          int index, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.Builder builderForValue) {
+          int index, yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.Builder builderForValue) {
         if (listBuilder_ == null) {
           ensureListIsMutable();
           list_.add(index, builderForValue.build());
@@ -2995,7 +2995,7 @@ public final class HomeworkOuterClass {
        * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
        */
       public Builder addAllList(
-          java.lang.Iterable<? extends yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata> values) {
+          java.lang.Iterable<? extends yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata> values) {
         if (listBuilder_ == null) {
           ensureListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -3047,7 +3047,7 @@ public final class HomeworkOuterClass {
        *
        * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.Builder getListBuilder(
+      public yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.Builder getListBuilder(
           int index) {
         return getListFieldBuilder().getBuilder(index);
       }
@@ -3058,7 +3058,7 @@ public final class HomeworkOuterClass {
        *
        * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadataOrBuilder getListOrBuilder(
+      public yeying.api.apps.zuoyepigai.Meta.HomeworkMetadataOrBuilder getListOrBuilder(
           int index) {
         if (listBuilder_ == null) {
           return list_.get(index);  } else {
@@ -3072,7 +3072,7 @@ public final class HomeworkOuterClass {
        *
        * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
        */
-      public java.util.List<? extends yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadataOrBuilder> 
+      public java.util.List<? extends yeying.api.apps.zuoyepigai.Meta.HomeworkMetadataOrBuilder> 
            getListOrBuilderList() {
         if (listBuilder_ != null) {
           return listBuilder_.getMessageOrBuilderList();
@@ -3087,9 +3087,9 @@ public final class HomeworkOuterClass {
        *
        * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.Builder addListBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.Builder addListBuilder() {
         return getListFieldBuilder().addBuilder(
-            yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.getDefaultInstance());
+            yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.getDefaultInstance());
       }
       /**
        * <pre>
@@ -3098,10 +3098,10 @@ public final class HomeworkOuterClass {
        *
        * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.Builder addListBuilder(
+      public yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.Builder addListBuilder(
           int index) {
         return getListFieldBuilder().addBuilder(
-            index, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.getDefaultInstance());
+            index, yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.getDefaultInstance());
       }
       /**
        * <pre>
@@ -3110,16 +3110,16 @@ public final class HomeworkOuterClass {
        *
        * <code>repeated .yeying.api.apps.zuoyepigai.HomeworkMetadata list = 2;</code>
        */
-      public java.util.List<yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.Builder> 
+      public java.util.List<yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.Builder> 
            getListBuilderList() {
         return getListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.Builder, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadataOrBuilder> 
+          yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata, yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.HomeworkMetadataOrBuilder> 
           getListFieldBuilder() {
         if (listBuilder_ == null) {
           listBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.Builder, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadataOrBuilder>(
+              yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata, yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.HomeworkMetadataOrBuilder>(
                   list_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -3175,1383 +3175,6 @@ public final class HomeworkOuterClass {
 
     @java.lang.Override
     public yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkListResponseBody getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
-  public interface HomeworkMetadataOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:yeying.api.apps.zuoyepigai.HomeworkMetadata)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <pre>
-     * 主键标识
-     * </pre>
-     *
-     * <code>string uid = 1;</code>
-     * @return The uid.
-     */
-    java.lang.String getUid();
-    /**
-     * <pre>
-     * 主键标识
-     * </pre>
-     *
-     * <code>string uid = 1;</code>
-     * @return The bytes for uid.
-     */
-    com.google.protobuf.ByteString
-        getUidBytes();
-
-    /**
-     * <pre>
-     * 用户Id
-     * </pre>
-     *
-     * <code>string did = 2;</code>
-     * @return The did.
-     */
-    java.lang.String getDid();
-    /**
-     * <pre>
-     * 用户Id
-     * </pre>
-     *
-     * <code>string did = 2;</code>
-     * @return The bytes for did.
-     */
-    com.google.protobuf.ByteString
-        getDidBytes();
-
-    /**
-     * <pre>
-     * 科目
-     * </pre>
-     *
-     * <code>string subject = 3;</code>
-     * @return The subject.
-     */
-    java.lang.String getSubject();
-    /**
-     * <pre>
-     * 科目
-     * </pre>
-     *
-     * <code>string subject = 3;</code>
-     * @return The bytes for subject.
-     */
-    com.google.protobuf.ByteString
-        getSubjectBytes();
-
-    /**
-     * <pre>
-     * 试卷Uid
-     * </pre>
-     *
-     * <code>string testPaperUid = 4;</code>
-     * @return The testPaperUid.
-     */
-    java.lang.String getTestPaperUid();
-    /**
-     * <pre>
-     * 试卷Uid
-     * </pre>
-     *
-     * <code>string testPaperUid = 4;</code>
-     * @return The bytes for testPaperUid.
-     */
-    com.google.protobuf.ByteString
-        getTestPaperUidBytes();
-
-    /**
-     * <pre>
-     * 创建时间
-     * </pre>
-     *
-     * <code>int64 createdAt = 5;</code>
-     * @return The createdAt.
-     */
-    long getCreatedAt();
-
-    /**
-     * <pre>
-     * 修改时间
-     * </pre>
-     *
-     * <code>int64 updatedAt = 6;</code>
-     * @return The updatedAt.
-     */
-    long getUpdatedAt();
-
-    /**
-     * <pre>
-     * 是否删除
-     * </pre>
-     *
-     * <code>bool isDeleted = 7;</code>
-     * @return The isDeleted.
-     */
-    boolean getIsDeleted();
-  }
-  /**
-   * Protobuf type {@code yeying.api.apps.zuoyepigai.HomeworkMetadata}
-   */
-  public static final class HomeworkMetadata extends
-      com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:yeying.api.apps.zuoyepigai.HomeworkMetadata)
-      HomeworkMetadataOrBuilder {
-  private static final long serialVersionUID = 0L;
-    static {
-      com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
-        com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
-        /* major= */ 4,
-        /* minor= */ 29,
-        /* patch= */ 3,
-        /* suffix= */ "",
-        HomeworkMetadata.class.getName());
-    }
-    // Use HomeworkMetadata.newBuilder() to construct.
-    private HomeworkMetadata(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-    }
-    private HomeworkMetadata() {
-      uid_ = "";
-      did_ = "";
-      subject_ = "";
-      testPaperUid_ = "";
-    }
-
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return yeying.api.apps.zuoyepigai.HomeworkOuterClass.internal_static_yeying_api_apps_zuoyepigai_HomeworkMetadata_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return yeying.api.apps.zuoyepigai.HomeworkOuterClass.internal_static_yeying_api_apps_zuoyepigai_HomeworkMetadata_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.class, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.Builder.class);
-    }
-
-    public static final int UID_FIELD_NUMBER = 1;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object uid_ = "";
-    /**
-     * <pre>
-     * 主键标识
-     * </pre>
-     *
-     * <code>string uid = 1;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public java.lang.String getUid() {
-      java.lang.Object ref = uid_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        uid_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * 主键标识
-     * </pre>
-     *
-     * <code>string uid = 1;</code>
-     * @return The bytes for uid.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getUidBytes() {
-      java.lang.Object ref = uid_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        uid_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int DID_FIELD_NUMBER = 2;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object did_ = "";
-    /**
-     * <pre>
-     * 用户Id
-     * </pre>
-     *
-     * <code>string did = 2;</code>
-     * @return The did.
-     */
-    @java.lang.Override
-    public java.lang.String getDid() {
-      java.lang.Object ref = did_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        did_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * 用户Id
-     * </pre>
-     *
-     * <code>string did = 2;</code>
-     * @return The bytes for did.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getDidBytes() {
-      java.lang.Object ref = did_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        did_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int SUBJECT_FIELD_NUMBER = 3;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object subject_ = "";
-    /**
-     * <pre>
-     * 科目
-     * </pre>
-     *
-     * <code>string subject = 3;</code>
-     * @return The subject.
-     */
-    @java.lang.Override
-    public java.lang.String getSubject() {
-      java.lang.Object ref = subject_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        subject_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * 科目
-     * </pre>
-     *
-     * <code>string subject = 3;</code>
-     * @return The bytes for subject.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getSubjectBytes() {
-      java.lang.Object ref = subject_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        subject_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int TESTPAPERUID_FIELD_NUMBER = 4;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object testPaperUid_ = "";
-    /**
-     * <pre>
-     * 试卷Uid
-     * </pre>
-     *
-     * <code>string testPaperUid = 4;</code>
-     * @return The testPaperUid.
-     */
-    @java.lang.Override
-    public java.lang.String getTestPaperUid() {
-      java.lang.Object ref = testPaperUid_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        testPaperUid_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * 试卷Uid
-     * </pre>
-     *
-     * <code>string testPaperUid = 4;</code>
-     * @return The bytes for testPaperUid.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getTestPaperUidBytes() {
-      java.lang.Object ref = testPaperUid_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        testPaperUid_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int CREATEDAT_FIELD_NUMBER = 5;
-    private long createdAt_ = 0L;
-    /**
-     * <pre>
-     * 创建时间
-     * </pre>
-     *
-     * <code>int64 createdAt = 5;</code>
-     * @return The createdAt.
-     */
-    @java.lang.Override
-    public long getCreatedAt() {
-      return createdAt_;
-    }
-
-    public static final int UPDATEDAT_FIELD_NUMBER = 6;
-    private long updatedAt_ = 0L;
-    /**
-     * <pre>
-     * 修改时间
-     * </pre>
-     *
-     * <code>int64 updatedAt = 6;</code>
-     * @return The updatedAt.
-     */
-    @java.lang.Override
-    public long getUpdatedAt() {
-      return updatedAt_;
-    }
-
-    public static final int ISDELETED_FIELD_NUMBER = 7;
-    private boolean isDeleted_ = false;
-    /**
-     * <pre>
-     * 是否删除
-     * </pre>
-     *
-     * <code>bool isDeleted = 7;</code>
-     * @return The isDeleted.
-     */
-    @java.lang.Override
-    public boolean getIsDeleted() {
-      return isDeleted_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(uid_)) {
-        com.google.protobuf.GeneratedMessage.writeString(output, 1, uid_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(did_)) {
-        com.google.protobuf.GeneratedMessage.writeString(output, 2, did_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(subject_)) {
-        com.google.protobuf.GeneratedMessage.writeString(output, 3, subject_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(testPaperUid_)) {
-        com.google.protobuf.GeneratedMessage.writeString(output, 4, testPaperUid_);
-      }
-      if (createdAt_ != 0L) {
-        output.writeInt64(5, createdAt_);
-      }
-      if (updatedAt_ != 0L) {
-        output.writeInt64(6, updatedAt_);
-      }
-      if (isDeleted_ != false) {
-        output.writeBool(7, isDeleted_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(uid_)) {
-        size += com.google.protobuf.GeneratedMessage.computeStringSize(1, uid_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(did_)) {
-        size += com.google.protobuf.GeneratedMessage.computeStringSize(2, did_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(subject_)) {
-        size += com.google.protobuf.GeneratedMessage.computeStringSize(3, subject_);
-      }
-      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(testPaperUid_)) {
-        size += com.google.protobuf.GeneratedMessage.computeStringSize(4, testPaperUid_);
-      }
-      if (createdAt_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(5, createdAt_);
-      }
-      if (updatedAt_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(6, updatedAt_);
-      }
-      if (isDeleted_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isDeleted_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata)) {
-        return super.equals(obj);
-      }
-      yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata other = (yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata) obj;
-
-      if (!getUid()
-          .equals(other.getUid())) return false;
-      if (!getDid()
-          .equals(other.getDid())) return false;
-      if (!getSubject()
-          .equals(other.getSubject())) return false;
-      if (!getTestPaperUid()
-          .equals(other.getTestPaperUid())) return false;
-      if (getCreatedAt()
-          != other.getCreatedAt()) return false;
-      if (getUpdatedAt()
-          != other.getUpdatedAt()) return false;
-      if (getIsDeleted()
-          != other.getIsDeleted()) return false;
-      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid().hashCode();
-      hash = (37 * hash) + DID_FIELD_NUMBER;
-      hash = (53 * hash) + getDid().hashCode();
-      hash = (37 * hash) + SUBJECT_FIELD_NUMBER;
-      hash = (53 * hash) + getSubject().hashCode();
-      hash = (37 * hash) + TESTPAPERUID_FIELD_NUMBER;
-      hash = (53 * hash) + getTestPaperUid().hashCode();
-      hash = (37 * hash) + CREATEDAT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getCreatedAt());
-      hash = (37 * hash) + UPDATEDAT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getUpdatedAt());
-      hash = (37 * hash) + ISDELETED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsDeleted());
-      hash = (29 * hash) + getUnknownFields().hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessage
-          .parseWithIOException(PARSER, input);
-    }
-    public static yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessage
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public static yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessage
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-
-    public static yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessage
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessage
-          .parseWithIOException(PARSER, input);
-    }
-    public static yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessage
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    @java.lang.Override
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    @java.lang.Override
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code yeying.api.apps.zuoyepigai.HomeworkMetadata}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:yeying.api.apps.zuoyepigai.HomeworkMetadata)
-        yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadataOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return yeying.api.apps.zuoyepigai.HomeworkOuterClass.internal_static_yeying_api_apps_zuoyepigai_HomeworkMetadata_descriptor;
-      }
-
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return yeying.api.apps.zuoyepigai.HomeworkOuterClass.internal_static_yeying_api_apps_zuoyepigai_HomeworkMetadata_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.class, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.Builder.class);
-      }
-
-      // Construct using yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.newBuilder()
-      private Builder() {
-
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-
-      }
-      @java.lang.Override
-      public Builder clear() {
-        super.clear();
-        bitField0_ = 0;
-        uid_ = "";
-        did_ = "";
-        subject_ = "";
-        testPaperUid_ = "";
-        createdAt_ = 0L;
-        updatedAt_ = 0L;
-        isDeleted_ = false;
-        return this;
-      }
-
-      @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return yeying.api.apps.zuoyepigai.HomeworkOuterClass.internal_static_yeying_api_apps_zuoyepigai_HomeworkMetadata_descriptor;
-      }
-
-      @java.lang.Override
-      public yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata getDefaultInstanceForType() {
-        return yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.getDefaultInstance();
-      }
-
-      @java.lang.Override
-      public yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata build() {
-        yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      @java.lang.Override
-      public yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata buildPartial() {
-        yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata result = new yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
-        onBuilt();
-        return result;
-      }
-
-      private void buildPartial0(yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.uid_ = uid_;
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.did_ = did_;
-        }
-        if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.subject_ = subject_;
-        }
-        if (((from_bitField0_ & 0x00000008) != 0)) {
-          result.testPaperUid_ = testPaperUid_;
-        }
-        if (((from_bitField0_ & 0x00000010) != 0)) {
-          result.createdAt_ = createdAt_;
-        }
-        if (((from_bitField0_ & 0x00000020) != 0)) {
-          result.updatedAt_ = updatedAt_;
-        }
-        if (((from_bitField0_ & 0x00000040) != 0)) {
-          result.isDeleted_ = isDeleted_;
-        }
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata) {
-          return mergeFrom((yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata other) {
-        if (other == yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.getDefaultInstance()) return this;
-        if (!other.getUid().isEmpty()) {
-          uid_ = other.uid_;
-          bitField0_ |= 0x00000001;
-          onChanged();
-        }
-        if (!other.getDid().isEmpty()) {
-          did_ = other.did_;
-          bitField0_ |= 0x00000002;
-          onChanged();
-        }
-        if (!other.getSubject().isEmpty()) {
-          subject_ = other.subject_;
-          bitField0_ |= 0x00000004;
-          onChanged();
-        }
-        if (!other.getTestPaperUid().isEmpty()) {
-          testPaperUid_ = other.testPaperUid_;
-          bitField0_ |= 0x00000008;
-          onChanged();
-        }
-        if (other.getCreatedAt() != 0L) {
-          setCreatedAt(other.getCreatedAt());
-        }
-        if (other.getUpdatedAt() != 0L) {
-          setUpdatedAt(other.getUpdatedAt());
-        }
-        if (other.getIsDeleted() != false) {
-          setIsDeleted(other.getIsDeleted());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        onChanged();
-        return this;
-      }
-
-      @java.lang.Override
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 10: {
-                uid_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 10
-              case 18: {
-                did_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000002;
-                break;
-              } // case 18
-              case 26: {
-                subject_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000004;
-                break;
-              } // case 26
-              case 34: {
-                testPaperUid_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000008;
-                break;
-              } // case 34
-              case 40: {
-                createdAt_ = input.readInt64();
-                bitField0_ |= 0x00000010;
-                break;
-              } // case 40
-              case 48: {
-                updatedAt_ = input.readInt64();
-                bitField0_ |= 0x00000020;
-                break;
-              } // case 48
-              case 56: {
-                isDeleted_ = input.readBool();
-                bitField0_ |= 0x00000040;
-                break;
-              } // case 56
-              default: {
-                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
-                  done = true; // was an endgroup tag
-                }
-                break;
-              } // default:
-            } // switch (tag)
-          } // while (!done)
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.unwrapIOException();
-        } finally {
-          onChanged();
-        } // finally
-        return this;
-      }
-      private int bitField0_;
-
-      private java.lang.Object uid_ = "";
-      /**
-       * <pre>
-       * 主键标识
-       * </pre>
-       *
-       * <code>string uid = 1;</code>
-       * @return The uid.
-       */
-      public java.lang.String getUid() {
-        java.lang.Object ref = uid_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          uid_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 主键标识
-       * </pre>
-       *
-       * <code>string uid = 1;</code>
-       * @return The bytes for uid.
-       */
-      public com.google.protobuf.ByteString
-          getUidBytes() {
-        java.lang.Object ref = uid_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          uid_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 主键标识
-       * </pre>
-       *
-       * <code>string uid = 1;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        uid_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 主键标识
-       * </pre>
-       *
-       * <code>string uid = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        uid_ = getDefaultInstance().getUid();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 主键标识
-       * </pre>
-       *
-       * <code>string uid = 1;</code>
-       * @param value The bytes for uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUidBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        uid_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object did_ = "";
-      /**
-       * <pre>
-       * 用户Id
-       * </pre>
-       *
-       * <code>string did = 2;</code>
-       * @return The did.
-       */
-      public java.lang.String getDid() {
-        java.lang.Object ref = did_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          did_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 用户Id
-       * </pre>
-       *
-       * <code>string did = 2;</code>
-       * @return The bytes for did.
-       */
-      public com.google.protobuf.ByteString
-          getDidBytes() {
-        java.lang.Object ref = did_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          did_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 用户Id
-       * </pre>
-       *
-       * <code>string did = 2;</code>
-       * @param value The did to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDid(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        did_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 用户Id
-       * </pre>
-       *
-       * <code>string did = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDid() {
-        did_ = getDefaultInstance().getDid();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 用户Id
-       * </pre>
-       *
-       * <code>string did = 2;</code>
-       * @param value The bytes for did to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDidBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        did_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object subject_ = "";
-      /**
-       * <pre>
-       * 科目
-       * </pre>
-       *
-       * <code>string subject = 3;</code>
-       * @return The subject.
-       */
-      public java.lang.String getSubject() {
-        java.lang.Object ref = subject_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          subject_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 科目
-       * </pre>
-       *
-       * <code>string subject = 3;</code>
-       * @return The bytes for subject.
-       */
-      public com.google.protobuf.ByteString
-          getSubjectBytes() {
-        java.lang.Object ref = subject_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          subject_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 科目
-       * </pre>
-       *
-       * <code>string subject = 3;</code>
-       * @param value The subject to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSubject(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        subject_ = value;
-        bitField0_ |= 0x00000004;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 科目
-       * </pre>
-       *
-       * <code>string subject = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSubject() {
-        subject_ = getDefaultInstance().getSubject();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 科目
-       * </pre>
-       *
-       * <code>string subject = 3;</code>
-       * @param value The bytes for subject to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSubjectBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        subject_ = value;
-        bitField0_ |= 0x00000004;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object testPaperUid_ = "";
-      /**
-       * <pre>
-       * 试卷Uid
-       * </pre>
-       *
-       * <code>string testPaperUid = 4;</code>
-       * @return The testPaperUid.
-       */
-      public java.lang.String getTestPaperUid() {
-        java.lang.Object ref = testPaperUid_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          testPaperUid_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 试卷Uid
-       * </pre>
-       *
-       * <code>string testPaperUid = 4;</code>
-       * @return The bytes for testPaperUid.
-       */
-      public com.google.protobuf.ByteString
-          getTestPaperUidBytes() {
-        java.lang.Object ref = testPaperUid_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          testPaperUid_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 试卷Uid
-       * </pre>
-       *
-       * <code>string testPaperUid = 4;</code>
-       * @param value The testPaperUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTestPaperUid(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        testPaperUid_ = value;
-        bitField0_ |= 0x00000008;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 试卷Uid
-       * </pre>
-       *
-       * <code>string testPaperUid = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTestPaperUid() {
-        testPaperUid_ = getDefaultInstance().getTestPaperUid();
-        bitField0_ = (bitField0_ & ~0x00000008);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 试卷Uid
-       * </pre>
-       *
-       * <code>string testPaperUid = 4;</code>
-       * @param value The bytes for testPaperUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTestPaperUidBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        testPaperUid_ = value;
-        bitField0_ |= 0x00000008;
-        onChanged();
-        return this;
-      }
-
-      private long createdAt_ ;
-      /**
-       * <pre>
-       * 创建时间
-       * </pre>
-       *
-       * <code>int64 createdAt = 5;</code>
-       * @return The createdAt.
-       */
-      @java.lang.Override
-      public long getCreatedAt() {
-        return createdAt_;
-      }
-      /**
-       * <pre>
-       * 创建时间
-       * </pre>
-       *
-       * <code>int64 createdAt = 5;</code>
-       * @param value The createdAt to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCreatedAt(long value) {
-
-        createdAt_ = value;
-        bitField0_ |= 0x00000010;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 创建时间
-       * </pre>
-       *
-       * <code>int64 createdAt = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCreatedAt() {
-        bitField0_ = (bitField0_ & ~0x00000010);
-        createdAt_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private long updatedAt_ ;
-      /**
-       * <pre>
-       * 修改时间
-       * </pre>
-       *
-       * <code>int64 updatedAt = 6;</code>
-       * @return The updatedAt.
-       */
-      @java.lang.Override
-      public long getUpdatedAt() {
-        return updatedAt_;
-      }
-      /**
-       * <pre>
-       * 修改时间
-       * </pre>
-       *
-       * <code>int64 updatedAt = 6;</code>
-       * @param value The updatedAt to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUpdatedAt(long value) {
-
-        updatedAt_ = value;
-        bitField0_ |= 0x00000020;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 修改时间
-       * </pre>
-       *
-       * <code>int64 updatedAt = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUpdatedAt() {
-        bitField0_ = (bitField0_ & ~0x00000020);
-        updatedAt_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private boolean isDeleted_ ;
-      /**
-       * <pre>
-       * 是否删除
-       * </pre>
-       *
-       * <code>bool isDeleted = 7;</code>
-       * @return The isDeleted.
-       */
-      @java.lang.Override
-      public boolean getIsDeleted() {
-        return isDeleted_;
-      }
-      /**
-       * <pre>
-       * 是否删除
-       * </pre>
-       *
-       * <code>bool isDeleted = 7;</code>
-       * @param value The isDeleted to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsDeleted(boolean value) {
-
-        isDeleted_ = value;
-        bitField0_ |= 0x00000040;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 是否删除
-       * </pre>
-       *
-       * <code>bool isDeleted = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsDeleted() {
-        bitField0_ = (bitField0_ & ~0x00000040);
-        isDeleted_ = false;
-        onChanged();
-        return this;
-      }
-
-      // @@protoc_insertion_point(builder_scope:yeying.api.apps.zuoyepigai.HomeworkMetadata)
-    }
-
-    // @@protoc_insertion_point(class_scope:yeying.api.apps.zuoyepigai.HomeworkMetadata)
-    private static final yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata();
-    }
-
-    public static yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<HomeworkMetadata>
-        PARSER = new com.google.protobuf.AbstractParser<HomeworkMetadata>() {
-      @java.lang.Override
-      public HomeworkMetadata parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        Builder builder = newBuilder();
-        try {
-          builder.mergeFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(builder.buildPartial());
-        } catch (com.google.protobuf.UninitializedMessageException e) {
-          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(e)
-              .setUnfinishedMessage(builder.buildPartial());
-        }
-        return builder.buildPartial();
-      }
-    };
-
-    public static com.google.protobuf.Parser<HomeworkMetadata> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<HomeworkMetadata> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -6643,11 +5266,11 @@ public final class HomeworkOuterClass {
      * <code>.yeying.api.apps.zuoyepigai.HomeworkMetadata meta = 2;</code>
      * @return The meta.
      */
-    yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata getMeta();
+    yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata getMeta();
     /**
      * <code>.yeying.api.apps.zuoyepigai.HomeworkMetadata meta = 2;</code>
      */
-    yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadataOrBuilder getMetaOrBuilder();
+    yeying.api.apps.zuoyepigai.Meta.HomeworkMetadataOrBuilder getMetaOrBuilder();
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.HomeworkDetailResponseBody}
@@ -6714,7 +5337,7 @@ public final class HomeworkOuterClass {
     }
 
     public static final int META_FIELD_NUMBER = 2;
-    private yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata meta_;
+    private yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata meta_;
     /**
      * <code>.yeying.api.apps.zuoyepigai.HomeworkMetadata meta = 2;</code>
      * @return Whether the meta field is set.
@@ -6728,15 +5351,15 @@ public final class HomeworkOuterClass {
      * @return The meta.
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata getMeta() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata getMeta() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.getDefaultInstance() : meta_;
     }
     /**
      * <code>.yeying.api.apps.zuoyepigai.HomeworkMetadata meta = 2;</code>
      */
     @java.lang.Override
-    public yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadataOrBuilder getMetaOrBuilder() {
-      return meta_ == null ? yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.getDefaultInstance() : meta_;
+    public yeying.api.apps.zuoyepigai.Meta.HomeworkMetadataOrBuilder getMetaOrBuilder() {
+      return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.getDefaultInstance() : meta_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -7213,9 +5836,9 @@ public final class HomeworkOuterClass {
         return statusBuilder_;
       }
 
-      private yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata meta_;
+      private yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata meta_;
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.Builder, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadataOrBuilder> metaBuilder_;
+          yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata, yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.HomeworkMetadataOrBuilder> metaBuilder_;
       /**
        * <code>.yeying.api.apps.zuoyepigai.HomeworkMetadata meta = 2;</code>
        * @return Whether the meta field is set.
@@ -7227,9 +5850,9 @@ public final class HomeworkOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.HomeworkMetadata meta = 2;</code>
        * @return The meta.
        */
-      public yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata getMeta() {
+      public yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata getMeta() {
         if (metaBuilder_ == null) {
-          return meta_ == null ? yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.getDefaultInstance() : meta_;
+          return meta_ == null ? yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.getDefaultInstance() : meta_;
         } else {
           return metaBuilder_.getMessage();
         }
@@ -7237,7 +5860,7 @@ public final class HomeworkOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.HomeworkMetadata meta = 2;</code>
        */
-      public Builder setMeta(yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata value) {
+      public Builder setMeta(yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata value) {
         if (metaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7254,7 +5877,7 @@ public final class HomeworkOuterClass {
        * <code>.yeying.api.apps.zuoyepigai.HomeworkMetadata meta = 2;</code>
        */
       public Builder setMeta(
-          yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.Builder builderForValue) {
+          yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.Builder builderForValue) {
         if (metaBuilder_ == null) {
           meta_ = builderForValue.build();
         } else {
@@ -7267,11 +5890,11 @@ public final class HomeworkOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.HomeworkMetadata meta = 2;</code>
        */
-      public Builder mergeMeta(yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata value) {
+      public Builder mergeMeta(yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata value) {
         if (metaBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0) &&
             meta_ != null &&
-            meta_ != yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.getDefaultInstance()) {
+            meta_ != yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.getDefaultInstance()) {
             getMetaBuilder().mergeFrom(value);
           } else {
             meta_ = value;
@@ -7301,7 +5924,7 @@ public final class HomeworkOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.HomeworkMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.Builder getMetaBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.Builder getMetaBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getMetaFieldBuilder().getBuilder();
@@ -7309,23 +5932,23 @@ public final class HomeworkOuterClass {
       /**
        * <code>.yeying.api.apps.zuoyepigai.HomeworkMetadata meta = 2;</code>
        */
-      public yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadataOrBuilder getMetaOrBuilder() {
+      public yeying.api.apps.zuoyepigai.Meta.HomeworkMetadataOrBuilder getMetaOrBuilder() {
         if (metaBuilder_ != null) {
           return metaBuilder_.getMessageOrBuilder();
         } else {
           return meta_ == null ?
-              yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.getDefaultInstance() : meta_;
+              yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.getDefaultInstance() : meta_;
         }
       }
       /**
        * <code>.yeying.api.apps.zuoyepigai.HomeworkMetadata meta = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.Builder, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadataOrBuilder> 
+          yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata, yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.HomeworkMetadataOrBuilder> 
           getMetaFieldBuilder() {
         if (metaBuilder_ == null) {
           metaBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadata.Builder, yeying.api.apps.zuoyepigai.HomeworkOuterClass.HomeworkMetadataOrBuilder>(
+              yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata, yeying.api.apps.zuoyepigai.Meta.HomeworkMetadata.Builder, yeying.api.apps.zuoyepigai.Meta.HomeworkMetadataOrBuilder>(
                   getMeta(),
                   getParentForChildren(),
                   isClean());
@@ -7406,11 +6029,6 @@ public final class HomeworkOuterClass {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_yeying_api_apps_zuoyepigai_HomeworkListResponseBody_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_yeying_api_apps_zuoyepigai_HomeworkMetadata_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_yeying_api_apps_zuoyepigai_HomeworkMetadata_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_yeying_api_apps_zuoyepigai_HomeworkDetailRequest_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -7441,46 +6059,44 @@ public final class HomeworkOuterClass {
     java.lang.String[] descriptorData = {
       "\n)yeying/api/apps/zuoyepigai/homework.pr" +
       "oto\022\032yeying.api.apps.zuoyepigai\032\037yeying/" +
-      "api/common/message.proto\"\212\001\n\023HomeworkLis" +
-      "tRequest\0220\n\006header\030\001 \001(\0132 .yeying.api.co" +
-      "mmon.MessageHeader\022A\n\004body\030\002 \001(\01323.yeyin" +
-      "g.api.apps.zuoyepigai.HomeworkListReques" +
-      "tBody\"&\n\027HomeworkListRequestBody\022\013\n\003did\030" +
-      "\001 \001(\t\"\214\001\n\024HomeworkListResponse\0220\n\006header" +
-      "\030\001 \001(\0132 .yeying.api.common.MessageHeader" +
-      "\022B\n\004body\030\002 \001(\01324.yeying.api.apps.zuoyepi" +
-      "gai.HomeworkListResponseBody\"\211\001\n\030Homewor" +
-      "kListResponseBody\0221\n\006status\030\001 \001(\0132!.yeyi" +
-      "ng.api.common.ResponseStatus\022:\n\004list\030\002 \003" +
-      "(\0132,.yeying.api.apps.zuoyepigai.Homework" +
-      "Metadata\"\214\001\n\020HomeworkMetadata\022\013\n\003uid\030\001 \001" +
-      "(\t\022\013\n\003did\030\002 \001(\t\022\017\n\007subject\030\003 \001(\t\022\024\n\014test" +
-      "PaperUid\030\004 \001(\t\022\021\n\tcreatedAt\030\005 \001(\003\022\021\n\tupd" +
-      "atedAt\030\006 \001(\003\022\021\n\tisDeleted\030\007 \001(\010\"\216\001\n\025Home" +
-      "workDetailRequest\0220\n\006header\030\001 \001(\0132 .yeyi" +
-      "ng.api.common.MessageHeader\022C\n\004body\030\002 \001(" +
-      "\01325.yeying.api.apps.zuoyepigai.HomeworkD" +
-      "etailRequestBody\"(\n\031HomeworkDetailReques" +
-      "tBody\022\013\n\003uid\030\001 \001(\t\"\220\001\n\026HomeworkDetailRes" +
-      "ponse\0220\n\006header\030\001 \001(\0132 .yeying.api.commo" +
-      "n.MessageHeader\022D\n\004body\030\002 \001(\01326.yeying.a" +
-      "pi.apps.zuoyepigai.HomeworkDetailRespons" +
-      "eBody\"\213\001\n\032HomeworkDetailResponseBody\0221\n\006" +
-      "status\030\001 \001(\0132!.yeying.api.common.Respons" +
-      "eStatus\022:\n\004meta\030\002 \001(\0132,.yeying.api.apps." +
-      "zuoyepigai.HomeworkMetadata2\352\001\n\010Homework" +
-      "\022k\n\004List\022/.yeying.api.apps.zuoyepigai.Ho" +
-      "meworkListRequest\0320.yeying.api.apps.zuoy" +
-      "epigai.HomeworkListResponse\"\000\022q\n\006Detail\022" +
-      "1.yeying.api.apps.zuoyepigai.HomeworkDet" +
-      "ailRequest\0322.yeying.api.apps.zuoyepigai." +
-      "HomeworkDetailResponse\"\000B\034Z\032yeying/api/a" +
-      "pps/zuoyepigaib\006proto3"
+      "api/common/message.proto\032%yeying/api/app" +
+      "s/zuoyepigai/meta.proto\"\212\001\n\023HomeworkList" +
+      "Request\0220\n\006header\030\001 \001(\0132 .yeying.api.com" +
+      "mon.MessageHeader\022A\n\004body\030\002 \001(\01323.yeying" +
+      ".api.apps.zuoyepigai.HomeworkListRequest" +
+      "Body\"&\n\027HomeworkListRequestBody\022\013\n\003did\030\001" +
+      " \001(\t\"\214\001\n\024HomeworkListResponse\0220\n\006header\030" +
+      "\001 \001(\0132 .yeying.api.common.MessageHeader\022" +
+      "B\n\004body\030\002 \001(\01324.yeying.api.apps.zuoyepig" +
+      "ai.HomeworkListResponseBody\"\211\001\n\030Homework" +
+      "ListResponseBody\0221\n\006status\030\001 \001(\0132!.yeyin" +
+      "g.api.common.ResponseStatus\022:\n\004list\030\002 \003(" +
+      "\0132,.yeying.api.apps.zuoyepigai.HomeworkM" +
+      "etadata\"\216\001\n\025HomeworkDetailRequest\0220\n\006hea" +
+      "der\030\001 \001(\0132 .yeying.api.common.MessageHea" +
+      "der\022C\n\004body\030\002 \001(\01325.yeying.api.apps.zuoy" +
+      "epigai.HomeworkDetailRequestBody\"(\n\031Home" +
+      "workDetailRequestBody\022\013\n\003uid\030\001 \001(\t\"\220\001\n\026H" +
+      "omeworkDetailResponse\0220\n\006header\030\001 \001(\0132 ." +
+      "yeying.api.common.MessageHeader\022D\n\004body\030" +
+      "\002 \001(\01326.yeying.api.apps.zuoyepigai.Homew" +
+      "orkDetailResponseBody\"\213\001\n\032HomeworkDetail" +
+      "ResponseBody\0221\n\006status\030\001 \001(\0132!.yeying.ap" +
+      "i.common.ResponseStatus\022:\n\004meta\030\002 \001(\0132,." +
+      "yeying.api.apps.zuoyepigai.HomeworkMetad" +
+      "ata2\352\001\n\010Homework\022k\n\004List\022/.yeying.api.ap" +
+      "ps.zuoyepigai.HomeworkListRequest\0320.yeyi" +
+      "ng.api.apps.zuoyepigai.HomeworkListRespo" +
+      "nse\"\000\022q\n\006Detail\0221.yeying.api.apps.zuoyep" +
+      "igai.HomeworkDetailRequest\0322.yeying.api." +
+      "apps.zuoyepigai.HomeworkDetailResponse\"\000" +
+      "B\034Z\032yeying/api/apps/zuoyepigaib\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           yeying.api.common.Message.getDescriptor(),
+          yeying.api.apps.zuoyepigai.Meta.getDescriptor(),
         });
     internal_static_yeying_api_apps_zuoyepigai_HomeworkListRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -7506,38 +6122,33 @@ public final class HomeworkOuterClass {
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_HomeworkListResponseBody_descriptor,
         new java.lang.String[] { "Status", "List", });
-    internal_static_yeying_api_apps_zuoyepigai_HomeworkMetadata_descriptor =
-      getDescriptor().getMessageTypes().get(4);
-    internal_static_yeying_api_apps_zuoyepigai_HomeworkMetadata_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_yeying_api_apps_zuoyepigai_HomeworkMetadata_descriptor,
-        new java.lang.String[] { "Uid", "Did", "Subject", "TestPaperUid", "CreatedAt", "UpdatedAt", "IsDeleted", });
     internal_static_yeying_api_apps_zuoyepigai_HomeworkDetailRequest_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(4);
     internal_static_yeying_api_apps_zuoyepigai_HomeworkDetailRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_HomeworkDetailRequest_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_HomeworkDetailRequestBody_descriptor =
-      getDescriptor().getMessageTypes().get(6);
+      getDescriptor().getMessageTypes().get(5);
     internal_static_yeying_api_apps_zuoyepigai_HomeworkDetailRequestBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_HomeworkDetailRequestBody_descriptor,
         new java.lang.String[] { "Uid", });
     internal_static_yeying_api_apps_zuoyepigai_HomeworkDetailResponse_descriptor =
-      getDescriptor().getMessageTypes().get(7);
+      getDescriptor().getMessageTypes().get(6);
     internal_static_yeying_api_apps_zuoyepigai_HomeworkDetailResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_HomeworkDetailResponse_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_apps_zuoyepigai_HomeworkDetailResponseBody_descriptor =
-      getDescriptor().getMessageTypes().get(8);
+      getDescriptor().getMessageTypes().get(7);
     internal_static_yeying_api_apps_zuoyepigai_HomeworkDetailResponseBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_HomeworkDetailResponseBody_descriptor,
         new java.lang.String[] { "Status", "Meta", });
     descriptor.resolveAllFeaturesImmutable();
     yeying.api.common.Message.getDescriptor();
+    yeying.api.apps.zuoyepigai.Meta.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)
