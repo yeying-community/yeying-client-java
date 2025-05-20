@@ -77,6 +77,37 @@ public final class UserGrpc {
     return getDetailMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<yeying.api.user.UserOuterClass.UserListRequest,
+      yeying.api.user.UserOuterClass.UserListResponse> getListMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "List",
+      requestType = yeying.api.user.UserOuterClass.UserListRequest.class,
+      responseType = yeying.api.user.UserOuterClass.UserListResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<yeying.api.user.UserOuterClass.UserListRequest,
+      yeying.api.user.UserOuterClass.UserListResponse> getListMethod() {
+    io.grpc.MethodDescriptor<yeying.api.user.UserOuterClass.UserListRequest, yeying.api.user.UserOuterClass.UserListResponse> getListMethod;
+    if ((getListMethod = UserGrpc.getListMethod) == null) {
+      synchronized (UserGrpc.class) {
+        if ((getListMethod = UserGrpc.getListMethod) == null) {
+          UserGrpc.getListMethod = getListMethod =
+              io.grpc.MethodDescriptor.<yeying.api.user.UserOuterClass.UserListRequest, yeying.api.user.UserOuterClass.UserListResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "List"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  yeying.api.user.UserOuterClass.UserListRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  yeying.api.user.UserOuterClass.UserListResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new UserMethodDescriptorSupplier("List"))
+              .build();
+        }
+      }
+    }
+    return getListMethod;
+  }
+
   private static volatile io.grpc.MethodDescriptor<yeying.api.user.UserOuterClass.DeleteUserRequest,
       yeying.api.user.UserOuterClass.DeleteUserResponse> getDeleteMethod;
 
@@ -137,6 +168,37 @@ public final class UserGrpc {
       }
     }
     return getUpdateMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<yeying.api.user.UserOuterClass.UpdateStatusRequest,
+      yeying.api.user.UserOuterClass.UpdateStatusResponse> getUpdateStatusMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "UpdateStatus",
+      requestType = yeying.api.user.UserOuterClass.UpdateStatusRequest.class,
+      responseType = yeying.api.user.UserOuterClass.UpdateStatusResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<yeying.api.user.UserOuterClass.UpdateStatusRequest,
+      yeying.api.user.UserOuterClass.UpdateStatusResponse> getUpdateStatusMethod() {
+    io.grpc.MethodDescriptor<yeying.api.user.UserOuterClass.UpdateStatusRequest, yeying.api.user.UserOuterClass.UpdateStatusResponse> getUpdateStatusMethod;
+    if ((getUpdateStatusMethod = UserGrpc.getUpdateStatusMethod) == null) {
+      synchronized (UserGrpc.class) {
+        if ((getUpdateStatusMethod = UserGrpc.getUpdateStatusMethod) == null) {
+          UserGrpc.getUpdateStatusMethod = getUpdateStatusMethod =
+              io.grpc.MethodDescriptor.<yeying.api.user.UserOuterClass.UpdateStatusRequest, yeying.api.user.UserOuterClass.UpdateStatusResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "UpdateStatus"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  yeying.api.user.UserOuterClass.UpdateStatusRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  yeying.api.user.UserOuterClass.UpdateStatusResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new UserMethodDescriptorSupplier("UpdateStatus"))
+              .build();
+        }
+      }
+    }
+    return getUpdateStatusMethod;
   }
 
   /**
@@ -224,6 +286,16 @@ public final class UserGrpc {
 
     /**
      * <pre>
+     * 用户列表
+     * </pre>
+     */
+    default void list(yeying.api.user.UserOuterClass.UserListRequest request,
+        io.grpc.stub.StreamObserver<yeying.api.user.UserOuterClass.UserListResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getListMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
      * 删除用户
      * </pre>
      */
@@ -240,6 +312,16 @@ public final class UserGrpc {
     default void update(yeying.api.user.UserOuterClass.UpdateUserRequest request,
         io.grpc.stub.StreamObserver<yeying.api.user.UserOuterClass.UpdateUserResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdateMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * 修改用户状态，冻结/解冻
+     * </pre>
+     */
+    default void updateStatus(yeying.api.user.UserOuterClass.UpdateStatusRequest request,
+        io.grpc.stub.StreamObserver<yeying.api.user.UserOuterClass.UpdateStatusResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdateStatusMethod(), responseObserver);
     }
   }
 
@@ -294,6 +376,17 @@ public final class UserGrpc {
 
     /**
      * <pre>
+     * 用户列表
+     * </pre>
+     */
+    public void list(yeying.api.user.UserOuterClass.UserListRequest request,
+        io.grpc.stub.StreamObserver<yeying.api.user.UserOuterClass.UserListResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getListMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
      * 删除用户
      * </pre>
      */
@@ -312,6 +405,17 @@ public final class UserGrpc {
         io.grpc.stub.StreamObserver<yeying.api.user.UserOuterClass.UpdateUserResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUpdateMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * 修改用户状态，冻结/解冻
+     * </pre>
+     */
+    public void updateStatus(yeying.api.user.UserOuterClass.UpdateStatusRequest request,
+        io.grpc.stub.StreamObserver<yeying.api.user.UserOuterClass.UpdateStatusResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getUpdateStatusMethod(), getCallOptions()), request, responseObserver);
     }
   }
 
@@ -353,6 +457,16 @@ public final class UserGrpc {
 
     /**
      * <pre>
+     * 用户列表
+     * </pre>
+     */
+    public yeying.api.user.UserOuterClass.UserListResponse list(yeying.api.user.UserOuterClass.UserListRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getListMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
      * 删除用户
      * </pre>
      */
@@ -369,6 +483,16 @@ public final class UserGrpc {
     public yeying.api.user.UserOuterClass.UpdateUserResponse update(yeying.api.user.UserOuterClass.UpdateUserRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUpdateMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * 修改用户状态，冻结/解冻
+     * </pre>
+     */
+    public yeying.api.user.UserOuterClass.UpdateStatusResponse updateStatus(yeying.api.user.UserOuterClass.UpdateStatusRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getUpdateStatusMethod(), getCallOptions(), request);
     }
   }
 
@@ -410,6 +534,16 @@ public final class UserGrpc {
 
     /**
      * <pre>
+     * 用户列表
+     * </pre>
+     */
+    public yeying.api.user.UserOuterClass.UserListResponse list(yeying.api.user.UserOuterClass.UserListRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getListMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
      * 删除用户
      * </pre>
      */
@@ -426,6 +560,16 @@ public final class UserGrpc {
     public yeying.api.user.UserOuterClass.UpdateUserResponse update(yeying.api.user.UserOuterClass.UpdateUserRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUpdateMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * 修改用户状态，冻结/解冻
+     * </pre>
+     */
+    public yeying.api.user.UserOuterClass.UpdateStatusResponse updateStatus(yeying.api.user.UserOuterClass.UpdateStatusRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getUpdateStatusMethod(), getCallOptions(), request);
     }
   }
 
@@ -469,6 +613,17 @@ public final class UserGrpc {
 
     /**
      * <pre>
+     * 用户列表
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<yeying.api.user.UserOuterClass.UserListResponse> list(
+        yeying.api.user.UserOuterClass.UserListRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getListMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
      * 删除用户
      * </pre>
      */
@@ -488,12 +643,25 @@ public final class UserGrpc {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUpdateMethod(), getCallOptions()), request);
     }
+
+    /**
+     * <pre>
+     * 修改用户状态，冻结/解冻
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<yeying.api.user.UserOuterClass.UpdateStatusResponse> updateStatus(
+        yeying.api.user.UserOuterClass.UpdateStatusRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getUpdateStatusMethod(), getCallOptions()), request);
+    }
   }
 
   private static final int METHODID_ADD = 0;
   private static final int METHODID_DETAIL = 1;
-  private static final int METHODID_DELETE = 2;
-  private static final int METHODID_UPDATE = 3;
+  private static final int METHODID_LIST = 2;
+  private static final int METHODID_DELETE = 3;
+  private static final int METHODID_UPDATE = 4;
+  private static final int METHODID_UPDATE_STATUS = 5;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -520,6 +688,10 @@ public final class UserGrpc {
           serviceImpl.detail((yeying.api.user.UserOuterClass.UserDetailRequest) request,
               (io.grpc.stub.StreamObserver<yeying.api.user.UserOuterClass.UserDetailResponse>) responseObserver);
           break;
+        case METHODID_LIST:
+          serviceImpl.list((yeying.api.user.UserOuterClass.UserListRequest) request,
+              (io.grpc.stub.StreamObserver<yeying.api.user.UserOuterClass.UserListResponse>) responseObserver);
+          break;
         case METHODID_DELETE:
           serviceImpl.delete((yeying.api.user.UserOuterClass.DeleteUserRequest) request,
               (io.grpc.stub.StreamObserver<yeying.api.user.UserOuterClass.DeleteUserResponse>) responseObserver);
@@ -527,6 +699,10 @@ public final class UserGrpc {
         case METHODID_UPDATE:
           serviceImpl.update((yeying.api.user.UserOuterClass.UpdateUserRequest) request,
               (io.grpc.stub.StreamObserver<yeying.api.user.UserOuterClass.UpdateUserResponse>) responseObserver);
+          break;
+        case METHODID_UPDATE_STATUS:
+          serviceImpl.updateStatus((yeying.api.user.UserOuterClass.UpdateStatusRequest) request,
+              (io.grpc.stub.StreamObserver<yeying.api.user.UserOuterClass.UpdateStatusResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -561,6 +737,13 @@ public final class UserGrpc {
               yeying.api.user.UserOuterClass.UserDetailResponse>(
                 service, METHODID_DETAIL)))
         .addMethod(
+          getListMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              yeying.api.user.UserOuterClass.UserListRequest,
+              yeying.api.user.UserOuterClass.UserListResponse>(
+                service, METHODID_LIST)))
+        .addMethod(
           getDeleteMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
@@ -574,6 +757,13 @@ public final class UserGrpc {
               yeying.api.user.UserOuterClass.UpdateUserRequest,
               yeying.api.user.UserOuterClass.UpdateUserResponse>(
                 service, METHODID_UPDATE)))
+        .addMethod(
+          getUpdateStatusMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              yeying.api.user.UserOuterClass.UpdateStatusRequest,
+              yeying.api.user.UserOuterClass.UpdateStatusResponse>(
+                service, METHODID_UPDATE_STATUS)))
         .build();
   }
 
@@ -624,8 +814,10 @@ public final class UserGrpc {
               .setSchemaDescriptor(new UserFileDescriptorSupplier())
               .addMethod(getAddMethod())
               .addMethod(getDetailMethod())
+              .addMethod(getListMethod())
               .addMethod(getDeleteMethod())
               .addMethod(getUpdateMethod())
+              .addMethod(getUpdateStatusMethod())
               .build();
         }
       }

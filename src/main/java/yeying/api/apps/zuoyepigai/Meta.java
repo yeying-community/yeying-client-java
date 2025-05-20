@@ -1719,6 +1719,66 @@ public final class Meta {
      * @return The isDeleted.
      */
     boolean getIsDeleted();
+
+    /**
+     * <pre>
+     * 手机
+     * </pre>
+     *
+     * <code>string telephone = 9;</code>
+     * @return The telephone.
+     */
+    java.lang.String getTelephone();
+    /**
+     * <pre>
+     * 手机
+     * </pre>
+     *
+     * <code>string telephone = 9;</code>
+     * @return The bytes for telephone.
+     */
+    com.google.protobuf.ByteString
+        getTelephoneBytes();
+
+    /**
+     * <pre>
+     * 邮箱
+     * </pre>
+     *
+     * <code>string email = 10;</code>
+     * @return The email.
+     */
+    java.lang.String getEmail();
+    /**
+     * <pre>
+     * 邮箱
+     * </pre>
+     *
+     * <code>string email = 10;</code>
+     * @return The bytes for email.
+     */
+    com.google.protobuf.ByteString
+        getEmailBytes();
+
+    /**
+     * <pre>
+     * 状态
+     * </pre>
+     *
+     * <code>string status = 11;</code>
+     * @return The status.
+     */
+    java.lang.String getStatus();
+    /**
+     * <pre>
+     * 状态
+     * </pre>
+     *
+     * <code>string status = 11;</code>
+     * @return The bytes for status.
+     */
+    com.google.protobuf.ByteString
+        getStatusBytes();
   }
   /**
    * Protobuf type {@code yeying.api.apps.zuoyepigai.ArchiveMetadata}
@@ -1747,6 +1807,9 @@ public final class Meta {
       studentDid_ = "";
       teacherDid_ = "";
       subject_ = "";
+      telephone_ = "";
+      email_ = "";
+      status_ = "";
     }
 
     public static final com.google.protobuf.Descriptors.Descriptor
@@ -2042,6 +2105,147 @@ public final class Meta {
       return isDeleted_;
     }
 
+    public static final int TELEPHONE_FIELD_NUMBER = 9;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object telephone_ = "";
+    /**
+     * <pre>
+     * 手机
+     * </pre>
+     *
+     * <code>string telephone = 9;</code>
+     * @return The telephone.
+     */
+    @java.lang.Override
+    public java.lang.String getTelephone() {
+      java.lang.Object ref = telephone_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        telephone_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * 手机
+     * </pre>
+     *
+     * <code>string telephone = 9;</code>
+     * @return The bytes for telephone.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getTelephoneBytes() {
+      java.lang.Object ref = telephone_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        telephone_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int EMAIL_FIELD_NUMBER = 10;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object email_ = "";
+    /**
+     * <pre>
+     * 邮箱
+     * </pre>
+     *
+     * <code>string email = 10;</code>
+     * @return The email.
+     */
+    @java.lang.Override
+    public java.lang.String getEmail() {
+      java.lang.Object ref = email_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        email_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * 邮箱
+     * </pre>
+     *
+     * <code>string email = 10;</code>
+     * @return The bytes for email.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getEmailBytes() {
+      java.lang.Object ref = email_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        email_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int STATUS_FIELD_NUMBER = 11;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object status_ = "";
+    /**
+     * <pre>
+     * 状态
+     * </pre>
+     *
+     * <code>string status = 11;</code>
+     * @return The status.
+     */
+    @java.lang.Override
+    public java.lang.String getStatus() {
+      java.lang.Object ref = status_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        status_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * 状态
+     * </pre>
+     *
+     * <code>string status = 11;</code>
+     * @return The bytes for status.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getStatusBytes() {
+      java.lang.Object ref = status_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        status_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -2080,6 +2284,15 @@ public final class Meta {
       if (isDeleted_ != false) {
         output.writeBool(8, isDeleted_);
       }
+      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(telephone_)) {
+        com.google.protobuf.GeneratedMessage.writeString(output, 9, telephone_);
+      }
+      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(email_)) {
+        com.google.protobuf.GeneratedMessage.writeString(output, 10, email_);
+      }
+      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(status_)) {
+        com.google.protobuf.GeneratedMessage.writeString(output, 11, status_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -2116,6 +2329,15 @@ public final class Meta {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(8, isDeleted_);
       }
+      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(telephone_)) {
+        size += com.google.protobuf.GeneratedMessage.computeStringSize(9, telephone_);
+      }
+      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(email_)) {
+        size += com.google.protobuf.GeneratedMessage.computeStringSize(10, email_);
+      }
+      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(status_)) {
+        size += com.google.protobuf.GeneratedMessage.computeStringSize(11, status_);
+      }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
@@ -2147,6 +2369,12 @@ public final class Meta {
           != other.getUpdatedAt()) return false;
       if (getIsDeleted()
           != other.getIsDeleted()) return false;
+      if (!getTelephone()
+          .equals(other.getTelephone())) return false;
+      if (!getEmail()
+          .equals(other.getEmail())) return false;
+      if (!getStatus()
+          .equals(other.getStatus())) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -2177,6 +2405,12 @@ public final class Meta {
       hash = (37 * hash) + ISDELETED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsDeleted());
+      hash = (37 * hash) + TELEPHONE_FIELD_NUMBER;
+      hash = (53 * hash) + getTelephone().hashCode();
+      hash = (37 * hash) + EMAIL_FIELD_NUMBER;
+      hash = (53 * hash) + getEmail().hashCode();
+      hash = (37 * hash) + STATUS_FIELD_NUMBER;
+      hash = (53 * hash) + getStatus().hashCode();
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -2316,6 +2550,9 @@ public final class Meta {
         createdAt_ = 0L;
         updatedAt_ = 0L;
         isDeleted_ = false;
+        telephone_ = "";
+        email_ = "";
+        status_ = "";
         return this;
       }
 
@@ -2373,6 +2610,15 @@ public final class Meta {
         if (((from_bitField0_ & 0x00000080) != 0)) {
           result.isDeleted_ = isDeleted_;
         }
+        if (((from_bitField0_ & 0x00000100) != 0)) {
+          result.telephone_ = telephone_;
+        }
+        if (((from_bitField0_ & 0x00000200) != 0)) {
+          result.email_ = email_;
+        }
+        if (((from_bitField0_ & 0x00000400) != 0)) {
+          result.status_ = status_;
+        }
       }
 
       @java.lang.Override
@@ -2420,6 +2666,21 @@ public final class Meta {
         }
         if (other.getIsDeleted() != false) {
           setIsDeleted(other.getIsDeleted());
+        }
+        if (!other.getTelephone().isEmpty()) {
+          telephone_ = other.telephone_;
+          bitField0_ |= 0x00000100;
+          onChanged();
+        }
+        if (!other.getEmail().isEmpty()) {
+          email_ = other.email_;
+          bitField0_ |= 0x00000200;
+          onChanged();
+        }
+        if (!other.getStatus().isEmpty()) {
+          status_ = other.status_;
+          bitField0_ |= 0x00000400;
+          onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -2487,6 +2748,21 @@ public final class Meta {
                 bitField0_ |= 0x00000080;
                 break;
               } // case 64
+              case 74: {
+                telephone_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000100;
+                break;
+              } // case 74
+              case 82: {
+                email_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000200;
+                break;
+              } // case 82
+              case 90: {
+                status_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000400;
+                break;
+              } // case 90
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -3092,6 +3368,282 @@ public final class Meta {
       public Builder clearIsDeleted() {
         bitField0_ = (bitField0_ & ~0x00000080);
         isDeleted_ = false;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object telephone_ = "";
+      /**
+       * <pre>
+       * 手机
+       * </pre>
+       *
+       * <code>string telephone = 9;</code>
+       * @return The telephone.
+       */
+      public java.lang.String getTelephone() {
+        java.lang.Object ref = telephone_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          telephone_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * 手机
+       * </pre>
+       *
+       * <code>string telephone = 9;</code>
+       * @return The bytes for telephone.
+       */
+      public com.google.protobuf.ByteString
+          getTelephoneBytes() {
+        java.lang.Object ref = telephone_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          telephone_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * 手机
+       * </pre>
+       *
+       * <code>string telephone = 9;</code>
+       * @param value The telephone to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTelephone(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        telephone_ = value;
+        bitField0_ |= 0x00000100;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 手机
+       * </pre>
+       *
+       * <code>string telephone = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTelephone() {
+        telephone_ = getDefaultInstance().getTelephone();
+        bitField0_ = (bitField0_ & ~0x00000100);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 手机
+       * </pre>
+       *
+       * <code>string telephone = 9;</code>
+       * @param value The bytes for telephone to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTelephoneBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
+        telephone_ = value;
+        bitField0_ |= 0x00000100;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object email_ = "";
+      /**
+       * <pre>
+       * 邮箱
+       * </pre>
+       *
+       * <code>string email = 10;</code>
+       * @return The email.
+       */
+      public java.lang.String getEmail() {
+        java.lang.Object ref = email_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          email_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * 邮箱
+       * </pre>
+       *
+       * <code>string email = 10;</code>
+       * @return The bytes for email.
+       */
+      public com.google.protobuf.ByteString
+          getEmailBytes() {
+        java.lang.Object ref = email_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          email_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * 邮箱
+       * </pre>
+       *
+       * <code>string email = 10;</code>
+       * @param value The email to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEmail(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        email_ = value;
+        bitField0_ |= 0x00000200;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 邮箱
+       * </pre>
+       *
+       * <code>string email = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEmail() {
+        email_ = getDefaultInstance().getEmail();
+        bitField0_ = (bitField0_ & ~0x00000200);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 邮箱
+       * </pre>
+       *
+       * <code>string email = 10;</code>
+       * @param value The bytes for email to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEmailBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
+        email_ = value;
+        bitField0_ |= 0x00000200;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object status_ = "";
+      /**
+       * <pre>
+       * 状态
+       * </pre>
+       *
+       * <code>string status = 11;</code>
+       * @return The status.
+       */
+      public java.lang.String getStatus() {
+        java.lang.Object ref = status_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          status_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * 状态
+       * </pre>
+       *
+       * <code>string status = 11;</code>
+       * @return The bytes for status.
+       */
+      public com.google.protobuf.ByteString
+          getStatusBytes() {
+        java.lang.Object ref = status_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          status_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * 状态
+       * </pre>
+       *
+       * <code>string status = 11;</code>
+       * @param value The status to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStatus(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        status_ = value;
+        bitField0_ |= 0x00000400;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 状态
+       * </pre>
+       *
+       * <code>string status = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStatus() {
+        status_ = getDefaultInstance().getStatus();
+        bitField0_ = (bitField0_ & ~0x00000400);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 状态
+       * </pre>
+       *
+       * <code>string status = 11;</code>
+       * @param value The bytes for status to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStatusBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
+        status_ = value;
+        bitField0_ |= 0x00000400;
         onChanged();
         return this;
       }
@@ -13865,42 +14417,43 @@ public final class Meta {
       "roupMetaData\022\013\n\003uid\030\001 \001(\t\022\013\n\003did\030\002 \001(\t\022\021" +
       "\n\tgroupName\030\003 \001(\t\022\021\n\tcreatedAt\030\004 \001(\003\022\021\n\t" +
       "updatedAt\030\005 \001(\003\022\021\n\tisDeleted\030\006 \001(\010\022\022\n\nte" +
-      "acherDid\030\007 \001(\t\022\023\n\013studentName\030\010 \001(\t\"\236\001\n\017" +
+      "acherDid\030\007 \001(\t\022\023\n\013studentName\030\010 \001(\t\"\320\001\n\017" +
       "ArchiveMetadata\022\013\n\003uid\030\001 \001(\t\022\014\n\004name\030\002 \001" +
       "(\t\022\022\n\nstudentDid\030\003 \001(\t\022\022\n\nteacherDid\030\004 \001" +
       "(\t\022\017\n\007subject\030\005 \001(\t\022\021\n\tcreatedAt\030\006 \001(\003\022\021" +
-      "\n\tupdatedAt\030\007 \001(\003\022\021\n\tisDeleted\030\010 \001(\010\"\214\001\n" +
-      "\020HomeworkMetadata\022\013\n\003uid\030\001 \001(\t\022\013\n\003did\030\002 " +
-      "\001(\t\022\017\n\007subject\030\003 \001(\t\022\024\n\014testPaperUid\030\004 \001" +
-      "(\t\022\021\n\tcreatedAt\030\005 \001(\003\022\021\n\tupdatedAt\030\006 \001(\003" +
-      "\022\021\n\tisDeleted\030\007 \001(\010\"z\n\020MistakesMetadata\022" +
-      "\013\n\003uid\030\001 \001(\t\022\020\n\010question\030\002 \001(\t\022\016\n\006answer" +
-      "\030\003 \001(\t\022\021\n\tcreatedAt\030\004 \001(\003\022\021\n\tupdatedAt\030\005" +
-      " \001(\003\022\021\n\tisDeleted\030\006 \001(\010\"\205\001\n\017MessageMetad" +
-      "ata\022\013\n\003uid\030\001 \001(\t\022\r\n\005title\030\002 \001(\t\022\014\n\004type\030" +
-      "\003 \001(\005\022\017\n\007content\030\004 \001(\t\022\021\n\tcreatedAt\030\005 \001(" +
-      "\003\022\021\n\tupdatedAt\030\006 \001(\003\022\021\n\tisDeleted\030\007 \001(\010\"" +
-      "\214\002\n\014TaskMetadata\022\013\n\003uid\030\001 \001(\t\022\014\n\004name\030\002 " +
-      "\001(\t\022\023\n\013description\030\003 \001(\t\022\016\n\006tagUid\030\004 \001(\t" +
-      "\022\013\n\003did\030\005 \001(\t\022\026\n\016studentDidList\030\006 \001(\t\022\021\n" +
-      "\tcreatedAt\030\007 \001(\003\022\021\n\tupdatedAt\030\010 \001(\003\022\021\n\ts" +
-      "tartTime\030\t \001(\003\022\017\n\007endTime\030\n \001(\003\022\021\n\tisDel" +
-      "eted\030\013 \001(\010\022:\n\006status\030\014 \001(\0162*.yeying.api." +
-      "apps.zuoyepigai.TaskStatusEnum\">\n\014TagCou" +
-      "ntMeta\022\016\n\006tagUid\030\001 \001(\t\022\017\n\007tagName\030\002 \001(\t\022" +
-      "\r\n\005count\030\003 \001(\004\"r\n\017TaskTagMetadata\022\013\n\003uid" +
-      "\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\013\n\003did\030\003 \001(\t\022\021\n\tcre" +
-      "atedAt\030\004 \001(\003\022\021\n\tupdatedAt\030\005 \001(\003\022\021\n\tisDel" +
-      "eted\030\006 \001(\010\"\224\002\n\021WarehouseMetadata\022\013\n\003uid\030" +
-      "\001 \001(\t\022\013\n\003did\030\002 \001(\t\022\013\n\003url\030\003 \001(\t\022<\n\013urlMe" +
-      "taData\030\004 \003(\0132\'.yeying.api.apps.zuoyepiga" +
-      "i.UrlMetaData\022\017\n\007taskUid\030\005 \001(\t\022>\n\004type\030\006" +
-      " \001(\01620.yeying.api.apps.zuoyepigai.ImageC" +
-      "ontentTypeEnum\022\021\n\tcreatedAt\030\007 \001(\003\022\021\n\tupd" +
-      "atedAt\030\010 \001(\003\022\021\n\tisDeleted\030\t \001(\010\022\020\n\010urlIn" +
-      "dex\030\n \001(\r\")\n\013UrlMetaData\022\r\n\005index\030\001 \001(\r\022" +
-      "\013\n\003url\030\002 \001(\tB\034Z\032yeying/api/apps/zuoyepig" +
-      "aib\006proto3"
+      "\n\tupdatedAt\030\007 \001(\003\022\021\n\tisDeleted\030\010 \001(\010\022\021\n\t" +
+      "telephone\030\t \001(\t\022\r\n\005email\030\n \001(\t\022\016\n\006status" +
+      "\030\013 \001(\t\"\214\001\n\020HomeworkMetadata\022\013\n\003uid\030\001 \001(\t" +
+      "\022\013\n\003did\030\002 \001(\t\022\017\n\007subject\030\003 \001(\t\022\024\n\014testPa" +
+      "perUid\030\004 \001(\t\022\021\n\tcreatedAt\030\005 \001(\003\022\021\n\tupdat" +
+      "edAt\030\006 \001(\003\022\021\n\tisDeleted\030\007 \001(\010\"z\n\020Mistake" +
+      "sMetadata\022\013\n\003uid\030\001 \001(\t\022\020\n\010question\030\002 \001(\t" +
+      "\022\016\n\006answer\030\003 \001(\t\022\021\n\tcreatedAt\030\004 \001(\003\022\021\n\tu" +
+      "pdatedAt\030\005 \001(\003\022\021\n\tisDeleted\030\006 \001(\010\"\205\001\n\017Me" +
+      "ssageMetadata\022\013\n\003uid\030\001 \001(\t\022\r\n\005title\030\002 \001(" +
+      "\t\022\014\n\004type\030\003 \001(\005\022\017\n\007content\030\004 \001(\t\022\021\n\tcrea" +
+      "tedAt\030\005 \001(\003\022\021\n\tupdatedAt\030\006 \001(\003\022\021\n\tisDele" +
+      "ted\030\007 \001(\010\"\214\002\n\014TaskMetadata\022\013\n\003uid\030\001 \001(\t\022" +
+      "\014\n\004name\030\002 \001(\t\022\023\n\013description\030\003 \001(\t\022\016\n\006ta" +
+      "gUid\030\004 \001(\t\022\013\n\003did\030\005 \001(\t\022\026\n\016studentDidLis" +
+      "t\030\006 \001(\t\022\021\n\tcreatedAt\030\007 \001(\003\022\021\n\tupdatedAt\030" +
+      "\010 \001(\003\022\021\n\tstartTime\030\t \001(\003\022\017\n\007endTime\030\n \001(" +
+      "\003\022\021\n\tisDeleted\030\013 \001(\010\022:\n\006status\030\014 \001(\0162*.y" +
+      "eying.api.apps.zuoyepigai.TaskStatusEnum" +
+      "\">\n\014TagCountMeta\022\016\n\006tagUid\030\001 \001(\t\022\017\n\007tagN" +
+      "ame\030\002 \001(\t\022\r\n\005count\030\003 \001(\004\"r\n\017TaskTagMetad" +
+      "ata\022\013\n\003uid\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\013\n\003did\030\003 " +
+      "\001(\t\022\021\n\tcreatedAt\030\004 \001(\003\022\021\n\tupdatedAt\030\005 \001(" +
+      "\003\022\021\n\tisDeleted\030\006 \001(\010\"\224\002\n\021WarehouseMetada" +
+      "ta\022\013\n\003uid\030\001 \001(\t\022\013\n\003did\030\002 \001(\t\022\013\n\003url\030\003 \001(" +
+      "\t\022<\n\013urlMetaData\030\004 \003(\0132\'.yeying.api.apps" +
+      ".zuoyepigai.UrlMetaData\022\017\n\007taskUid\030\005 \001(\t" +
+      "\022>\n\004type\030\006 \001(\01620.yeying.api.apps.zuoyepi" +
+      "gai.ImageContentTypeEnum\022\021\n\tcreatedAt\030\007 " +
+      "\001(\003\022\021\n\tupdatedAt\030\010 \001(\003\022\021\n\tisDeleted\030\t \001(" +
+      "\010\022\020\n\010urlIndex\030\n \001(\r\")\n\013UrlMetaData\022\r\n\005in" +
+      "dex\030\001 \001(\r\022\013\n\003url\030\002 \001(\tB\034Z\032yeying/api/app" +
+      "s/zuoyepigaib\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -13918,7 +14471,7 @@ public final class Meta {
     internal_static_yeying_api_apps_zuoyepigai_ArchiveMetadata_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_apps_zuoyepigai_ArchiveMetadata_descriptor,
-        new java.lang.String[] { "Uid", "Name", "StudentDid", "TeacherDid", "Subject", "CreatedAt", "UpdatedAt", "IsDeleted", });
+        new java.lang.String[] { "Uid", "Name", "StudentDid", "TeacherDid", "Subject", "CreatedAt", "UpdatedAt", "IsDeleted", "Telephone", "Email", "Status", });
     internal_static_yeying_api_apps_zuoyepigai_HomeworkMetadata_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_yeying_api_apps_zuoyepigai_HomeworkMetadata_fieldAccessorTable = new
