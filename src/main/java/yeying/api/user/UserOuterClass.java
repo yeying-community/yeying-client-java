@@ -461,6 +461,6275 @@ public final class UserOuterClass {
     // @@protoc_insertion_point(enum_scope:yeying.api.user.UserRoleEnum)
   }
 
+  public interface UpdateStatusRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:yeying.api.user.UpdateStatusRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return Whether the header field is set.
+     */
+    boolean hasHeader();
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return The header.
+     */
+    yeying.api.common.Message.MessageHeader getHeader();
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     */
+    yeying.api.common.Message.MessageHeaderOrBuilder getHeaderOrBuilder();
+
+    /**
+     * <code>.yeying.api.user.UpdateStatusRequestBody body = 2;</code>
+     * @return Whether the body field is set.
+     */
+    boolean hasBody();
+    /**
+     * <code>.yeying.api.user.UpdateStatusRequestBody body = 2;</code>
+     * @return The body.
+     */
+    yeying.api.user.UserOuterClass.UpdateStatusRequestBody getBody();
+    /**
+     * <code>.yeying.api.user.UpdateStatusRequestBody body = 2;</code>
+     */
+    yeying.api.user.UserOuterClass.UpdateStatusRequestBodyOrBuilder getBodyOrBuilder();
+  }
+  /**
+   * Protobuf type {@code yeying.api.user.UpdateStatusRequest}
+   */
+  public static final class UpdateStatusRequest extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:yeying.api.user.UpdateStatusRequest)
+      UpdateStatusRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
+    static {
+      com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
+        com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
+        /* major= */ 4,
+        /* minor= */ 29,
+        /* patch= */ 3,
+        /* suffix= */ "",
+        UpdateStatusRequest.class.getName());
+    }
+    // Use UpdateStatusRequest.newBuilder() to construct.
+    private UpdateStatusRequest(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+    }
+    private UpdateStatusRequest() {
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusRequest_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              yeying.api.user.UserOuterClass.UpdateStatusRequest.class, yeying.api.user.UserOuterClass.UpdateStatusRequest.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int HEADER_FIELD_NUMBER = 1;
+    private yeying.api.common.Message.MessageHeader header_;
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return Whether the header field is set.
+     */
+    @java.lang.Override
+    public boolean hasHeader() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return The header.
+     */
+    @java.lang.Override
+    public yeying.api.common.Message.MessageHeader getHeader() {
+      return header_ == null ? yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+    }
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     */
+    @java.lang.Override
+    public yeying.api.common.Message.MessageHeaderOrBuilder getHeaderOrBuilder() {
+      return header_ == null ? yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+    }
+
+    public static final int BODY_FIELD_NUMBER = 2;
+    private yeying.api.user.UserOuterClass.UpdateStatusRequestBody body_;
+    /**
+     * <code>.yeying.api.user.UpdateStatusRequestBody body = 2;</code>
+     * @return Whether the body field is set.
+     */
+    @java.lang.Override
+    public boolean hasBody() {
+      return ((bitField0_ & 0x00000002) != 0);
+    }
+    /**
+     * <code>.yeying.api.user.UpdateStatusRequestBody body = 2;</code>
+     * @return The body.
+     */
+    @java.lang.Override
+    public yeying.api.user.UserOuterClass.UpdateStatusRequestBody getBody() {
+      return body_ == null ? yeying.api.user.UserOuterClass.UpdateStatusRequestBody.getDefaultInstance() : body_;
+    }
+    /**
+     * <code>.yeying.api.user.UpdateStatusRequestBody body = 2;</code>
+     */
+    @java.lang.Override
+    public yeying.api.user.UserOuterClass.UpdateStatusRequestBodyOrBuilder getBodyOrBuilder() {
+      return body_ == null ? yeying.api.user.UserOuterClass.UpdateStatusRequestBody.getDefaultInstance() : body_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) != 0)) {
+        output.writeMessage(1, getHeader());
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        output.writeMessage(2, getBody());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getHeader());
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getBody());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof yeying.api.user.UserOuterClass.UpdateStatusRequest)) {
+        return super.equals(obj);
+      }
+      yeying.api.user.UserOuterClass.UpdateStatusRequest other = (yeying.api.user.UserOuterClass.UpdateStatusRequest) obj;
+
+      if (hasHeader() != other.hasHeader()) return false;
+      if (hasHeader()) {
+        if (!getHeader()
+            .equals(other.getHeader())) return false;
+      }
+      if (hasBody() != other.hasBody()) return false;
+      if (hasBody()) {
+        if (!getBody()
+            .equals(other.getBody())) return false;
+      }
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasHeader()) {
+        hash = (37 * hash) + HEADER_FIELD_NUMBER;
+        hash = (53 * hash) + getHeader().hashCode();
+      }
+      if (hasBody()) {
+        hash = (37 * hash) + BODY_FIELD_NUMBER;
+        hash = (53 * hash) + getBody().hashCode();
+      }
+      hash = (29 * hash) + getUnknownFields().hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(yeying.api.user.UserOuterClass.UpdateStatusRequest prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code yeying.api.user.UpdateStatusRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:yeying.api.user.UpdateStatusRequest)
+        yeying.api.user.UserOuterClass.UpdateStatusRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusRequest_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                yeying.api.user.UserOuterClass.UpdateStatusRequest.class, yeying.api.user.UserOuterClass.UpdateStatusRequest.Builder.class);
+      }
+
+      // Construct using yeying.api.user.UserOuterClass.UpdateStatusRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage
+                .alwaysUseFieldBuilders) {
+          getHeaderFieldBuilder();
+          getBodyFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        bitField0_ = 0;
+        header_ = null;
+        if (headerBuilder_ != null) {
+          headerBuilder_.dispose();
+          headerBuilder_ = null;
+        }
+        body_ = null;
+        if (bodyBuilder_ != null) {
+          bodyBuilder_.dispose();
+          bodyBuilder_ = null;
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusRequest_descriptor;
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UpdateStatusRequest getDefaultInstanceForType() {
+        return yeying.api.user.UserOuterClass.UpdateStatusRequest.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UpdateStatusRequest build() {
+        yeying.api.user.UserOuterClass.UpdateStatusRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UpdateStatusRequest buildPartial() {
+        yeying.api.user.UserOuterClass.UpdateStatusRequest result = new yeying.api.user.UserOuterClass.UpdateStatusRequest(this);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartial0(yeying.api.user.UserOuterClass.UpdateStatusRequest result) {
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.header_ = headerBuilder_ == null
+              ? header_
+              : headerBuilder_.build();
+          to_bitField0_ |= 0x00000001;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.body_ = bodyBuilder_ == null
+              ? body_
+              : bodyBuilder_.build();
+          to_bitField0_ |= 0x00000002;
+        }
+        result.bitField0_ |= to_bitField0_;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof yeying.api.user.UserOuterClass.UpdateStatusRequest) {
+          return mergeFrom((yeying.api.user.UserOuterClass.UpdateStatusRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(yeying.api.user.UserOuterClass.UpdateStatusRequest other) {
+        if (other == yeying.api.user.UserOuterClass.UpdateStatusRequest.getDefaultInstance()) return this;
+        if (other.hasHeader()) {
+          mergeHeader(other.getHeader());
+        }
+        if (other.hasBody()) {
+          mergeBody(other.getBody());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                input.readMessage(
+                    getHeaderFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 10
+              case 18: {
+                input.readMessage(
+                    getBodyFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 18
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.unwrapIOException();
+        } finally {
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private yeying.api.common.Message.MessageHeader header_;
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.common.Message.MessageHeader, yeying.api.common.Message.MessageHeader.Builder, yeying.api.common.Message.MessageHeaderOrBuilder> headerBuilder_;
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       * @return Whether the header field is set.
+       */
+      public boolean hasHeader() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       * @return The header.
+       */
+      public yeying.api.common.Message.MessageHeader getHeader() {
+        if (headerBuilder_ == null) {
+          return header_ == null ? yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+        } else {
+          return headerBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder setHeader(yeying.api.common.Message.MessageHeader value) {
+        if (headerBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          header_ = value;
+        } else {
+          headerBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder setHeader(
+          yeying.api.common.Message.MessageHeader.Builder builderForValue) {
+        if (headerBuilder_ == null) {
+          header_ = builderForValue.build();
+        } else {
+          headerBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder mergeHeader(yeying.api.common.Message.MessageHeader value) {
+        if (headerBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0) &&
+            header_ != null &&
+            header_ != yeying.api.common.Message.MessageHeader.getDefaultInstance()) {
+            getHeaderBuilder().mergeFrom(value);
+          } else {
+            header_ = value;
+          }
+        } else {
+          headerBuilder_.mergeFrom(value);
+        }
+        if (header_ != null) {
+          bitField0_ |= 0x00000001;
+          onChanged();
+        }
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder clearHeader() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        header_ = null;
+        if (headerBuilder_ != null) {
+          headerBuilder_.dispose();
+          headerBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public yeying.api.common.Message.MessageHeader.Builder getHeaderBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getHeaderFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public yeying.api.common.Message.MessageHeaderOrBuilder getHeaderOrBuilder() {
+        if (headerBuilder_ != null) {
+          return headerBuilder_.getMessageOrBuilder();
+        } else {
+          return header_ == null ?
+              yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+        }
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.common.Message.MessageHeader, yeying.api.common.Message.MessageHeader.Builder, yeying.api.common.Message.MessageHeaderOrBuilder> 
+          getHeaderFieldBuilder() {
+        if (headerBuilder_ == null) {
+          headerBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              yeying.api.common.Message.MessageHeader, yeying.api.common.Message.MessageHeader.Builder, yeying.api.common.Message.MessageHeaderOrBuilder>(
+                  getHeader(),
+                  getParentForChildren(),
+                  isClean());
+          header_ = null;
+        }
+        return headerBuilder_;
+      }
+
+      private yeying.api.user.UserOuterClass.UpdateStatusRequestBody body_;
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.user.UserOuterClass.UpdateStatusRequestBody, yeying.api.user.UserOuterClass.UpdateStatusRequestBody.Builder, yeying.api.user.UserOuterClass.UpdateStatusRequestBodyOrBuilder> bodyBuilder_;
+      /**
+       * <code>.yeying.api.user.UpdateStatusRequestBody body = 2;</code>
+       * @return Whether the body field is set.
+       */
+      public boolean hasBody() {
+        return ((bitField0_ & 0x00000002) != 0);
+      }
+      /**
+       * <code>.yeying.api.user.UpdateStatusRequestBody body = 2;</code>
+       * @return The body.
+       */
+      public yeying.api.user.UserOuterClass.UpdateStatusRequestBody getBody() {
+        if (bodyBuilder_ == null) {
+          return body_ == null ? yeying.api.user.UserOuterClass.UpdateStatusRequestBody.getDefaultInstance() : body_;
+        } else {
+          return bodyBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.yeying.api.user.UpdateStatusRequestBody body = 2;</code>
+       */
+      public Builder setBody(yeying.api.user.UserOuterClass.UpdateStatusRequestBody value) {
+        if (bodyBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          body_ = value;
+        } else {
+          bodyBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.user.UpdateStatusRequestBody body = 2;</code>
+       */
+      public Builder setBody(
+          yeying.api.user.UserOuterClass.UpdateStatusRequestBody.Builder builderForValue) {
+        if (bodyBuilder_ == null) {
+          body_ = builderForValue.build();
+        } else {
+          bodyBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.user.UpdateStatusRequestBody body = 2;</code>
+       */
+      public Builder mergeBody(yeying.api.user.UserOuterClass.UpdateStatusRequestBody value) {
+        if (bodyBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0) &&
+            body_ != null &&
+            body_ != yeying.api.user.UserOuterClass.UpdateStatusRequestBody.getDefaultInstance()) {
+            getBodyBuilder().mergeFrom(value);
+          } else {
+            body_ = value;
+          }
+        } else {
+          bodyBuilder_.mergeFrom(value);
+        }
+        if (body_ != null) {
+          bitField0_ |= 0x00000002;
+          onChanged();
+        }
+        return this;
+      }
+      /**
+       * <code>.yeying.api.user.UpdateStatusRequestBody body = 2;</code>
+       */
+      public Builder clearBody() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        body_ = null;
+        if (bodyBuilder_ != null) {
+          bodyBuilder_.dispose();
+          bodyBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.user.UpdateStatusRequestBody body = 2;</code>
+       */
+      public yeying.api.user.UserOuterClass.UpdateStatusRequestBody.Builder getBodyBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getBodyFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.yeying.api.user.UpdateStatusRequestBody body = 2;</code>
+       */
+      public yeying.api.user.UserOuterClass.UpdateStatusRequestBodyOrBuilder getBodyOrBuilder() {
+        if (bodyBuilder_ != null) {
+          return bodyBuilder_.getMessageOrBuilder();
+        } else {
+          return body_ == null ?
+              yeying.api.user.UserOuterClass.UpdateStatusRequestBody.getDefaultInstance() : body_;
+        }
+      }
+      /**
+       * <code>.yeying.api.user.UpdateStatusRequestBody body = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.user.UserOuterClass.UpdateStatusRequestBody, yeying.api.user.UserOuterClass.UpdateStatusRequestBody.Builder, yeying.api.user.UserOuterClass.UpdateStatusRequestBodyOrBuilder> 
+          getBodyFieldBuilder() {
+        if (bodyBuilder_ == null) {
+          bodyBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              yeying.api.user.UserOuterClass.UpdateStatusRequestBody, yeying.api.user.UserOuterClass.UpdateStatusRequestBody.Builder, yeying.api.user.UserOuterClass.UpdateStatusRequestBodyOrBuilder>(
+                  getBody(),
+                  getParentForChildren(),
+                  isClean());
+          body_ = null;
+        }
+        return bodyBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:yeying.api.user.UpdateStatusRequest)
+    }
+
+    // @@protoc_insertion_point(class_scope:yeying.api.user.UpdateStatusRequest)
+    private static final yeying.api.user.UserOuterClass.UpdateStatusRequest DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new yeying.api.user.UserOuterClass.UpdateStatusRequest();
+    }
+
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<UpdateStatusRequest>
+        PARSER = new com.google.protobuf.AbstractParser<UpdateStatusRequest>() {
+      @java.lang.Override
+      public UpdateStatusRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
+      }
+    };
+
+    public static com.google.protobuf.Parser<UpdateStatusRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<UpdateStatusRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public yeying.api.user.UserOuterClass.UpdateStatusRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface UpdateStatusRequestBodyOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:yeying.api.user.UpdateStatusRequestBody)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     * 用户did
+     * </pre>
+     *
+     * <code>string did = 1;</code>
+     * @return The did.
+     */
+    java.lang.String getDid();
+    /**
+     * <pre>
+     * 用户did
+     * </pre>
+     *
+     * <code>string did = 1;</code>
+     * @return The bytes for did.
+     */
+    com.google.protobuf.ByteString
+        getDidBytes();
+
+    /**
+     * <pre>
+     * 用户状态，冻结/正常
+     * </pre>
+     *
+     * <code>.yeying.api.user.UserStatusEnum status = 2;</code>
+     * @return The enum numeric value on the wire for status.
+     */
+    int getStatusValue();
+    /**
+     * <pre>
+     * 用户状态，冻结/正常
+     * </pre>
+     *
+     * <code>.yeying.api.user.UserStatusEnum status = 2;</code>
+     * @return The status.
+     */
+    yeying.api.user.UserOuterClass.UserStatusEnum getStatus();
+  }
+  /**
+   * Protobuf type {@code yeying.api.user.UpdateStatusRequestBody}
+   */
+  public static final class UpdateStatusRequestBody extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:yeying.api.user.UpdateStatusRequestBody)
+      UpdateStatusRequestBodyOrBuilder {
+  private static final long serialVersionUID = 0L;
+    static {
+      com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
+        com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
+        /* major= */ 4,
+        /* minor= */ 29,
+        /* patch= */ 3,
+        /* suffix= */ "",
+        UpdateStatusRequestBody.class.getName());
+    }
+    // Use UpdateStatusRequestBody.newBuilder() to construct.
+    private UpdateStatusRequestBody(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+    }
+    private UpdateStatusRequestBody() {
+      did_ = "";
+      status_ = 0;
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusRequestBody_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusRequestBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              yeying.api.user.UserOuterClass.UpdateStatusRequestBody.class, yeying.api.user.UserOuterClass.UpdateStatusRequestBody.Builder.class);
+    }
+
+    public static final int DID_FIELD_NUMBER = 1;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object did_ = "";
+    /**
+     * <pre>
+     * 用户did
+     * </pre>
+     *
+     * <code>string did = 1;</code>
+     * @return The did.
+     */
+    @java.lang.Override
+    public java.lang.String getDid() {
+      java.lang.Object ref = did_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        did_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * 用户did
+     * </pre>
+     *
+     * <code>string did = 1;</code>
+     * @return The bytes for did.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getDidBytes() {
+      java.lang.Object ref = did_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        did_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int STATUS_FIELD_NUMBER = 2;
+    private int status_ = 0;
+    /**
+     * <pre>
+     * 用户状态，冻结/正常
+     * </pre>
+     *
+     * <code>.yeying.api.user.UserStatusEnum status = 2;</code>
+     * @return The enum numeric value on the wire for status.
+     */
+    @java.lang.Override public int getStatusValue() {
+      return status_;
+    }
+    /**
+     * <pre>
+     * 用户状态，冻结/正常
+     * </pre>
+     *
+     * <code>.yeying.api.user.UserStatusEnum status = 2;</code>
+     * @return The status.
+     */
+    @java.lang.Override public yeying.api.user.UserOuterClass.UserStatusEnum getStatus() {
+      yeying.api.user.UserOuterClass.UserStatusEnum result = yeying.api.user.UserOuterClass.UserStatusEnum.forNumber(status_);
+      return result == null ? yeying.api.user.UserOuterClass.UserStatusEnum.UNRECOGNIZED : result;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(did_)) {
+        com.google.protobuf.GeneratedMessage.writeString(output, 1, did_);
+      }
+      if (status_ != yeying.api.user.UserOuterClass.UserStatusEnum.USER_STATUS_UNKNOWN.getNumber()) {
+        output.writeEnum(2, status_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(did_)) {
+        size += com.google.protobuf.GeneratedMessage.computeStringSize(1, did_);
+      }
+      if (status_ != yeying.api.user.UserOuterClass.UserStatusEnum.USER_STATUS_UNKNOWN.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(2, status_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof yeying.api.user.UserOuterClass.UpdateStatusRequestBody)) {
+        return super.equals(obj);
+      }
+      yeying.api.user.UserOuterClass.UpdateStatusRequestBody other = (yeying.api.user.UserOuterClass.UpdateStatusRequestBody) obj;
+
+      if (!getDid()
+          .equals(other.getDid())) return false;
+      if (status_ != other.status_) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + DID_FIELD_NUMBER;
+      hash = (53 * hash) + getDid().hashCode();
+      hash = (37 * hash) + STATUS_FIELD_NUMBER;
+      hash = (53 * hash) + status_;
+      hash = (29 * hash) + getUnknownFields().hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequestBody parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequestBody parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequestBody parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequestBody parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequestBody parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequestBody parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequestBody parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequestBody parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequestBody parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequestBody parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequestBody parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequestBody parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(yeying.api.user.UserOuterClass.UpdateStatusRequestBody prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code yeying.api.user.UpdateStatusRequestBody}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:yeying.api.user.UpdateStatusRequestBody)
+        yeying.api.user.UserOuterClass.UpdateStatusRequestBodyOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusRequestBody_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusRequestBody_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                yeying.api.user.UserOuterClass.UpdateStatusRequestBody.class, yeying.api.user.UserOuterClass.UpdateStatusRequestBody.Builder.class);
+      }
+
+      // Construct using yeying.api.user.UserOuterClass.UpdateStatusRequestBody.newBuilder()
+      private Builder() {
+
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        bitField0_ = 0;
+        did_ = "";
+        status_ = 0;
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusRequestBody_descriptor;
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UpdateStatusRequestBody getDefaultInstanceForType() {
+        return yeying.api.user.UserOuterClass.UpdateStatusRequestBody.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UpdateStatusRequestBody build() {
+        yeying.api.user.UserOuterClass.UpdateStatusRequestBody result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UpdateStatusRequestBody buildPartial() {
+        yeying.api.user.UserOuterClass.UpdateStatusRequestBody result = new yeying.api.user.UserOuterClass.UpdateStatusRequestBody(this);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartial0(yeying.api.user.UserOuterClass.UpdateStatusRequestBody result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.did_ = did_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.status_ = status_;
+        }
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof yeying.api.user.UserOuterClass.UpdateStatusRequestBody) {
+          return mergeFrom((yeying.api.user.UserOuterClass.UpdateStatusRequestBody)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(yeying.api.user.UserOuterClass.UpdateStatusRequestBody other) {
+        if (other == yeying.api.user.UserOuterClass.UpdateStatusRequestBody.getDefaultInstance()) return this;
+        if (!other.getDid().isEmpty()) {
+          did_ = other.did_;
+          bitField0_ |= 0x00000001;
+          onChanged();
+        }
+        if (other.status_ != 0) {
+          setStatusValue(other.getStatusValue());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                did_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 10
+              case 16: {
+                status_ = input.readEnum();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.unwrapIOException();
+        } finally {
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object did_ = "";
+      /**
+       * <pre>
+       * 用户did
+       * </pre>
+       *
+       * <code>string did = 1;</code>
+       * @return The did.
+       */
+      public java.lang.String getDid() {
+        java.lang.Object ref = did_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          did_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * 用户did
+       * </pre>
+       *
+       * <code>string did = 1;</code>
+       * @return The bytes for did.
+       */
+      public com.google.protobuf.ByteString
+          getDidBytes() {
+        java.lang.Object ref = did_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          did_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * 用户did
+       * </pre>
+       *
+       * <code>string did = 1;</code>
+       * @param value The did to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDid(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        did_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 用户did
+       * </pre>
+       *
+       * <code>string did = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDid() {
+        did_ = getDefaultInstance().getDid();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 用户did
+       * </pre>
+       *
+       * <code>string did = 1;</code>
+       * @param value The bytes for did to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
+        did_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+
+      private int status_ = 0;
+      /**
+       * <pre>
+       * 用户状态，冻结/正常
+       * </pre>
+       *
+       * <code>.yeying.api.user.UserStatusEnum status = 2;</code>
+       * @return The enum numeric value on the wire for status.
+       */
+      @java.lang.Override public int getStatusValue() {
+        return status_;
+      }
+      /**
+       * <pre>
+       * 用户状态，冻结/正常
+       * </pre>
+       *
+       * <code>.yeying.api.user.UserStatusEnum status = 2;</code>
+       * @param value The enum numeric value on the wire for status to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStatusValue(int value) {
+        status_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 用户状态，冻结/正常
+       * </pre>
+       *
+       * <code>.yeying.api.user.UserStatusEnum status = 2;</code>
+       * @return The status.
+       */
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UserStatusEnum getStatus() {
+        yeying.api.user.UserOuterClass.UserStatusEnum result = yeying.api.user.UserOuterClass.UserStatusEnum.forNumber(status_);
+        return result == null ? yeying.api.user.UserOuterClass.UserStatusEnum.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       * 用户状态，冻结/正常
+       * </pre>
+       *
+       * <code>.yeying.api.user.UserStatusEnum status = 2;</code>
+       * @param value The status to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStatus(yeying.api.user.UserOuterClass.UserStatusEnum value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000002;
+        status_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 用户状态，冻结/正常
+       * </pre>
+       *
+       * <code>.yeying.api.user.UserStatusEnum status = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStatus() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        status_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:yeying.api.user.UpdateStatusRequestBody)
+    }
+
+    // @@protoc_insertion_point(class_scope:yeying.api.user.UpdateStatusRequestBody)
+    private static final yeying.api.user.UserOuterClass.UpdateStatusRequestBody DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new yeying.api.user.UserOuterClass.UpdateStatusRequestBody();
+    }
+
+    public static yeying.api.user.UserOuterClass.UpdateStatusRequestBody getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<UpdateStatusRequestBody>
+        PARSER = new com.google.protobuf.AbstractParser<UpdateStatusRequestBody>() {
+      @java.lang.Override
+      public UpdateStatusRequestBody parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
+      }
+    };
+
+    public static com.google.protobuf.Parser<UpdateStatusRequestBody> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<UpdateStatusRequestBody> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public yeying.api.user.UserOuterClass.UpdateStatusRequestBody getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface UpdateStatusResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:yeying.api.user.UpdateStatusResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return Whether the header field is set.
+     */
+    boolean hasHeader();
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return The header.
+     */
+    yeying.api.common.Message.MessageHeader getHeader();
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     */
+    yeying.api.common.Message.MessageHeaderOrBuilder getHeaderOrBuilder();
+
+    /**
+     * <code>.yeying.api.user.UpdateStatusResponseBody body = 2;</code>
+     * @return Whether the body field is set.
+     */
+    boolean hasBody();
+    /**
+     * <code>.yeying.api.user.UpdateStatusResponseBody body = 2;</code>
+     * @return The body.
+     */
+    yeying.api.user.UserOuterClass.UpdateStatusResponseBody getBody();
+    /**
+     * <code>.yeying.api.user.UpdateStatusResponseBody body = 2;</code>
+     */
+    yeying.api.user.UserOuterClass.UpdateStatusResponseBodyOrBuilder getBodyOrBuilder();
+  }
+  /**
+   * Protobuf type {@code yeying.api.user.UpdateStatusResponse}
+   */
+  public static final class UpdateStatusResponse extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:yeying.api.user.UpdateStatusResponse)
+      UpdateStatusResponseOrBuilder {
+  private static final long serialVersionUID = 0L;
+    static {
+      com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
+        com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
+        /* major= */ 4,
+        /* minor= */ 29,
+        /* patch= */ 3,
+        /* suffix= */ "",
+        UpdateStatusResponse.class.getName());
+    }
+    // Use UpdateStatusResponse.newBuilder() to construct.
+    private UpdateStatusResponse(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+    }
+    private UpdateStatusResponse() {
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusResponse_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              yeying.api.user.UserOuterClass.UpdateStatusResponse.class, yeying.api.user.UserOuterClass.UpdateStatusResponse.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int HEADER_FIELD_NUMBER = 1;
+    private yeying.api.common.Message.MessageHeader header_;
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return Whether the header field is set.
+     */
+    @java.lang.Override
+    public boolean hasHeader() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return The header.
+     */
+    @java.lang.Override
+    public yeying.api.common.Message.MessageHeader getHeader() {
+      return header_ == null ? yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+    }
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     */
+    @java.lang.Override
+    public yeying.api.common.Message.MessageHeaderOrBuilder getHeaderOrBuilder() {
+      return header_ == null ? yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+    }
+
+    public static final int BODY_FIELD_NUMBER = 2;
+    private yeying.api.user.UserOuterClass.UpdateStatusResponseBody body_;
+    /**
+     * <code>.yeying.api.user.UpdateStatusResponseBody body = 2;</code>
+     * @return Whether the body field is set.
+     */
+    @java.lang.Override
+    public boolean hasBody() {
+      return ((bitField0_ & 0x00000002) != 0);
+    }
+    /**
+     * <code>.yeying.api.user.UpdateStatusResponseBody body = 2;</code>
+     * @return The body.
+     */
+    @java.lang.Override
+    public yeying.api.user.UserOuterClass.UpdateStatusResponseBody getBody() {
+      return body_ == null ? yeying.api.user.UserOuterClass.UpdateStatusResponseBody.getDefaultInstance() : body_;
+    }
+    /**
+     * <code>.yeying.api.user.UpdateStatusResponseBody body = 2;</code>
+     */
+    @java.lang.Override
+    public yeying.api.user.UserOuterClass.UpdateStatusResponseBodyOrBuilder getBodyOrBuilder() {
+      return body_ == null ? yeying.api.user.UserOuterClass.UpdateStatusResponseBody.getDefaultInstance() : body_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) != 0)) {
+        output.writeMessage(1, getHeader());
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        output.writeMessage(2, getBody());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getHeader());
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getBody());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof yeying.api.user.UserOuterClass.UpdateStatusResponse)) {
+        return super.equals(obj);
+      }
+      yeying.api.user.UserOuterClass.UpdateStatusResponse other = (yeying.api.user.UserOuterClass.UpdateStatusResponse) obj;
+
+      if (hasHeader() != other.hasHeader()) return false;
+      if (hasHeader()) {
+        if (!getHeader()
+            .equals(other.getHeader())) return false;
+      }
+      if (hasBody() != other.hasBody()) return false;
+      if (hasBody()) {
+        if (!getBody()
+            .equals(other.getBody())) return false;
+      }
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasHeader()) {
+        hash = (37 * hash) + HEADER_FIELD_NUMBER;
+        hash = (53 * hash) + getHeader().hashCode();
+      }
+      if (hasBody()) {
+        hash = (37 * hash) + BODY_FIELD_NUMBER;
+        hash = (53 * hash) + getBody().hashCode();
+      }
+      hash = (29 * hash) + getUnknownFields().hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(yeying.api.user.UserOuterClass.UpdateStatusResponse prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code yeying.api.user.UpdateStatusResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:yeying.api.user.UpdateStatusResponse)
+        yeying.api.user.UserOuterClass.UpdateStatusResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusResponse_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                yeying.api.user.UserOuterClass.UpdateStatusResponse.class, yeying.api.user.UserOuterClass.UpdateStatusResponse.Builder.class);
+      }
+
+      // Construct using yeying.api.user.UserOuterClass.UpdateStatusResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage
+                .alwaysUseFieldBuilders) {
+          getHeaderFieldBuilder();
+          getBodyFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        bitField0_ = 0;
+        header_ = null;
+        if (headerBuilder_ != null) {
+          headerBuilder_.dispose();
+          headerBuilder_ = null;
+        }
+        body_ = null;
+        if (bodyBuilder_ != null) {
+          bodyBuilder_.dispose();
+          bodyBuilder_ = null;
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusResponse_descriptor;
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UpdateStatusResponse getDefaultInstanceForType() {
+        return yeying.api.user.UserOuterClass.UpdateStatusResponse.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UpdateStatusResponse build() {
+        yeying.api.user.UserOuterClass.UpdateStatusResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UpdateStatusResponse buildPartial() {
+        yeying.api.user.UserOuterClass.UpdateStatusResponse result = new yeying.api.user.UserOuterClass.UpdateStatusResponse(this);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartial0(yeying.api.user.UserOuterClass.UpdateStatusResponse result) {
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.header_ = headerBuilder_ == null
+              ? header_
+              : headerBuilder_.build();
+          to_bitField0_ |= 0x00000001;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.body_ = bodyBuilder_ == null
+              ? body_
+              : bodyBuilder_.build();
+          to_bitField0_ |= 0x00000002;
+        }
+        result.bitField0_ |= to_bitField0_;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof yeying.api.user.UserOuterClass.UpdateStatusResponse) {
+          return mergeFrom((yeying.api.user.UserOuterClass.UpdateStatusResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(yeying.api.user.UserOuterClass.UpdateStatusResponse other) {
+        if (other == yeying.api.user.UserOuterClass.UpdateStatusResponse.getDefaultInstance()) return this;
+        if (other.hasHeader()) {
+          mergeHeader(other.getHeader());
+        }
+        if (other.hasBody()) {
+          mergeBody(other.getBody());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                input.readMessage(
+                    getHeaderFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 10
+              case 18: {
+                input.readMessage(
+                    getBodyFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 18
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.unwrapIOException();
+        } finally {
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private yeying.api.common.Message.MessageHeader header_;
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.common.Message.MessageHeader, yeying.api.common.Message.MessageHeader.Builder, yeying.api.common.Message.MessageHeaderOrBuilder> headerBuilder_;
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       * @return Whether the header field is set.
+       */
+      public boolean hasHeader() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       * @return The header.
+       */
+      public yeying.api.common.Message.MessageHeader getHeader() {
+        if (headerBuilder_ == null) {
+          return header_ == null ? yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+        } else {
+          return headerBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder setHeader(yeying.api.common.Message.MessageHeader value) {
+        if (headerBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          header_ = value;
+        } else {
+          headerBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder setHeader(
+          yeying.api.common.Message.MessageHeader.Builder builderForValue) {
+        if (headerBuilder_ == null) {
+          header_ = builderForValue.build();
+        } else {
+          headerBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder mergeHeader(yeying.api.common.Message.MessageHeader value) {
+        if (headerBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0) &&
+            header_ != null &&
+            header_ != yeying.api.common.Message.MessageHeader.getDefaultInstance()) {
+            getHeaderBuilder().mergeFrom(value);
+          } else {
+            header_ = value;
+          }
+        } else {
+          headerBuilder_.mergeFrom(value);
+        }
+        if (header_ != null) {
+          bitField0_ |= 0x00000001;
+          onChanged();
+        }
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder clearHeader() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        header_ = null;
+        if (headerBuilder_ != null) {
+          headerBuilder_.dispose();
+          headerBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public yeying.api.common.Message.MessageHeader.Builder getHeaderBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getHeaderFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public yeying.api.common.Message.MessageHeaderOrBuilder getHeaderOrBuilder() {
+        if (headerBuilder_ != null) {
+          return headerBuilder_.getMessageOrBuilder();
+        } else {
+          return header_ == null ?
+              yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+        }
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.common.Message.MessageHeader, yeying.api.common.Message.MessageHeader.Builder, yeying.api.common.Message.MessageHeaderOrBuilder> 
+          getHeaderFieldBuilder() {
+        if (headerBuilder_ == null) {
+          headerBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              yeying.api.common.Message.MessageHeader, yeying.api.common.Message.MessageHeader.Builder, yeying.api.common.Message.MessageHeaderOrBuilder>(
+                  getHeader(),
+                  getParentForChildren(),
+                  isClean());
+          header_ = null;
+        }
+        return headerBuilder_;
+      }
+
+      private yeying.api.user.UserOuterClass.UpdateStatusResponseBody body_;
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.user.UserOuterClass.UpdateStatusResponseBody, yeying.api.user.UserOuterClass.UpdateStatusResponseBody.Builder, yeying.api.user.UserOuterClass.UpdateStatusResponseBodyOrBuilder> bodyBuilder_;
+      /**
+       * <code>.yeying.api.user.UpdateStatusResponseBody body = 2;</code>
+       * @return Whether the body field is set.
+       */
+      public boolean hasBody() {
+        return ((bitField0_ & 0x00000002) != 0);
+      }
+      /**
+       * <code>.yeying.api.user.UpdateStatusResponseBody body = 2;</code>
+       * @return The body.
+       */
+      public yeying.api.user.UserOuterClass.UpdateStatusResponseBody getBody() {
+        if (bodyBuilder_ == null) {
+          return body_ == null ? yeying.api.user.UserOuterClass.UpdateStatusResponseBody.getDefaultInstance() : body_;
+        } else {
+          return bodyBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.yeying.api.user.UpdateStatusResponseBody body = 2;</code>
+       */
+      public Builder setBody(yeying.api.user.UserOuterClass.UpdateStatusResponseBody value) {
+        if (bodyBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          body_ = value;
+        } else {
+          bodyBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.user.UpdateStatusResponseBody body = 2;</code>
+       */
+      public Builder setBody(
+          yeying.api.user.UserOuterClass.UpdateStatusResponseBody.Builder builderForValue) {
+        if (bodyBuilder_ == null) {
+          body_ = builderForValue.build();
+        } else {
+          bodyBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.user.UpdateStatusResponseBody body = 2;</code>
+       */
+      public Builder mergeBody(yeying.api.user.UserOuterClass.UpdateStatusResponseBody value) {
+        if (bodyBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0) &&
+            body_ != null &&
+            body_ != yeying.api.user.UserOuterClass.UpdateStatusResponseBody.getDefaultInstance()) {
+            getBodyBuilder().mergeFrom(value);
+          } else {
+            body_ = value;
+          }
+        } else {
+          bodyBuilder_.mergeFrom(value);
+        }
+        if (body_ != null) {
+          bitField0_ |= 0x00000002;
+          onChanged();
+        }
+        return this;
+      }
+      /**
+       * <code>.yeying.api.user.UpdateStatusResponseBody body = 2;</code>
+       */
+      public Builder clearBody() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        body_ = null;
+        if (bodyBuilder_ != null) {
+          bodyBuilder_.dispose();
+          bodyBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.user.UpdateStatusResponseBody body = 2;</code>
+       */
+      public yeying.api.user.UserOuterClass.UpdateStatusResponseBody.Builder getBodyBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getBodyFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.yeying.api.user.UpdateStatusResponseBody body = 2;</code>
+       */
+      public yeying.api.user.UserOuterClass.UpdateStatusResponseBodyOrBuilder getBodyOrBuilder() {
+        if (bodyBuilder_ != null) {
+          return bodyBuilder_.getMessageOrBuilder();
+        } else {
+          return body_ == null ?
+              yeying.api.user.UserOuterClass.UpdateStatusResponseBody.getDefaultInstance() : body_;
+        }
+      }
+      /**
+       * <code>.yeying.api.user.UpdateStatusResponseBody body = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.user.UserOuterClass.UpdateStatusResponseBody, yeying.api.user.UserOuterClass.UpdateStatusResponseBody.Builder, yeying.api.user.UserOuterClass.UpdateStatusResponseBodyOrBuilder> 
+          getBodyFieldBuilder() {
+        if (bodyBuilder_ == null) {
+          bodyBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              yeying.api.user.UserOuterClass.UpdateStatusResponseBody, yeying.api.user.UserOuterClass.UpdateStatusResponseBody.Builder, yeying.api.user.UserOuterClass.UpdateStatusResponseBodyOrBuilder>(
+                  getBody(),
+                  getParentForChildren(),
+                  isClean());
+          body_ = null;
+        }
+        return bodyBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:yeying.api.user.UpdateStatusResponse)
+    }
+
+    // @@protoc_insertion_point(class_scope:yeying.api.user.UpdateStatusResponse)
+    private static final yeying.api.user.UserOuterClass.UpdateStatusResponse DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new yeying.api.user.UserOuterClass.UpdateStatusResponse();
+    }
+
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<UpdateStatusResponse>
+        PARSER = new com.google.protobuf.AbstractParser<UpdateStatusResponse>() {
+      @java.lang.Override
+      public UpdateStatusResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
+      }
+    };
+
+    public static com.google.protobuf.Parser<UpdateStatusResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<UpdateStatusResponse> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public yeying.api.user.UserOuterClass.UpdateStatusResponse getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface UpdateStatusResponseBodyOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:yeying.api.user.UpdateStatusResponseBody)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     * @return Whether the status field is set.
+     */
+    boolean hasStatus();
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     * @return The status.
+     */
+    yeying.api.common.Message.ResponseStatus getStatus();
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     */
+    yeying.api.common.Message.ResponseStatusOrBuilder getStatusOrBuilder();
+  }
+  /**
+   * Protobuf type {@code yeying.api.user.UpdateStatusResponseBody}
+   */
+  public static final class UpdateStatusResponseBody extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:yeying.api.user.UpdateStatusResponseBody)
+      UpdateStatusResponseBodyOrBuilder {
+  private static final long serialVersionUID = 0L;
+    static {
+      com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
+        com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
+        /* major= */ 4,
+        /* minor= */ 29,
+        /* patch= */ 3,
+        /* suffix= */ "",
+        UpdateStatusResponseBody.class.getName());
+    }
+    // Use UpdateStatusResponseBody.newBuilder() to construct.
+    private UpdateStatusResponseBody(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+    }
+    private UpdateStatusResponseBody() {
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusResponseBody_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              yeying.api.user.UserOuterClass.UpdateStatusResponseBody.class, yeying.api.user.UserOuterClass.UpdateStatusResponseBody.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int STATUS_FIELD_NUMBER = 1;
+    private yeying.api.common.Message.ResponseStatus status_;
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     * @return Whether the status field is set.
+     */
+    @java.lang.Override
+    public boolean hasStatus() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     * @return The status.
+     */
+    @java.lang.Override
+    public yeying.api.common.Message.ResponseStatus getStatus() {
+      return status_ == null ? yeying.api.common.Message.ResponseStatus.getDefaultInstance() : status_;
+    }
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     */
+    @java.lang.Override
+    public yeying.api.common.Message.ResponseStatusOrBuilder getStatusOrBuilder() {
+      return status_ == null ? yeying.api.common.Message.ResponseStatus.getDefaultInstance() : status_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) != 0)) {
+        output.writeMessage(1, getStatus());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getStatus());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof yeying.api.user.UserOuterClass.UpdateStatusResponseBody)) {
+        return super.equals(obj);
+      }
+      yeying.api.user.UserOuterClass.UpdateStatusResponseBody other = (yeying.api.user.UserOuterClass.UpdateStatusResponseBody) obj;
+
+      if (hasStatus() != other.hasStatus()) return false;
+      if (hasStatus()) {
+        if (!getStatus()
+            .equals(other.getStatus())) return false;
+      }
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasStatus()) {
+        hash = (37 * hash) + STATUS_FIELD_NUMBER;
+        hash = (53 * hash) + getStatus().hashCode();
+      }
+      hash = (29 * hash) + getUnknownFields().hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponseBody parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponseBody parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponseBody parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponseBody parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponseBody parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponseBody parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponseBody parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponseBody parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponseBody parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponseBody parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponseBody parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponseBody parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(yeying.api.user.UserOuterClass.UpdateStatusResponseBody prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code yeying.api.user.UpdateStatusResponseBody}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:yeying.api.user.UpdateStatusResponseBody)
+        yeying.api.user.UserOuterClass.UpdateStatusResponseBodyOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusResponseBody_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusResponseBody_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                yeying.api.user.UserOuterClass.UpdateStatusResponseBody.class, yeying.api.user.UserOuterClass.UpdateStatusResponseBody.Builder.class);
+      }
+
+      // Construct using yeying.api.user.UserOuterClass.UpdateStatusResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage
+                .alwaysUseFieldBuilders) {
+          getStatusFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        bitField0_ = 0;
+        status_ = null;
+        if (statusBuilder_ != null) {
+          statusBuilder_.dispose();
+          statusBuilder_ = null;
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UpdateStatusResponseBody_descriptor;
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UpdateStatusResponseBody getDefaultInstanceForType() {
+        return yeying.api.user.UserOuterClass.UpdateStatusResponseBody.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UpdateStatusResponseBody build() {
+        yeying.api.user.UserOuterClass.UpdateStatusResponseBody result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UpdateStatusResponseBody buildPartial() {
+        yeying.api.user.UserOuterClass.UpdateStatusResponseBody result = new yeying.api.user.UserOuterClass.UpdateStatusResponseBody(this);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartial0(yeying.api.user.UserOuterClass.UpdateStatusResponseBody result) {
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.status_ = statusBuilder_ == null
+              ? status_
+              : statusBuilder_.build();
+          to_bitField0_ |= 0x00000001;
+        }
+        result.bitField0_ |= to_bitField0_;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof yeying.api.user.UserOuterClass.UpdateStatusResponseBody) {
+          return mergeFrom((yeying.api.user.UserOuterClass.UpdateStatusResponseBody)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(yeying.api.user.UserOuterClass.UpdateStatusResponseBody other) {
+        if (other == yeying.api.user.UserOuterClass.UpdateStatusResponseBody.getDefaultInstance()) return this;
+        if (other.hasStatus()) {
+          mergeStatus(other.getStatus());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                input.readMessage(
+                    getStatusFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 10
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.unwrapIOException();
+        } finally {
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private yeying.api.common.Message.ResponseStatus status_;
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.common.Message.ResponseStatus, yeying.api.common.Message.ResponseStatus.Builder, yeying.api.common.Message.ResponseStatusOrBuilder> statusBuilder_;
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       * @return Whether the status field is set.
+       */
+      public boolean hasStatus() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       * @return The status.
+       */
+      public yeying.api.common.Message.ResponseStatus getStatus() {
+        if (statusBuilder_ == null) {
+          return status_ == null ? yeying.api.common.Message.ResponseStatus.getDefaultInstance() : status_;
+        } else {
+          return statusBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public Builder setStatus(yeying.api.common.Message.ResponseStatus value) {
+        if (statusBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          status_ = value;
+        } else {
+          statusBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public Builder setStatus(
+          yeying.api.common.Message.ResponseStatus.Builder builderForValue) {
+        if (statusBuilder_ == null) {
+          status_ = builderForValue.build();
+        } else {
+          statusBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public Builder mergeStatus(yeying.api.common.Message.ResponseStatus value) {
+        if (statusBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0) &&
+            status_ != null &&
+            status_ != yeying.api.common.Message.ResponseStatus.getDefaultInstance()) {
+            getStatusBuilder().mergeFrom(value);
+          } else {
+            status_ = value;
+          }
+        } else {
+          statusBuilder_.mergeFrom(value);
+        }
+        if (status_ != null) {
+          bitField0_ |= 0x00000001;
+          onChanged();
+        }
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public Builder clearStatus() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        status_ = null;
+        if (statusBuilder_ != null) {
+          statusBuilder_.dispose();
+          statusBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public yeying.api.common.Message.ResponseStatus.Builder getStatusBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getStatusFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public yeying.api.common.Message.ResponseStatusOrBuilder getStatusOrBuilder() {
+        if (statusBuilder_ != null) {
+          return statusBuilder_.getMessageOrBuilder();
+        } else {
+          return status_ == null ?
+              yeying.api.common.Message.ResponseStatus.getDefaultInstance() : status_;
+        }
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.common.Message.ResponseStatus, yeying.api.common.Message.ResponseStatus.Builder, yeying.api.common.Message.ResponseStatusOrBuilder> 
+          getStatusFieldBuilder() {
+        if (statusBuilder_ == null) {
+          statusBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              yeying.api.common.Message.ResponseStatus, yeying.api.common.Message.ResponseStatus.Builder, yeying.api.common.Message.ResponseStatusOrBuilder>(
+                  getStatus(),
+                  getParentForChildren(),
+                  isClean());
+          status_ = null;
+        }
+        return statusBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:yeying.api.user.UpdateStatusResponseBody)
+    }
+
+    // @@protoc_insertion_point(class_scope:yeying.api.user.UpdateStatusResponseBody)
+    private static final yeying.api.user.UserOuterClass.UpdateStatusResponseBody DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new yeying.api.user.UserOuterClass.UpdateStatusResponseBody();
+    }
+
+    public static yeying.api.user.UserOuterClass.UpdateStatusResponseBody getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<UpdateStatusResponseBody>
+        PARSER = new com.google.protobuf.AbstractParser<UpdateStatusResponseBody>() {
+      @java.lang.Override
+      public UpdateStatusResponseBody parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
+      }
+    };
+
+    public static com.google.protobuf.Parser<UpdateStatusResponseBody> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<UpdateStatusResponseBody> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public yeying.api.user.UserOuterClass.UpdateStatusResponseBody getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface UserListRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:yeying.api.user.UserListRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return Whether the header field is set.
+     */
+    boolean hasHeader();
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return The header.
+     */
+    yeying.api.common.Message.MessageHeader getHeader();
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     */
+    yeying.api.common.Message.MessageHeaderOrBuilder getHeaderOrBuilder();
+
+    /**
+     * <code>.yeying.api.user.UserListRequestBody body = 2;</code>
+     * @return Whether the body field is set.
+     */
+    boolean hasBody();
+    /**
+     * <code>.yeying.api.user.UserListRequestBody body = 2;</code>
+     * @return The body.
+     */
+    yeying.api.user.UserOuterClass.UserListRequestBody getBody();
+    /**
+     * <code>.yeying.api.user.UserListRequestBody body = 2;</code>
+     */
+    yeying.api.user.UserOuterClass.UserListRequestBodyOrBuilder getBodyOrBuilder();
+  }
+  /**
+   * Protobuf type {@code yeying.api.user.UserListRequest}
+   */
+  public static final class UserListRequest extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:yeying.api.user.UserListRequest)
+      UserListRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
+    static {
+      com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
+        com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
+        /* major= */ 4,
+        /* minor= */ 29,
+        /* patch= */ 3,
+        /* suffix= */ "",
+        UserListRequest.class.getName());
+    }
+    // Use UserListRequest.newBuilder() to construct.
+    private UserListRequest(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+    }
+    private UserListRequest() {
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListRequest_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              yeying.api.user.UserOuterClass.UserListRequest.class, yeying.api.user.UserOuterClass.UserListRequest.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int HEADER_FIELD_NUMBER = 1;
+    private yeying.api.common.Message.MessageHeader header_;
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return Whether the header field is set.
+     */
+    @java.lang.Override
+    public boolean hasHeader() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return The header.
+     */
+    @java.lang.Override
+    public yeying.api.common.Message.MessageHeader getHeader() {
+      return header_ == null ? yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+    }
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     */
+    @java.lang.Override
+    public yeying.api.common.Message.MessageHeaderOrBuilder getHeaderOrBuilder() {
+      return header_ == null ? yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+    }
+
+    public static final int BODY_FIELD_NUMBER = 2;
+    private yeying.api.user.UserOuterClass.UserListRequestBody body_;
+    /**
+     * <code>.yeying.api.user.UserListRequestBody body = 2;</code>
+     * @return Whether the body field is set.
+     */
+    @java.lang.Override
+    public boolean hasBody() {
+      return ((bitField0_ & 0x00000002) != 0);
+    }
+    /**
+     * <code>.yeying.api.user.UserListRequestBody body = 2;</code>
+     * @return The body.
+     */
+    @java.lang.Override
+    public yeying.api.user.UserOuterClass.UserListRequestBody getBody() {
+      return body_ == null ? yeying.api.user.UserOuterClass.UserListRequestBody.getDefaultInstance() : body_;
+    }
+    /**
+     * <code>.yeying.api.user.UserListRequestBody body = 2;</code>
+     */
+    @java.lang.Override
+    public yeying.api.user.UserOuterClass.UserListRequestBodyOrBuilder getBodyOrBuilder() {
+      return body_ == null ? yeying.api.user.UserOuterClass.UserListRequestBody.getDefaultInstance() : body_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) != 0)) {
+        output.writeMessage(1, getHeader());
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        output.writeMessage(2, getBody());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getHeader());
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getBody());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof yeying.api.user.UserOuterClass.UserListRequest)) {
+        return super.equals(obj);
+      }
+      yeying.api.user.UserOuterClass.UserListRequest other = (yeying.api.user.UserOuterClass.UserListRequest) obj;
+
+      if (hasHeader() != other.hasHeader()) return false;
+      if (hasHeader()) {
+        if (!getHeader()
+            .equals(other.getHeader())) return false;
+      }
+      if (hasBody() != other.hasBody()) return false;
+      if (hasBody()) {
+        if (!getBody()
+            .equals(other.getBody())) return false;
+      }
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasHeader()) {
+        hash = (37 * hash) + HEADER_FIELD_NUMBER;
+        hash = (53 * hash) + getHeader().hashCode();
+      }
+      if (hasBody()) {
+        hash = (37 * hash) + BODY_FIELD_NUMBER;
+        hash = (53 * hash) + getBody().hashCode();
+      }
+      hash = (29 * hash) + getUnknownFields().hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static yeying.api.user.UserOuterClass.UserListRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UserListRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UserListRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UserListRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UserListRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UserListRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UserListRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.user.UserOuterClass.UserListRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static yeying.api.user.UserOuterClass.UserListRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static yeying.api.user.UserOuterClass.UserListRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UserListRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.user.UserOuterClass.UserListRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(yeying.api.user.UserOuterClass.UserListRequest prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code yeying.api.user.UserListRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:yeying.api.user.UserListRequest)
+        yeying.api.user.UserOuterClass.UserListRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListRequest_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                yeying.api.user.UserOuterClass.UserListRequest.class, yeying.api.user.UserOuterClass.UserListRequest.Builder.class);
+      }
+
+      // Construct using yeying.api.user.UserOuterClass.UserListRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage
+                .alwaysUseFieldBuilders) {
+          getHeaderFieldBuilder();
+          getBodyFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        bitField0_ = 0;
+        header_ = null;
+        if (headerBuilder_ != null) {
+          headerBuilder_.dispose();
+          headerBuilder_ = null;
+        }
+        body_ = null;
+        if (bodyBuilder_ != null) {
+          bodyBuilder_.dispose();
+          bodyBuilder_ = null;
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListRequest_descriptor;
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UserListRequest getDefaultInstanceForType() {
+        return yeying.api.user.UserOuterClass.UserListRequest.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UserListRequest build() {
+        yeying.api.user.UserOuterClass.UserListRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UserListRequest buildPartial() {
+        yeying.api.user.UserOuterClass.UserListRequest result = new yeying.api.user.UserOuterClass.UserListRequest(this);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartial0(yeying.api.user.UserOuterClass.UserListRequest result) {
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.header_ = headerBuilder_ == null
+              ? header_
+              : headerBuilder_.build();
+          to_bitField0_ |= 0x00000001;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.body_ = bodyBuilder_ == null
+              ? body_
+              : bodyBuilder_.build();
+          to_bitField0_ |= 0x00000002;
+        }
+        result.bitField0_ |= to_bitField0_;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof yeying.api.user.UserOuterClass.UserListRequest) {
+          return mergeFrom((yeying.api.user.UserOuterClass.UserListRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(yeying.api.user.UserOuterClass.UserListRequest other) {
+        if (other == yeying.api.user.UserOuterClass.UserListRequest.getDefaultInstance()) return this;
+        if (other.hasHeader()) {
+          mergeHeader(other.getHeader());
+        }
+        if (other.hasBody()) {
+          mergeBody(other.getBody());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                input.readMessage(
+                    getHeaderFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 10
+              case 18: {
+                input.readMessage(
+                    getBodyFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 18
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.unwrapIOException();
+        } finally {
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private yeying.api.common.Message.MessageHeader header_;
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.common.Message.MessageHeader, yeying.api.common.Message.MessageHeader.Builder, yeying.api.common.Message.MessageHeaderOrBuilder> headerBuilder_;
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       * @return Whether the header field is set.
+       */
+      public boolean hasHeader() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       * @return The header.
+       */
+      public yeying.api.common.Message.MessageHeader getHeader() {
+        if (headerBuilder_ == null) {
+          return header_ == null ? yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+        } else {
+          return headerBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder setHeader(yeying.api.common.Message.MessageHeader value) {
+        if (headerBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          header_ = value;
+        } else {
+          headerBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder setHeader(
+          yeying.api.common.Message.MessageHeader.Builder builderForValue) {
+        if (headerBuilder_ == null) {
+          header_ = builderForValue.build();
+        } else {
+          headerBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder mergeHeader(yeying.api.common.Message.MessageHeader value) {
+        if (headerBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0) &&
+            header_ != null &&
+            header_ != yeying.api.common.Message.MessageHeader.getDefaultInstance()) {
+            getHeaderBuilder().mergeFrom(value);
+          } else {
+            header_ = value;
+          }
+        } else {
+          headerBuilder_.mergeFrom(value);
+        }
+        if (header_ != null) {
+          bitField0_ |= 0x00000001;
+          onChanged();
+        }
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder clearHeader() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        header_ = null;
+        if (headerBuilder_ != null) {
+          headerBuilder_.dispose();
+          headerBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public yeying.api.common.Message.MessageHeader.Builder getHeaderBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getHeaderFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public yeying.api.common.Message.MessageHeaderOrBuilder getHeaderOrBuilder() {
+        if (headerBuilder_ != null) {
+          return headerBuilder_.getMessageOrBuilder();
+        } else {
+          return header_ == null ?
+              yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+        }
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.common.Message.MessageHeader, yeying.api.common.Message.MessageHeader.Builder, yeying.api.common.Message.MessageHeaderOrBuilder> 
+          getHeaderFieldBuilder() {
+        if (headerBuilder_ == null) {
+          headerBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              yeying.api.common.Message.MessageHeader, yeying.api.common.Message.MessageHeader.Builder, yeying.api.common.Message.MessageHeaderOrBuilder>(
+                  getHeader(),
+                  getParentForChildren(),
+                  isClean());
+          header_ = null;
+        }
+        return headerBuilder_;
+      }
+
+      private yeying.api.user.UserOuterClass.UserListRequestBody body_;
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.user.UserOuterClass.UserListRequestBody, yeying.api.user.UserOuterClass.UserListRequestBody.Builder, yeying.api.user.UserOuterClass.UserListRequestBodyOrBuilder> bodyBuilder_;
+      /**
+       * <code>.yeying.api.user.UserListRequestBody body = 2;</code>
+       * @return Whether the body field is set.
+       */
+      public boolean hasBody() {
+        return ((bitField0_ & 0x00000002) != 0);
+      }
+      /**
+       * <code>.yeying.api.user.UserListRequestBody body = 2;</code>
+       * @return The body.
+       */
+      public yeying.api.user.UserOuterClass.UserListRequestBody getBody() {
+        if (bodyBuilder_ == null) {
+          return body_ == null ? yeying.api.user.UserOuterClass.UserListRequestBody.getDefaultInstance() : body_;
+        } else {
+          return bodyBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.yeying.api.user.UserListRequestBody body = 2;</code>
+       */
+      public Builder setBody(yeying.api.user.UserOuterClass.UserListRequestBody value) {
+        if (bodyBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          body_ = value;
+        } else {
+          bodyBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.user.UserListRequestBody body = 2;</code>
+       */
+      public Builder setBody(
+          yeying.api.user.UserOuterClass.UserListRequestBody.Builder builderForValue) {
+        if (bodyBuilder_ == null) {
+          body_ = builderForValue.build();
+        } else {
+          bodyBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.user.UserListRequestBody body = 2;</code>
+       */
+      public Builder mergeBody(yeying.api.user.UserOuterClass.UserListRequestBody value) {
+        if (bodyBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0) &&
+            body_ != null &&
+            body_ != yeying.api.user.UserOuterClass.UserListRequestBody.getDefaultInstance()) {
+            getBodyBuilder().mergeFrom(value);
+          } else {
+            body_ = value;
+          }
+        } else {
+          bodyBuilder_.mergeFrom(value);
+        }
+        if (body_ != null) {
+          bitField0_ |= 0x00000002;
+          onChanged();
+        }
+        return this;
+      }
+      /**
+       * <code>.yeying.api.user.UserListRequestBody body = 2;</code>
+       */
+      public Builder clearBody() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        body_ = null;
+        if (bodyBuilder_ != null) {
+          bodyBuilder_.dispose();
+          bodyBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.user.UserListRequestBody body = 2;</code>
+       */
+      public yeying.api.user.UserOuterClass.UserListRequestBody.Builder getBodyBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getBodyFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.yeying.api.user.UserListRequestBody body = 2;</code>
+       */
+      public yeying.api.user.UserOuterClass.UserListRequestBodyOrBuilder getBodyOrBuilder() {
+        if (bodyBuilder_ != null) {
+          return bodyBuilder_.getMessageOrBuilder();
+        } else {
+          return body_ == null ?
+              yeying.api.user.UserOuterClass.UserListRequestBody.getDefaultInstance() : body_;
+        }
+      }
+      /**
+       * <code>.yeying.api.user.UserListRequestBody body = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.user.UserOuterClass.UserListRequestBody, yeying.api.user.UserOuterClass.UserListRequestBody.Builder, yeying.api.user.UserOuterClass.UserListRequestBodyOrBuilder> 
+          getBodyFieldBuilder() {
+        if (bodyBuilder_ == null) {
+          bodyBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              yeying.api.user.UserOuterClass.UserListRequestBody, yeying.api.user.UserOuterClass.UserListRequestBody.Builder, yeying.api.user.UserOuterClass.UserListRequestBodyOrBuilder>(
+                  getBody(),
+                  getParentForChildren(),
+                  isClean());
+          body_ = null;
+        }
+        return bodyBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:yeying.api.user.UserListRequest)
+    }
+
+    // @@protoc_insertion_point(class_scope:yeying.api.user.UserListRequest)
+    private static final yeying.api.user.UserOuterClass.UserListRequest DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new yeying.api.user.UserOuterClass.UserListRequest();
+    }
+
+    public static yeying.api.user.UserOuterClass.UserListRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<UserListRequest>
+        PARSER = new com.google.protobuf.AbstractParser<UserListRequest>() {
+      @java.lang.Override
+      public UserListRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
+      }
+    };
+
+    public static com.google.protobuf.Parser<UserListRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<UserListRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public yeying.api.user.UserOuterClass.UserListRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface UserListRequestBodyOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:yeying.api.user.UserListRequestBody)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     * 当前页
+     * </pre>
+     *
+     * <code>.google.protobuf.Int32Value pageIndex = 3;</code>
+     * @return Whether the pageIndex field is set.
+     */
+    boolean hasPageIndex();
+    /**
+     * <pre>
+     * 当前页
+     * </pre>
+     *
+     * <code>.google.protobuf.Int32Value pageIndex = 3;</code>
+     * @return The pageIndex.
+     */
+    com.google.protobuf.Int32Value getPageIndex();
+    /**
+     * <pre>
+     * 当前页
+     * </pre>
+     *
+     * <code>.google.protobuf.Int32Value pageIndex = 3;</code>
+     */
+    com.google.protobuf.Int32ValueOrBuilder getPageIndexOrBuilder();
+
+    /**
+     * <pre>
+     * 每页大小
+     * </pre>
+     *
+     * <code>.google.protobuf.Int32Value pageSize = 4;</code>
+     * @return Whether the pageSize field is set.
+     */
+    boolean hasPageSize();
+    /**
+     * <pre>
+     * 每页大小
+     * </pre>
+     *
+     * <code>.google.protobuf.Int32Value pageSize = 4;</code>
+     * @return The pageSize.
+     */
+    com.google.protobuf.Int32Value getPageSize();
+    /**
+     * <pre>
+     * 每页大小
+     * </pre>
+     *
+     * <code>.google.protobuf.Int32Value pageSize = 4;</code>
+     */
+    com.google.protobuf.Int32ValueOrBuilder getPageSizeOrBuilder();
+  }
+  /**
+   * Protobuf type {@code yeying.api.user.UserListRequestBody}
+   */
+  public static final class UserListRequestBody extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:yeying.api.user.UserListRequestBody)
+      UserListRequestBodyOrBuilder {
+  private static final long serialVersionUID = 0L;
+    static {
+      com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
+        com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
+        /* major= */ 4,
+        /* minor= */ 29,
+        /* patch= */ 3,
+        /* suffix= */ "",
+        UserListRequestBody.class.getName());
+    }
+    // Use UserListRequestBody.newBuilder() to construct.
+    private UserListRequestBody(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+    }
+    private UserListRequestBody() {
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListRequestBody_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListRequestBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              yeying.api.user.UserOuterClass.UserListRequestBody.class, yeying.api.user.UserOuterClass.UserListRequestBody.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int PAGEINDEX_FIELD_NUMBER = 3;
+    private com.google.protobuf.Int32Value pageIndex_;
+    /**
+     * <pre>
+     * 当前页
+     * </pre>
+     *
+     * <code>.google.protobuf.Int32Value pageIndex = 3;</code>
+     * @return Whether the pageIndex field is set.
+     */
+    @java.lang.Override
+    public boolean hasPageIndex() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <pre>
+     * 当前页
+     * </pre>
+     *
+     * <code>.google.protobuf.Int32Value pageIndex = 3;</code>
+     * @return The pageIndex.
+     */
+    @java.lang.Override
+    public com.google.protobuf.Int32Value getPageIndex() {
+      return pageIndex_ == null ? com.google.protobuf.Int32Value.getDefaultInstance() : pageIndex_;
+    }
+    /**
+     * <pre>
+     * 当前页
+     * </pre>
+     *
+     * <code>.google.protobuf.Int32Value pageIndex = 3;</code>
+     */
+    @java.lang.Override
+    public com.google.protobuf.Int32ValueOrBuilder getPageIndexOrBuilder() {
+      return pageIndex_ == null ? com.google.protobuf.Int32Value.getDefaultInstance() : pageIndex_;
+    }
+
+    public static final int PAGESIZE_FIELD_NUMBER = 4;
+    private com.google.protobuf.Int32Value pageSize_;
+    /**
+     * <pre>
+     * 每页大小
+     * </pre>
+     *
+     * <code>.google.protobuf.Int32Value pageSize = 4;</code>
+     * @return Whether the pageSize field is set.
+     */
+    @java.lang.Override
+    public boolean hasPageSize() {
+      return ((bitField0_ & 0x00000002) != 0);
+    }
+    /**
+     * <pre>
+     * 每页大小
+     * </pre>
+     *
+     * <code>.google.protobuf.Int32Value pageSize = 4;</code>
+     * @return The pageSize.
+     */
+    @java.lang.Override
+    public com.google.protobuf.Int32Value getPageSize() {
+      return pageSize_ == null ? com.google.protobuf.Int32Value.getDefaultInstance() : pageSize_;
+    }
+    /**
+     * <pre>
+     * 每页大小
+     * </pre>
+     *
+     * <code>.google.protobuf.Int32Value pageSize = 4;</code>
+     */
+    @java.lang.Override
+    public com.google.protobuf.Int32ValueOrBuilder getPageSizeOrBuilder() {
+      return pageSize_ == null ? com.google.protobuf.Int32Value.getDefaultInstance() : pageSize_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) != 0)) {
+        output.writeMessage(3, getPageIndex());
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        output.writeMessage(4, getPageSize());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, getPageIndex());
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, getPageSize());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof yeying.api.user.UserOuterClass.UserListRequestBody)) {
+        return super.equals(obj);
+      }
+      yeying.api.user.UserOuterClass.UserListRequestBody other = (yeying.api.user.UserOuterClass.UserListRequestBody) obj;
+
+      if (hasPageIndex() != other.hasPageIndex()) return false;
+      if (hasPageIndex()) {
+        if (!getPageIndex()
+            .equals(other.getPageIndex())) return false;
+      }
+      if (hasPageSize() != other.hasPageSize()) return false;
+      if (hasPageSize()) {
+        if (!getPageSize()
+            .equals(other.getPageSize())) return false;
+      }
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasPageIndex()) {
+        hash = (37 * hash) + PAGEINDEX_FIELD_NUMBER;
+        hash = (53 * hash) + getPageIndex().hashCode();
+      }
+      if (hasPageSize()) {
+        hash = (37 * hash) + PAGESIZE_FIELD_NUMBER;
+        hash = (53 * hash) + getPageSize().hashCode();
+      }
+      hash = (29 * hash) + getUnknownFields().hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static yeying.api.user.UserOuterClass.UserListRequestBody parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UserListRequestBody parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UserListRequestBody parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UserListRequestBody parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UserListRequestBody parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UserListRequestBody parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UserListRequestBody parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.user.UserOuterClass.UserListRequestBody parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static yeying.api.user.UserOuterClass.UserListRequestBody parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static yeying.api.user.UserOuterClass.UserListRequestBody parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UserListRequestBody parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.user.UserOuterClass.UserListRequestBody parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(yeying.api.user.UserOuterClass.UserListRequestBody prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code yeying.api.user.UserListRequestBody}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:yeying.api.user.UserListRequestBody)
+        yeying.api.user.UserOuterClass.UserListRequestBodyOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListRequestBody_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListRequestBody_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                yeying.api.user.UserOuterClass.UserListRequestBody.class, yeying.api.user.UserOuterClass.UserListRequestBody.Builder.class);
+      }
+
+      // Construct using yeying.api.user.UserOuterClass.UserListRequestBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage
+                .alwaysUseFieldBuilders) {
+          getPageIndexFieldBuilder();
+          getPageSizeFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        bitField0_ = 0;
+        pageIndex_ = null;
+        if (pageIndexBuilder_ != null) {
+          pageIndexBuilder_.dispose();
+          pageIndexBuilder_ = null;
+        }
+        pageSize_ = null;
+        if (pageSizeBuilder_ != null) {
+          pageSizeBuilder_.dispose();
+          pageSizeBuilder_ = null;
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListRequestBody_descriptor;
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UserListRequestBody getDefaultInstanceForType() {
+        return yeying.api.user.UserOuterClass.UserListRequestBody.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UserListRequestBody build() {
+        yeying.api.user.UserOuterClass.UserListRequestBody result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UserListRequestBody buildPartial() {
+        yeying.api.user.UserOuterClass.UserListRequestBody result = new yeying.api.user.UserOuterClass.UserListRequestBody(this);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartial0(yeying.api.user.UserOuterClass.UserListRequestBody result) {
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.pageIndex_ = pageIndexBuilder_ == null
+              ? pageIndex_
+              : pageIndexBuilder_.build();
+          to_bitField0_ |= 0x00000001;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.pageSize_ = pageSizeBuilder_ == null
+              ? pageSize_
+              : pageSizeBuilder_.build();
+          to_bitField0_ |= 0x00000002;
+        }
+        result.bitField0_ |= to_bitField0_;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof yeying.api.user.UserOuterClass.UserListRequestBody) {
+          return mergeFrom((yeying.api.user.UserOuterClass.UserListRequestBody)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(yeying.api.user.UserOuterClass.UserListRequestBody other) {
+        if (other == yeying.api.user.UserOuterClass.UserListRequestBody.getDefaultInstance()) return this;
+        if (other.hasPageIndex()) {
+          mergePageIndex(other.getPageIndex());
+        }
+        if (other.hasPageSize()) {
+          mergePageSize(other.getPageSize());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 26: {
+                input.readMessage(
+                    getPageIndexFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 26
+              case 34: {
+                input.readMessage(
+                    getPageSizeFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 34
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.unwrapIOException();
+        } finally {
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private com.google.protobuf.Int32Value pageIndex_;
+      private com.google.protobuf.SingleFieldBuilder<
+          com.google.protobuf.Int32Value, com.google.protobuf.Int32Value.Builder, com.google.protobuf.Int32ValueOrBuilder> pageIndexBuilder_;
+      /**
+       * <pre>
+       * 当前页
+       * </pre>
+       *
+       * <code>.google.protobuf.Int32Value pageIndex = 3;</code>
+       * @return Whether the pageIndex field is set.
+       */
+      public boolean hasPageIndex() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <pre>
+       * 当前页
+       * </pre>
+       *
+       * <code>.google.protobuf.Int32Value pageIndex = 3;</code>
+       * @return The pageIndex.
+       */
+      public com.google.protobuf.Int32Value getPageIndex() {
+        if (pageIndexBuilder_ == null) {
+          return pageIndex_ == null ? com.google.protobuf.Int32Value.getDefaultInstance() : pageIndex_;
+        } else {
+          return pageIndexBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       * 当前页
+       * </pre>
+       *
+       * <code>.google.protobuf.Int32Value pageIndex = 3;</code>
+       */
+      public Builder setPageIndex(com.google.protobuf.Int32Value value) {
+        if (pageIndexBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          pageIndex_ = value;
+        } else {
+          pageIndexBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 当前页
+       * </pre>
+       *
+       * <code>.google.protobuf.Int32Value pageIndex = 3;</code>
+       */
+      public Builder setPageIndex(
+          com.google.protobuf.Int32Value.Builder builderForValue) {
+        if (pageIndexBuilder_ == null) {
+          pageIndex_ = builderForValue.build();
+        } else {
+          pageIndexBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 当前页
+       * </pre>
+       *
+       * <code>.google.protobuf.Int32Value pageIndex = 3;</code>
+       */
+      public Builder mergePageIndex(com.google.protobuf.Int32Value value) {
+        if (pageIndexBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0) &&
+            pageIndex_ != null &&
+            pageIndex_ != com.google.protobuf.Int32Value.getDefaultInstance()) {
+            getPageIndexBuilder().mergeFrom(value);
+          } else {
+            pageIndex_ = value;
+          }
+        } else {
+          pageIndexBuilder_.mergeFrom(value);
+        }
+        if (pageIndex_ != null) {
+          bitField0_ |= 0x00000001;
+          onChanged();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 当前页
+       * </pre>
+       *
+       * <code>.google.protobuf.Int32Value pageIndex = 3;</code>
+       */
+      public Builder clearPageIndex() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        pageIndex_ = null;
+        if (pageIndexBuilder_ != null) {
+          pageIndexBuilder_.dispose();
+          pageIndexBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 当前页
+       * </pre>
+       *
+       * <code>.google.protobuf.Int32Value pageIndex = 3;</code>
+       */
+      public com.google.protobuf.Int32Value.Builder getPageIndexBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getPageIndexFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * 当前页
+       * </pre>
+       *
+       * <code>.google.protobuf.Int32Value pageIndex = 3;</code>
+       */
+      public com.google.protobuf.Int32ValueOrBuilder getPageIndexOrBuilder() {
+        if (pageIndexBuilder_ != null) {
+          return pageIndexBuilder_.getMessageOrBuilder();
+        } else {
+          return pageIndex_ == null ?
+              com.google.protobuf.Int32Value.getDefaultInstance() : pageIndex_;
+        }
+      }
+      /**
+       * <pre>
+       * 当前页
+       * </pre>
+       *
+       * <code>.google.protobuf.Int32Value pageIndex = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          com.google.protobuf.Int32Value, com.google.protobuf.Int32Value.Builder, com.google.protobuf.Int32ValueOrBuilder> 
+          getPageIndexFieldBuilder() {
+        if (pageIndexBuilder_ == null) {
+          pageIndexBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.google.protobuf.Int32Value, com.google.protobuf.Int32Value.Builder, com.google.protobuf.Int32ValueOrBuilder>(
+                  getPageIndex(),
+                  getParentForChildren(),
+                  isClean());
+          pageIndex_ = null;
+        }
+        return pageIndexBuilder_;
+      }
+
+      private com.google.protobuf.Int32Value pageSize_;
+      private com.google.protobuf.SingleFieldBuilder<
+          com.google.protobuf.Int32Value, com.google.protobuf.Int32Value.Builder, com.google.protobuf.Int32ValueOrBuilder> pageSizeBuilder_;
+      /**
+       * <pre>
+       * 每页大小
+       * </pre>
+       *
+       * <code>.google.protobuf.Int32Value pageSize = 4;</code>
+       * @return Whether the pageSize field is set.
+       */
+      public boolean hasPageSize() {
+        return ((bitField0_ & 0x00000002) != 0);
+      }
+      /**
+       * <pre>
+       * 每页大小
+       * </pre>
+       *
+       * <code>.google.protobuf.Int32Value pageSize = 4;</code>
+       * @return The pageSize.
+       */
+      public com.google.protobuf.Int32Value getPageSize() {
+        if (pageSizeBuilder_ == null) {
+          return pageSize_ == null ? com.google.protobuf.Int32Value.getDefaultInstance() : pageSize_;
+        } else {
+          return pageSizeBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       * 每页大小
+       * </pre>
+       *
+       * <code>.google.protobuf.Int32Value pageSize = 4;</code>
+       */
+      public Builder setPageSize(com.google.protobuf.Int32Value value) {
+        if (pageSizeBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          pageSize_ = value;
+        } else {
+          pageSizeBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 每页大小
+       * </pre>
+       *
+       * <code>.google.protobuf.Int32Value pageSize = 4;</code>
+       */
+      public Builder setPageSize(
+          com.google.protobuf.Int32Value.Builder builderForValue) {
+        if (pageSizeBuilder_ == null) {
+          pageSize_ = builderForValue.build();
+        } else {
+          pageSizeBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 每页大小
+       * </pre>
+       *
+       * <code>.google.protobuf.Int32Value pageSize = 4;</code>
+       */
+      public Builder mergePageSize(com.google.protobuf.Int32Value value) {
+        if (pageSizeBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0) &&
+            pageSize_ != null &&
+            pageSize_ != com.google.protobuf.Int32Value.getDefaultInstance()) {
+            getPageSizeBuilder().mergeFrom(value);
+          } else {
+            pageSize_ = value;
+          }
+        } else {
+          pageSizeBuilder_.mergeFrom(value);
+        }
+        if (pageSize_ != null) {
+          bitField0_ |= 0x00000002;
+          onChanged();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 每页大小
+       * </pre>
+       *
+       * <code>.google.protobuf.Int32Value pageSize = 4;</code>
+       */
+      public Builder clearPageSize() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        pageSize_ = null;
+        if (pageSizeBuilder_ != null) {
+          pageSizeBuilder_.dispose();
+          pageSizeBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 每页大小
+       * </pre>
+       *
+       * <code>.google.protobuf.Int32Value pageSize = 4;</code>
+       */
+      public com.google.protobuf.Int32Value.Builder getPageSizeBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getPageSizeFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * 每页大小
+       * </pre>
+       *
+       * <code>.google.protobuf.Int32Value pageSize = 4;</code>
+       */
+      public com.google.protobuf.Int32ValueOrBuilder getPageSizeOrBuilder() {
+        if (pageSizeBuilder_ != null) {
+          return pageSizeBuilder_.getMessageOrBuilder();
+        } else {
+          return pageSize_ == null ?
+              com.google.protobuf.Int32Value.getDefaultInstance() : pageSize_;
+        }
+      }
+      /**
+       * <pre>
+       * 每页大小
+       * </pre>
+       *
+       * <code>.google.protobuf.Int32Value pageSize = 4;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          com.google.protobuf.Int32Value, com.google.protobuf.Int32Value.Builder, com.google.protobuf.Int32ValueOrBuilder> 
+          getPageSizeFieldBuilder() {
+        if (pageSizeBuilder_ == null) {
+          pageSizeBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              com.google.protobuf.Int32Value, com.google.protobuf.Int32Value.Builder, com.google.protobuf.Int32ValueOrBuilder>(
+                  getPageSize(),
+                  getParentForChildren(),
+                  isClean());
+          pageSize_ = null;
+        }
+        return pageSizeBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:yeying.api.user.UserListRequestBody)
+    }
+
+    // @@protoc_insertion_point(class_scope:yeying.api.user.UserListRequestBody)
+    private static final yeying.api.user.UserOuterClass.UserListRequestBody DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new yeying.api.user.UserOuterClass.UserListRequestBody();
+    }
+
+    public static yeying.api.user.UserOuterClass.UserListRequestBody getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<UserListRequestBody>
+        PARSER = new com.google.protobuf.AbstractParser<UserListRequestBody>() {
+      @java.lang.Override
+      public UserListRequestBody parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
+      }
+    };
+
+    public static com.google.protobuf.Parser<UserListRequestBody> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<UserListRequestBody> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public yeying.api.user.UserOuterClass.UserListRequestBody getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface UserListResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:yeying.api.user.UserListResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return Whether the header field is set.
+     */
+    boolean hasHeader();
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return The header.
+     */
+    yeying.api.common.Message.MessageHeader getHeader();
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     */
+    yeying.api.common.Message.MessageHeaderOrBuilder getHeaderOrBuilder();
+
+    /**
+     * <code>.yeying.api.user.UserListResponseBody body = 2;</code>
+     * @return Whether the body field is set.
+     */
+    boolean hasBody();
+    /**
+     * <code>.yeying.api.user.UserListResponseBody body = 2;</code>
+     * @return The body.
+     */
+    yeying.api.user.UserOuterClass.UserListResponseBody getBody();
+    /**
+     * <code>.yeying.api.user.UserListResponseBody body = 2;</code>
+     */
+    yeying.api.user.UserOuterClass.UserListResponseBodyOrBuilder getBodyOrBuilder();
+  }
+  /**
+   * Protobuf type {@code yeying.api.user.UserListResponse}
+   */
+  public static final class UserListResponse extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:yeying.api.user.UserListResponse)
+      UserListResponseOrBuilder {
+  private static final long serialVersionUID = 0L;
+    static {
+      com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
+        com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
+        /* major= */ 4,
+        /* minor= */ 29,
+        /* patch= */ 3,
+        /* suffix= */ "",
+        UserListResponse.class.getName());
+    }
+    // Use UserListResponse.newBuilder() to construct.
+    private UserListResponse(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+    }
+    private UserListResponse() {
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListResponse_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              yeying.api.user.UserOuterClass.UserListResponse.class, yeying.api.user.UserOuterClass.UserListResponse.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int HEADER_FIELD_NUMBER = 1;
+    private yeying.api.common.Message.MessageHeader header_;
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return Whether the header field is set.
+     */
+    @java.lang.Override
+    public boolean hasHeader() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     * @return The header.
+     */
+    @java.lang.Override
+    public yeying.api.common.Message.MessageHeader getHeader() {
+      return header_ == null ? yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+    }
+    /**
+     * <code>.yeying.api.common.MessageHeader header = 1;</code>
+     */
+    @java.lang.Override
+    public yeying.api.common.Message.MessageHeaderOrBuilder getHeaderOrBuilder() {
+      return header_ == null ? yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+    }
+
+    public static final int BODY_FIELD_NUMBER = 2;
+    private yeying.api.user.UserOuterClass.UserListResponseBody body_;
+    /**
+     * <code>.yeying.api.user.UserListResponseBody body = 2;</code>
+     * @return Whether the body field is set.
+     */
+    @java.lang.Override
+    public boolean hasBody() {
+      return ((bitField0_ & 0x00000002) != 0);
+    }
+    /**
+     * <code>.yeying.api.user.UserListResponseBody body = 2;</code>
+     * @return The body.
+     */
+    @java.lang.Override
+    public yeying.api.user.UserOuterClass.UserListResponseBody getBody() {
+      return body_ == null ? yeying.api.user.UserOuterClass.UserListResponseBody.getDefaultInstance() : body_;
+    }
+    /**
+     * <code>.yeying.api.user.UserListResponseBody body = 2;</code>
+     */
+    @java.lang.Override
+    public yeying.api.user.UserOuterClass.UserListResponseBodyOrBuilder getBodyOrBuilder() {
+      return body_ == null ? yeying.api.user.UserOuterClass.UserListResponseBody.getDefaultInstance() : body_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) != 0)) {
+        output.writeMessage(1, getHeader());
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        output.writeMessage(2, getBody());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getHeader());
+      }
+      if (((bitField0_ & 0x00000002) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getBody());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof yeying.api.user.UserOuterClass.UserListResponse)) {
+        return super.equals(obj);
+      }
+      yeying.api.user.UserOuterClass.UserListResponse other = (yeying.api.user.UserOuterClass.UserListResponse) obj;
+
+      if (hasHeader() != other.hasHeader()) return false;
+      if (hasHeader()) {
+        if (!getHeader()
+            .equals(other.getHeader())) return false;
+      }
+      if (hasBody() != other.hasBody()) return false;
+      if (hasBody()) {
+        if (!getBody()
+            .equals(other.getBody())) return false;
+      }
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasHeader()) {
+        hash = (37 * hash) + HEADER_FIELD_NUMBER;
+        hash = (53 * hash) + getHeader().hashCode();
+      }
+      if (hasBody()) {
+        hash = (37 * hash) + BODY_FIELD_NUMBER;
+        hash = (53 * hash) + getBody().hashCode();
+      }
+      hash = (29 * hash) + getUnknownFields().hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static yeying.api.user.UserOuterClass.UserListResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UserListResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UserListResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UserListResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UserListResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UserListResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UserListResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.user.UserOuterClass.UserListResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static yeying.api.user.UserOuterClass.UserListResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static yeying.api.user.UserOuterClass.UserListResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UserListResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.user.UserOuterClass.UserListResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(yeying.api.user.UserOuterClass.UserListResponse prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code yeying.api.user.UserListResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:yeying.api.user.UserListResponse)
+        yeying.api.user.UserOuterClass.UserListResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListResponse_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                yeying.api.user.UserOuterClass.UserListResponse.class, yeying.api.user.UserOuterClass.UserListResponse.Builder.class);
+      }
+
+      // Construct using yeying.api.user.UserOuterClass.UserListResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage
+                .alwaysUseFieldBuilders) {
+          getHeaderFieldBuilder();
+          getBodyFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        bitField0_ = 0;
+        header_ = null;
+        if (headerBuilder_ != null) {
+          headerBuilder_.dispose();
+          headerBuilder_ = null;
+        }
+        body_ = null;
+        if (bodyBuilder_ != null) {
+          bodyBuilder_.dispose();
+          bodyBuilder_ = null;
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListResponse_descriptor;
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UserListResponse getDefaultInstanceForType() {
+        return yeying.api.user.UserOuterClass.UserListResponse.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UserListResponse build() {
+        yeying.api.user.UserOuterClass.UserListResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UserListResponse buildPartial() {
+        yeying.api.user.UserOuterClass.UserListResponse result = new yeying.api.user.UserOuterClass.UserListResponse(this);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartial0(yeying.api.user.UserOuterClass.UserListResponse result) {
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.header_ = headerBuilder_ == null
+              ? header_
+              : headerBuilder_.build();
+          to_bitField0_ |= 0x00000001;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.body_ = bodyBuilder_ == null
+              ? body_
+              : bodyBuilder_.build();
+          to_bitField0_ |= 0x00000002;
+        }
+        result.bitField0_ |= to_bitField0_;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof yeying.api.user.UserOuterClass.UserListResponse) {
+          return mergeFrom((yeying.api.user.UserOuterClass.UserListResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(yeying.api.user.UserOuterClass.UserListResponse other) {
+        if (other == yeying.api.user.UserOuterClass.UserListResponse.getDefaultInstance()) return this;
+        if (other.hasHeader()) {
+          mergeHeader(other.getHeader());
+        }
+        if (other.hasBody()) {
+          mergeBody(other.getBody());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                input.readMessage(
+                    getHeaderFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 10
+              case 18: {
+                input.readMessage(
+                    getBodyFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 18
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.unwrapIOException();
+        } finally {
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private yeying.api.common.Message.MessageHeader header_;
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.common.Message.MessageHeader, yeying.api.common.Message.MessageHeader.Builder, yeying.api.common.Message.MessageHeaderOrBuilder> headerBuilder_;
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       * @return Whether the header field is set.
+       */
+      public boolean hasHeader() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       * @return The header.
+       */
+      public yeying.api.common.Message.MessageHeader getHeader() {
+        if (headerBuilder_ == null) {
+          return header_ == null ? yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+        } else {
+          return headerBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder setHeader(yeying.api.common.Message.MessageHeader value) {
+        if (headerBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          header_ = value;
+        } else {
+          headerBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder setHeader(
+          yeying.api.common.Message.MessageHeader.Builder builderForValue) {
+        if (headerBuilder_ == null) {
+          header_ = builderForValue.build();
+        } else {
+          headerBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder mergeHeader(yeying.api.common.Message.MessageHeader value) {
+        if (headerBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0) &&
+            header_ != null &&
+            header_ != yeying.api.common.Message.MessageHeader.getDefaultInstance()) {
+            getHeaderBuilder().mergeFrom(value);
+          } else {
+            header_ = value;
+          }
+        } else {
+          headerBuilder_.mergeFrom(value);
+        }
+        if (header_ != null) {
+          bitField0_ |= 0x00000001;
+          onChanged();
+        }
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public Builder clearHeader() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        header_ = null;
+        if (headerBuilder_ != null) {
+          headerBuilder_.dispose();
+          headerBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public yeying.api.common.Message.MessageHeader.Builder getHeaderBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getHeaderFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      public yeying.api.common.Message.MessageHeaderOrBuilder getHeaderOrBuilder() {
+        if (headerBuilder_ != null) {
+          return headerBuilder_.getMessageOrBuilder();
+        } else {
+          return header_ == null ?
+              yeying.api.common.Message.MessageHeader.getDefaultInstance() : header_;
+        }
+      }
+      /**
+       * <code>.yeying.api.common.MessageHeader header = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.common.Message.MessageHeader, yeying.api.common.Message.MessageHeader.Builder, yeying.api.common.Message.MessageHeaderOrBuilder> 
+          getHeaderFieldBuilder() {
+        if (headerBuilder_ == null) {
+          headerBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              yeying.api.common.Message.MessageHeader, yeying.api.common.Message.MessageHeader.Builder, yeying.api.common.Message.MessageHeaderOrBuilder>(
+                  getHeader(),
+                  getParentForChildren(),
+                  isClean());
+          header_ = null;
+        }
+        return headerBuilder_;
+      }
+
+      private yeying.api.user.UserOuterClass.UserListResponseBody body_;
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.user.UserOuterClass.UserListResponseBody, yeying.api.user.UserOuterClass.UserListResponseBody.Builder, yeying.api.user.UserOuterClass.UserListResponseBodyOrBuilder> bodyBuilder_;
+      /**
+       * <code>.yeying.api.user.UserListResponseBody body = 2;</code>
+       * @return Whether the body field is set.
+       */
+      public boolean hasBody() {
+        return ((bitField0_ & 0x00000002) != 0);
+      }
+      /**
+       * <code>.yeying.api.user.UserListResponseBody body = 2;</code>
+       * @return The body.
+       */
+      public yeying.api.user.UserOuterClass.UserListResponseBody getBody() {
+        if (bodyBuilder_ == null) {
+          return body_ == null ? yeying.api.user.UserOuterClass.UserListResponseBody.getDefaultInstance() : body_;
+        } else {
+          return bodyBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.yeying.api.user.UserListResponseBody body = 2;</code>
+       */
+      public Builder setBody(yeying.api.user.UserOuterClass.UserListResponseBody value) {
+        if (bodyBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          body_ = value;
+        } else {
+          bodyBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.user.UserListResponseBody body = 2;</code>
+       */
+      public Builder setBody(
+          yeying.api.user.UserOuterClass.UserListResponseBody.Builder builderForValue) {
+        if (bodyBuilder_ == null) {
+          body_ = builderForValue.build();
+        } else {
+          bodyBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.user.UserListResponseBody body = 2;</code>
+       */
+      public Builder mergeBody(yeying.api.user.UserOuterClass.UserListResponseBody value) {
+        if (bodyBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0) &&
+            body_ != null &&
+            body_ != yeying.api.user.UserOuterClass.UserListResponseBody.getDefaultInstance()) {
+            getBodyBuilder().mergeFrom(value);
+          } else {
+            body_ = value;
+          }
+        } else {
+          bodyBuilder_.mergeFrom(value);
+        }
+        if (body_ != null) {
+          bitField0_ |= 0x00000002;
+          onChanged();
+        }
+        return this;
+      }
+      /**
+       * <code>.yeying.api.user.UserListResponseBody body = 2;</code>
+       */
+      public Builder clearBody() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        body_ = null;
+        if (bodyBuilder_ != null) {
+          bodyBuilder_.dispose();
+          bodyBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.user.UserListResponseBody body = 2;</code>
+       */
+      public yeying.api.user.UserOuterClass.UserListResponseBody.Builder getBodyBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getBodyFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.yeying.api.user.UserListResponseBody body = 2;</code>
+       */
+      public yeying.api.user.UserOuterClass.UserListResponseBodyOrBuilder getBodyOrBuilder() {
+        if (bodyBuilder_ != null) {
+          return bodyBuilder_.getMessageOrBuilder();
+        } else {
+          return body_ == null ?
+              yeying.api.user.UserOuterClass.UserListResponseBody.getDefaultInstance() : body_;
+        }
+      }
+      /**
+       * <code>.yeying.api.user.UserListResponseBody body = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.user.UserOuterClass.UserListResponseBody, yeying.api.user.UserOuterClass.UserListResponseBody.Builder, yeying.api.user.UserOuterClass.UserListResponseBodyOrBuilder> 
+          getBodyFieldBuilder() {
+        if (bodyBuilder_ == null) {
+          bodyBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              yeying.api.user.UserOuterClass.UserListResponseBody, yeying.api.user.UserOuterClass.UserListResponseBody.Builder, yeying.api.user.UserOuterClass.UserListResponseBodyOrBuilder>(
+                  getBody(),
+                  getParentForChildren(),
+                  isClean());
+          body_ = null;
+        }
+        return bodyBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:yeying.api.user.UserListResponse)
+    }
+
+    // @@protoc_insertion_point(class_scope:yeying.api.user.UserListResponse)
+    private static final yeying.api.user.UserOuterClass.UserListResponse DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new yeying.api.user.UserOuterClass.UserListResponse();
+    }
+
+    public static yeying.api.user.UserOuterClass.UserListResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<UserListResponse>
+        PARSER = new com.google.protobuf.AbstractParser<UserListResponse>() {
+      @java.lang.Override
+      public UserListResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
+      }
+    };
+
+    public static com.google.protobuf.Parser<UserListResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<UserListResponse> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public yeying.api.user.UserOuterClass.UserListResponse getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface UserListResponseBodyOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:yeying.api.user.UserListResponseBody)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     * @return Whether the status field is set.
+     */
+    boolean hasStatus();
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     * @return The status.
+     */
+    yeying.api.common.Message.ResponseStatus getStatus();
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     */
+    yeying.api.common.Message.ResponseStatusOrBuilder getStatusOrBuilder();
+
+    /**
+     * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+     */
+    java.util.List<yeying.api.user.UserOuterClass.UserDetail> 
+        getListList();
+    /**
+     * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+     */
+    yeying.api.user.UserOuterClass.UserDetail getList(int index);
+    /**
+     * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+     */
+    int getListCount();
+    /**
+     * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+     */
+    java.util.List<? extends yeying.api.user.UserOuterClass.UserDetailOrBuilder> 
+        getListOrBuilderList();
+    /**
+     * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+     */
+    yeying.api.user.UserOuterClass.UserDetailOrBuilder getListOrBuilder(
+        int index);
+
+    /**
+     * <pre>
+     * 总数
+     * </pre>
+     *
+     * <code>uint64 total = 3;</code>
+     * @return The total.
+     */
+    long getTotal();
+  }
+  /**
+   * Protobuf type {@code yeying.api.user.UserListResponseBody}
+   */
+  public static final class UserListResponseBody extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:yeying.api.user.UserListResponseBody)
+      UserListResponseBodyOrBuilder {
+  private static final long serialVersionUID = 0L;
+    static {
+      com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
+        com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
+        /* major= */ 4,
+        /* minor= */ 29,
+        /* patch= */ 3,
+        /* suffix= */ "",
+        UserListResponseBody.class.getName());
+    }
+    // Use UserListResponseBody.newBuilder() to construct.
+    private UserListResponseBody(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+    }
+    private UserListResponseBody() {
+      list_ = java.util.Collections.emptyList();
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListResponseBody_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListResponseBody_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              yeying.api.user.UserOuterClass.UserListResponseBody.class, yeying.api.user.UserOuterClass.UserListResponseBody.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int STATUS_FIELD_NUMBER = 1;
+    private yeying.api.common.Message.ResponseStatus status_;
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     * @return Whether the status field is set.
+     */
+    @java.lang.Override
+    public boolean hasStatus() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     * @return The status.
+     */
+    @java.lang.Override
+    public yeying.api.common.Message.ResponseStatus getStatus() {
+      return status_ == null ? yeying.api.common.Message.ResponseStatus.getDefaultInstance() : status_;
+    }
+    /**
+     * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+     */
+    @java.lang.Override
+    public yeying.api.common.Message.ResponseStatusOrBuilder getStatusOrBuilder() {
+      return status_ == null ? yeying.api.common.Message.ResponseStatus.getDefaultInstance() : status_;
+    }
+
+    public static final int LIST_FIELD_NUMBER = 2;
+    @SuppressWarnings("serial")
+    private java.util.List<yeying.api.user.UserOuterClass.UserDetail> list_;
+    /**
+     * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<yeying.api.user.UserOuterClass.UserDetail> getListList() {
+      return list_;
+    }
+    /**
+     * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends yeying.api.user.UserOuterClass.UserDetailOrBuilder> 
+        getListOrBuilderList() {
+      return list_;
+    }
+    /**
+     * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+     */
+    @java.lang.Override
+    public int getListCount() {
+      return list_.size();
+    }
+    /**
+     * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+     */
+    @java.lang.Override
+    public yeying.api.user.UserOuterClass.UserDetail getList(int index) {
+      return list_.get(index);
+    }
+    /**
+     * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+     */
+    @java.lang.Override
+    public yeying.api.user.UserOuterClass.UserDetailOrBuilder getListOrBuilder(
+        int index) {
+      return list_.get(index);
+    }
+
+    public static final int TOTAL_FIELD_NUMBER = 3;
+    private long total_ = 0L;
+    /**
+     * <pre>
+     * 总数
+     * </pre>
+     *
+     * <code>uint64 total = 3;</code>
+     * @return The total.
+     */
+    @java.lang.Override
+    public long getTotal() {
+      return total_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) != 0)) {
+        output.writeMessage(1, getStatus());
+      }
+      for (int i = 0; i < list_.size(); i++) {
+        output.writeMessage(2, list_.get(i));
+      }
+      if (total_ != 0L) {
+        output.writeUInt64(3, total_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getStatus());
+      }
+      for (int i = 0; i < list_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, list_.get(i));
+      }
+      if (total_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(3, total_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof yeying.api.user.UserOuterClass.UserListResponseBody)) {
+        return super.equals(obj);
+      }
+      yeying.api.user.UserOuterClass.UserListResponseBody other = (yeying.api.user.UserOuterClass.UserListResponseBody) obj;
+
+      if (hasStatus() != other.hasStatus()) return false;
+      if (hasStatus()) {
+        if (!getStatus()
+            .equals(other.getStatus())) return false;
+      }
+      if (!getListList()
+          .equals(other.getListList())) return false;
+      if (getTotal()
+          != other.getTotal()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasStatus()) {
+        hash = (37 * hash) + STATUS_FIELD_NUMBER;
+        hash = (53 * hash) + getStatus().hashCode();
+      }
+      if (getListCount() > 0) {
+        hash = (37 * hash) + LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getListList().hashCode();
+      }
+      hash = (37 * hash) + TOTAL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getTotal());
+      hash = (29 * hash) + getUnknownFields().hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static yeying.api.user.UserOuterClass.UserListResponseBody parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UserListResponseBody parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UserListResponseBody parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UserListResponseBody parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UserListResponseBody parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static yeying.api.user.UserOuterClass.UserListResponseBody parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UserListResponseBody parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.user.UserOuterClass.UserListResponseBody parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static yeying.api.user.UserOuterClass.UserListResponseBody parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static yeying.api.user.UserOuterClass.UserListResponseBody parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static yeying.api.user.UserOuterClass.UserListResponseBody parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input);
+    }
+    public static yeying.api.user.UserOuterClass.UserListResponseBody parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessage
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(yeying.api.user.UserOuterClass.UserListResponseBody prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code yeying.api.user.UserListResponseBody}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:yeying.api.user.UserListResponseBody)
+        yeying.api.user.UserOuterClass.UserListResponseBodyOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListResponseBody_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListResponseBody_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                yeying.api.user.UserOuterClass.UserListResponseBody.class, yeying.api.user.UserOuterClass.UserListResponseBody.Builder.class);
+      }
+
+      // Construct using yeying.api.user.UserOuterClass.UserListResponseBody.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage
+                .alwaysUseFieldBuilders) {
+          getStatusFieldBuilder();
+          getListFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        bitField0_ = 0;
+        status_ = null;
+        if (statusBuilder_ != null) {
+          statusBuilder_.dispose();
+          statusBuilder_ = null;
+        }
+        if (listBuilder_ == null) {
+          list_ = java.util.Collections.emptyList();
+        } else {
+          list_ = null;
+          listBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        total_ = 0L;
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return yeying.api.user.UserOuterClass.internal_static_yeying_api_user_UserListResponseBody_descriptor;
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UserListResponseBody getDefaultInstanceForType() {
+        return yeying.api.user.UserOuterClass.UserListResponseBody.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UserListResponseBody build() {
+        yeying.api.user.UserOuterClass.UserListResponseBody result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public yeying.api.user.UserOuterClass.UserListResponseBody buildPartial() {
+        yeying.api.user.UserOuterClass.UserListResponseBody result = new yeying.api.user.UserOuterClass.UserListResponseBody(this);
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(yeying.api.user.UserOuterClass.UserListResponseBody result) {
+        if (listBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0)) {
+            list_ = java.util.Collections.unmodifiableList(list_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.list_ = list_;
+        } else {
+          result.list_ = listBuilder_.build();
+        }
+      }
+
+      private void buildPartial0(yeying.api.user.UserOuterClass.UserListResponseBody result) {
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.status_ = statusBuilder_ == null
+              ? status_
+              : statusBuilder_.build();
+          to_bitField0_ |= 0x00000001;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.total_ = total_;
+        }
+        result.bitField0_ |= to_bitField0_;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof yeying.api.user.UserOuterClass.UserListResponseBody) {
+          return mergeFrom((yeying.api.user.UserOuterClass.UserListResponseBody)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(yeying.api.user.UserOuterClass.UserListResponseBody other) {
+        if (other == yeying.api.user.UserOuterClass.UserListResponseBody.getDefaultInstance()) return this;
+        if (other.hasStatus()) {
+          mergeStatus(other.getStatus());
+        }
+        if (listBuilder_ == null) {
+          if (!other.list_.isEmpty()) {
+            if (list_.isEmpty()) {
+              list_ = other.list_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureListIsMutable();
+              list_.addAll(other.list_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.list_.isEmpty()) {
+            if (listBuilder_.isEmpty()) {
+              listBuilder_.dispose();
+              listBuilder_ = null;
+              list_ = other.list_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              listBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getListFieldBuilder() : null;
+            } else {
+              listBuilder_.addAllMessages(other.list_);
+            }
+          }
+        }
+        if (other.getTotal() != 0L) {
+          setTotal(other.getTotal());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                input.readMessage(
+                    getStatusFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 10
+              case 18: {
+                yeying.api.user.UserOuterClass.UserDetail m =
+                    input.readMessage(
+                        yeying.api.user.UserOuterClass.UserDetail.parser(),
+                        extensionRegistry);
+                if (listBuilder_ == null) {
+                  ensureListIsMutable();
+                  list_.add(m);
+                } else {
+                  listBuilder_.addMessage(m);
+                }
+                break;
+              } // case 18
+              case 24: {
+                total_ = input.readUInt64();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.unwrapIOException();
+        } finally {
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private yeying.api.common.Message.ResponseStatus status_;
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.common.Message.ResponseStatus, yeying.api.common.Message.ResponseStatus.Builder, yeying.api.common.Message.ResponseStatusOrBuilder> statusBuilder_;
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       * @return Whether the status field is set.
+       */
+      public boolean hasStatus() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       * @return The status.
+       */
+      public yeying.api.common.Message.ResponseStatus getStatus() {
+        if (statusBuilder_ == null) {
+          return status_ == null ? yeying.api.common.Message.ResponseStatus.getDefaultInstance() : status_;
+        } else {
+          return statusBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public Builder setStatus(yeying.api.common.Message.ResponseStatus value) {
+        if (statusBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          status_ = value;
+        } else {
+          statusBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public Builder setStatus(
+          yeying.api.common.Message.ResponseStatus.Builder builderForValue) {
+        if (statusBuilder_ == null) {
+          status_ = builderForValue.build();
+        } else {
+          statusBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public Builder mergeStatus(yeying.api.common.Message.ResponseStatus value) {
+        if (statusBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0) &&
+            status_ != null &&
+            status_ != yeying.api.common.Message.ResponseStatus.getDefaultInstance()) {
+            getStatusBuilder().mergeFrom(value);
+          } else {
+            status_ = value;
+          }
+        } else {
+          statusBuilder_.mergeFrom(value);
+        }
+        if (status_ != null) {
+          bitField0_ |= 0x00000001;
+          onChanged();
+        }
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public Builder clearStatus() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        status_ = null;
+        if (statusBuilder_ != null) {
+          statusBuilder_.dispose();
+          statusBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public yeying.api.common.Message.ResponseStatus.Builder getStatusBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getStatusFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      public yeying.api.common.Message.ResponseStatusOrBuilder getStatusOrBuilder() {
+        if (statusBuilder_ != null) {
+          return statusBuilder_.getMessageOrBuilder();
+        } else {
+          return status_ == null ?
+              yeying.api.common.Message.ResponseStatus.getDefaultInstance() : status_;
+        }
+      }
+      /**
+       * <code>.yeying.api.common.ResponseStatus status = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          yeying.api.common.Message.ResponseStatus, yeying.api.common.Message.ResponseStatus.Builder, yeying.api.common.Message.ResponseStatusOrBuilder> 
+          getStatusFieldBuilder() {
+        if (statusBuilder_ == null) {
+          statusBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              yeying.api.common.Message.ResponseStatus, yeying.api.common.Message.ResponseStatus.Builder, yeying.api.common.Message.ResponseStatusOrBuilder>(
+                  getStatus(),
+                  getParentForChildren(),
+                  isClean());
+          status_ = null;
+        }
+        return statusBuilder_;
+      }
+
+      private java.util.List<yeying.api.user.UserOuterClass.UserDetail> list_ =
+        java.util.Collections.emptyList();
+      private void ensureListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          list_ = new java.util.ArrayList<yeying.api.user.UserOuterClass.UserDetail>(list_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          yeying.api.user.UserOuterClass.UserDetail, yeying.api.user.UserOuterClass.UserDetail.Builder, yeying.api.user.UserOuterClass.UserDetailOrBuilder> listBuilder_;
+
+      /**
+       * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+       */
+      public java.util.List<yeying.api.user.UserOuterClass.UserDetail> getListList() {
+        if (listBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(list_);
+        } else {
+          return listBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+       */
+      public int getListCount() {
+        if (listBuilder_ == null) {
+          return list_.size();
+        } else {
+          return listBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+       */
+      public yeying.api.user.UserOuterClass.UserDetail getList(int index) {
+        if (listBuilder_ == null) {
+          return list_.get(index);
+        } else {
+          return listBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+       */
+      public Builder setList(
+          int index, yeying.api.user.UserOuterClass.UserDetail value) {
+        if (listBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureListIsMutable();
+          list_.set(index, value);
+          onChanged();
+        } else {
+          listBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+       */
+      public Builder setList(
+          int index, yeying.api.user.UserOuterClass.UserDetail.Builder builderForValue) {
+        if (listBuilder_ == null) {
+          ensureListIsMutable();
+          list_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          listBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+       */
+      public Builder addList(yeying.api.user.UserOuterClass.UserDetail value) {
+        if (listBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureListIsMutable();
+          list_.add(value);
+          onChanged();
+        } else {
+          listBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+       */
+      public Builder addList(
+          int index, yeying.api.user.UserOuterClass.UserDetail value) {
+        if (listBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureListIsMutable();
+          list_.add(index, value);
+          onChanged();
+        } else {
+          listBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+       */
+      public Builder addList(
+          yeying.api.user.UserOuterClass.UserDetail.Builder builderForValue) {
+        if (listBuilder_ == null) {
+          ensureListIsMutable();
+          list_.add(builderForValue.build());
+          onChanged();
+        } else {
+          listBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+       */
+      public Builder addList(
+          int index, yeying.api.user.UserOuterClass.UserDetail.Builder builderForValue) {
+        if (listBuilder_ == null) {
+          ensureListIsMutable();
+          list_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          listBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+       */
+      public Builder addAllList(
+          java.lang.Iterable<? extends yeying.api.user.UserOuterClass.UserDetail> values) {
+        if (listBuilder_ == null) {
+          ensureListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, list_);
+          onChanged();
+        } else {
+          listBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+       */
+      public Builder clearList() {
+        if (listBuilder_ == null) {
+          list_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          listBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+       */
+      public Builder removeList(int index) {
+        if (listBuilder_ == null) {
+          ensureListIsMutable();
+          list_.remove(index);
+          onChanged();
+        } else {
+          listBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+       */
+      public yeying.api.user.UserOuterClass.UserDetail.Builder getListBuilder(
+          int index) {
+        return getListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+       */
+      public yeying.api.user.UserOuterClass.UserDetailOrBuilder getListOrBuilder(
+          int index) {
+        if (listBuilder_ == null) {
+          return list_.get(index);  } else {
+          return listBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+       */
+      public java.util.List<? extends yeying.api.user.UserOuterClass.UserDetailOrBuilder> 
+           getListOrBuilderList() {
+        if (listBuilder_ != null) {
+          return listBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(list_);
+        }
+      }
+      /**
+       * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+       */
+      public yeying.api.user.UserOuterClass.UserDetail.Builder addListBuilder() {
+        return getListFieldBuilder().addBuilder(
+            yeying.api.user.UserOuterClass.UserDetail.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+       */
+      public yeying.api.user.UserOuterClass.UserDetail.Builder addListBuilder(
+          int index) {
+        return getListFieldBuilder().addBuilder(
+            index, yeying.api.user.UserOuterClass.UserDetail.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .yeying.api.user.UserDetail list = 2;</code>
+       */
+      public java.util.List<yeying.api.user.UserOuterClass.UserDetail.Builder> 
+           getListBuilderList() {
+        return getListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          yeying.api.user.UserOuterClass.UserDetail, yeying.api.user.UserOuterClass.UserDetail.Builder, yeying.api.user.UserOuterClass.UserDetailOrBuilder> 
+          getListFieldBuilder() {
+        if (listBuilder_ == null) {
+          listBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              yeying.api.user.UserOuterClass.UserDetail, yeying.api.user.UserOuterClass.UserDetail.Builder, yeying.api.user.UserOuterClass.UserDetailOrBuilder>(
+                  list_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          list_ = null;
+        }
+        return listBuilder_;
+      }
+
+      private long total_ ;
+      /**
+       * <pre>
+       * 总数
+       * </pre>
+       *
+       * <code>uint64 total = 3;</code>
+       * @return The total.
+       */
+      @java.lang.Override
+      public long getTotal() {
+        return total_;
+      }
+      /**
+       * <pre>
+       * 总数
+       * </pre>
+       *
+       * <code>uint64 total = 3;</code>
+       * @param value The total to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTotal(long value) {
+
+        total_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 总数
+       * </pre>
+       *
+       * <code>uint64 total = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTotal() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        total_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:yeying.api.user.UserListResponseBody)
+    }
+
+    // @@protoc_insertion_point(class_scope:yeying.api.user.UserListResponseBody)
+    private static final yeying.api.user.UserOuterClass.UserListResponseBody DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new yeying.api.user.UserOuterClass.UserListResponseBody();
+    }
+
+    public static yeying.api.user.UserOuterClass.UserListResponseBody getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<UserListResponseBody>
+        PARSER = new com.google.protobuf.AbstractParser<UserListResponseBody>() {
+      @java.lang.Override
+      public UserListResponseBody parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
+      }
+    };
+
+    public static com.google.protobuf.Parser<UserListResponseBody> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<UserListResponseBody> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public yeying.api.user.UserOuterClass.UserListResponseBody getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface UserMetadataOrBuilder extends
       // @@protoc_insertion_point(interface_extends:yeying.api.user.UserMetadata)
       com.google.protobuf.MessageOrBuilder {
@@ -536,6 +6805,30 @@ public final class UserOuterClass {
      */
     com.google.protobuf.ByteString
         getSignatureBytes();
+
+    /**
+     * <code>string telephone = 7;</code>
+     * @return The telephone.
+     */
+    java.lang.String getTelephone();
+    /**
+     * <code>string telephone = 7;</code>
+     * @return The bytes for telephone.
+     */
+    com.google.protobuf.ByteString
+        getTelephoneBytes();
+
+    /**
+     * <code>string email = 8;</code>
+     * @return The email.
+     */
+    java.lang.String getEmail();
+    /**
+     * <code>string email = 8;</code>
+     * @return The bytes for email.
+     */
+    com.google.protobuf.ByteString
+        getEmailBytes();
   }
   /**
    * Protobuf type {@code yeying.api.user.UserMetadata}
@@ -565,6 +6858,8 @@ public final class UserOuterClass {
       createdAt_ = "";
       updatedAt_ = "";
       signature_ = "";
+      telephone_ = "";
+      email_ = "";
     }
 
     public static final com.google.protobuf.Descriptors.Descriptor
@@ -814,6 +7109,84 @@ public final class UserOuterClass {
       }
     }
 
+    public static final int TELEPHONE_FIELD_NUMBER = 7;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object telephone_ = "";
+    /**
+     * <code>string telephone = 7;</code>
+     * @return The telephone.
+     */
+    @java.lang.Override
+    public java.lang.String getTelephone() {
+      java.lang.Object ref = telephone_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        telephone_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string telephone = 7;</code>
+     * @return The bytes for telephone.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getTelephoneBytes() {
+      java.lang.Object ref = telephone_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        telephone_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int EMAIL_FIELD_NUMBER = 8;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object email_ = "";
+    /**
+     * <code>string email = 8;</code>
+     * @return The email.
+     */
+    @java.lang.Override
+    public java.lang.String getEmail() {
+      java.lang.Object ref = email_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        email_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string email = 8;</code>
+     * @return The bytes for email.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getEmailBytes() {
+      java.lang.Object ref = email_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        email_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -846,6 +7219,12 @@ public final class UserOuterClass {
       if (!com.google.protobuf.GeneratedMessage.isStringEmpty(signature_)) {
         com.google.protobuf.GeneratedMessage.writeString(output, 6, signature_);
       }
+      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(telephone_)) {
+        com.google.protobuf.GeneratedMessage.writeString(output, 7, telephone_);
+      }
+      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(email_)) {
+        com.google.protobuf.GeneratedMessage.writeString(output, 8, email_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -872,6 +7251,12 @@ public final class UserOuterClass {
       }
       if (!com.google.protobuf.GeneratedMessage.isStringEmpty(signature_)) {
         size += com.google.protobuf.GeneratedMessage.computeStringSize(6, signature_);
+      }
+      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(telephone_)) {
+        size += com.google.protobuf.GeneratedMessage.computeStringSize(7, telephone_);
+      }
+      if (!com.google.protobuf.GeneratedMessage.isStringEmpty(email_)) {
+        size += com.google.protobuf.GeneratedMessage.computeStringSize(8, email_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -900,6 +7285,10 @@ public final class UserOuterClass {
           .equals(other.getUpdatedAt())) return false;
       if (!getSignature()
           .equals(other.getSignature())) return false;
+      if (!getTelephone()
+          .equals(other.getTelephone())) return false;
+      if (!getEmail()
+          .equals(other.getEmail())) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -923,6 +7312,10 @@ public final class UserOuterClass {
       hash = (53 * hash) + getUpdatedAt().hashCode();
       hash = (37 * hash) + SIGNATURE_FIELD_NUMBER;
       hash = (53 * hash) + getSignature().hashCode();
+      hash = (37 * hash) + TELEPHONE_FIELD_NUMBER;
+      hash = (53 * hash) + getTelephone().hashCode();
+      hash = (37 * hash) + EMAIL_FIELD_NUMBER;
+      hash = (53 * hash) + getEmail().hashCode();
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1060,6 +7453,8 @@ public final class UserOuterClass {
         createdAt_ = "";
         updatedAt_ = "";
         signature_ = "";
+        telephone_ = "";
+        email_ = "";
         return this;
       }
 
@@ -1111,6 +7506,12 @@ public final class UserOuterClass {
         if (((from_bitField0_ & 0x00000020) != 0)) {
           result.signature_ = signature_;
         }
+        if (((from_bitField0_ & 0x00000040) != 0)) {
+          result.telephone_ = telephone_;
+        }
+        if (((from_bitField0_ & 0x00000080) != 0)) {
+          result.email_ = email_;
+        }
       }
 
       @java.lang.Override
@@ -1153,6 +7554,16 @@ public final class UserOuterClass {
         if (!other.getSignature().isEmpty()) {
           signature_ = other.signature_;
           bitField0_ |= 0x00000020;
+          onChanged();
+        }
+        if (!other.getTelephone().isEmpty()) {
+          telephone_ = other.telephone_;
+          bitField0_ |= 0x00000040;
+          onChanged();
+        }
+        if (!other.getEmail().isEmpty()) {
+          email_ = other.email_;
+          bitField0_ |= 0x00000080;
           onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
@@ -1211,6 +7622,16 @@ public final class UserOuterClass {
                 bitField0_ |= 0x00000020;
                 break;
               } // case 50
+              case 58: {
+                telephone_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000040;
+                break;
+              } // case 58
+              case 66: {
+                email_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000080;
+                break;
+              } // case 66
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -1656,6 +8077,150 @@ public final class UserOuterClass {
         checkByteStringIsUtf8(value);
         signature_ = value;
         bitField0_ |= 0x00000020;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object telephone_ = "";
+      /**
+       * <code>string telephone = 7;</code>
+       * @return The telephone.
+       */
+      public java.lang.String getTelephone() {
+        java.lang.Object ref = telephone_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          telephone_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string telephone = 7;</code>
+       * @return The bytes for telephone.
+       */
+      public com.google.protobuf.ByteString
+          getTelephoneBytes() {
+        java.lang.Object ref = telephone_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          telephone_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string telephone = 7;</code>
+       * @param value The telephone to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTelephone(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        telephone_ = value;
+        bitField0_ |= 0x00000040;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string telephone = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTelephone() {
+        telephone_ = getDefaultInstance().getTelephone();
+        bitField0_ = (bitField0_ & ~0x00000040);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string telephone = 7;</code>
+       * @param value The bytes for telephone to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTelephoneBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
+        telephone_ = value;
+        bitField0_ |= 0x00000040;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object email_ = "";
+      /**
+       * <code>string email = 8;</code>
+       * @return The email.
+       */
+      public java.lang.String getEmail() {
+        java.lang.Object ref = email_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          email_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string email = 8;</code>
+       * @return The bytes for email.
+       */
+      public com.google.protobuf.ByteString
+          getEmailBytes() {
+        java.lang.Object ref = email_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          email_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string email = 8;</code>
+       * @param value The email to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEmail(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        email_ = value;
+        bitField0_ |= 0x00000080;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string email = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEmail() {
+        email_ = getDefaultInstance().getEmail();
+        bitField0_ = (bitField0_ & ~0x00000080);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string email = 8;</code>
+       * @param value The bytes for email to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEmailBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
+        email_ = value;
+        bitField0_ |= 0x00000080;
         onChanged();
         return this;
       }
@@ -13574,6 +20139,46 @@ public final class UserOuterClass {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_yeying_api_user_UpdateStatusRequest_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_yeying_api_user_UpdateStatusRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_yeying_api_user_UpdateStatusRequestBody_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_yeying_api_user_UpdateStatusRequestBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_yeying_api_user_UpdateStatusResponse_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_yeying_api_user_UpdateStatusResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_yeying_api_user_UpdateStatusResponseBody_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_yeying_api_user_UpdateStatusResponseBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_yeying_api_user_UserListRequest_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_yeying_api_user_UserListRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_yeying_api_user_UserListRequestBody_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_yeying_api_user_UserListRequestBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_yeying_api_user_UserListResponse_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_yeying_api_user_UserListResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_yeying_api_user_UserListResponseBody_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_yeying_api_user_UserListResponseBody_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_yeying_api_user_UserMetadata_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -13668,182 +20273,261 @@ public final class UserOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032yeying/api/user/user.proto\022\017yeying.api" +
-      ".user\032\037yeying/api/common/message.proto\"r" +
-      "\n\014UserMetadata\022\013\n\003did\030\001 \001(\t\022\014\n\004name\030\002 \001(" +
-      "\t\022\016\n\006avatar\030\003 \001(\t\022\021\n\tcreatedAt\030\004 \001(\t\022\021\n\t" +
-      "updatedAt\030\005 \001(\t\022\021\n\tsignature\030\006 \001(\t\"\276\001\n\tU" +
-      "serState\022\r\n\005owner\030\001 \001(\t\022\013\n\003did\030\002 \001(\t\022+\n\004" +
-      "role\030\003 \001(\0162\035.yeying.api.user.UserRoleEnu" +
-      "m\022/\n\006status\030\004 \001(\0162\037.yeying.api.user.User" +
-      "StatusEnum\022\021\n\tcreatedAt\030\005 \001(\t\022\021\n\tupdated" +
-      "At\030\006 \001(\t\022\021\n\tsignature\030\007 \001(\t\"u\n\016AddUserRe" +
-      "quest\0220\n\006header\030\001 \001(\0132 .yeying.api.commo" +
-      "n.MessageHeader\0221\n\004body\030\002 \001(\0132#.yeying.a" +
-      "pi.user.AddUserRequestBody\"A\n\022AddUserReq" +
-      "uestBody\022+\n\004user\030\001 \001(\0132\035.yeying.api.user" +
-      ".UserMetadata\"w\n\017AddUserResponse\0220\n\006head" +
-      "er\030\001 \001(\0132 .yeying.api.common.MessageHead" +
-      "er\0222\n\004body\030\002 \001(\0132$.yeying.api.user.AddUs" +
-      "erResponseBody\"u\n\023AddUserResponseBody\0221\n" +
-      "\006status\030\001 \001(\0132!.yeying.api.common.Respon" +
-      "seStatus\022+\n\004user\030\002 \001(\0132\035.yeying.api.user" +
-      ".UserMetadata\"{\n\021UpdateUserRequest\0220\n\006he" +
-      "ader\030\001 \001(\0132 .yeying.api.common.MessageHe" +
-      "ader\0224\n\004body\030\002 \001(\0132&.yeying.api.user.Upd" +
-      "ateUserRequestBody\"D\n\025UpdateUserRequestB" +
-      "ody\022+\n\004user\030\001 \001(\0132\035.yeying.api.user.User" +
-      "Metadata\"}\n\022UpdateUserResponse\0220\n\006header" +
-      "\030\001 \001(\0132 .yeying.api.common.MessageHeader" +
-      "\0225\n\004body\030\002 \001(\0132\'.yeying.api.user.UpdateU" +
-      "serResponseBody\"x\n\026UpdateUserResponseBod" +
-      "y\0221\n\006status\030\001 \001(\0132!.yeying.api.common.Re" +
-      "sponseStatus\022+\n\004user\030\002 \001(\0132\035.yeying.api." +
-      "user.UserMetadata\"E\n\021DeleteUserRequest\0220" +
-      "\n\006header\030\001 \001(\0132 .yeying.api.common.Messa" +
-      "geHeader\"}\n\022DeleteUserResponse\0220\n\006header" +
-      "\030\001 \001(\0132 .yeying.api.common.MessageHeader" +
-      "\0225\n\004body\030\002 \001(\0132\'.yeying.api.user.DeleteU" +
-      "serResponseBody\"K\n\026DeleteUserResponseBod" +
-      "y\0221\n\006status\030\001 \001(\0132!.yeying.api.common.Re" +
-      "sponseStatus\"E\n\021UserDetailRequest\0220\n\006hea" +
+      ".user\032\036google/protobuf/wrappers.proto\032\037y" +
+      "eying/api/common/message.proto\"\177\n\023Update" +
+      "StatusRequest\0220\n\006header\030\001 \001(\0132 .yeying.a" +
+      "pi.common.MessageHeader\0226\n\004body\030\002 \001(\0132(." +
+      "yeying.api.user.UpdateStatusRequestBody\"" +
+      "W\n\027UpdateStatusRequestBody\022\013\n\003did\030\001 \001(\t\022" +
+      "/\n\006status\030\002 \001(\0162\037.yeying.api.user.UserSt" +
+      "atusEnum\"\201\001\n\024UpdateStatusResponse\0220\n\006hea" +
       "der\030\001 \001(\0132 .yeying.api.common.MessageHea" +
-      "der\"}\n\022UserDetailResponse\0220\n\006header\030\001 \001(" +
-      "\0132 .yeying.api.common.MessageHeader\0225\n\004b" +
-      "ody\030\002 \001(\0132\'.yeying.api.user.UserDetailRe" +
-      "sponseBody\"x\n\026UserDetailResponseBody\0221\n\006" +
-      "status\030\001 \001(\0132!.yeying.api.common.Respons" +
-      "eStatus\022+\n\006detail\030\002 \001(\0132\033.yeying.api.use" +
-      "r.UserDetail\"d\n\nUserDetail\022+\n\004user\030\001 \001(\013" +
-      "2\035.yeying.api.user.UserMetadata\022)\n\005state" +
-      "\030\002 \001(\0132\032.yeying.api.user.UserState*\237\002\n\016U" +
-      "serStatusEnum\022\027\n\023USER_STATUS_UNKNOWN\020\000\022\026" +
-      "\n\022USER_STATUS_ACTIVE\020\001\022\027\n\023USER_STATUS_OF" +
-      "FLINE\020\002\022\027\n\023USER_STATUS_DISABLE\020\003\022\024\n\020USER" +
-      "_STATUS_LOCK\020\004\022\032\n\026USER_STATUS_UNVERIFIED" +
-      "\020\005\022\027\n\023USER_STATUS_DELETED\020\006\022\027\n\023USER_STAT" +
-      "US_DORMANT\020\007\022\026\n\022USER_STATUS_FREEZE\020\010\022\025\n\021" +
-      "USER_STATUS_AUDIT\020\t\022\027\n\023USER_STATUS_REFUS" +
-      "ED\020\n*P\n\014UserRoleEnum\022\025\n\021USER_ROLE_UNKNOW" +
-      "N\020\000\022\023\n\017USER_ROLE_OWNER\020\001\022\024\n\020USER_ROLE_NO" +
-      "RMAL\020\0022\321\002\n\004User\022J\n\003Add\022\037.yeying.api.user" +
-      ".AddUserRequest\032 .yeying.api.user.AddUse" +
-      "rResponse\"\000\022S\n\006Detail\022\".yeying.api.user." +
-      "UserDetailRequest\032#.yeying.api.user.User" +
-      "DetailResponse\"\000\022S\n\006Delete\022\".yeying.api." +
-      "user.DeleteUserRequest\032#.yeying.api.user" +
-      ".DeleteUserResponse\"\000\022S\n\006Update\022\".yeying" +
-      ".api.user.UpdateUserRequest\032#.yeying.api" +
-      ".user.UpdateUserResponse\"\000B\021Z\017yeying/api" +
-      "/userb\006proto3"
+      "der\0227\n\004body\030\002 \001(\0132).yeying.api.user.Upda" +
+      "teStatusResponseBody\"M\n\030UpdateStatusResp" +
+      "onseBody\0221\n\006status\030\001 \001(\0132!.yeying.api.co" +
+      "mmon.ResponseStatus\"w\n\017UserListRequest\0220" +
+      "\n\006header\030\001 \001(\0132 .yeying.api.common.Messa" +
+      "geHeader\0222\n\004body\030\002 \001(\0132$.yeying.api.user" +
+      ".UserListRequestBody\"t\n\023UserListRequestB" +
+      "ody\022.\n\tpageIndex\030\003 \001(\0132\033.google.protobuf" +
+      ".Int32Value\022-\n\010pageSize\030\004 \001(\0132\033.google.p" +
+      "rotobuf.Int32Value\"y\n\020UserListResponse\0220" +
+      "\n\006header\030\001 \001(\0132 .yeying.api.common.Messa" +
+      "geHeader\0223\n\004body\030\002 \001(\0132%.yeying.api.user" +
+      ".UserListResponseBody\"\203\001\n\024UserListRespon" +
+      "seBody\0221\n\006status\030\001 \001(\0132!.yeying.api.comm" +
+      "on.ResponseStatus\022)\n\004list\030\002 \003(\0132\033.yeying" +
+      ".api.user.UserDetail\022\r\n\005total\030\003 \001(\004\"\224\001\n\014" +
+      "UserMetadata\022\013\n\003did\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022" +
+      "\016\n\006avatar\030\003 \001(\t\022\021\n\tcreatedAt\030\004 \001(\t\022\021\n\tup" +
+      "datedAt\030\005 \001(\t\022\021\n\tsignature\030\006 \001(\t\022\021\n\ttele" +
+      "phone\030\007 \001(\t\022\r\n\005email\030\010 \001(\t\"\276\001\n\tUserState" +
+      "\022\r\n\005owner\030\001 \001(\t\022\013\n\003did\030\002 \001(\t\022+\n\004role\030\003 \001" +
+      "(\0162\035.yeying.api.user.UserRoleEnum\022/\n\006sta" +
+      "tus\030\004 \001(\0162\037.yeying.api.user.UserStatusEn" +
+      "um\022\021\n\tcreatedAt\030\005 \001(\t\022\021\n\tupdatedAt\030\006 \001(\t" +
+      "\022\021\n\tsignature\030\007 \001(\t\"u\n\016AddUserRequest\0220\n" +
+      "\006header\030\001 \001(\0132 .yeying.api.common.Messag" +
+      "eHeader\0221\n\004body\030\002 \001(\0132#.yeying.api.user." +
+      "AddUserRequestBody\"A\n\022AddUserRequestBody" +
+      "\022+\n\004user\030\001 \001(\0132\035.yeying.api.user.UserMet" +
+      "adata\"w\n\017AddUserResponse\0220\n\006header\030\001 \001(\013" +
+      "2 .yeying.api.common.MessageHeader\0222\n\004bo" +
+      "dy\030\002 \001(\0132$.yeying.api.user.AddUserRespon" +
+      "seBody\"u\n\023AddUserResponseBody\0221\n\006status\030" +
+      "\001 \001(\0132!.yeying.api.common.ResponseStatus" +
+      "\022+\n\004user\030\002 \001(\0132\035.yeying.api.user.UserMet" +
+      "adata\"{\n\021UpdateUserRequest\0220\n\006header\030\001 \001" +
+      "(\0132 .yeying.api.common.MessageHeader\0224\n\004" +
+      "body\030\002 \001(\0132&.yeying.api.user.UpdateUserR" +
+      "equestBody\"D\n\025UpdateUserRequestBody\022+\n\004u" +
+      "ser\030\001 \001(\0132\035.yeying.api.user.UserMetadata" +
+      "\"}\n\022UpdateUserResponse\0220\n\006header\030\001 \001(\0132 " +
+      ".yeying.api.common.MessageHeader\0225\n\004body" +
+      "\030\002 \001(\0132\'.yeying.api.user.UpdateUserRespo" +
+      "nseBody\"x\n\026UpdateUserResponseBody\0221\n\006sta" +
+      "tus\030\001 \001(\0132!.yeying.api.common.ResponseSt" +
+      "atus\022+\n\004user\030\002 \001(\0132\035.yeying.api.user.Use" +
+      "rMetadata\"E\n\021DeleteUserRequest\0220\n\006header" +
+      "\030\001 \001(\0132 .yeying.api.common.MessageHeader" +
+      "\"}\n\022DeleteUserResponse\0220\n\006header\030\001 \001(\0132 " +
+      ".yeying.api.common.MessageHeader\0225\n\004body" +
+      "\030\002 \001(\0132\'.yeying.api.user.DeleteUserRespo" +
+      "nseBody\"K\n\026DeleteUserResponseBody\0221\n\006sta" +
+      "tus\030\001 \001(\0132!.yeying.api.common.ResponseSt" +
+      "atus\"E\n\021UserDetailRequest\0220\n\006header\030\001 \001(" +
+      "\0132 .yeying.api.common.MessageHeader\"}\n\022U" +
+      "serDetailResponse\0220\n\006header\030\001 \001(\0132 .yeyi" +
+      "ng.api.common.MessageHeader\0225\n\004body\030\002 \001(" +
+      "\0132\'.yeying.api.user.UserDetailResponseBo" +
+      "dy\"x\n\026UserDetailResponseBody\0221\n\006status\030\001" +
+      " \001(\0132!.yeying.api.common.ResponseStatus\022" +
+      "+\n\006detail\030\002 \001(\0132\033.yeying.api.user.UserDe" +
+      "tail\"d\n\nUserDetail\022+\n\004user\030\001 \001(\0132\035.yeyin" +
+      "g.api.user.UserMetadata\022)\n\005state\030\002 \001(\0132\032" +
+      ".yeying.api.user.UserState*\237\002\n\016UserStatu" +
+      "sEnum\022\027\n\023USER_STATUS_UNKNOWN\020\000\022\026\n\022USER_S" +
+      "TATUS_ACTIVE\020\001\022\027\n\023USER_STATUS_OFFLINE\020\002\022" +
+      "\027\n\023USER_STATUS_DISABLE\020\003\022\024\n\020USER_STATUS_" +
+      "LOCK\020\004\022\032\n\026USER_STATUS_UNVERIFIED\020\005\022\027\n\023US" +
+      "ER_STATUS_DELETED\020\006\022\027\n\023USER_STATUS_DORMA" +
+      "NT\020\007\022\026\n\022USER_STATUS_FREEZE\020\010\022\025\n\021USER_STA" +
+      "TUS_AUDIT\020\t\022\027\n\023USER_STATUS_REFUSED\020\n*P\n\014" +
+      "UserRoleEnum\022\025\n\021USER_ROLE_UNKNOWN\020\000\022\023\n\017U" +
+      "SER_ROLE_OWNER\020\001\022\024\n\020USER_ROLE_NORMAL\020\0022\377" +
+      "\003\n\004User\022J\n\003Add\022\037.yeying.api.user.AddUser" +
+      "Request\032 .yeying.api.user.AddUserRespons" +
+      "e\"\000\022S\n\006Detail\022\".yeying.api.user.UserDeta" +
+      "ilRequest\032#.yeying.api.user.UserDetailRe" +
+      "sponse\"\000\022M\n\004List\022 .yeying.api.user.UserL" +
+      "istRequest\032!.yeying.api.user.UserListRes" +
+      "ponse\"\000\022S\n\006Delete\022\".yeying.api.user.Dele" +
+      "teUserRequest\032#.yeying.api.user.DeleteUs" +
+      "erResponse\"\000\022S\n\006Update\022\".yeying.api.user" +
+      ".UpdateUserRequest\032#.yeying.api.user.Upd" +
+      "ateUserResponse\"\000\022]\n\014UpdateStatus\022$.yeyi" +
+      "ng.api.user.UpdateStatusRequest\032%.yeying" +
+      ".api.user.UpdateStatusResponse\"\000B\021Z\017yeyi" +
+      "ng/api/userb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          com.google.protobuf.WrappersProto.getDescriptor(),
           yeying.api.common.Message.getDescriptor(),
         });
-    internal_static_yeying_api_user_UserMetadata_descriptor =
+    internal_static_yeying_api_user_UpdateStatusRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
+    internal_static_yeying_api_user_UpdateStatusRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_yeying_api_user_UpdateStatusRequest_descriptor,
+        new java.lang.String[] { "Header", "Body", });
+    internal_static_yeying_api_user_UpdateStatusRequestBody_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_yeying_api_user_UpdateStatusRequestBody_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_yeying_api_user_UpdateStatusRequestBody_descriptor,
+        new java.lang.String[] { "Did", "Status", });
+    internal_static_yeying_api_user_UpdateStatusResponse_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_yeying_api_user_UpdateStatusResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_yeying_api_user_UpdateStatusResponse_descriptor,
+        new java.lang.String[] { "Header", "Body", });
+    internal_static_yeying_api_user_UpdateStatusResponseBody_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_yeying_api_user_UpdateStatusResponseBody_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_yeying_api_user_UpdateStatusResponseBody_descriptor,
+        new java.lang.String[] { "Status", });
+    internal_static_yeying_api_user_UserListRequest_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_yeying_api_user_UserListRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_yeying_api_user_UserListRequest_descriptor,
+        new java.lang.String[] { "Header", "Body", });
+    internal_static_yeying_api_user_UserListRequestBody_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_yeying_api_user_UserListRequestBody_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_yeying_api_user_UserListRequestBody_descriptor,
+        new java.lang.String[] { "PageIndex", "PageSize", });
+    internal_static_yeying_api_user_UserListResponse_descriptor =
+      getDescriptor().getMessageTypes().get(6);
+    internal_static_yeying_api_user_UserListResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_yeying_api_user_UserListResponse_descriptor,
+        new java.lang.String[] { "Header", "Body", });
+    internal_static_yeying_api_user_UserListResponseBody_descriptor =
+      getDescriptor().getMessageTypes().get(7);
+    internal_static_yeying_api_user_UserListResponseBody_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_yeying_api_user_UserListResponseBody_descriptor,
+        new java.lang.String[] { "Status", "List", "Total", });
+    internal_static_yeying_api_user_UserMetadata_descriptor =
+      getDescriptor().getMessageTypes().get(8);
     internal_static_yeying_api_user_UserMetadata_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_user_UserMetadata_descriptor,
-        new java.lang.String[] { "Did", "Name", "Avatar", "CreatedAt", "UpdatedAt", "Signature", });
+        new java.lang.String[] { "Did", "Name", "Avatar", "CreatedAt", "UpdatedAt", "Signature", "Telephone", "Email", });
     internal_static_yeying_api_user_UserState_descriptor =
-      getDescriptor().getMessageTypes().get(1);
+      getDescriptor().getMessageTypes().get(9);
     internal_static_yeying_api_user_UserState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_user_UserState_descriptor,
         new java.lang.String[] { "Owner", "Did", "Role", "Status", "CreatedAt", "UpdatedAt", "Signature", });
     internal_static_yeying_api_user_AddUserRequest_descriptor =
-      getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(10);
     internal_static_yeying_api_user_AddUserRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_user_AddUserRequest_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_user_AddUserRequestBody_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(11);
     internal_static_yeying_api_user_AddUserRequestBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_user_AddUserRequestBody_descriptor,
         new java.lang.String[] { "User", });
     internal_static_yeying_api_user_AddUserResponse_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(12);
     internal_static_yeying_api_user_AddUserResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_user_AddUserResponse_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_user_AddUserResponseBody_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(13);
     internal_static_yeying_api_user_AddUserResponseBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_user_AddUserResponseBody_descriptor,
         new java.lang.String[] { "Status", "User", });
     internal_static_yeying_api_user_UpdateUserRequest_descriptor =
-      getDescriptor().getMessageTypes().get(6);
+      getDescriptor().getMessageTypes().get(14);
     internal_static_yeying_api_user_UpdateUserRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_user_UpdateUserRequest_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_user_UpdateUserRequestBody_descriptor =
-      getDescriptor().getMessageTypes().get(7);
+      getDescriptor().getMessageTypes().get(15);
     internal_static_yeying_api_user_UpdateUserRequestBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_user_UpdateUserRequestBody_descriptor,
         new java.lang.String[] { "User", });
     internal_static_yeying_api_user_UpdateUserResponse_descriptor =
-      getDescriptor().getMessageTypes().get(8);
+      getDescriptor().getMessageTypes().get(16);
     internal_static_yeying_api_user_UpdateUserResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_user_UpdateUserResponse_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_user_UpdateUserResponseBody_descriptor =
-      getDescriptor().getMessageTypes().get(9);
+      getDescriptor().getMessageTypes().get(17);
     internal_static_yeying_api_user_UpdateUserResponseBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_user_UpdateUserResponseBody_descriptor,
         new java.lang.String[] { "Status", "User", });
     internal_static_yeying_api_user_DeleteUserRequest_descriptor =
-      getDescriptor().getMessageTypes().get(10);
+      getDescriptor().getMessageTypes().get(18);
     internal_static_yeying_api_user_DeleteUserRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_user_DeleteUserRequest_descriptor,
         new java.lang.String[] { "Header", });
     internal_static_yeying_api_user_DeleteUserResponse_descriptor =
-      getDescriptor().getMessageTypes().get(11);
+      getDescriptor().getMessageTypes().get(19);
     internal_static_yeying_api_user_DeleteUserResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_user_DeleteUserResponse_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_user_DeleteUserResponseBody_descriptor =
-      getDescriptor().getMessageTypes().get(12);
+      getDescriptor().getMessageTypes().get(20);
     internal_static_yeying_api_user_DeleteUserResponseBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_user_DeleteUserResponseBody_descriptor,
         new java.lang.String[] { "Status", });
     internal_static_yeying_api_user_UserDetailRequest_descriptor =
-      getDescriptor().getMessageTypes().get(13);
+      getDescriptor().getMessageTypes().get(21);
     internal_static_yeying_api_user_UserDetailRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_user_UserDetailRequest_descriptor,
         new java.lang.String[] { "Header", });
     internal_static_yeying_api_user_UserDetailResponse_descriptor =
-      getDescriptor().getMessageTypes().get(14);
+      getDescriptor().getMessageTypes().get(22);
     internal_static_yeying_api_user_UserDetailResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_user_UserDetailResponse_descriptor,
         new java.lang.String[] { "Header", "Body", });
     internal_static_yeying_api_user_UserDetailResponseBody_descriptor =
-      getDescriptor().getMessageTypes().get(15);
+      getDescriptor().getMessageTypes().get(23);
     internal_static_yeying_api_user_UserDetailResponseBody_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_user_UserDetailResponseBody_descriptor,
         new java.lang.String[] { "Status", "Detail", });
     internal_static_yeying_api_user_UserDetail_descriptor =
-      getDescriptor().getMessageTypes().get(16);
+      getDescriptor().getMessageTypes().get(24);
     internal_static_yeying_api_user_UserDetail_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_yeying_api_user_UserDetail_descriptor,
         new java.lang.String[] { "User", "State", });
     descriptor.resolveAllFeaturesImmutable();
+    com.google.protobuf.WrappersProto.getDescriptor();
     yeying.api.common.Message.getDescriptor();
   }
 
